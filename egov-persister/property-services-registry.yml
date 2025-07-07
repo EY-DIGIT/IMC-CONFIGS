@@ -188,7 +188,7 @@ serviceMaps:
       - jsonPath: $.Property.auditDetails.lastModifiedTime
 
 
-    - query: INSERT INTO eg_pt_address(tenantid, id, propertyid, doorno, plotno, buildingname, street, landmark, city, pincode, locality, district, region, state, country, latitude, longitude, createdby, createdtime, lastmodifiedby, lastmodifiedtime, ward, colony,additionaldetails) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+    - query: INSERT INTO eg_pt_address(tenantid, id, propertyid, doorno, plotno, buildingname, street, landmark, city, pincode, locality, district, region, state, country, latitude, longitude, createdby, createdtime, lastmodifiedby, lastmodifiedtime, ward, zone,additionaldetails) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
       basePath: Property.address
       jsonMaps:
 
@@ -236,7 +236,7 @@ serviceMaps:
       
       - jsonPath: $.Property.address.ward
       
-      - jsonPath: $.Property.address.colony
+      - jsonPath: $.Property.address.zone
       
       - jsonPath: $.Property.address.additionalDetails
         type: JSON
@@ -442,7 +442,7 @@ serviceMaps:
 
       - jsonPath: $.Property.auditDetails.lastModifiedTime
 
-    - query: UPDATE eg_pt_address SET doorno=?, plotno=?, buildingname=?, street=?, landmark=?, city=?, pincode=?, locality=?, district=?, region=?, state=?, country=?, latitude=?, longitude=?, lastmodifiedby=?, lastmodifiedtime=?, ward=?, colony=?, additionaldetails=? WHERE id=?;
+    - query: UPDATE eg_pt_address SET doorno=?, plotno=?, buildingname=?, street=?, landmark=?, city=?, pincode=?, locality=?, district=?, region=?, state=?, country=?, latitude=?, longitude=?, lastmodifiedby=?, lastmodifiedtime=?, ward=?, zone=?, additionaldetails=? WHERE id=?;
       basePath: Property.address
       jsonMaps:
 
@@ -480,7 +480,7 @@ serviceMaps:
       
       - jsonPath: $.Property.address.ward
       
-      - jsonPath: $.Property.address.colony
+      - jsonPath: $.Property.address.zone
 
       - jsonPath: $.Property.address.additionalDetails
         type: JSON
