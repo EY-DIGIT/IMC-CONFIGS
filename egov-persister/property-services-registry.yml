@@ -188,7 +188,7 @@ serviceMaps:
       - jsonPath: $.Property.auditDetails.lastModifiedTime
 
 
-    - query: INSERT INTO eg_pt_address(tenantid, id, propertyid, doorno, plotno, buildingname, street, landmark, city, pincode, locality, district, region, state, country, latitude, longitude, createdby, createdtime, lastmodifiedby, lastmodifiedtime, ward, colony,additionaldetails) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+    - query: INSERT INTO eg_pt_address(tenantid, id, propertyid, doorno, plotno, buildingname, street, landmark, city, pincode, locality, district, region, state, country, latitude, longitude, createdby, createdtime, lastmodifiedby, lastmodifiedtime, ward, zone,additionaldetails) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
       basePath: Property.address
       jsonMaps:
 
@@ -236,14 +236,14 @@ serviceMaps:
       
       - jsonPath: $.Property.address.ward
       
-      - jsonPath: $.Property.address.colony
+      - jsonPath: $.Property.address.zone
       
       - jsonPath: $.Property.address.additionalDetails
         type: JSON
         dbType: JSONB  
 
 
-    - query: INSERT INTO eg_pt_unit(id, tenantid, propertyid, floorno, unittype, usagecategory, occupancytype, occupancydate, carpetarea, builtuparea, plintharea, superbuiltuparea, arv, ratezone, roadfactor, constructiontype, constructiondate, dimensions, active, createdby, createdtime, lastmodifiedby, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+    - query: INSERT INTO eg_pt_unit(id, tenantid, propertyid, floorno, unittype, usagecategory, occupancytype, occupancydate, carpetarea, builtuparea, plintharea, superbuiltuparea, arv, ratezone, roadfactor, fromyear, toyear, constructiontype, constructiondate, dimensions, active, createdby, createdtime, lastmodifiedby, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
       basePath: Property.units.*
       jsonMaps:
 
@@ -276,6 +276,10 @@ serviceMaps:
       - jsonPath: $.Property.units.*.rateZone
       
       - jsonPath: $.Property.units.*.roadFactor
+      
+      - jsonPath: $.Property.units.*.fromYear
+      
+      - jsonPath: $.Property.units.*.toYear
 
       - jsonPath: $.Property.units.*.constructionDetail.constructionType
 
@@ -438,7 +442,7 @@ serviceMaps:
 
       - jsonPath: $.Property.auditDetails.lastModifiedTime
 
-    - query: UPDATE eg_pt_address SET doorno=?, plotno=?, buildingname=?, street=?, landmark=?, city=?, pincode=?, locality=?, district=?, region=?, state=?, country=?, latitude=?, longitude=?, lastmodifiedby=?, lastmodifiedtime=?, ward=?, colony=?, additionaldetails=? WHERE id=?;
+    - query: UPDATE eg_pt_address SET doorno=?, plotno=?, buildingname=?, street=?, landmark=?, city=?, pincode=?, locality=?, district=?, region=?, state=?, country=?, latitude=?, longitude=?, lastmodifiedby=?, lastmodifiedtime=?, ward=?, zone=?, additionaldetails=? WHERE id=?;
       basePath: Property.address
       jsonMaps:
 
@@ -476,7 +480,7 @@ serviceMaps:
       
       - jsonPath: $.Property.address.ward
       
-      - jsonPath: $.Property.address.colony
+      - jsonPath: $.Property.address.zone
 
       - jsonPath: $.Property.address.additionalDetails
         type: JSON
@@ -544,7 +548,7 @@ serviceMaps:
       - jsonPath: $.Property.units.*.rateZone
       
       - jsonPath: $.Property.units.*.roadFactor
-
+      
       - jsonPath: $.Property.units.*.constructionDetail.constructionType
 
       - jsonPath: $.Property.units.*.constructionDetail.constructionDate
