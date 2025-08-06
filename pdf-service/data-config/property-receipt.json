@@ -174,11 +174,21 @@
                   { "variable": "phoneNumber", "value": "$.MdmsRes.tenant.tenants[0].contactNumber" },
                   { "variable": "website", "value": "$.MdmsRes.tenant.tenants[0].domainUrl" },
                   { "variable": "email", "value": "$.MdmsRes.tenant.tenants[0].emailId" },
-                  { "variable": "logoImage", "value": "$.MdmsRes.common-masters.StateInfo[0].logoUrl", "type": "image" },
+                  { "variable": "logoImage", "value": "$.MdmsRes.tenant.tenants[0].logoId", "type": "image" },
                   {
                     "variable": "logo-header",
                     "value": "$.MdmsRes.tenant.tenants[0].code",
                     "localisation": { "required": true, "prefix": "TENANT_TENANTS", "module": "rainmaker-common" }
+                  },
+                  {
+                    "variable": "stateLogoImage",
+                    "value": "$.MdmsRes['common-masters'].StateInfo[0].logoUrl",
+                    "type": "image"
+                  },
+                  {
+                    "variable": "stateEmblemImage",
+                    "value": "$.MdmsRes['common-masters'].StateInfo[0].statelogo",
+                    "type": "image"
                   }
                 ]
               },
