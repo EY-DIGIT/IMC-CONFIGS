@@ -3,20 +3,13 @@
   "config": {
     "pageSize": "A4",
     "pageMargins": [24, 22, 24, 22],
-
-    "background": {
-      "image": "{{finalWatermarkImage}}",
-      "opacity": 0.06,
-      "width": 520
-    },
-
     "defaultStyle": { "font": "Cambay" },
 
     "content": [
       {
         "alignment": "center",
         "stack": [
-          { "image": "{{finalHeaderImage}}", "width": 48, "height": 48, "margin": [0, 0, 0, 6] },
+          { "image": "{{logoImage}}", "width": 48, "height": 48, "margin": [0, 0, 0, 6] },
           { "text": "{{logo-header}} {{Municipal_Corporation}}", "style": "header-title" },
           { "text": "{{serviceType}} {{payment_receipt}}", "style": "header-subtitle" },
           {
