@@ -160,9 +160,15 @@
               { "variable": "th_maintenance",  "formula": "'Maintenance Discount'" },
               { "variable": "th_urban_dev_cess", "formula": "'Urban Development Cess'" },
 
-              { "variable": "finalHeaderImage", "formula": "{{stateLogoImage}}?{{stateLogoImage}}:{{logoImage}}" },
-              { "variable": "preferredLogo",    "formula": "{{stateLogoImage}}?{{stateLogoImage}}:{{logoImage}}" },
-              { "variable": "finalWatermarkImage", "formula": "{{stateEmblemImage}}?{{stateEmblemImage}}:{{finalHeaderImage}}" },
+              { "variable": "finalHeaderImage", 
+                "formula": "'{{stateLogoImage}}' ? '{{stateLogoImage}}' : '{{logoImage}}'" 
+              },
+              { "variable": "preferredLogo",    
+                "formula": "'{{stateLogoImage}}' ? '{{stateLogoImage}}' : '{{logoImage}}'" 
+              },
+              { "variable": "finalWatermarkImage", 
+                "formula": "'{{stateEmblemImage}}' ? '{{stateEmblemImage}}' : ( '{{stateLogoImage}}' ? '{{stateLogoImage}}' : '{{logoImage}}' )" 
+              },
 
               { "variable": "disclaimerContent", "formula": "'This is a system-generated receipt and does not confer title or ownership.'" }
             ]
