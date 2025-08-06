@@ -2,9 +2,7 @@
   "key": "property-receipt",
   "config": {
     "defaultStyle": {
-      "font": "Cambay",
-      "fontSize": 11,
-      "color": "#000000"
+      "font": "Cambay"
     },
     "content": [
       {
@@ -38,7 +36,6 @@
         },
         "layout": "noBorders"
       },
-
       {
         "style": "noc-table",
         "table": {
@@ -66,7 +63,6 @@
         },
         "layout": {}
       },
-
       {
         "style": "next-noc-table",
         "table": {
@@ -110,7 +106,7 @@
       {
         "text": "{{calcTableTitle}}",
         "style": "receipt-logo-sub-header",
-        "margin": [-25, 10, -22, 6]
+        "margin": [-25, 12, -22, 6]
       },
       {
         "style": "calcTable",
@@ -128,8 +124,28 @@
               { "text": "{{th_maintenance}}", "style": "th" },
               { "text": "{{th_tpv}}", "style": "th" }
             ],
-            "{{#calcRows}}[{\"text\":\"{{usageType}}\",\"style\":\"td\"},{\"text\":\"{{usageFactor}}\",\"style\":\"td\",\"alignment\":\"right\"},{\"text\":\"{{floorNo}}\",\"style\":\"td\",\"alignment\":\"center\"},{\"text\":\"{{constructionType}}\",\"style\":\"td\"},{\"text\":\"{{area}}\",\"style\":\"td\",\"alignment\":\"right\",\"font\":\"Roboto\"},{\"text\":\"{{rate}}\",\"style\":\"td\",\"alignment\":\"right\",\"font\":\"Roboto\"},{\"text\":\"{{alv}}\",\"style\":\"td\",\"alignment\":\"right\",\"font\":\"Roboto\"},{\"text\":\"{{maintenance}}\",\"style\":\"td\",\"alignment\":\"right\",\"font\":\"Roboto\"},{\"text\":\"{{tpv}}\",\"style\":\"td\",\"alignment\":\"right\",\"font\":\"Roboto\"}]{{/calcRows}}",
-            "{{^calcRows}}[{\"text\":\"-\",\"colSpan\":9,\"style\":\"td\",\"alignment\":\"center\"},{},{},{},{},{},{},{},{}]{{/calcRows}}"
+            [
+              { "text": "{{calc1_usageType}}", "style": "td" },
+              { "text": "{{calc1_usageFactor}}", "style": "td", "alignment": "right" },
+              { "text": "{{calc1_floorNo}}", "style": "td", "alignment": "center" },
+              { "text": "{{calc1_constructionType}}", "style": "td" },
+              { "text": "{{calc1_area}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{calc1_rate}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{calc1_alv}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{calc1_maintenance}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{calc1_tpv}}", "style": "td", "alignment": "right", "font": "Roboto" }
+            ],
+            [
+              { "text": "{{calc2_usageType}}", "style": "td" },
+              { "text": "{{calc2_usageFactor}}", "style": "td", "alignment": "right" },
+              { "text": "{{calc2_floorNo}}", "style": "td", "alignment": "center" },
+              { "text": "{{calc2_constructionType}}", "style": "td" },
+              { "text": "{{calc2_area}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{calc2_rate}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{calc2_alv}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{calc2_maintenance}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{calc2_tpv}}", "style": "td", "alignment": "right", "font": "Roboto" }
+            ]
           ]
         },
         "layout": {}
@@ -159,8 +175,34 @@
               { "text": "{{th_penalty}}", "style": "th" },
               { "text": "{{th_net_total}}", "style": "th" }
             ],
-            "{{#taxRows}}[{\"text\":\"{{year}}\",\"style\":\"td\",\"alignment\":\"center\"},{\"text\":\"{{propertyTax}}\",\"style\":\"td\",\"alignment\":\"right\",\"font\":\"Roboto\"},{\"text\":\"{{samekitTax}}\",\"style\":\"td\",\"alignment\":\"right\",\"font\":\"Roboto\"},{\"text\":\"{{educationCess}}\",\"style\":\"td\",\"alignment\":\"right\",\"font\":\"Roboto\"},{\"text\":\"{{waterCess}}\",\"style\":\"td\",\"alignment\":\"right\",\"font\":\"Roboto\"},{\"text\":\"{{drainageCess}}\",\"style\":\"td\",\"alignment\":\"right\",\"font\":\"Roboto\"},{\"text\":\"{{urbanDevCess}}\",\"style\":\"td\",\"alignment\":\"right\",\"font\":\"Roboto\"},{\"text\":\"{{serviceCharge}}\",\"style\":\"td\",\"alignment\":\"right\",\"font\":\"Roboto\"},{\"text\":\"{{totalTax}}\",\"style\":\"td\",\"alignment\":\"right\",\"font\":\"Roboto\"},{\"text\":\"{{rebate}}\",\"style\":\"td\",\"alignment\":\"right\",\"font\":\"Roboto\"},{\"text\":\"{{penalty}}\",\"style\":\"td\",\"alignment\":\"right\",\"font\":\"Roboto\"},{\"text\":\"{{netTotal}}\",\"style\":\"td\",\"alignment\":\"right\",\"font\":\"Roboto\"}]{{/taxRows}}",
-            "{{^taxRows}}[{\"text\":\"-\",\"colSpan\":12,\"style\":\"td\",\"alignment\":\"center\"},{},{},{},{},{},{},{},{},{},{},{}]{{/taxRows}}"
+            [
+              { "text": "{{tax1_year}}", "style": "td", "alignment": "center" },
+              { "text": "{{tax1_propertyTax}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax1_samekitTax}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax1_educationCess}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax1_waterCess}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax1_drainageCess}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax1_urbanDevCess}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax1_serviceCharge}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax1_totalTax}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax1_rebate}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax1_penalty}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax1_netTotal}}", "style": "td", "alignment": "right", "font": "Roboto" }
+            ],
+            [
+              { "text": "{{tax2_year}}", "style": "td", "alignment": "center" },
+              { "text": "{{tax2_propertyTax}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax2_samekitTax}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax2_educationCess}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax2_waterCess}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax2_drainageCess}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax2_urbanDevCess}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax2_serviceCharge}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax2_totalTax}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax2_rebate}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax2_penalty}}", "style": "td", "alignment": "right", "font": "Roboto" },
+              { "text": "{{tax2_netTotal}}", "style": "td", "alignment": "right", "font": "Roboto" }
+            ]
           ]
         },
         "layout": {}
@@ -184,7 +226,6 @@
         ]
       },
       { "style": "no-signature", "text": "{{no_signature}}" },
-
       {
         "style": "pt-disclaimer",
         "stack": [
@@ -194,8 +235,13 @@
             "table": {
               "widths": ["120%", "*", "*", "*"],
               "body": [
-                "{{#variable11}}[{\"text\":\"{{disclaimerContent}}\",\"border\":[false,false,false,false],\"style\":\"pt-disclaimer-value\"}]{{/variable11}}",
-                "{{^variable11}}[{\"text\":\"\",\"border\":[false,false,false,false],\"style\":\"pt-disclaimer-value\"}]{{/variable11}}"
+                [
+                  {
+                    "text": "{{disclaimerContent}}",
+                    "border": [false, false, false, false],
+                    "style": "pt-disclaimer-value"
+                  }
+                ]
               ]
             },
             "layout": {}
