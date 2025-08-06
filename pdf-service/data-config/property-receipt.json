@@ -157,6 +157,9 @@
               { "variable": "tax2_penalty",          "formula": "'0'" },
               { "variable": "tax2_netTotal",         "formula": "'3190'" },
 
+              { "variable": "th_maintenance",  "formula": "'Maintenance Discount'" },
+              { "variable": "th_urban_dev_cess", "formula": "'Urban Development Cess'" },
+
               { "variable": "disclaimerContent", "formula": "'This is a system-generated receipt and does not confer title or ownership.'" }
             ]
           },
@@ -171,7 +174,7 @@
                   { "variable": "phoneNumber", "value": "$.MdmsRes.tenant.tenants[0].contactNumber" },
                   { "variable": "website", "value": "$.MdmsRes.tenant.tenants[0].domainUrl" },
                   { "variable": "email", "value": "$.MdmsRes.tenant.tenants[0].emailId" },
-                  { "variable": "logoImage", "value": "$.MdmsRes.tenant.tenants[0].logoId", "type": "image" },
+                  { "variable": "logoImage", "value": "$.MdmsRes.common-masters.StateInfo[0].logoUrl", "type": "image" },
                   {
                     "variable": "logo-header",
                     "value": "$.MdmsRes.tenant.tenants[0].code",
