@@ -2,7 +2,7 @@
   "key": "property-receipt",
   "config": {
     "pageSize": "A4",
-    "pageMargins": [24, 22, 24, 22],
+    "pageMargins": [14, 12, 14, 12],
     "defaultStyle": { "font": "Cambay" },
 
     "content": [
@@ -17,7 +17,7 @@
       {
         "alignment": "center",
         "stack": [
-          { "image": "{{logoImage}}", "width": 54, "height": 54, "margin": [0, 0, 0, 8] },
+          { "image": "{{logoImage}}", "width": 60, "height": 60, "margin": [0, 0, 0, 8] },
           { "text": "{{logo-header}} Nagar Nigam", "style": "header-title" },
           { "text": "Property Tax", "style": "header-subtitle" }
         ],
@@ -29,7 +29,7 @@
           {
             "width": "52%",
             "stack": [
-              { "text": "Municipal Act 1956 Sec. 186", "style": "info-line-muted", "margin": [0, 2, 0, 10] },
+              { "text": "Municipal Act 1956 Sec. 186", "style": "info-line-muted" },
               { "text": [ "Receipt No : ", { "text": "{{receiptNo}}", "style": "info-value" } ], "style": "info-line" },
               { "text": [ "Property ID : ", { "text": "{{consumerID}}", "style": "info-value" } ], "style": "info-line" },
               { "text": [ "Property Owner Name : ", { "text": "{{payerName}}", "style": "info-value" } ], "style": "info-line" },
@@ -43,20 +43,20 @@
             "width": "48%",
             "alignment": "right",
             "stack": [
-              { "text": [ "Date : ", { "text": "{{paymentDate}}", "style": "info-value" } ], "style": "info-line" },
-              { "text": [ "Assessment Year : ", { "text": "{{fromPeriod}} {{to}} {{toPeriod}}", "style": "info-value" } ], "style": "info-line" },
-              { "text": [ "Mobile No : ", { "text": "{{payerContact}}", "style": "info-value" } ], "style": "info-line" }
+              { "text": [ "Date : ", { "text": "{{paymentDate}}", "style": "info-value" } ], "style": "info-line", "alignment": "left" },
+              { "text": [ "Assessment Year : ", { "text": "{{fromPeriod}} {{to}} {{toPeriod}}", "style": "info-value" } ], "style": "info-line", "alignment": "left" },
+              { "text": [ "Mobile No : ", { "text": "{{payerContact}}", "style": "info-value" } ], "style": "info-line", "alignment": "left" }
             ]
           }
         ],
         "margin": [0, 6, 0, 6]
       },
 
-      { "text": "{{calcTableTitle}}", "style": "section-title", "margin": [0, 12, 0, 6] },
+      { "text": "{{calcTableTitle}}", "style": "section-title", "margin": [0, 0, 0, 6] },
       {
         "style": "calcTable",
         "table": {
-          "widths": ["12%", "10%", "10%", "15%", "10%", "10%", "10%", "13%", "10%"],
+          "widths": ["15%", "10%", "7%", "15%", "10%", "10%", "10%", "13%", "10%"],
           "headerRows": 1,
           "keepWithHeaderRows": 1,
           "dontBreakRows": true,
@@ -73,22 +73,21 @@
               { "text": "{{th_tpv}}", "style": "th" }
             ],
             [
-              { "text": "{{calc1_usageType}}",      "style": "td", "alignment": "left", "font": "Roboto" },
-              { "text": "{{calc1_usageFactor}}",    "style": "td", "alignment": "left", "font": "Roboto" },
-              { "text": "{{calc1_floorNo}}",        "style": "td", "alignment": "left", "font": "Roboto" },
-              { "text": "{{calc1_constructionType}}","style": "td","alignment": "left", "font": "Roboto" },
-              { "text": "{{calc1_area}}",           "style": "td", "alignment": "left", "font": "Roboto" },
-              { "text": "{{calc1_rate}}",           "style": "td", "alignment": "left", "font": "Roboto" },
-              { "text": "{{calc1_alv}}",            "style": "td", "alignment": "left", "font": "Roboto" },
-              { "text": "{{calc1_maintenance}}",    "style": "td", "alignment": "left", "font": "Roboto" },
-              { "text": "{{calc1_tpv}}",            "style": "td", "alignment": "left", "font": "Roboto" }
+              { "text": "{{calc1_usageType}}",      "style": "td", "font": "Roboto" },
+              { "text": "{{calc1_usageFactor}}",    "style": "td", "font": "Roboto" },
+              { "text": "{{calc1_floorNo}}",        "style": "td", "font": "Roboto" },
+              { "text": "{{calc1_constructionType}}","style": "td", "font": "Roboto" },
+              { "text": "{{calc1_area}}",           "style": "td", "font": "Roboto" },
+              { "text": "{{calc1_rate}}",           "style": "td", "font": "Roboto" },
+              { "text": "{{calc1_alv}}",            "style": "td", "font": "Roboto" },
+              { "text": "{{calc1_maintenance}}",    "style": "td", "font": "Roboto" },
+              { "text": "{{calc1_tpv}}",            "style": "td", "font": "Roboto" }
             ]
           ]
         },
         "layout": {}
       },
 
-      { "text": "{{taxTableTitle}}", "style": "section-title", "margin": [0, 12, 0, 6] },
       {
         "style": "taxTable",
         "table": {
@@ -112,18 +111,18 @@
               { "text": "{{th_net_total}}", "style": "th" }
             ],
             [
-              { "text": "{{tax1_year}}",          "style": "td", "alignment": "left", "font": "Roboto" },
-              { "text": "{{tax1_propertyTax}}",   "style": "td", "alignment": "left", "font": "Roboto" },
-              { "text": "{{tax1_samekitTax}}",    "style": "td", "alignment": "left", "font": "Roboto" },
-              { "text": "{{tax1_educationCess}}", "style": "td", "alignment": "left", "font": "Roboto" },
-              { "text": "{{tax1_waterCess}}",     "style": "td", "alignment": "left", "font": "Roboto" },
-              { "text": "{{tax1_drainageCess}}",  "style": "td", "alignment": "left", "font": "Roboto" },
-              { "text": "{{tax1_urbanDevCess}}",  "style": "td", "alignment": "left", "font": "Roboto" },
-              { "text": "{{tax1_serviceCharge}}", "style": "td", "alignment": "left", "font": "Roboto" },
-              { "text": "{{tax1_totalTax}}",      "style": "td", "alignment": "left", "font": "Roboto" },
-              { "text": "{{tax1_rebate}}",        "style": "td", "alignment": "left", "font": "Roboto" },
-              { "text": "{{tax1_penalty}}",       "style": "td", "alignment": "left", "font": "Roboto" },
-              { "text": "{{tax1_netTotal}}",      "style": "td", "alignment": "left", "font": "Roboto" }
+              { "text": "{{tax1_year}}",          "style": "td", "font": "Roboto" },
+              { "text": "{{tax1_propertyTax}}",   "style": "td", "font": "Roboto" },
+              { "text": "{{tax1_samekitTax}}",    "style": "td", "font": "Roboto" },
+              { "text": "{{tax1_educationCess}}", "style": "td", "font": "Roboto" },
+              { "text": "{{tax1_waterCess}}",     "style": "td", "font": "Roboto" },
+              { "text": "{{tax1_drainageCess}}",  "style": "td", "font": "Roboto" },
+              { "text": "{{tax1_urbanDevCess}}",  "style": "td", "font": "Roboto" },
+              { "text": "{{tax1_serviceCharge}}", "style": "td", "font": "Roboto" },
+              { "text": "{{tax1_totalTax}}",      "style": "td", "font": "Roboto" },
+              { "text": "{{tax1_rebate}}",        "style": "td", "font": "Roboto" },
+              { "text": "{{tax1_penalty}}",       "style": "td", "font": "Roboto" },
+              { "text": "{{tax1_netTotal}}",      "style": "td", "font": "Roboto" }
             ]
           ]
         },
@@ -131,56 +130,63 @@
       },
 
       {
-        "style": "office-table",
-        "table": {
-          "widths": ["25%", "25%", "25%", "25%"],
-          "body": [
-            [
-              { "text": "Arrear :",                 "style": "meta-label" },
-              { "text": "{{arrearAmt}}",            "style": "meta-value" },
-              { "text": "Current Year Net Tax :",   "style": "meta-label" },
-              { "text": "{{currentYearNetTax}}",    "style": "meta-value" }
-            ],
-            [
-              { "text": "Total Amount Paid :",      "style": "meta-label" },
-              { "text": "₹ {{paidAmount}}",         "style": "meta-value" },
-              { "text": "Previous Balance :",       "style": "meta-label" },
-              { "text": "{{previousBalance}}",      "style": "meta-value" }
-            ],
-            [
-              { "text": "Cumulative Balance :",     "style": "meta-label" },
-              { "text": "{{cumulativeBalance}}",    "style": "meta-value" },
-              { "text": "Total Demand Payable :",   "style": "meta-label" },
-              { "text": "{{totalDemandPayable}}",   "style": "meta-value" }
-            ],
-            [
-              { "text": "Advance :",                "style": "meta-label" },
-              { "text": "{{advanceAmt}}",           "style": "meta-value" },
-              { "text": "Mode of Payment :",        "style": "meta-label" },
-              { "text": "{{paymentMode}}",          "style": "meta-value" }
-            ],
-            [
-              { "text": "Cheque Date :",            "style": "meta-label" },
-              { "text": "{{chequeDate}}",           "style": "meta-value" },
-              { "text": "Cheque Number :",          "style": "meta-label" },
-              { "text": "{{chequeNumber}}",         "style": "meta-value" }
-            ],
-            [
-              { "text": "Cheque Bank Name :",       "style": "meta-label" },
-              { "text": "{{chequeBankName}}",       "style": "meta-value" },
-              { "text": "",                         "style": "meta-label" },
-              { "text": "",                         "style": "meta-value" }
-            ]
-          ]
-        },
-        "layout": {},
+        "style": "office-columns-block",
+        "stack": [
+          { "columns": [
+              { "text": "Arrear :",               "style": "meta-label" },
+              { "text": "{{arrearAmt}}",          "style": "meta-value" },
+              { "text": "Current Year Net Tax :", "style": "meta-label" },
+              { "text": "{{currentYearNetTax}}",  "style": "meta-value" }
+            ], "columnGap": 4 },
+
+          { "columns": [
+              { "text": "Total Amount Paid :",    "style": "meta-label" },
+              { "text": "₹ {{paidAmount}}",       "style": "meta-value" },
+              { "text": "Previous Balance :",     "style": "meta-label" },
+              { "text": "{{previousBalance}}",    "style": "meta-value" }
+            ], "columnGap": 4 },
+
+          { "columns": [
+              { "text": "Cumulative Balance :",   "style": "meta-label" },
+              { "text": "{{cumulativeBalance}}",  "style": "meta-value" },
+              { "text": "Total Demand Payable :", "style": "meta-label" },
+              { "text": "{{totalDemandPayable}}", "style": "meta-value" }
+            ], "columnGap": 4 },
+
+          { "columns": [
+              { "text": "Advance :",              "style": "meta-label" },
+              { "text": "{{advanceAmt}}",         "style": "meta-value" },
+              { "text": "Mode of Payment :",      "style": "meta-label" },
+              { "text": "{{paymentMode}}",        "style": "meta-value" }
+            ], "columnGap": 4 },
+
+          { "columns": [
+              { "text": "Cheque Date :",          "style": "meta-label" },
+              { "text": "{{chequeDate}}",         "style": "meta-value" },
+              { "text": "Cheque Number :",        "style": "meta-label" },
+              { "text": "{{chequeNumber}}",       "style": "meta-value" }
+            ], "columnGap": 4 },
+
+          { "columns": [
+              { "text": "Cheque Bank Name :",     "style": "meta-label" },
+              { "text": "{{chequeBankName}}",     "style": "meta-value" },
+              { "text": "",                       "style": "meta-label" },
+              { "text": "",                       "style": "meta-value" }
+            ], "columnGap": 4 }
+        ],
         "margin": [0, 10, 0, 6]
       },
 
       {
         "text": [
-          "**This property tax receipt paid via cheque shall be acknowledged upon successful clearance of the cheque**\n\n",
-          "**This receipt is not a proof of ownership**"
+          "**This property tax receipt paid via cheque shall be acknowledged upon successful clearance of the cheque"
+        ],
+        "style": "pt-disclaimer-value",
+        "margin": [0, 6, 0, 10]
+      },
+      {
+        "text": [
+          "**This receipt is not a proof of ownership"
         ],
         "style": "pt-disclaimer-value",
         "margin": [0, 6, 0, 10]
@@ -217,13 +223,13 @@
             "width": "50%",
             "alignment": "right",
             "stack": [
-              { "text": [ "Address : ", { "text": "", "style": "info-value" } ], "style": "info-line" },
-              { "text": [ "Zone/Ward : ", { "text": "", "style": "info-value" } ], "style": "info-line" },
-              { "text": [ "Rate Zone : ", { "text": "", "style": "info-value" } ], "style": "info-line" },
-              { "text": [ "Plot Area : ", { "text": "", "style": "info-value" } ], "style": "info-line" },
-              { "text": [ "Total Amount Paid : ", { "text": "₹ {{paidAmount}}", "style": "info-value" } ], "style": "info-line" },
-              { "text": [ "Mode of Payment : ", { "text": "{{paymentMode}}", "style": "info-value" } ], "style": "info-line" },
-              { "text": [ "Transaction ID : ", { "text": "{{transactionID}}", "style": "info-value" } ], "style": "info-line" }
+              { "text": [ "Address : ", { "text": "", "style": "info-value" } ], "style": "info-line", "alignment": "left" },
+              { "text": [ "Zone/Ward : ", { "text": "", "style": "info-value" } ], "style": "info-line", "alignment": "left" },
+              { "text": [ "Rate Zone : ", { "text": "", "style": "info-value" } ], "style": "info-line", "alignment": "left" },
+              { "text": [ "Plot Area : ", { "text": "", "style": "info-value" } ], "style": "info-line", "alignment": "left" },
+              { "text": [ "Total Amount Paid : ", { "text": "₹ {{paidAmount}}", "style": "info-value" } ], "style": "info-line", "alignment": "left" },
+              { "text": [ "Mode of Payment : ", { "text": "{{paymentMode}}", "style": "info-value" } ], "style": "info-line", "alignment": "left" },
+              { "text": [ "Transaction ID : ", { "text": "{{transactionID}}", "style": "info-value" } ], "style": "info-line", "alignment": "left" }
             ]
           }
         ],
@@ -232,52 +238,38 @@
 
       {
         "columns": [
-          { "text": "Cashier Signature", "style": "signature-left" },
-          { "text": [ "Cashier Name: ", { "text": "{{user-name}}", "bold": true } ], "style": "signature-right", "alignment": "right" }
+          { "width": "70%", "text": "Cashier Signature", "style": "signature-left" },
+          { "width": "30%", "text": [ "Cashier Name: ", { "text": "{{user-name}}"} ], "style": "signature-right", "alignment": "right" }
         ],
         "margin": [0, 2, 0, 6]
-      },
-
-      {
-        "style": "pt-disclaimer",
-        "stack": [
-          { "text": "{{disclamer}}", "bold": true, "style": "pt-disclaimer-value" },
-          {
-            "style": "pt-disclaimer-value",
-            "table": {
-              "widths": ["100%"],
-              "body": [
-                [ { "text": "{{disclaimerContent}}", "border": [false, false, false, false], "style": "pt-disclaimer-value" } ]
-              ]
-            },
-            "layout": {}
-          }
-        ]
       }
     ],
 
     "styles": {
       "topline": { "fontSize": 10, "color": "#484848" },
-      "header-title": { "fontSize": 14, "bold": true, "color": "#000000" },
-      "header-subtitle": { "fontSize": 12, "color": "#000000", "bold": true ,"margin": [0, 2, 0, 0] },
+      "header-title": { "fontSize": 14, "color": "#000000" },
+      "header-subtitle": { "fontSize": 12, "color": "#000000" ,"margin": [0, 2, 0, 0] },
 
-      "info-line": { "fontSize": 10.5, "margin": [0, 2, 0, 2], "color": "#000000" },
-      "info-line-muted": { "fontSize": 10.5, "margin": [0, 0, 0, 2], "color": "#484848" },
-      "info-value": { "bold": true },
+      "meta-label": { "fontSize": 9, "color": "#000000", "margin": [0, 2, 0, 2] },
+      "meta-value": { "fontSize": 9, "color": "#000000", "margin": [0, 2, 0, 2] },
 
-      "section-title": { "fontSize": 11, "bold": true },
+      "info-line": { "fontSize": 10, "margin": [0, 2, 0, 2], "color": "#000000" },
+      "info-line-muted": { "fontSize": 10, "margin": [0, 0, 0, 2], "color": "#484848" },
+      "info-value": { "fontSize": 10, "margin": [0, 2, 0, 2], "color": "#000000" },
 
-      "calcTable": { "fontSize": 10, "margin": [0, 0, 0, 0] },
-      "taxTable":  { "fontSize": 10, "margin": [0, 0, 0, 0] },
-      "th": { "bold": true, "alignment": "center", "margin": [4, 6, 4, 6] },
-      "td": { "margin": [4, 6, 4, 6] },
+      "section-title": { "fontSize": 8 },
+
+      "calcTable": { "fontSize": 9, "margin": [0, 0, 0, 0] },
+      "taxTable":  { "fontSize": 9, "margin": [0, 0, 0, 0] },
+      "th": { "alignment": "center", "margin": [2, 3, 2, 3] },
+      "td": { "alignment": "center", "margin": [2, 3, 2, 3] },
 
       "office-title": { "fontSize": 11, "bold": true, "color": "#000000" },
-      "signature-left":  { "fontSize": 10, "color": "#000000" },
-      "signature-right": { "fontSize": 10, "color": "#000000" },
+      "signature-left":  { "fontSize": 10, "color": "#000000", "bold": true },
+      "signature-right": { "fontSize": 10, "color": "#000000", "bold": true },
 
       "pt-disclaimer": { "fontSize": 10, "color": "#484848", "margin": [0, 6, 0, 0] },
-      "pt-disclaimer-value": { "fontSize": 10, "color": "#484848", "margin": [0, 2, 0, 0] }
+      "pt-disclaimer-value": { "fontSize": 9, "color": "#484848", "margin": [0, 2, 0, 0] }
     }
   }
 }
