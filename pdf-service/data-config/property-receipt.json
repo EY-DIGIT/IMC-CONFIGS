@@ -161,7 +161,7 @@
               },
               {
                 "path": "http://pt-calculator-v2:8080/propertytax/v2/_estimate",
-                "queryParam": "tenantId={$..tenantId}&propertyId={$..consumerID}&financialYear={$..fromPeriod[0:4]}-{$..toPeriod[2:4]}",
+                "queryParam": "tenantId={$..tenantId}",
                 "apiRequest": {
                   "Assessment": {
                     "financialYear": "{$..fromPeriod[0:4]}-{$..toPeriod[2:4]}",
@@ -171,44 +171,40 @@
                     "channel": "EMPLOYEE",
                     "assessmentDate": "{$..paymentDate}"
                   },
-                  "RequestInfo": { "authToken": "{$..requestInfo.authToken}" }
+                  "RequestInfo": { "authToken": "{$..RequestInfo.authToken}" }
                 },
                 "responseMapping": [
-                  
-                  { "variable": "arrearAmt",           "value": "$.Calculation[0].arrear" },
-                  { "variable": "currentYearNetTax",   "value": "$.Calculation[0].currentYearTax" },
-                  { "variable": "previousBalance",     "value": "$.Calculation[0].taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')].estimateAmount" },
-                  { "variable": "cumulativeBalance",   "value": "$.Calculation[0].totalAmount" },
-                  { "variable": "totalDemandPayable",  "value": "$.Calculation[0].taxAmount" },
-                  { "variable": "advanceAmt",          "value": "$.Calculation[0].taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')].estimateAmount" },
+                  { "variable": "arrearAmt",          "value": "$.Calculation[0].arrear" },
+                  { "variable": "currentYearNetTax",  "value": "$.Calculation[0].currentYearTax" },
+                  { "variable": "previousBalance",    "value": "$.Calculation[0].taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')].estimateAmount" },
+                  { "variable": "cumulativeBalance",  "value": "$.Calculation[0].totalAmount" },
+                  { "variable": "totalDemandPayable", "value": "$.Calculation[0].taxAmount" },
+                  { "variable": "advanceAmt",         "value": "$.Calculation[0].taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')].estimateAmount" },
 
-                  
-                  { "variable": "calc1_usageType",       "value": "$.Calculation[0].propertyFYDetails[0].usageType" },
-                  { "variable": "calc1_usageFactor",     "value": "$.Calculation[0].propertyFYDetails[0].usageFactor" },
-                  { "variable": "calc1_floorNo",         "value": "$.Calculation[0].propertyFYDetails[0].floorNo" },
-                  { "variable": "calc1_constructionType","value": "$.Calculation[0].propertyFYDetails[0].constructionType" },
-                  { "variable": "calc1_area",            "value": "$.Calculation[0].propertyFYDetails[0].area" },
-                  { "variable": "calc1_rate",            "value": "$.Calculation[0].propertyFYDetails[0].factor" },
-                  { "variable": "calc1_alv",             "value": "$.Calculation[0].propertyFYDetails[0].alv" },
-                  { "variable": "calc1_maintenance",     "value": "10%", "type": "string" },
-                  { "variable": "calc1_tpv",             "value": "$.Calculation[0].propertyFYTaxSummaries[0].tpv" },
+                  { "variable": "calc1_usageType",        "value": "$.Calculation[0].propertyFYDetails[0].usageType" },
+                  { "variable": "calc1_usageFactor",      "value": "$.Calculation[0].propertyFYDetails[0].usageFactor" },
+                  { "variable": "calc1_floorNo",          "value": "$.Calculation[0].propertyFYDetails[0].floorNo" },
+                  { "variable": "calc1_constructionType", "value": "$.Calculation[0].propertyFYDetails[0].constructionType" },
+                  { "variable": "calc1_area",             "value": "$.Calculation[0].propertyFYDetails[0].area" },
+                  { "variable": "calc1_rate",             "value": "$.Calculation[0].propertyFYDetails[0].factor" },
+                  { "variable": "calc1_alv",              "value": "$.Calculation[0].propertyFYDetails[0].alv" },
+                  { "variable": "calc1_maintenance",      "value": "10%", "type": "string" },
+                  { "variable": "calc1_tpv",              "value": "$.Calculation[0].propertyFYTaxSummaries[0].tpv" },
 
-                  
-                  { "variable": "tax1_year",             "value": "$.Calculation[0].propertyFYTaxSummaries[0].year" },
-                  { "variable": "tax1_propertyTax",      "value": "$.Calculation[0].propertyFYTaxSummaries[0].propertyTax" },
-                  { "variable": "tax1_samekitTax",       "value": "$.Calculation[0].propertyFYTaxSummaries[0].samekit" },
-                  { "variable": "tax1_educationCess",    "value": "$.Calculation[0].propertyFYTaxSummaries[0].educationCess" },
-                  { "variable": "tax1_waterCess",        "value": "$.Calculation[0].propertyFYTaxSummaries[0].jalKar" },
-                  { "variable": "tax1_drainageCess",     "value": "$.Calculation[0].propertyFYTaxSummaries[0].jalNikas" },
-                  { "variable": "tax1_urbanDevCess",     "value": "$.Calculation[0].propertyFYTaxSummaries[0].urbanTax" },
-                  { "variable": "tax1_serviceCharge",    "value": "$.Calculation[0].propertyFYTaxSummaries[0].sevaKar" },
-                  { "variable": "tax1_totalTax",         "value": "$.Calculation[0].propertyFYTaxSummaries[0].totalTax" },
-                  { "variable": "tax1_rebate",           "value": "$.Calculation[0].propertyFYTaxSummaries[0].rebate" },
-                  { "variable": "tax1_penalty",          "value": "$.Calculation[0].propertyFYTaxSummaries[0].penalty" },
-                  { "variable": "tax1_netTotal",         "value": "$.Calculation[0].propertyFYTaxSummaries[0].netTax" }
+                  { "variable": "tax1_year",          "value": "$.Calculation[0].propertyFYTaxSummaries[0].year" },
+                  { "variable": "tax1_propertyTax",   "value": "$.Calculation[0].propertyFYTaxSummaries[0].propertyTax" },
+                  { "variable": "tax1_samekitTax",    "value": "$.Calculation[0].propertyFYTaxSummaries[0].samekit" },
+                  { "variable": "tax1_educationCess", "value": "$.Calculation[0].propertyFYTaxSummaries[0].educationCess" },
+                  { "variable": "tax1_waterCess",     "value": "$.Calculation[0].propertyFYTaxSummaries[0].jalKar" },
+                  { "variable": "tax1_drainageCess",  "value": "$.Calculation[0].propertyFYTaxSummaries[0].jalNikas" },
+                  { "variable": "tax1_urbanDevCess",  "value": "$.Calculation[0].propertyFYTaxSummaries[0].urbanTax" },
+                  { "variable": "tax1_serviceCharge", "value": "$.Calculation[0].propertyFYTaxSummaries[0].sevaKar" },
+                  { "variable": "tax1_totalTax",      "value": "$.Calculation[0].propertyFYTaxSummaries[0].totalTax" },
+                  { "variable": "tax1_rebate",        "value": "$.Calculation[0].propertyFYTaxSummaries[0].rebate" },
+                  { "variable": "tax1_penalty",       "value": "$.Calculation[0].propertyFYTaxSummaries[0].penalty" },
+                  { "variable": "tax1_netTotal",      "value": "$.Calculation[0].propertyFYTaxSummaries[0].netTax" }
                 ]
               }
-
             ]
           }
         ]
