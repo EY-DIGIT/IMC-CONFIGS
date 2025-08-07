@@ -3,9 +3,6 @@
   "config": {
     "pageSize": "A4",
     "pageMargins": [24, 22, 24, 22],
-
-    "background": { "image": "{{logoImage}}", "opacity": 0.12, "width": 460 },
-
     "defaultStyle": { "font": "Cambay" },
 
     "content": [
