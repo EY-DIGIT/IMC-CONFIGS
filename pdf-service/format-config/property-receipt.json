@@ -2,7 +2,7 @@
   "key": "property-receipt",
   "config": {
     "pageSize": "A4",
-    "pageMargins": [14, 12, 14, 12],
+    "pageMargins": [18, 15, 18, 15],
     "defaultStyle": { "font": "Cambay" },
 
     "content": [
@@ -17,7 +17,7 @@
       {
         "alignment": "center",
         "stack": [
-          { "image": "{{logoImage}}", "width": 60, "height": 60, "margin": [0, 0, 0, 8] },
+          { "image": "{{logoImage}}", "width": 60, "height": 60, "margin": [0, -15, 0, 8] },
           { "text": "{{logo-header}} Nagar Nigam", "style": "header-title" },
           { "text": "Property Tax", "style": "header-subtitle" }
         ],
@@ -27,25 +27,25 @@
       {
         "columns": [
           {
-            "width": "52%",
+            "width": "60%",
             "stack": [
               { "text": "Municipal Act 1956 Sec. 186", "style": "info-line-muted" },
               { "text": [ "Receipt No : ", { "text": "{{receiptNo}}", "style": "info-value" } ], "style": "info-line" },
               { "text": [ "Property ID : ", { "text": "{{consumerID}}", "style": "info-value" } ], "style": "info-line" },
               { "text": [ "Property Owner Name : ", { "text": "{{payerName}}", "style": "info-value" } ], "style": "info-line" },
               { "text": [ "Address : ", { "text": "", "style": "info-value" } ], "style": "info-line" },
-              { "text": [ "Zone/Ward : ", { "text": "", "style": "info-value" } ], "style": "info-line" },
-              { "text": [ "Rate Zone : ", { "text": "", "style": "info-value" } ], "style": "info-line" },
-              { "text": [ "Plot Area : ", { "text": "", "style": "info-value" } ], "style": "info-line" }
+              { "text": [ "Zone/Ward : ", { "text": "", "style": "info-value" } ], "style": "info-line" }
             ]
           },
           {
-            "width": "48%",
+            "width": "40%",
             "alignment": "right",
             "stack": [
               { "text": [ "Date : ", { "text": "{{paymentDate}}", "style": "info-value" } ], "style": "info-line", "alignment": "left" },
               { "text": [ "Assessment Year : ", { "text": "{{fromPeriod}} {{to}} {{toPeriod}}", "style": "info-value" } ], "style": "info-line", "alignment": "left" },
-              { "text": [ "Mobile No : ", { "text": "{{payerContact}}", "style": "info-value" } ], "style": "info-line", "alignment": "left" }
+              { "text": [ "Mobile No : ", { "text": "{{payerContact}}", "style": "info-value" } ], "style": "info-line", "alignment": "left" },
+              { "text": [ "Rate Zone : ", { "text": "", "style": "info-value" } ], "style": "info-line", "alignment": "left" },
+              { "text": [ "Plot Area : ", { "text": "", "style": "info-value" } ], "style": "info-line", "alignment": "left" }
             ]
           }
         ],
@@ -55,6 +55,7 @@
       { "text": "{{calcTableTitle}}", "style": "section-title", "margin": [0, 0, 0, 6] },
       {
         "style": "calcTable",
+        "margin": [0, 0, 0, 10],
         "table": {
           "widths": ["15%", "10%", "7%", "15%", "10%", "10%", "10%", "13%", "10%"],
           "headerRows": 1,
@@ -132,47 +133,108 @@
       {
         "style": "office-columns-block",
         "stack": [
-          { "columns": [
-              { "text": "Arrear :",               "style": "meta-label" },
-              { "text": "{{arrearAmt}}",          "style": "meta-value" },
-              { "text": "Current Year Net Tax :", "style": "meta-label" },
-              { "text": "{{currentYearNetTax}}",  "style": "meta-value" }
-            ], "columnGap": 4 },
 
-          { "columns": [
-              { "text": "Total Amount Paid :",    "style": "meta-label" },
-              { "text": "₹ {{paidAmount}}",       "style": "meta-value" },
-              { "text": "Previous Balance :",     "style": "meta-label" },
-              { "text": "{{previousBalance}}",    "style": "meta-value" }
-            ], "columnGap": 4 },
+          {
+            "columns": [
+              {
+                "width": "25%",
+                "stack": [
+                  { "text": "Arrear :",               "style": "meta-label"  },
+                  { "text": "{{arrearAmt}}",          "style": "meta-value" }
+                ]
+              },
+              {
+                "width": "25%",
+                "stack": [
+                  { "text": "Current Year Net Tax :", "style": "meta-label"  },
+                  { "text": "{{currentYearNetTax}}",  "style": "meta-value" }
+                ]
+              },
+              {
+                "width": "25%",
+                "stack": [
+                  { "text": "Total Amount Paid :",    "style": "meta-label"  },
+                  { "text": "₹ {{paidAmount}}",       "style": "meta-value" }
+                ]
+              },
+              {
+                "width": "25%",
+                "stack": [
+                  { "text": "Previous Balance :",     "style": "meta-label"  },
+                  { "text": "{{previousBalance}}",    "style": "meta-value" }
+                ]
+              }
+            ],
+            "columnGap": 4
+          },
 
-          { "columns": [
-              { "text": "Cumulative Balance :",   "style": "meta-label" },
-              { "text": "{{cumulativeBalance}}",  "style": "meta-value" },
-              { "text": "Total Demand Payable :", "style": "meta-label" },
-              { "text": "{{totalDemandPayable}}", "style": "meta-value" }
-            ], "columnGap": 4 },
+          {
+            "columns": [
+              {
+                "width": "25%",
+                "stack": [
+                  { "text": "Cumulative Balance :",   "style": "meta-label"  },
+                  { "text": "{{cumulativeBalance}}",  "style": "meta-value" }
+                ]
+              },
+              {
+                "width": "25%",
+                "stack": [
+                  { "text": "Total Demand Payable :", "style": "meta-label"  },
+                  { "text": "{{totalDemandPayable}}", "style": "meta-value" }
+                ]
+              },
+              {
+                "width": "25%",
+                "stack": [
+                  { "text": "Advance :",              "style": "meta-label"  },
+                  { "text": "{{advanceAmt}}",         "style": "meta-value" }
+                ]
+              },
+              {
+                "width": "25%",
+                "stack": [
+                  { "text": "Mode of Payment :",      "style": "meta-label"  },
+                  { "text": "{{paymentMode}}",        "style": "meta-value" }
+                ]
+              }
+            ],
+            "columnGap": 4
+          },
 
-          { "columns": [
-              { "text": "Advance :",              "style": "meta-label" },
-              { "text": "{{advanceAmt}}",         "style": "meta-value" },
-              { "text": "Mode of Payment :",      "style": "meta-label" },
-              { "text": "{{paymentMode}}",        "style": "meta-value" }
-            ], "columnGap": 4 },
-
-          { "columns": [
-              { "text": "Cheque Date :",          "style": "meta-label" },
-              { "text": "{{chequeDate}}",         "style": "meta-value" },
-              { "text": "Cheque Number :",        "style": "meta-label" },
-              { "text": "{{chequeNumber}}",       "style": "meta-value" }
-            ], "columnGap": 4 },
-
-          { "columns": [
-              { "text": "Cheque Bank Name :",     "style": "meta-label" },
-              { "text": "{{chequeBankName}}",     "style": "meta-value" },
-              { "text": "",                       "style": "meta-label" },
-              { "text": "",                       "style": "meta-value" }
-            ], "columnGap": 4 }
+          {
+            "columns": [
+              {
+                "width": "25%",
+                "stack": [
+                  { "text": "Cheque Date :",          "style": "meta-label"  },
+                  { "text": "{{chequeDate}}",         "style": "meta-value" }
+                ]
+              },
+              {
+                "width": "25%",
+                "stack": [
+                  { "text": "Cheque Number :",        "style": "meta-label"  },
+                  { "text": "{{chequeNumber}}",       "style": "meta-value" }
+                ]
+              },
+              {
+                "width": "25%",
+                "stack": [
+                  { "text": "Cheque Bank Name :",     "style": "meta-label"  },
+                  { "text": "{{chequeBankName}}",     "style": "meta-value" }
+                ]
+              },
+              {
+                "width": "25%",
+                "stack": [
+                  { "text": "",                       "style": "meta-label"  },
+                  { "text": "",                       "style": "meta-value" }
+                ]
+              }
+            ],
+            "columnGap": 4
+          }
         ],
         "margin": [0, 10, 0, 6]
       },
@@ -195,7 +257,7 @@
       {
         "columns": [
           { "text": "Cashier Signature Label", "style": "signature-left" },
-          { "text": [ "Signature Placeholder ", { "text": "{{user-name}}", "bold": true } ], "style": "signature-right", "alignment": "right" }
+          { "text": [ "Signature Placeholder ", { "text": "{{user-name}}" } ], "style": "signature-right", "alignment": "left" }
         ],
         "margin": [0, 2, 0, 6]
       },
@@ -204,26 +266,26 @@
         "margin": [0, 0, 0, 0],
         "canvas": [ { "type": "line", "x1": 0, "y1": 0, "x2": 547, "y2": 0, "lineWidth": 0.8, "lineColor": "#000000" } ]
       },
-      { "text": "Office Copy", "alignment": "center", "style": "office-title", "margin": [0, 0, 0, 8] },
+      { "text": "Office Copy", "alignment": "center", "style": "office-title" },
 
       {
         "columns": [
           {
-            "width": "50%",
+            "width": "60%",
             "alignment": "left",
             "stack": [
               { "text": [ "Receipt No : ", { "text": "{{receiptNo}}", "style": "info-value" } ], "style": "info-line" },
               { "text": [ "Assessment Year : ", { "text": "{{fromPeriod}} {{to}} {{toPeriod}}", "style": "info-value" } ], "style": "info-line" },
               { "text": [ "Property ID : ", { "text": "{{consumerID}}", "style": "info-value" } ], "style": "info-line" },
               { "text": [ "Date : ", { "text": "{{paymentDate}}", "style": "info-value" } ], "style": "info-line" },
-              { "text": [ "Property Owner Name : ", { "text": "{{payerName}}", "style": "info-value" } ], "style": "info-line" }
+              { "text": [ "Property Owner Name : ", { "text": "{{payerName}}", "style": "info-value" } ], "style": "info-line" },
+              { "text": [ "Address : ", { "text": "", "style": "info-value" } ], "style": "info-line" }
             ]
           },
           {
-            "width": "50%",
+            "width": "40%",
             "alignment": "right",
             "stack": [
-              { "text": [ "Address : ", { "text": "", "style": "info-value" } ], "style": "info-line", "alignment": "left" },
               { "text": [ "Zone/Ward : ", { "text": "", "style": "info-value" } ], "style": "info-line", "alignment": "left" },
               { "text": [ "Rate Zone : ", { "text": "", "style": "info-value" } ], "style": "info-line", "alignment": "left" },
               { "text": [ "Plot Area : ", { "text": "", "style": "info-value" } ], "style": "info-line", "alignment": "left" },
@@ -238,8 +300,8 @@
 
       {
         "columns": [
-          { "width": "70%", "text": "Cashier Signature", "style": "signature-left" },
-          { "width": "30%", "text": [ "Cashier Name: ", { "text": "{{user-name}}"} ], "style": "signature-right", "alignment": "right" }
+          { "text": "Cashier Signature", "style": "signature-left" },
+          { "text": [ "Cashier Name: ", { "text": "{{user-name}}"} ], "style": "signature-right", "alignment": "right" }
         ],
         "margin": [0, 2, 0, 6]
       }
