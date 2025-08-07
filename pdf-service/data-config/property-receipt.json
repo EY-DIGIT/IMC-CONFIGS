@@ -160,6 +160,11 @@
               { "variable": "th_maintenance",  "formula": "'Maintenance Discount'" },
               { "variable": "th_urban_dev_cess", "formula": "'Urban Development Cess'" },
 
+              { "variable": "logoImage",
+                "formula": "'https://tfstate8auyj.blob.core.windows.net/egov-dev-assets/MP%20Emblem%201%201.svg'",
+                "type": "image",
+                "isExternal": true },
+
               { "variable": "disclaimerContent", "formula": "'This is a system-generated receipt and does not confer title or ownership.'" }
             ]
           },
@@ -174,24 +179,10 @@
                   { "variable": "phoneNumber", "value": "$.MdmsRes.tenant.tenants[0].contactNumber" },
                   { "variable": "website", "value": "$.MdmsRes.tenant.tenants[0].domainUrl" },
                   { "variable": "email", "value": "$.MdmsRes.tenant.tenants[0].emailId" },
-                  { "variable": "logoImage", "value": "$.MdmsRes.tenant.tenants[0].logoId", "type": "image" },
                   {
                     "variable": "logo-header",
                     "value": "$.MdmsRes.tenant.tenants[0].code",
                     "localisation": { "required": true, "prefix": "TENANT_TENANTS", "module": "rainmaker-common" }
-                  }
-                ]
-              },
-              {
-                "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=common-masters&masterName=StateInfo&tenantId=pg",
-                "apiRequest": null,
-                "responseMapping": [
-                  {
-                    "variable": "logoImage",
-                    "value": "$.MdmsRes['common-masters'].StateInfo[0].statelogo",
-                    "type": "image",
-                    "isExternal": true
                   }
                 ]
               },
