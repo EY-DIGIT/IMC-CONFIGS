@@ -160,7 +160,7 @@
                 ]
               },
               {
-                "path": "https://urban.eydemoapp.in/pt-calculator-v2/propertytax/v2/_estimate",
+                "path": "http://pt-calculator-v2:8080/pt-calculator-v2/propertytax/v2/_estimate",
                 "queryParam": "tenantId={$..tenantId}",
                 "apiRequest": {
                   "Assessment": {
