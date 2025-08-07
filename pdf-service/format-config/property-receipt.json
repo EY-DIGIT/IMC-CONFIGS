@@ -20,7 +20,7 @@
       {
         "alignment": "center",
         "stack": [
-          { "image": "{{finalHeaderImage}}", "width": 54, "height": 54, "margin": [0, 0, 0, 8] },
+          { "image": "{{logoImage}}", "width": 54, "height": 54, "margin": [0, 0, 0, 8] },
           { "text": "{{logo-header}} Nagar Nigam", "style": "header-title" },
           { "text": "Property Tax", "style": "header-subtitle" }
         ],
