@@ -184,6 +184,19 @@
               },
               {
                 "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
+                "queryParam": "moduleName=common-masters&masterName=StateInfo&tenantId=pg",
+                "apiRequest": null,
+                "responseMapping": [
+                  {
+                    "variable": "logoImage",
+                    "value": "$.MdmsRes['common-masters'].StateInfo[0].statelogo",
+                    "type": "image",
+                    "isExternal": true
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
                 "queryParam": "moduleName=tenant&masterName=footer&tenantId=pg&filter=%5B?(@.code=='{$.tenantId}' %26%26 @.service=='{$.paymentDetails[0].businessService}')%5D",
                 "apiRequest": null,
                 "responseMapping": [
