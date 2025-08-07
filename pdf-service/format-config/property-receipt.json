@@ -4,7 +4,7 @@
     "pageSize": "A4",
     "pageMargins": [24, 22, 24, 22],
 
-    "background": { "image": "{{logoImage}}", "opacity": 0.06, "width": 460, "position": "center", "height": 460, "margin": [0, 0, 0, 0] },
+    "background": { "image": "{{logoImage}}", "opacity": 0.12, "width": 460 },
 
     "defaultStyle": { "font": "Cambay" },
 
