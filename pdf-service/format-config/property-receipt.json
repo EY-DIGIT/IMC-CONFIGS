@@ -17,7 +17,7 @@
       {
         "alignment": "center",
         "stack": [
-          { "image": "{{logoImage}}", "width": 60, "height": 60, "margin": [0, -15, 0, 8] },
+          { "image": "{{logoImage}}", "width": 60, "height": 60, "margin": [0, -20, 0, 8] },
           { "text": "{{logo-header}} Nagar Nigam", "style": "header-title" },
           { "text": "Property Tax", "style": "header-subtitle" }
         ],
@@ -27,9 +27,9 @@
       {
         "columns": [
           {
-            "width": "60%",
+            "width": "65%",
             "stack": [
-              { "text": "Municipal Act 1956 Sec. 186", "style": "info-line-muted" },
+              { "text": "Municipal Act 1956 Sec. 186", "style": "info-line" },
               { "text": [ "Receipt No : ", { "text": "{{receiptNo}}", "style": "info-value" } ], "style": "info-line" },
               { "text": [ "Property ID : ", { "text": "{{consumerID}}", "style": "info-value" } ], "style": "info-line" },
               { "text": [ "Property Owner Name : ", { "text": "{{payerName}}", "style": "info-value" } ], "style": "info-line" },
@@ -38,7 +38,7 @@
             ]
           },
           {
-            "width": "40%",
+            "width": "35%",
             "alignment": "right",
             "stack": [
               { "text": [ "Date : ", { "text": "{{paymentDate}}", "style": "info-value" } ], "style": "info-line", "alignment": "left" },
@@ -133,105 +133,65 @@
       {
         "style": "office-columns-block",
         "stack": [
-
           {
             "columns": [
-              {
-                "width": "25%",
-                "stack": [
-                  { "text": "Arrear :",               "style": "meta-label"  },
-                  { "text": "{{arrearAmt}}",          "style": "meta-value" }
-                ]
-              },
-              {
-                "width": "25%",
-                "stack": [
-                  { "text": "Current Year Net Tax :", "style": "meta-label"  },
-                  { "text": "{{currentYearNetTax}}",  "style": "meta-value" }
-                ]
-              },
-              {
-                "width": "25%",
-                "stack": [
-                  { "text": "Total Amount Paid :",    "style": "meta-label"  },
-                  { "text": "₹ {{paidAmount}}",       "style": "meta-value" }
-                ]
-              },
-              {
-                "width": "25%",
-                "stack": [
-                  { "text": "Previous Balance :",     "style": "meta-label"  },
-                  { "text": "{{previousBalance}}",    "style": "meta-value" }
-                ]
-              }
+              { "width": "25%", "text": [
+                  { "text": "Arrear : ",               "style": "meta-label"  },
+                  { "text": "{{arrearAmt}}",           "style": "meta-value" }
+              ]},
+              { "width": "25%", "text": [
+                  { "text": "Current Year Net Tax : ", "style": "meta-label"  },
+                  { "text": "{{currentYearNetTax}}",   "style": "meta-value" }
+              ]},
+              { "width": "25%", "text": [
+                  { "text": "Total Amount Paid : ",    "style": "meta-label"  },
+                  { "text": "₹ {{paidAmount}}",        "style": "meta-value" }
+              ]},
+              { "width": "25%", "text": [
+                  { "text": "Previous Balance : ",     "style": "meta-label"  },
+                  { "text": "{{previousBalance}}",     "style": "meta-value" }
+              ]}
             ],
             "columnGap": 4
           },
 
           {
             "columns": [
-              {
-                "width": "25%",
-                "stack": [
-                  { "text": "Cumulative Balance :",   "style": "meta-label"  },
-                  { "text": "{{cumulativeBalance}}",  "style": "meta-value" }
-                ]
-              },
-              {
-                "width": "25%",
-                "stack": [
-                  { "text": "Total Demand Payable :", "style": "meta-label"  },
-                  { "text": "{{totalDemandPayable}}", "style": "meta-value" }
-                ]
-              },
-              {
-                "width": "25%",
-                "stack": [
-                  { "text": "Advance :",              "style": "meta-label"  },
-                  { "text": "{{advanceAmt}}",         "style": "meta-value" }
-                ]
-              },
-              {
-                "width": "25%",
-                "stack": [
-                  { "text": "Mode of Payment :",      "style": "meta-label"  },
-                  { "text": "{{paymentMode}}",        "style": "meta-value" }
-                ]
-              }
+              { "width": "25%", "text": [
+                  { "text": "Cumulative Balance : ",   "style": "meta-label"  },
+                  { "text": "{{cumulativeBalance}}",   "style": "meta-value" }
+              ]},
+              { "width": "25%", "text": [
+                  { "text": "Total Demand Payable : ", "style": "meta-label"  },
+                  { "text": "{{totalDemandPayable}}",  "style": "meta-value" }
+              ]},
+              { "width": "25%", "text": [
+                  { "text": "Advance : ",              "style": "meta-label"  },
+                  { "text": "{{advanceAmt}}",          "style": "meta-value" }
+              ]},
+              { "width": "25%", "text": [
+                  { "text": "Mode of Payment : ",      "style": "meta-label"  },
+                  { "text": "{{paymentMode}}",         "style": "meta-value" }
+              ]}
             ],
             "columnGap": 4
           },
 
           {
             "columns": [
-              {
-                "width": "25%",
-                "stack": [
-                  { "text": "Cheque Date :",          "style": "meta-label"  },
-                  { "text": "{{chequeDate}}",         "style": "meta-value" }
-                ]
-              },
-              {
-                "width": "25%",
-                "stack": [
-                  { "text": "Cheque Number :",        "style": "meta-label"  },
-                  { "text": "{{chequeNumber}}",       "style": "meta-value" }
-                ]
-              },
-              {
-                "width": "25%",
-                "stack": [
-                  { "text": "Cheque Bank Name :",     "style": "meta-label"  },
-                  { "text": "{{chequeBankName}}",     "style": "meta-value" }
-                ]
-              },
-              {
-                "width": "25%",
-                "stack": [
-                  { "text": "",                       "style": "meta-label"  },
-                  { "text": "",                       "style": "meta-value" }
-                ]
-              }
+              { "width": "25%", "text": [
+                  { "text": "Cheque Date : ",          "style": "meta-label"  },
+                  { "text": "{{chequeDate}}",          "style": "meta-value" }
+              ]},
+              { "width": "25%", "text": [
+                  { "text": "Cheque Number : ",        "style": "meta-label"  },
+                  { "text": "{{chequeNumber}}",        "style": "meta-value" }
+              ]},
+              { "width": "25%", "text": [
+                  { "text": "Cheque Bank Name : ",     "style": "meta-label"  },
+                  { "text": "{{chequeBankName}}",      "style": "meta-value" }
+              ]},
+              { "width": "25%", "text": "" }
             ],
             "columnGap": 4
           }
@@ -244,20 +204,32 @@
           "**This property tax receipt paid via cheque shall be acknowledged upon successful clearance of the cheque"
         ],
         "style": "pt-disclaimer-value",
-        "margin": [0, 6, 0, 10]
+        "margin": [0, 3, 0, 5]
       },
       {
         "text": [
           "**This receipt is not a proof of ownership"
         ],
         "style": "pt-disclaimer-value",
-        "margin": [0, 6, 0, 10]
+        "margin": [0, 3, 0, 5]
       },
 
       {
         "columns": [
-          { "text": "Cashier Signature Label", "style": "signature-left" },
-          { "text": [ "Signature Placeholder ", { "text": "{{user-name}}" } ], "style": "signature-right", "alignment": "left" }
+          {
+            "width": "70%",
+            "text": "Cashier Signature Label",
+            "style": "signature-left"
+          },
+          {
+            "width": "30%",
+            "text": [
+              "Signature Placeholder ",
+              { "text": "{{user-name}}" }
+            ],
+            "style": "signature-right",
+            "alignment": "left"
+          }
         ],
         "margin": [0, 2, 0, 6]
       },
@@ -266,12 +238,19 @@
         "margin": [0, 0, 0, 0],
         "canvas": [ { "type": "line", "x1": 0, "y1": 0, "x2": 547, "y2": 0, "lineWidth": 0.8, "lineColor": "#000000" } ]
       },
-      { "text": "Office Copy", "alignment": "center", "style": "office-title" },
 
+      { "text": "Office Copy", "alignment": "center", "style": "office-title" },
+      {
+        "alignment": "center",
+        "stack": [
+          { "text": "{{logo-header}} Nagar Nigam", "style": "header-title" }
+        ],
+        "margin": [0, 0, 0, 6]
+      },
       {
         "columns": [
           {
-            "width": "60%",
+            "width": "65%",
             "alignment": "left",
             "stack": [
               { "text": [ "Receipt No : ", { "text": "{{receiptNo}}", "style": "info-value" } ], "style": "info-line" },
@@ -283,7 +262,7 @@
             ]
           },
           {
-            "width": "40%",
+            "width": "35%",
             "alignment": "right",
             "stack": [
               { "text": [ "Zone/Ward : ", { "text": "", "style": "info-value" } ], "style": "info-line", "alignment": "left" },
@@ -300,8 +279,8 @@
 
       {
         "columns": [
-          { "text": "Cashier Signature", "style": "signature-left" },
-          { "text": [ "Cashier Name: ", { "text": "{{user-name}}"} ], "style": "signature-right", "alignment": "right" }
+          { "width":"70%", "text": "Cashier Signature", "style": "signature-left" },
+          { "width": "30%", "text": [ "Cashier Name: ", { "text": "{{user-name}}"} ], "style": "signature-right", "alignment": "left" }
         ],
         "margin": [0, 2, 0, 6]
       }
@@ -316,17 +295,16 @@
       "meta-value": { "fontSize": 9, "color": "#000000", "margin": [0, 2, 0, 2] },
 
       "info-line": { "fontSize": 10, "margin": [0, 2, 0, 2], "color": "#000000" },
-      "info-line-muted": { "fontSize": 10, "margin": [0, 0, 0, 2], "color": "#484848" },
       "info-value": { "fontSize": 10, "margin": [0, 2, 0, 2], "color": "#000000" },
 
-      "section-title": { "fontSize": 8 },
+      "section-title": { "fontSize": 9 },
 
       "calcTable": { "fontSize": 9, "margin": [0, 0, 0, 0] },
-      "taxTable":  { "fontSize": 9, "margin": [0, 0, 0, 0] },
+      "taxTable":  { "fontSize": 8, "margin": [0, 0, 0, 0] },
       "th": { "alignment": "center", "margin": [2, 3, 2, 3] },
       "td": { "alignment": "center", "margin": [2, 3, 2, 3] },
 
-      "office-title": { "fontSize": 11, "bold": true, "color": "#000000" },
+      "office-title": { "fontSize": 12, "bold": true, "color": "#000000" },
       "signature-left":  { "fontSize": 10, "color": "#000000", "bold": true },
       "signature-right": { "fontSize": 10, "color": "#000000", "bold": true },
 
