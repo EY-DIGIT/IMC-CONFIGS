@@ -87,7 +87,7 @@
               { "variable": "calc1_area",             "value": { "path": "$..Calculation[0].propertyFYDetails[0].area" } },
               { "variable": "calc1_rate",             "value": { "path": "$..Calculation[0].propertyFYDetails[0].factor" } },
               { "variable": "calc1_alv",              "value": { "path": "$..Calculation[0].propertyFYDetails[0].alv" } },
-              { "variable": "calc1_maintenance",      "value": "10%", "type": "string" },
+              
               { "variable": "calc1_tpv",              "value": { "path": "$..Calculation[0].propertyFYTaxSummaries[0].tpv" } },
               { "variable": "tax1_year",              "value": { "path": "$..Calculation[0].propertyFYTaxSummaries[0].year" } },
               { "variable": "tax1_propertyTax",       "value": { "path": "$..Calculation[0].propertyFYTaxSummaries[0].propertyTax" } },
@@ -142,7 +142,9 @@
               { "variable": "th_maintenance",  "formula": "'Maintenance Discount'" },
               { "variable": "th_urban_dev_cess", "formula": "'Urban Development Cess'" },
 
-              { "variable": "disclaimerContent", "formula": "'This is a system-generated receipt and does not confer title or ownership.'" }
+              { "variable": "disclaimerContent", "formula": "'This is a system-generated receipt and does not confer title or ownership.'" },
+              
+              { "variable": "calc1_maintenance", "formula": "'10%'" }
             ]
           },
           {
