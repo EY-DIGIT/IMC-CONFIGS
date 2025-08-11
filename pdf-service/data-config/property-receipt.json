@@ -4,8 +4,8 @@
   "DataConfigs": {
     "moduleName": "PT",
     "version": "1.0.0",
-    "baseKeyPath": "$.*",
-    "entityIdPath": "$.Payments[0].id",
+    "baseKeyPath": "$.Payments[*]",
+    "entityIdPath": "$.id",
     "isCommonTableBorderRequired": true,
     "mappings": [
       {
@@ -13,150 +13,77 @@
         "mappings": [
           {
             "direct": [
-              { "variable": "payerName", "value": { "path": "$.Payments[0].payerName" } },
-              {
-                "variable": "user-name",
-                "value": { "path": "$.RequestInfo.userInfo.name" },
-                "type": "selectFromRequestInfo"
-              },
-              { "variable": "payerContact", "value": { "path": "$.Payments[0].mobileNumber" } },
-              {
-                "variable": "paymentStatus",
-                "value": { "path": "$.Payments[0].paymentStatus" },
-                "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" }
-              },
-              { "variable": "receiptNo", "value": { "path": "$.Payments[0].paymentDetails[0].receiptNumber" } },
-              {
-                "variable": "serviceType",
-                "value": { "path": "$.Payments[0].paymentDetails[0].businessService" },
-                "localisation": { "required": true, "prefix": "MODULE", "module": "rainmaker-common" }
-              },
-              { "variable": "paidAmount", "value": { "path": "$.Payments[0].paymentDetails[0].totalAmountPaid" } },
-              { "variable": "fromPeriod", "value": { "path": "$.Payments[0].paymentDetails[0].bill.billDetails[0].fromPeriod" }, "type": "date" },
-              { "variable": "toPeriod", "value": { "path": "$.Payments[0].paymentDetails[0].bill.billDetails[0].toPeriod" }, "type": "date" },
-              {
-                "variable": "paymentMode",
-                "value": { "path": "$.Payments[0].paymentMode" },
-                "localisation": { "required": true, "prefix": "COMMON_MASTERS_PAYMENTMODE", "module": "rainmaker-common" }
-              },
-              { "variable": "G8ReceiptNo", "value": { "path": "$.Payments[0].paymentDetails[0].manualReceiptNumber" } },
-              { "variable": "G8ReceiptDate", "value": { "path": "$.Payments[0].paymentDetails[0].manualReceiptDate" }, "type": "date" },
-              { "variable": "paymentDate", "value": { "path": "$.Payments[0].transactionDate" }, "type": "date" },
-              { "variable": "consumerID", "value": { "path": "$.Payments[0].paymentDetails[0].bill.consumerCode" } },
-              { "variable": "transactionID", "value": { "path": "$.Payments[0].transactionNumber" } },
-              { "variable": "dueAmount", "value": { "path": "$.Payments[0].paymentDetails[0].totalDue" } },
-              { "variable": "chequeDate", "value": { "path": "$.Payments[0].instrumentDate" }, "type": "date" },
-              { "variable": "chequeNumber", "value": { "path": "$.Payments[0].instrumentNumber" } },
-              { "variable": "chequeBankName", "value": { "path": "$.Payments[0].additionalDetails.bankName" } },
+              { "variable": "payerName", "value": { "path": "$.payerName" } },
+              { "variable": "user-name", "value": { "path": "$.RequestInfo.userInfo.name" }, "type": "selectFromRequestInfo" },
+              { "variable": "payerContact", "value": { "path": "$.mobileNumber" } },
+              { "variable": "paymentStatus", "value": { "path": "$.paymentStatus" }, "localisation": { "required": true, "module": "rainmaker-common" } },
+              { "variable": "receiptNo", "value": { "path": "$.paymentDetails[0].receiptNumber" } },
+              { "variable": "serviceType", "value": { "path": "$.paymentDetails[0].businessService" }, "localisation": { "required": true, "prefix": "MODULE", "module": "rainmaker-common" } },
+              { "variable": "paidAmount", "value": { "path": "$.paymentDetails[0].totalAmountPaid" } },
+              { "variable": "fromPeriod", "value": { "path": "$.paymentDetails[0].bill.billDetails[0].fromPeriod" }, "type": "date" },
+              { "variable": "toPeriod", "value": { "path": "$.paymentDetails[0].bill.billDetails[0].toPeriod" }, "type": "date" },
+              { "variable": "paymentMode", "value": { "path": "$.paymentMode" }, "localisation": { "required": true, "prefix": "COMMON_MASTERS_PAYMENTMODE", "module": "rainmaker-common" } },
+              { "variable": "G8ReceiptNo", "value": { "path": "$.paymentDetails[0].manualReceiptNumber" } },
+              { "variable": "G8ReceiptDate", "value": { "path": "$.paymentDetails[0].manualReceiptDate" }, "type": "date" },
+              { "variable": "paymentDate", "value": { "path": "$.transactionDate" }, "type": "date" },
+              { "variable": "consumerID", "value": { "path": "$.paymentDetails[0].bill.consumerCode" } },
+              { "variable": "transactionID", "value": { "path": "$.transactionNumber" } },
+              { "variable": "dueAmount", "value": { "path": "$.paymentDetails[0].totalDue" } },
+              { "variable": "chequeDate", "value": { "path": "$.instrumentDate" }, "type": "date" },
+              { "variable": "chequeNumber", "value": { "path": "$.instrumentNumber" } },
+              { "variable": "chequeBankName", "value": { "path": "$.additionalDetails.bankName" } },
 
-              { "variable": "payment_receipt", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_PAYMENT_RECEIPT" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "receipt_no", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_RECEIPT_NO" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              {
-                "variable": "consumer_id",
-                "value": { "path": "$.Payments[0].paymentDetails[0].businessService" },
-                "localisation": { "required": true, "prefix": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_CONSUMER_ID", "module": "rainmaker-common" }
-              },
-              { "variable": "payment_date", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_PAYMENT_DATE" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "payer_name", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_PAYER_NAME" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "payer_contact", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_PAYER_CONTACT" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "payment_status", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_PAYMENT_STATUS" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "service_type", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_SERVICE_TYPE" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "billing_period", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_BILLING_PERIOD" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "paid_amount", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_PAID_AMOUNT" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "pending_amount", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_PENDING_AMOUNT" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "excess_amount_paid", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_EXCESS_AMOUNT_PAID" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "total_bill_amount", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_TOTAL_BILL_AMOUNT" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "payment_mode", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_PAYMENT_MODE" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "transaction_id", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_TRANSACTION_ID" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "g8_receipt_no", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_G8_RECEIPT_NO" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "g8_receipt_date", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_G8_RECEIPT_DATE" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "generated_by", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_GENERATED_BY" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "commissioner/eo", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_COMMISSIONER_EO" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "no_signature", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_NO_SIGNATURE" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "disclamer", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_DISCLAIMER" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "to", "value": { "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_TO" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-              { "variable": "Municipal_Corporation", "value": { "path": "PDF_STATIC_LABEL_MDMS_MUNICIPAL_CORPORATION" }, "type": "label", "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
-
-              { "variable": "arrearAmt", "value": { "path": "$.Calculation[0].arrear" } },
-              { "variable": "currentYearNetTax", "value": { "path": "$.Calculation[0].currentYearTax" } },
-              { "variable": "cumulativeBalance", "value": { "path": "$.Calculation[0].totalAmount" } },
-              { "variable": "totalDemandPayable", "value": { "path": "$.Calculation[0].taxAmount" } },
-              { "variable": "previousBalance", "value": { "path": "$.Calculation[0].taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')].estimateAmount" } },
-              { "variable": "advanceAmt", "value": { "path": "$.Calculation[0].taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')].estimateAmount" } }
+              { "variable": "arrearAmt", "value": { "path": "$['Calculation'][0].arrear" } },
+              { "variable": "currentYearNetTax", "value": { "path": "$['Calculation'][0].currentYearTax" } },
+              { "variable": "cumulativeBalance", "value": { "path": "$['Calculation'][0].totalAmount" } },
+              { "variable": "totalDemandPayable", "value": { "path": "$['Calculation'][0].taxAmount" } },
+              { "variable": "previousBalance", "value": { "path": "$['Calculation'][0].taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')].estimateAmount" } },
+              { "variable": "advanceAmt", "value": { "path": "$['Calculation'][0].taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')].estimateAmount" } }
             ]
           },
           {
             "derived": [
-              {
-                "variable": "pendingAmount",
-                "formula": "{{dueAmount}}>{{paidAmount}}?{{dueAmount}}-{{paidAmount}}:0"
-              },
-              {
-                "variable": "excessAmountPaid",
-                "formula": "{{paidAmount}}>{{dueAmount}}?{{paidAmount}}-{{dueAmount}}:0"
-              },
-              { "variable": "calcTableTitle", "formula": "'Property Taxes and Other Taxes have been calculated based on the details given below'" },
-              { "variable": "taxTableTitle", "formula": "'Tax Breakup'" },
-
-              { "variable": "th_usage_type", "formula": "'Usage Type'" },
-              { "variable": "th_usage_factor", "formula": "'Usage Factor'" },
-              { "variable": "th_floor_no", "formula": "'Floor No.'" },
-              { "variable": "th_construction_type", "formula": "'Construction Type'" },
-              { "variable": "th_area", "formula": "'Area'" },
-              { "variable": "th_rate", "formula": "'Rate'" },
-              { "variable": "th_alv", "formula": "'ALV'" },
-              { "variable": "th_maintenance", "formula": "'Maintenance'" },
-              { "variable": "th_tpv", "formula": "'TPV'" },
-
-              { "variable": "th_year", "formula": "'Year'" },
-              { "variable": "th_property_tax", "formula": "'Property Tax'" },
-              { "variable": "th_samekit_tax", "formula": "'Samekit Tax'" },
-              { "variable": "th_education_cess", "formula": "'Education Cess'" },
-              { "variable": "th_water_cess", "formula": "'Water Cess'" },
-              { "variable": "th_drainage_cess", "formula": "'Drainage Cess'" },
-              { "variable": "th_urban_dev_cess", "formula": "'Urban Dev. Cess'" },
-              { "variable": "th_service_charge", "formula": "'Service Charge'" },
-              { "variable": "th_total_tax", "formula": "'Total Tax'" },
-              { "variable": "th_rebate", "formula": "'Rebate'" },
-              { "variable": "th_penalty", "formula": "'Penalty'" },
-              { "variable": "th_net_total", "formula": "'Net Total'" },
-
-              { "variable": "disclaimerContent", "formula": "'This is a system-generated receipt and does not confer title or ownership.'" }
+              { "variable": "pendingAmount", "formula": "{{dueAmount}}>{{paidAmount}}?{{dueAmount}}-{{paidAmount}}:0" },
+              { "variable": "excessAmountPaid", "formula": "{{paidAmount}}>{{dueAmount}}?{{paidAmount}}-{{dueAmount}}:0" }
             ]
           },
           {
-            "arrayPath": "$.Calculation[0].propertyFYDetails[*]",
-            "variable": "calcTableData",
-            "fields": [
-              { "variable": "calc_usageType", "value": { "path": "$.usageType" } },
-              { "variable": "calc_usageFactor", "value": { "path": "$.usageFactor" } },
-              { "variable": "calc_floorNo", "value": { "path": "$.floorNo" } },
-              { "variable": "calc_constructionType", "value": { "path": "$.constructionType" } },
-              { "variable": "calc_area", "value": { "path": "$.area" } },
-              { "variable": "calc_rate", "value": { "path": "$.factor" } },
-              { "variable": "calc_alv", "value": { "path": "$.alv" } },
-              { "variable": "calc_maintenance", "formula": "'N/A'" },
-              { "variable": "calc_year", "value": { "path": "$.year" } },
-              { "variable": "calc_tpv", "formula": "'N/A'" }
-            ]
-          },
-          {
-            "arrayPath": "$.Calculation[0].propertyFYTaxSummaries[*]",
-            "variable": "taxTableData",
-            "fields": [
-              { "variable": "tax_year", "value": { "path": "$.year" } },
-              { "variable": "tax_propertyTax", "value": { "path": "$.propertyTax" } },
-              { "variable": "tax_samekitTax", "value": { "path": "$.samekit" } },
-              { "variable": "tax_educationCess", "value": { "path": "$.educationCess" } },
-              { "variable": "tax_waterCess", "value": { "path": "$.jalKar" } },
-              { "variable": "tax_drainageCess", "value": { "path": "$.jalNikas" } },
-              { "variable": "tax_urbanDevCess", "value": { "path": "$.urbanTax" } },
-              { "variable": "tax_serviceCharge", "value": { "path": "$.sevaKar" } },
-              { "variable": "tax_totalTax", "value": { "path": "$.totalTax" } },
-              { "variable": "tax_rebate", "value": { "path": "$.rebate" } },
-              { "variable": "tax_penalty", "value": { "path": "$.penalty" } },
-              { "variable": "tax_netTotal", "value": { "path": "$.netTax" } },
-              { "variable": "tax_tpv", "value": { "path": "$.tpv" } }
+            "arrayMapping": [
+              {
+                "arrayPath": "$['Calculation'][0].propertyFYDetails[*]",
+                "variable": "calcTableData",
+                "fields": [
+                  { "variable": "calc_usageType", "value": { "path": "$.usageType" } },
+                  { "variable": "calc_usageFactor", "value": { "path": "$.usageFactor" } },
+                  { "variable": "calc_floorNo", "value": { "path": "$.floorNo" } },
+                  { "variable": "calc_constructionType", "value": { "path": "$.constructionType" } },
+                  { "variable": "calc_area", "value": { "path": "$.area" } },
+                  { "variable": "calc_rate", "value": { "path": "$.factor" } },
+                  { "variable": "calc_alv", "value": { "path": "$.alv" } },
+                  { "variable": "calc_maintenance", "formula": "'N/A'" },
+                  { "variable": "calc_year", "value": { "path": "$.year" } },
+                  { "variable": "calc_tpv", "formula": "'N/A'" }
+                ]
+              },
+              {
+                "arrayPath": "$['Calculation'][0].propertyFYTaxSummaries[*]",
+                "variable": "taxTableData",
+                "fields": [
+                  { "variable": "tax_year", "value": { "path": "$.year" } },
+                  { "variable": "tax_propertyTax", "value": { "path": "$.propertyTax" } },
+                  { "variable": "tax_samekitTax", "value": { "path": "$.samekit" } },
+                  { "variable": "tax_educationCess", "value": { "path": "$.educationCess" } },
+                  { "variable": "tax_waterCess", "value": { "path": "$.jalKar" } },
+                  { "variable": "tax_drainageCess", "value": { "path": "$.jalNikas" } },
+                  { "variable": "tax_urbanDevCess", "value": { "path": "$.urbanTax" } },
+                  { "variable": "tax_serviceCharge", "value": { "path": "$.sevaKar" } },
+                  { "variable": "tax_totalTax", "value": { "path": "$.totalTax" } },
+                  { "variable": "tax_rebate", "value": { "path": "$.rebate" } },
+                  { "variable": "tax_penalty", "value": { "path": "$.penalty" } },
+                  { "variable": "tax_netTotal", "value": { "path": "$.netTax" } },
+                  { "variable": "tax_tpv", "value": { "path": "$.tpv" } }
+                ]
+              }
             ]
           },
           {
