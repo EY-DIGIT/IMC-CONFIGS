@@ -14,7 +14,7 @@
           {
             "direct": [
               { "variable": "payerName", "value": { "path": "$.payerName" } },
-              { "variable": "user-name", "value": { "path": "$.RequestInfo.userInfo.name" }, "type": "selectFromRequestInfo" },
+              { "variable": "user-name", "value": { "path": "$.userInfo.name" }, "type": "selectFromRequestInfo" },
               { "variable": "payerContact", "value": { "path": "$.mobileNumber" } },
               { "variable": "paymentStatus", "value": { "path": "$.paymentStatus" }, "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
               { "variable": "receiptNo", "value": { "path": "$.paymentDetails[0].receiptNumber" } },
@@ -86,7 +86,7 @@
               { "variable": "calc_rate",             "value": { "path": "$.factor" } },
               { "variable": "calc_alv",              "value": { "path": "$.alv" } },
               { "variable": "calc_maintenance",      "formula": "'10%'" },
-              { "variable": "calc_tpv",              "formula": "''" },
+              { "variable": "calc_tpv",              "formula": "'static'" },
               { "variable": "calc_year",             "value": { "path": "$.year" } }
             ]
           },
@@ -139,7 +139,7 @@
                     "type": "array",
                     "format": {
                       "type": "string",
-                      "scema": [
+                      "schema": [
                         {
                           "variable": "disclaimerContent",
                           "value": "disclaimer",
