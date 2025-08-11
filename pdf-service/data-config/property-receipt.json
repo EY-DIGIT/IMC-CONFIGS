@@ -4,7 +4,7 @@
   "DataConfigs": {
     "moduleName": "PT",
     "version": "1.0.0",
-    "baseKeyPath": "$.Payments[*]",
+    "baseKeyPath": "$.Payments.*",
     "entityIdPath": "$.id",
     "isCommonTableBorderRequired": true,
     "mappings": [
