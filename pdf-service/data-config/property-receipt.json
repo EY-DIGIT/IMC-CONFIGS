@@ -14,9 +14,9 @@
           {
             "direct": [
               { "variable": "payerName", "value": { "path": "$.payerName" } },
-              { "variable": "user-name", "value": { "path": "$.RequestInfo.userInfo.name" }, "type": "selectFromRequestInfo" },
+              { "variable": "user-name", "value": { "path": "$.userInfo.name" }, "type": "selectFromRequestInfo" },
               { "variable": "payerContact", "value": { "path": "$.mobileNumber" } },
-              { "variable": "paymentStatus", "value": { "path": "$.paymentStatus" }, "localisation": { "required": true, "module": "rainmaker-common" } },
+              { "variable": "paymentStatus", "value": { "path": "$.paymentStatus" }, "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
               { "variable": "receiptNo", "value": { "path": "$.paymentDetails[0].receiptNumber" } },
               { "variable": "serviceType", "value": { "path": "$.paymentDetails[0].businessService" }, "localisation": { "required": true, "prefix": "MODULE", "module": "rainmaker-common" } },
               { "variable": "paidAmount", "value": { "path": "$.paymentDetails[0].totalAmountPaid" } },
@@ -82,9 +82,9 @@
               { "variable": "calc_area", "value": { "path": "$.area" } },
               { "variable": "calc_rate", "value": { "path": "$.factor" } },
               { "variable": "calc_alv", "value": { "path": "$.alv" } },
-              { "variable": "calc_maintenance", "formula": "'N/A'" },
+              { "variable": "calc_maintenance", "formula": "'Maintenance'" },
               { "variable": "calc_year", "value": { "path": "$.year" } },
-              { "variable": "calc_tpv", "formula": "'N/A'" }
+              { "variable": "calc_tpv", "formula": "'TPV'" }
             ]
           },
           {
@@ -116,7 +116,7 @@
                   { "variable": "address", "value": "$.MdmsRes.tenant.tenants[0].address" },
                   { "variable": "phoneNumber", "value": "$.MdmsRes.tenant.tenants[0].contactNumber" },
                   { "variable": "website", "value": "$.MdmsRes.tenant.tenants[0].domainUrl" },
-                  { "variable": "email", "value": { "path": "$.MdmsRes.tenant.tenants[0].emailId" } },
+                  { "variable": "email", "value": "$.MdmsRes.tenant.tenants[0].emailId" },
                   { "variable": "logoImage", "value": "$.MdmsRes.tenant.tenants[0].logoId", "type": "image" },
                   {
                     "variable": "logo-header",
