@@ -72,7 +72,7 @@
               { "text": "{{th_alv}}", "style": "th" },
               { "text": "{{th_maintenance}}", "style": "th" },
               { "text": "{{th_tpv}}", "style": "th" },
-              { "text": "Year", "style": "th" }
+              { "text": "{{th_year}}", "style": "th" }
             ],
             "{{#calcTableData}}",
             [

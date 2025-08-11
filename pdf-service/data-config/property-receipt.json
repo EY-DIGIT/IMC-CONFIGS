@@ -44,53 +44,73 @@
           {
             "derived": [
               { "variable": "pendingAmount", "formula": "{{dueAmount}}>{{paidAmount}}?{{dueAmount}}-{{paidAmount}}:0" },
-              { "variable": "excessAmountPaid", "formula": "{{paidAmount}}>{{dueAmount}}?{{paidAmount}}-{{dueAmount}}:0" }
+              { "variable": "excessAmountPaid", "formula": "{{paidAmount}}>{{dueAmount}}?{{paidAmount}}-{{dueAmount}}:0" },
+              { "variable": "calcTableTitle", "formula": "'Property Taxes and Other Taxes have been calculated based on the details given below'" },
+              { "variable": "taxTableTitle", "formula": "'Tax Breakup'" },
+              { "variable": "th_usage_type", "formula": "'Usage Type'" },
+              { "variable": "th_usage_factor", "formula": "'Usage Factor'" },
+              { "variable": "th_floor_no", "formula": "'Floor No.'" },
+              { "variable": "th_construction_type", "formula": "'Construction Type'" },
+              { "variable": "th_area", "formula": "'Area'" },
+              { "variable": "th_rate", "formula": "'Rate'" },
+              { "variable": "th_alv", "formula": "'ALV'" },
+              { "variable": "th_maintenance", "formula": "'Maintenance'" },
+              { "variable": "th_tpv", "formula": "'TPV'" },
+              { "variable": "th_year", "formula": "'Year'" },
+              { "variable": "th_property_tax", "formula": "'Property Tax'" },
+              { "variable": "th_samekit_tax", "formula": "'Samekit Tax'" },
+              { "variable": "th_education_cess", "formula": "'Education Cess'" },
+              { "variable": "th_water_cess", "formula": "'Water Cess'" },
+              { "variable": "th_drainage_cess", "formula": "'Drainage Cess'" },
+              { "variable": "th_urban_dev_cess", "formula": "'Urban Dev. Cess'" },
+              { "variable": "th_service_charge", "formula": "'Service Charge'" },
+              { "variable": "th_total_tax", "formula": "'Total Tax'" },
+              { "variable": "th_rebate", "formula": "'Rebate'" },
+              { "variable": "th_penalty", "formula": "'Penalty'" },
+              { "variable": "th_net_total", "formula": "'Net Total'" },
+              { "variable": "to", "formula": "'to'" }
             ]
           },
           {
-            "arrayMapping": [
-              {
-                "arrayPath": "$['Calculation'][0].propertyFYDetails[*]",
-                "variable": "calcTableData",
-                "fields": [
-                  { "variable": "calc_usageType", "value": { "path": "$.usageType" } },
-                  { "variable": "calc_usageFactor", "value": { "path": "$.usageFactor" } },
-                  { "variable": "calc_floorNo", "value": { "path": "$.floorNo" } },
-                  { "variable": "calc_constructionType", "value": { "path": "$.constructionType" } },
-                  { "variable": "calc_area", "value": { "path": "$.area" } },
-                  { "variable": "calc_rate", "value": { "path": "$.factor" } },
-                  { "variable": "calc_alv", "value": { "path": "$.alv" } },
-                  { "variable": "calc_maintenance", "formula": "'N/A'" },
-                  { "variable": "calc_year", "value": { "path": "$.year" } },
-                  { "variable": "calc_tpv", "formula": "'N/A'" }
-                ]
-              },
-              {
-                "arrayPath": "$['Calculation'][0].propertyFYTaxSummaries[*]",
-                "variable": "taxTableData",
-                "fields": [
-                  { "variable": "tax_year", "value": { "path": "$.year" } },
-                  { "variable": "tax_propertyTax", "value": { "path": "$.propertyTax" } },
-                  { "variable": "tax_samekitTax", "value": { "path": "$.samekit" } },
-                  { "variable": "tax_educationCess", "value": { "path": "$.educationCess" } },
-                  { "variable": "tax_waterCess", "value": { "path": "$.jalKar" } },
-                  { "variable": "tax_drainageCess", "value": { "path": "$.jalNikas" } },
-                  { "variable": "tax_urbanDevCess", "value": { "path": "$.urbanTax" } },
-                  { "variable": "tax_serviceCharge", "value": { "path": "$.sevaKar" } },
-                  { "variable": "tax_totalTax", "value": { "path": "$.totalTax" } },
-                  { "variable": "tax_rebate", "value": { "path": "$.rebate" } },
-                  { "variable": "tax_penalty", "value": { "path": "$.penalty" } },
-                  { "variable": "tax_netTotal", "value": { "path": "$.netTax" } },
-                  { "variable": "tax_tpv", "value": { "path": "$.tpv" } }
-                ]
-              }
+            "arrayPath": "$['Calculation'][0].propertyFYDetails[*]",
+            "variable": "calcTableData",
+            "fields": [
+              { "variable": "calc_usageType", "value": { "path": "$.usageType" } },
+              { "variable": "calc_usageFactor", "value": { "path": "$.usageFactor" } },
+              { "variable": "calc_floorNo", "value": { "path": "$.floorNo" } },
+              { "variable": "calc_constructionType", "value": { "path": "$.constructionType" } },
+              { "variable": "calc_area", "value": { "path": "$.area" } },
+              { "variable": "calc_rate", "value": { "path": "$.factor" } },
+              { "variable": "calc_alv", "value": { "path": "$.alv" } },
+              { "variable": "calc_maintenance", "formula": "'N/A'" },
+              { "variable": "calc_year", "value": { "path": "$.year" } },
+              { "variable": "calc_tpv", "formula": "'N/A'" }
+            ]
+          },
+          {
+            "arrayPath": "$['Calculation'][0].propertyFYTaxSummaries[*]",
+            "variable": "taxTableData",
+            "fields": [
+              { "variable": "tax_year", "value": { "path": "$.year" } },
+              { "variable": "tax_propertyTax", "value": { "path": "$.propertyTax" } },
+              { "variable": "tax_samekitTax", "value": { "path": "$.samekit" } },
+              { "variable": "tax_educationCess", "value": { "path": "$.educationCess" } },
+              { "variable": "tax_waterCess", "value": { "path": "$.jalKar" } },
+              { "variable": "tax_drainageCess", "value": { "path": "$.jalNikas" } },
+              { "variable": "tax_urbanDevCess", "value": { "path": "$.urbanTax" } },
+              { "variable": "tax_serviceCharge", "value": { "path": "$.sevaKar" } },
+              { "variable": "tax_totalTax", "value": { "path": "$.totalTax" } },
+              { "variable": "tax_rebate", "value": { "path": "$.rebate" } },
+              { "variable": "tax_penalty", "value": { "path": "$.penalty" } },
+              { "variable": "tax_netTotal", "value": { "path": "$.netTax" } },
+              { "variable": "tax_tpv", "value": { "path": "$.tpv" } }
             ]
           },
           {
             "externalAPI": [
               {
                 "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=pg&filter=%5B?(@.code=='{$.Payments[0].tenantId}')%5D",
+                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=pg&filter=%5B?(@.code=='{$.tenantId}')%5D",
                 "apiRequest": null,
                 "responseMapping": [
                   { "variable": "address", "value": "$.MdmsRes.tenant.tenants[0].address" },
@@ -107,7 +127,7 @@
               },
               {
                 "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=tenant&masterName=footer&tenantId=pg&filter=%5B?(@.code=='{$.Payments[0].tenantId}' %26%26 @.service=='{$.Payments[0].paymentDetails[0].businessService}')%5D",
+                "queryParam": "moduleName=tenant&masterName=footer&tenantId=pg&filter=%5B?(@.code=='{$.tenantId}' %26%26 @.service=='{$.paymentDetails[0].businessService}')%5D",
                 "apiRequest": null,
                 "responseMapping": [
                   {
