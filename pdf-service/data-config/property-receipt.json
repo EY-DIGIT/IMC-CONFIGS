@@ -37,8 +37,8 @@
               { "variable": "currentYearNetTax", "value": { "path": "$.Payments[*].Calculation.currentYearTax" } },
               { "variable": "cumulativeBalance", "value": { "path": "$.Payments[*].Calculation.totalAmount" } },
               { "variable": "totalDemandPayable", "value": { "path": "$.Payments[*].Calculation.taxAmount" } },
-              { "variable": "previousBalance", "value": { "path": "$.Payments[*].Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')][0].estimateAmount" } },
-              { "variable": "advanceAmt", "value": { "path": "$.Payments[*].Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')][0].estimateAmount" } }
+              { "variable": "previousBalance", "value": { "path": "$.Payments[*].Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')][0].estimateAmount", "defaultValue": 0 } },
+              { "variable": "advanceAmt", "value": { "path": "$.Payments[*].Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')][0].estimateAmount", "defaultValue": 0 } }
             ]
           },
           {
@@ -75,7 +75,7 @@
             ]
           },
           {
-            "arrayPath": "$.Payments[*].Calculation.propertyFYDetails[*]",
+            "arrayPath": "$.Calculation.propertyFYDetails[*]",
             "variable": "calcTableData",
             "fields": [
               { "variable": "calc_usageType",        "value": { "path": "$.usageType",        "defaultValue": "-" } },
@@ -91,7 +91,7 @@
             ]
           },
           {
-            "arrayPath": "$.Payments[*].Calculation.propertyFYTaxSummaries[*]",
+            "arrayPath": "$.Calculation.propertyFYTaxSummaries[*]",
             "variable": "taxTableData",
             "fields": [
               { "variable": "tax_year",          "value": { "path": "$.year",         "defaultValue": "-" } },
