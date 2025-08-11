@@ -135,8 +135,9 @@
               { "variable": "calc_area", "value": { "path": "$.area" } },
               { "variable": "calc_rate", "value": { "path": "$.factor" } },
               { "variable": "calc_alv", "value": { "path": "$.alv" } },
-              { "variable": "calc_maintenance", "formula": "'10% Discount'" },
-              { "variable": "calc_year", "value": { "path": "$.year" } }
+              { "variable": "calc_maintenance", "formula": "'N/A'" },
+              { "variable": "calc_year", "value": { "path": "$.year" } },
+              { "variable": "calc_tpv", "formula": "'N/A'" }
             ]
           },
           {
