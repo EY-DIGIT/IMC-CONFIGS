@@ -33,12 +33,12 @@
               { "variable": "chequeNumber", "value": { "path": "$.instrumentNumber" } },
               { "variable": "chequeBankName", "value": { "path": "$.additionalDetails.bankName" } },
 
-              { "variable": "arrearAmt", "value": { "path": "@.Calculation.arrear" } },
-              { "variable": "currentYearNetTax", "value": { "path": "@.Calculation.currentYearTax" } },
-              { "variable": "cumulativeBalance", "value": { "path": "@.Calculation.totalAmount" } },
-              { "variable": "totalDemandPayable", "value": { "path": "@.Calculation.taxAmount" } },
-              { "variable": "previousBalance", "value": { "path": "@.Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')].estimateAmount" } },
-              { "variable": "advanceAmt", "value": { "path": "@.Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')].estimateAmount" } }
+              { "variable": "arrearAmt", "value": { "path": "$.Payments[*].Calculation.arrear" } },
+              { "variable": "currentYearNetTax", "value": { "path": "$.Payments[*].Calculation.currentYearTax" } },
+              { "variable": "cumulativeBalance", "value": { "path": "$.Payments[*].Calculation.totalAmount" } },
+              { "variable": "totalDemandPayable", "value": { "path": "$.Payments[*].Calculation.taxAmount" } },
+              { "variable": "previousBalance", "value": { "path": "$.Payments[*].Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')][0].estimateAmount" } },
+              { "variable": "advanceAmt", "value": { "path": "$.Payments[*].Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')][0].estimateAmount" } }
             ]
           },
           {
@@ -75,7 +75,7 @@
             ]
           },
           {
-            "arrayPath": "@.Calculation.propertyFYDetails[*]",
+            "arrayPath": "$.Payments[*].Calculation.propertyFYDetails[*]",
             "variable": "calcTableData",
             "fields": [
               { "variable": "calc_usageType",        "value": { "path": "$.usageType",        "defaultValue": "-" } },
@@ -91,7 +91,7 @@
             ]
           },
           {
-            "arrayPath": "@.Calculation.propertyFYTaxSummaries[*]",
+            "arrayPath": "$.Payments[*].Calculation.propertyFYTaxSummaries[*]",
             "variable": "taxTableData",
             "fields": [
               { "variable": "tax_year",          "value": { "path": "$.year",         "defaultValue": "-" } },
