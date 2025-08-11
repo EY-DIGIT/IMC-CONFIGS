@@ -73,9 +73,9 @@
               { "text": "{{th_maintenance}}", "style": "th" },
               { "text": "{{th_tpv}}", "style": "th" },
               { "text": "{{th_year}}", "style": "th" }
-            ],
-            "{{#calcTableData}}",
-            [
+            ]
+            {{#calcTableData}}
+            ,[
               { "text": "{{calc_usageType}}", "style": "td", "font": "Roboto" },
               { "text": "{{calc_usageFactor}}", "style": "td", "font": "Roboto" },
               { "text": "{{calc_floorNo}}", "style": "td", "font": "Roboto" },
@@ -86,8 +86,8 @@
               { "text": "{{calc_maintenance}}", "style": "td", "font": "Roboto" },
               { "text": "{{calc_tpv}}", "style": "td", "font": "Roboto" },
               { "text": "{{calc_year}}", "style": "td", "font": "Roboto" }
-            ],
-            "{{/calcTableData}}"
+            ]
+            {{/calcTableData}}
           ]
         },
         "layout": {}
@@ -116,9 +116,9 @@
               { "text": "{{th_penalty}}", "style": "th" },
               { "text": "{{th_net_total}}", "style": "th" },
               { "text": "{{th_tpv}}", "style": "th" }
-            ],
-            "{{#taxTableData}}",
-            [
+            ]
+            {{#taxTableData}}
+            ,[
               { "text": "{{tax_year}}", "style": "td", "font": "Roboto" },
               { "text": "{{tax_propertyTax}}", "style": "td", "font": "Roboto" },
               { "text": "{{tax_samekitTax}}", "style": "td", "font": "Roboto" },
@@ -132,8 +132,8 @@
               { "text": "{{tax_penalty}}", "style": "td", "font": "Roboto" },
               { "text": "{{tax_netTotal}}", "style": "td", "font": "Roboto" },
               { "text": "{{tax_tpv}}", "style": "td", "font": "Roboto" }
-            ],
-            "{{/taxTableData}}"
+            ]
+            {{/taxTableData}}
           ]
         },
         "layout": {}
