@@ -4,7 +4,7 @@
   "DataConfigs": {
     "moduleName": "PT",
     "version": "1.0.0",
-    "baseKeyPath": "$.Payments.*",
+    "baseKeyPath": "$.Payments[*]",
     "entityIdPath": "$.id",
     "isCommonTableBorderRequired": true,
     "mappings": [
@@ -78,35 +78,35 @@
             "arrayPath": "$.Calculation.propertyFYDetails[*]",
             "variable": "calcTableData",
             "fields": [
-              { "variable": "calc_usageType",        "value": { "path": "$.usageType" } },
-              { "variable": "calc_usageFactor",      "value": { "path": "$.usageFactor" } },
-              { "variable": "calc_floorNo",          "value": { "path": "$.floorNo" } },
-              { "variable": "calc_constructionType", "value": { "path": "$.constructionType" } },
-              { "variable": "calc_area",             "value": { "path": "$.area" } },
-              { "variable": "calc_rate",             "value": { "path": "$.factor" } },
-              { "variable": "calc_alv",              "value": { "path": "$.alv" } },
+              { "variable": "calc_usageType",        "value": { "path": "$.usageType",        "defaultValue": "-" } },
+              { "variable": "calc_usageFactor",      "value": { "path": "$.usageFactor",      "defaultValue": "-" } },
+              { "variable": "calc_floorNo",          "value": { "path": "$.floorNo",          "defaultValue": "-" } },
+              { "variable": "calc_constructionType", "value": { "path": "$.constructionType", "defaultValue": "-" } },
+              { "variable": "calc_area",             "value": { "path": "$.area",             "defaultValue": "-" } },
+              { "variable": "calc_rate",             "value": { "path": "$.factor",           "defaultValue": "-" } },
+              { "variable": "calc_alv",              "value": { "path": "$.alv",              "defaultValue": "-" } },
               { "variable": "calc_maintenance",      "formula": "'10%'" },
               { "variable": "calc_tpv",              "formula": "'static'" },
-              { "variable": "calc_year",             "value": { "path": "$.year" } }
+              { "variable": "calc_year",             "value": { "path": "$.year",             "defaultValue": "-" } }
             ]
           },
           {
             "arrayPath": "$.Calculation.propertyFYTaxSummaries[*]",
             "variable": "taxTableData",
             "fields": [
-              { "variable": "tax_year",          "value": { "path": "$.year" } },
-              { "variable": "tax_propertyTax",   "value": { "path": "$.propertyTax" } },
-              { "variable": "tax_samekitTax",    "value": { "path": "$.samekit" } },
-              { "variable": "tax_educationCess", "value": { "path": "$.educationCess" } },
-              { "variable": "tax_waterCess",     "value": { "path": "$.jalKar" } },
-              { "variable": "tax_drainageCess",  "value": { "path": "$.jalNikas" } },
-              { "variable": "tax_urbanDevCess",  "value": { "path": "$.urbanTax" } },
-              { "variable": "tax_serviceCharge", "value": { "path": "$.sevaKar" } },
-              { "variable": "tax_totalTax",      "value": { "path": "$.totalTax" } },
-              { "variable": "tax_rebate",        "value": { "path": "$.rebate" } },
-              { "variable": "tax_penalty",       "value": { "path": "$.penalty" } },
-              { "variable": "tax_netTotal",      "value": { "path": "$.netTax" } },
-              { "variable": "tax_tpv",           "value": { "path": "$.tpv" } }
+              { "variable": "tax_year",          "value": { "path": "$.year",         "defaultValue": "-" } },
+              { "variable": "tax_propertyTax",   "value": { "path": "$.propertyTax",  "defaultValue": 0 } },
+              { "variable": "tax_samekitTax",    "value": { "path": "$.samekit",      "defaultValue": 0 } },
+              { "variable": "tax_educationCess", "value": { "path": "$.educationCess","defaultValue": 0 } },
+              { "variable": "tax_waterCess",     "value": { "path": "$.jalKar",       "defaultValue": 0 } },
+              { "variable": "tax_drainageCess",  "value": { "path": "$.jalNikas",     "defaultValue": 0 } },
+              { "variable": "tax_urbanDevCess",  "value": { "path": "$.urbanTax",     "defaultValue": 0 } },
+              { "variable": "tax_serviceCharge", "value": { "path": "$.sevaKar",      "defaultValue": 0 } },
+              { "variable": "tax_totalTax",      "value": { "path": "$.totalTax",     "defaultValue": 0 } },
+              { "variable": "tax_rebate",        "value": { "path": "$.rebate",       "defaultValue": 0 } },
+              { "variable": "tax_penalty",       "value": { "path": "$.penalty",      "defaultValue": 0 } },
+              { "variable": "tax_netTotal",      "value": { "path": "$.netTax",       "defaultValue": 0 } },
+              { "variable": "tax_tpv",           "value": { "path": "$.tpv",          "defaultValue": "-" } }
             ]
           },
           {
