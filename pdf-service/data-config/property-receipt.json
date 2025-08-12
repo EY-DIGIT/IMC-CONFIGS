@@ -363,19 +363,6 @@
                     { "variable": "tax_tpv",           "value": "tpv",            "type": "string", "defaultValue": "-" }
                   ]
                 }
-              },
-              {
-                "variable": "taxHeadData",
-                "value": { "path": "$.Calculation.taxHeadEstimates.*" },
-                "type": "array",
-                "format": {
-                  "type": "object",
-                  "schema": [
-                    { "variable": "th_code",     "value": "taxHeadCode",    "type": "string", "defaultValue": "-" },
-                    { "variable": "th_category", "value": "category",       "type": "string", "defaultValue": "-" },
-                    { "variable": "th_amount",   "value": "estimateAmount", "type": "number", "defaultValue": 0 }
-                  ]
-                }
               }
             ]
           },

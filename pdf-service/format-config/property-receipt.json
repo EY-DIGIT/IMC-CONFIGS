@@ -72,16 +72,16 @@
             ],
             "{{#calcTableData}}",
             [
-              { "text": "{{calc_usageType}}", "style": "td", "font": "Roboto" },
-              { "text": "{{calc_usageFactor}}", "style": "td", "font": "Roboto" },
-              { "text": "{{calc_floorNo}}", "style": "td", "font": "Roboto" },
-              { "text": "{{calc_constructionType}}", "style": "td", "font": "Roboto" },
-              { "text": "{{calc_area}}", "style": "td", "font": "Roboto" },
-              { "text": "{{calc_rate}}", "style": "td", "font": "Roboto" },
-              { "text": "{{calc_alv}}", "style": "td", "font": "Roboto" },
-              { "text": "{{calc_maintenance}}", "style": "td", "font": "Roboto" },
-              { "text": "{{calc_tpv}}", "style": "td", "font": "Roboto" },
-              { "text": "{{calc_year}}", "style": "td", "font": "Roboto" }
+              { "text": "{{calc_usageType}}", "style": "td"},
+              { "text": "{{calc_usageFactor}}", "style": "td"},
+              { "text": "{{calc_floorNo}}", "style": "td"},
+              { "text": "{{calc_constructionType}}", "style": "td"},
+              { "text": "{{calc_area}}", "style": "td"},
+              { "text": "{{calc_rate}}", "style": "td"},
+              { "text": "{{calc_alv}}", "style": "td"},
+              { "text": "{{calc_maintenance}}", "style": "td"},
+              { "text": "{{calc_tpv}}", "style": "td"},
+              { "text": "{{calc_year}}", "style": "td"}
             ],
             "{{/calcTableData}}"
           ]
@@ -114,46 +114,21 @@
             ],
             "{{#taxTableData}}",
             [
-              { "text": "{{tax_year}}", "style": "td", "font": "Roboto" },
-              { "text": "{{tax_propertyTax}}", "style": "td", "font": "Roboto" },
-              { "text": "{{tax_samekitTax}}", "style": "td", "font": "Roboto" },
-              { "text": "{{tax_educationCess}}", "style": "td", "font": "Roboto" },
-              { "text": "{{tax_waterCess}}", "style": "td", "font": "Roboto" },
-              { "text": "{{tax_drainageCess}}", "style": "td", "font": "Roboto" },
-              { "text": "{{tax_urbanDevCess}}", "style": "td", "font": "Roboto" },
-              { "text": "{{tax_serviceCharge}}", "style": "td", "font": "Roboto" },
-              { "text": "{{tax_totalTax}}", "style": "td", "font": "Roboto" },
-              { "text": "{{tax_rebate}}", "style": "td", "font": "Roboto" },
-              { "text": "{{tax_penalty}}", "style": "td", "font": "Roboto" },
-              { "text": "{{tax_netTotal}}", "style": "td", "font": "Roboto" },
-              { "text": "{{tax_tpv}}", "style": "td", "font": "Roboto" }
+              { "text": "{{tax_year}}", "style": "td"},
+              { "text": "{{tax_propertyTax}}", "style": "td"},
+              { "text": "{{tax_samekitTax}}", "style": "td"},
+              { "text": "{{tax_educationCess}}", "style": "td"},
+              { "text": "{{tax_waterCess}}", "style": "td"},
+              { "text": "{{tax_drainageCess}}", "style": "td"},
+              { "text": "{{tax_urbanDevCess}}", "style": "td"},
+              { "text": "{{tax_serviceCharge}}", "style": "td"},
+              { "text": "{{tax_totalTax}}", "style": "td"},
+              { "text": "{{tax_rebate}}", "style": "td"},
+              { "text": "{{tax_penalty}}", "style": "td"},
+              { "text": "{{tax_netTotal}}", "style": "td"},
+              { "text": "{{tax_tpv}}", "style": "td"}
             ],
             "{{/taxTableData}}"
-          ]
-        },
-        "layout": {}
-      },
-      { "text": "{{taxHeadTableTitle}}", "style": "section-title", "margin": [0, 10, 0, 6] },
-      {
-        "style": "taxTable",
-        "table": {
-          "widths": ["40%", "30%", "30%"],
-          "headerRows": 1,
-          "keepWithHeaderRows": 1,
-          "dontBreakRows": true,
-          "body": [
-            [
-              { "text": "{{th_tax_head}}", "style": "th" },
-              { "text": "{{th_category}}", "style": "th" },
-              { "text": "{{th_amount}}", "style": "th" }
-            ],
-            "{{#taxHeadData}}",
-            [
-              { "text": "{{th_code}}", "style": "td", "font": "Roboto" },
-              { "text": "{{th_category}}", "style": "td", "font": "Roboto" },
-              { "text": "{{th_amount}}", "style": "td", "font": "Roboto" }
-            ],
-            "{{/taxHeadData}}"
           ]
         },
         "layout": {}
