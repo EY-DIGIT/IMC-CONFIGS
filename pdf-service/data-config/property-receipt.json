@@ -407,6 +407,24 @@
               {
                 "variable": "currentYearTax",
                 "value": { "path": "$.Calculation.currentYearTax" }
+              },
+              {
+                "variable": "fyDetails",
+                "value": "$.Calculation.propertyFYDetails.*",
+                "type": "array",
+                "format": {
+                  "type": "string",
+                  "scema": [
+                    { "variable": "fyYear",              "value": "year",              "type": "string" },
+                    { "variable": "fyUsageType",         "value": "usageType",         "type": "string" },
+                    { "variable": "fyUsageFactor",       "value": "usageFactor",       "type": "string" },
+                    { "variable": "fyFloorNo",           "value": "floorNo",           "type": "string" },
+                    { "variable": "fyConstructionType",  "value": "constructionType",  "type": "string" },
+                    { "variable": "fyArea",              "value": "area",              "type": "number" },
+                    { "variable": "fyFactor",            "value": "factor",            "type": "number" },
+                    { "variable": "fyAlv",               "value": "alv",               "type": "number" }
+                  ]
+                }
               }
             ]
           },

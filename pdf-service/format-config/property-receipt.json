@@ -442,6 +442,26 @@
         "layout": {}
       },
       {
+        "style": "next-noc-table",
+        "table": {
+          "widths": ["12%","16%","16%","10%","16%","10%","10%","10%"],
+          "body": [
+            [
+              { "text": "Year",               "style": "receipt-table-value", "border": [true,true,true,true] },
+              { "text": "Usage Type",         "style": "receipt-table-value", "border": [true,true,true,true] },
+              { "text": "Usage Factor",       "style": "receipt-table-value", "border": [true,true,true,true] },
+              { "text": "Floor No",           "style": "receipt-table-value", "border": [true,true,true,true] },
+              { "text": "Construction Type",  "style": "receipt-table-value", "border": [true,true,true,true] },
+              { "text": "Area",               "style": "receipt-table-value", "border": [true,true,true,true] },
+              { "text": "Factor",             "style": "receipt-table-value", "border": [true,true,true,true] },
+              { "text": "ALV",                "style": "receipt-table-value", "border": [true,true,true,true] }
+            ],
+            "{{#fyDetails}}[{\"text\":\"{{fyYear}}\",\"style\":\"receipt-table\",\"border\":[true,false,true,true]},{\"text\":\"{{fyUsageType}}\",\"style\":\"receipt-table\",\"border\":[true,false,true,true]},{\"text\":\"{{fyUsageFactor}}\",\"style\":\"receipt-table\",\"border\":[true,false,true,true]},{\"text\":\"{{fyFloorNo}}\",\"style\":\"receipt-table\",\"border\":[true,false,true,true]},{\"text\":\"{{fyConstructionType}}\",\"style\":\"receipt-table\",\"border\":[true,false,true,true]},{\"text\":\"{{fyArea}}\",\"style\":\"receipt-table\",\"border\":[true,false,true,true]},{\"text\":\"{{fyFactor}}\",\"style\":\"receipt-table\",\"border\":[true,false,true,true]},{\"text\":\"{{fyAlv}}\",\"style\":\"receipt-table\",\"border\":[true,false,true,true]}]{{/fyDetails}}"
+          ]
+        },
+        "layout": {}
+      },
+      {
         "style": "receipt-approver",
         "columns": [
           {
