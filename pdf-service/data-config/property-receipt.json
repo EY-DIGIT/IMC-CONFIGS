@@ -410,10 +410,10 @@
               },
               {
                 "variable": "fyDetails",
-                "value": "$.Calculation.propertyFYDetails.*",
+                "value": { "path": "$.Calculation.propertyFYDetails.*" },
                 "type": "array",
                 "format": {
-                  "type": "string",
+                  "type": "object",
                   "scema": [
                     { "variable": "fyYear",              "value": "year",              "type": "string" },
                     { "variable": "fyUsageType",         "value": "usageType",         "type": "string" },
