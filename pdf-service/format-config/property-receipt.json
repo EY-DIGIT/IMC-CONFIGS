@@ -75,7 +75,6 @@
         },
         "layout": {}
       },
-      { "text": "{{taxTableTitle}}", "style": "section-title", "margin": [0, 10, 0, 6] },
       {
         "style": "taxTable",
         "table": {
