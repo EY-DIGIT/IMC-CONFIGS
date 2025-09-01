@@ -6,6 +6,11 @@
     "defaultStyle": { "font": "Cambay" },
     "content": [
       {
+        "image": "{{logoImage}}",
+        "width": 300,
+        "absolutePosition": { "x": 150, "y": 200 }
+      },
+      {
         "columns": [
           { "text": "Receipt/Acknowledgement", "style": "topline" },
           { "text": "Customer Copy {{paymentDate}}", "alignment": "right", "style": "topline" }
@@ -15,8 +20,7 @@
       {
         "alignment": "center",
         "stack": [
-          { "image": "{{logoImage}}", "width": 60, "height": 60, "margin": [0, -20, 0, 8] },
-          { "text": "{{logo-header}} Nagar Nigam", "style": "header-title" },
+          { "text": "Indore Nagar Nigam", "style": "header-title" },
           { "text": "Property Tax", "style": "header-subtitle" }
         ],
         "margin": [0, 0, 0, 6]
@@ -53,7 +57,7 @@
         "style": "calcTable",
         "margin": [0, 0, 0, 10],
         "table": {
-          "widths": ["13%", "11%", "7%", "9%", "9%", "10%", "9%", "10%", "10%", "12%"],
+          "widths": ["15%", "15%", "12%", "15%", "10%", "10%", "10%", "13%"],
           "headerRows": 1,
           "keepWithHeaderRows": 1,
           "dontBreakRows": true,
@@ -66,11 +70,9 @@
               { "text": "{{th_area}}", "style": "th" },
               { "text": "{{th_rate}}", "style": "th" },
               { "text": "{{th_alv}}", "style": "th" },
-              { "text": "{{th_maintenance}}", "style": "th" },
-              { "text": "{{th_tpv}}", "style": "th" },
               { "text": "{{th_year}}", "style": "th" }
             ],
-            "{{#calcTableData}}[{\"text\":\"{{calc_usageType}}\",\"style\":\"td\"},{\"text\":\"{{calc_usageFactor}}\",\"style\":\"td\"},{\"text\":\"{{calc_floorNo}}\",\"style\":\"td\"},{\"text\":\"{{calc_constructionType}}\",\"style\":\"td\"},{\"text\":\"{{calc_area}}\",\"style\":\"td\"},{\"text\":\"{{calc_rate}}\",\"style\":\"td\"},{\"text\":\"{{calc_alv}}\",\"style\":\"td\"},{\"text\":\"{{calc_maintenance}}\",\"style\":\"td\"},{\"text\":\"{{calc_tpv}}\",\"style\":\"td\"},{\"text\":\"{{calc_year}}\",\"style\":\"td\"}]{{/calcTableData}}"
+            "{{#calcTableData}}[{\"text\":\"{{calc_usageType}}\",\"style\":\"td\"},{\"text\":\"{{calc_usageFactor}}\",\"style\":\"td\"},{\"text\":\"{{calc_floorNo}}\",\"style\":\"td\"},{\"text\":\"{{calc_constructionType}}\",\"style\":\"td\"},{\"text\":\"{{calc_area}}\",\"style\":\"td\"},{\"text\":\"{{calc_rate}}\",\"style\":\"td\"},{\"text\":\"{{calc_alv}}\",\"style\":\"td\"},{\"text\":\"{{calc_year}}\",\"style\":\"td\"}]{{/calcTableData}}"
           ]
         },
         "layout": {}
@@ -125,16 +127,6 @@
             ],
             "columnGap": 4,
             "margin": [0, 2, 0, 2]
-          },
-          {
-            "columns": [
-              { "width": "25%", "text": [{ "text": "Cheque Date : ", "style": "meta-label" }, { "text": "{{chequeDate}}", "style": "meta-value" }] },
-              { "width": "25%", "text": [{ "text": "Cheque Number : ", "style": "meta-label" }, { "text": "{{chequeNumber}}", "style": "meta-value" }] },
-              { "width": "25%", "text": [{ "text": "Cheque Bank Name : ", "style": "meta-label" }, { "text": "{{chequeBankName}}", "style": "meta-value" }] },
-              { "width": "25%", "text": "" }
-            ],
-            "columnGap": 4,
-            "margin": [0, 2, 0, 2]
           }
         ],
         "margin": [0, 10, 0, 6]
@@ -142,12 +134,12 @@
       {
         "text": ["**This property tax receipt paid via cheque shall be acknowledged upon successful clearance of the cheque"],
         "style": "pt-disclaimer-value",
-        "margin": [0, 3, 0, 3]
+        "margin": [0, 0, 0, 3]
       },
       {
         "text": ["**This receipt is not a proof of ownership"],
         "style": "pt-disclaimer-value",
-        "margin": [0, 3, 0, 3]
+        "margin": [0, 0, 0, 0]
       },
       {
         "columns": [
@@ -166,8 +158,7 @@
       {
         "alignment": "center",
         "stack": [
-          { "image": "{{logoImage}}", "width": 30, "height": 30, "margin": [0, 8, 0, 8] },
-          { "text": "{{logo-header}} Nagar Nigam", "style": "office-header-title" }
+          { "text": "Indore Nagar Nigam", "style": "office-header-title" }
         ],
         "margin": [0, 0, 0, 6]
       },
@@ -210,7 +201,7 @@
     ],
     "styles": {
       "topline": { "fontSize": 10, "color": "#484848" },
-      "header-title": { "fontSize": 14, "color": "#000000" },
+      "header-title": { "fontSize": 14, "color": "#000000", "margin": [0, -3, 0, 0] },
       "header-subtitle": { "fontSize": 12, "color": "#000000", "margin": [0, 2, 0, 0] },
       "office-header-title": { "fontSize": 12, "color": "#000000" },
       "meta-label": { "fontSize": 9, "color": "#000000", "margin": [2, 2, 0, 2] },

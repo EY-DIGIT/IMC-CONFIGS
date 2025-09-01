@@ -31,7 +31,7 @@
   },
 "BusinessServices": [
   {
-    "tenantId": "pg",
+    "tenantId": "mp",
     "businessService": "CONTRACT-REVISION",
     "business": "contract-service",
     "businessServiceSla": 604800000,
