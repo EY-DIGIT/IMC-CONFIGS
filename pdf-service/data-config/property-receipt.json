@@ -5,7 +5,7 @@
     "moduleName": "PT",
     "version": "1.0.0",
     "baseKeyPath": "$.Payments.*",
-    "entityIdPath":"$.id",
+    "entityIdPath": "$.id",
     "isCommonTableBorderRequired": true,
     "mappings": [
       {
@@ -13,122 +13,23 @@
         "mappings": [
           {
             "direct": [
-              {
-                "variable": "payerName", 
-                "value": {
-                  "path": "$.payerName"
-                }
-              },
-              {
-                "variable": "user-name", 
-                "value": {
-                  "path": "$.userInfo.name"
-                },
-                "type":"selectFromRequestInfo"  
-              },
-              {
-                "variable": "payerContact", 
-                "value": {
-                  "path": "$.mobileNumber"
-                }
-              },
-              {
-                "variable": "paymentStatus", 
-                "value": {
-                  "path": "$.paymentStatus"
-                },
-                "localisation":{
-                  "required":true,
-                  "prefix":null,
-                  "module":"rainmaker-common"
-                }
-              },
-              {
-                "variable": "receiptNo", 
-                "value": {
-                  "path": "$.paymentDetails[0].receiptNumber"
-                }
-              },
-              {
-                "variable": "serviceType", 
-                "value": {
-                  "path": "$.paymentDetails[0].businessService"
-                },
-                "localisation":{
-                  "required":true,
-                  "prefix":"MODULE",   
-                  "module":"rainmaker-common"
-               }
-              },
-              {
-                "variable": "paidAmount", 
-                "value": {
-                  "path": "$.paymentDetails[0].totalAmountPaid"
-                }
-              },
-              {
-                "variable": "fromPeriod", 
-                "value": {
-                  "path": "$.paymentDetails[0].bill.billDetails[0].fromPeriod"
-                },
-                "type": "date"
-              },
-              {
-                "variable": "toPeriod", 
-                "value": {
-                  "path": "$.paymentDetails[0].bill.billDetails[0].toPeriod"
-                },
-                "type": "date"
-              },
-              {
-                "variable": "paymentMode", 
-                "value": {
-                  "path": "$.paymentMode"
-                },
-                "localisation":{
-                  "required":true,
-                  "prefix": "COMMON_MASTERS_PAYMENTMODE",
-                  "module": "rainmaker-common"
-               }
-              },
-              {
-                "variable": "G8ReceiptNo",
-                "value": {
-                  "path": "$.paymentDetails[0].manualReceiptNumber"
-                }
-              },
-              {
-                "variable": "G8ReceiptDate",
-                "value": {
-                  "path": "$.paymentDetails[0].manualReceiptDate"
-                },
-                "type": "date"
-              },
-              {
-                "variable": "paymentDate", 
-                "value": {
-                  "path": "$.transactionDate"
-                },
-                "type": "date"
-              },
-              {
-                "variable": "consumerID", 
-                "value": {
-                  "path": "$.paymentDetails[0].bill.consumerCode"
-                }
-              },
-              {
-                "variable": "transactionID", 
-                "value": {
-                  "path": "$.transactionNumber"
-                }
-              },
-              {
-                "variable": "dueAmount", 
-                "value": {
-                  "path": "$.paymentDetails[0].totalDue"
-                }
-              },
+              { "variable": "payerName", "value": { "path": "$.payerName" } },
+              { "variable": "user-name", "value": { "path": "$.userInfo.name" }, "type": "selectFromRequestInfo" },
+              { "variable": "payerContact", "value": { "path": "$.mobileNumber" } },
+              { "variable": "paymentStatus", "value": { "path": "$.paymentStatus" }, "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
+              { "variable": "receiptNo", "value": { "path": "$.paymentDetails[0].receiptNumber" } },
+              { "variable": "serviceType", "value": { "path": "$.paymentDetails[0].businessService" }, "localisation": { "required": true, "prefix": "MODULE", "module": "rainmaker-common" } },
+              { "variable": "paidAmount", "value": { "path": "$.paymentDetails[0].totalAmountPaid" } },
+              { "variable": "fromPeriod", "value": { "path": "$.paymentDetails[0].bill.billDetails[0].fromPeriod" }, "type": "date" },
+              { "variable": "toPeriod", "value": { "path": "$.paymentDetails[0].bill.billDetails[0].toPeriod" }, "type": "date" },
+              { "variable": "paymentMode", "value": { "path": "$.paymentMode" }, "localisation": { "required": true, "prefix": "COMMON_MASTERS_PAYMENTMODE", "module": "rainmaker-common" } },
+              { "variable": "G8ReceiptNo", "value": { "path": "$.paymentDetails[0].manualReceiptNumber" } },
+              { "variable": "G8ReceiptDate", "value": { "path": "$.paymentDetails[0].manualReceiptDate" }, "type": "date" },
+              { "variable": "paymentDate", "value": { "path": "$.transactionDate" }, "type": "date" },
+              { "variable": "consumerID", "value": { "path": "$.paymentDetails[0].bill.consumerCode" } },
+              { "variable": "transactionID", "value": { "path": "$.transactionNumber" } },
+              { "variable": "dueAmount", "value": { "path": "$.paymentDetails[0].totalDue" } },
+
               {
                 "variable": "payment_receipt",
                 "value": {
@@ -403,87 +304,145 @@
                   "prefix": null,
                   "module":"rainmaker-common"
                }
+              },
+
+              { "variable": "chequeDate", "value": { "path": "$.instrumentDate" }, "type": "date" },
+              { "variable": "chequeNumber", "value": { "path": "$.instrumentNumber" } },
+              { "variable": "chequeBankName", "value": { "path": "$.additionalDetails.bankName" } },
+
+              { "variable": "arrearAmt",           "value": { "path": "$.Calculation.arrear" } },
+              { "variable": "currentYearNetTax",   "value": { "path": "$.Calculation.currentYearTax" } },
+              { "variable": "cumulativeBalance",   "value": { "path": "$.Calculation.totalAmount" } },
+              { "variable": "totalDemandPayable",  "value": { "path": "$.Calculation.taxAmount" } },
+              { "variable": "previousBalance",     "value": { "path": "$.Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')][0].estimateAmount" }, "defaultValue": 0 },
+              { "variable": "advanceAmt",          "value": { "path": "$.Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')][0].estimateAmount" }, "defaultValue": 0 },
+
+              { "variable": "serviceNumber",       "value": { "path": "$.Calculation.serviceNumber" } },
+              { "variable": "calcFromDate",        "value": { "path": "$.Calculation.fromDate" }, "type": "date" },
+              { "variable": "calcToDate",          "value": { "path": "$.Calculation.toDate" },   "type": "date" },
+
+              {
+                "variable": "calcTableData",
+                "value": { "path": "$.Calculation.propertyFYDetails.*" },
+                "type": "array",
+                "format": {
+                  "type": "object",
+                  "scema": [
+                    { "variable": "calc_usageType",        "value": "usageType",        "type": "string", "defaultValue": "-" },
+                    { "variable": "calc_usageFactor",      "value": "usageFactor",      "type": "string", "defaultValue": "-" },
+                    { "variable": "calc_floorNo",          "value": "floorNo",          "type": "string", "defaultValue": "-" },
+                    { "variable": "calc_constructionType", "value": "constructionType", "type": "string", "defaultValue": "-" },
+                    { "variable": "calc_area",             "value": "area",             "type": "string", "defaultValue": "-" },
+                    { "variable": "calc_rate",             "value": "factor",           "type": "string", "defaultValue": "-" },
+                    { "variable": "calc_alv",              "value": "alv",              "type": "string", "defaultValue": "-" },
+                    { "variable": "calc_maintenance",      "formula": "'10%'",          "type": "string" },
+                    { "variable": "calc_tpv",              "formula": "'static'",       "type": "string" },
+                    { "variable": "calc_year",             "value": "year",             "type": "string", "defaultValue": "-" }
+                  ]
+                }
+              },
+              {
+                "variable": "taxTableData",
+                "value": { "path": "$.Calculation.propertyFYTaxSummaries.*" },
+                "type": "array",
+                "format": {
+                  "type": "object",
+                  "scema": [
+                    { "variable": "tax_year",          "value": "year",           "type": "string", "defaultValue": "-" },
+                    { "variable": "tax_propertyTax",   "value": "propertyTax",    "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_samekitTax",    "value": "samekit",        "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_educationCess", "value": "educationCess",  "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_waterCess",     "value": "jalKar",         "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_drainageCess",  "value": "jalNikas",       "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_urbanDevCess",  "value": "urbanTax",       "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_serviceCharge", "value": "sevaKar",        "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_totalTax",      "value": "totalTax",       "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_rebate",        "value": "rebate",         "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_penalty",       "value": "penalty",        "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_netTotal",      "value": "netTax",         "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_tpv",           "value": "tpv",            "type": "string", "defaultValue": "-" }
+                  ]
+                }
               }
             ]
           },
           {
-            "derived": [ 
-               {
-                  "variable": "pendingAmount",
-                  "formula": "{{dueAmount}}>{{paidAmount}}?{{dueAmount}}-{{paidAmount}}:0"
-               },
-               {
-                "variable": "excessAmountPaid",
-                "formula": "{{paidAmount}}>{{dueAmount}}?{{paidAmount}}-{{dueAmount}}:0"
-             }
+            "derived": [
+              { "variable": "pendingAmount", "formula": "{{dueAmount}}>{{paidAmount}}?{{dueAmount}}-{{paidAmount}}:0" },
+              { "variable": "excessAmountPaid", "formula": "{{paidAmount}}>{{dueAmount}}?{{paidAmount}}-{{dueAmount}}:0" },
+
+              { "variable": "calcTableTitle", "formula": "'Property Taxes and Other Taxes have been calculated based on the details given below'" },
+
+              { "variable": "th_usage_type", "formula": "'Usage Type'" },
+              { "variable": "th_usage_factor", "formula": "'Usage Factor'" },
+              { "variable": "th_floor_no", "formula": "'Floor No.'" },
+              { "variable": "th_construction_type", "formula": "'Construction Type'" },
+              { "variable": "th_area", "formula": "'Area'" },
+              { "variable": "th_rate", "formula": "'Rate'" },
+              { "variable": "th_alv", "formula": "'ALV'" },
+              { "variable": "th_maintenance", "formula": "'Maintenance'" },
+              { "variable": "th_tpv", "formula": "'TPV'" },
+
+              { "variable": "th_year", "formula": "'Year'" },
+              { "variable": "th_property_tax", "formula": "'Property Tax'" },
+              { "variable": "th_samekit_tax", "formula": "'Samekit Tax'" },
+              { "variable": "th_education_cess", "formula": "'Education Cess'" },
+              { "variable": "th_water_cess", "formula": "'Water Cess'" },
+              { "variable": "th_drainage_cess", "formula": "'Drainage Cess'" },
+              { "variable": "th_urban_dev_cess", "formula": "'Urban Dev. Cess'" },
+              { "variable": "th_service_charge", "formula": "'Service Charge'" },
+              { "variable": "th_total_tax", "formula": "'Total Tax'" },
+              { "variable": "th_rebate", "formula": "'Rebate'" },
+              { "variable": "th_penalty", "formula": "'Penalty'" },
+              { "variable": "th_net_total", "formula": "'Net Total'" },
+
+              { "variable": "th_tax_head", "formula": "'Tax Head Code'" },
+              { "variable": "th_category", "formula": "'Category'" },
+              { "variable": "th_amount", "formula": "'Amount'" }
             ]
-         },
+          },
           {
-            "externalAPI": [     
-              { 
+            "externalAPI": [
+              {
                 "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=pb&filter=%5B?(@.code=='{$.tenantId}')%5D",
-                  "apiRequest": null,
-                  "responseMapping":[
-                    {             
-                      "variable":"address",
-                      "value":"$.MdmsRes.tenant.tenants[0].address"
-                    },
-                    {
-                      "variable":"phoneNumber",
-                      "value":"$.MdmsRes.tenant.tenants[0].contactNumber"
-                    },
-                    {
-                      "variable":"website",
-                      "value":"$.MdmsRes.tenant.tenants[0].domainUrl"
-                    },
-                    {
-                      "variable":"email",
-                      "value":"$.MdmsRes.tenant.tenants[0].emailId"
-                    },
-                    {
-                      "variable": "logoImage",                        
-                      "value":"$.MdmsRes.tenant.tenants[0].logoId",
-                      "type":"image"      
-                    },
-                    {
-                      "variable": "logo-header",
-                      "value":"$.MdmsRes.tenant.tenants[0].code",
-                      "localisation":{
-                        "required":true,
-                        "prefix": "TENANT_TENANTS",
-                        "module":"rainmaker-common"
-                        }
-                    }
-                  ]
-              },
-              { 
-                "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=tenant&masterName=footer&tenantId=pb&filter=%5B?(@.code=='{$.tenantId}' %26%26 @.service=='{$.paymentDetails[0].businessService}')%5D",
+                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=pg&filter=%5B?(@.code=='{$.tenantId}')%5D",
                 "apiRequest": null,
-                "responseMapping":[
+                "responseMapping": [
+                  { "variable": "address", "value": "$.MdmsRes.tenant.tenants[0].address" },
+                  { "variable": "phoneNumber", "value": "$.MdmsRes.tenant.tenants[0].contactNumber" },
+                  { "variable": "website", "value": "$.MdmsRes.tenant.tenants[0].domainUrl" },
+                  { "variable": "email", "value": "$.MdmsRes.tenant.tenants[0].emailId" },
+                  { "variable": "logoImage", "value": "$.MdmsRes.tenant.tenants[0].logoId", "type": "image" },
                   {
-                    "variable": "variable11",                        
-                    "value": "$.MdmsRes.tenant.footer[0].receiptFooterContent.*",
-                     "type":"array",
-                     "format":{                            
-                        "type":"string",
-                        "scema":[
-                           {
-                            "variable":"disclaimerContent",
-                            "value":"disclaimer",
-                            "type":"string",
-                            "localisation":{
-                              "required":true,
-                              "prefix": null,
-                              "module": "rainmaker-common"
-                           }
-                         }
-                        ]
-                    } 
-                 }
+                    "variable": "logo-header",
+                    "value": "$.MdmsRes.tenant.tenants[0].code",
+                    "localisation": { "required": true, "prefix": "TENANT_TENANTS", "module": "rainmaker-common" }
+                  }
                 ]
-            }
+              },
+              {
+                "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
+                "queryParam": "moduleName=tenant&masterName=footer&tenantId=pg&filter=%5B?(@.code=='{$.tenantId}' %26%26 @.service=='{$.paymentDetails[0].businessService}')%5D",
+                "apiRequest": null,
+                "responseMapping": [
+                  {
+                    "variable": "variable11",
+                    "value": "$.MdmsRes.tenant.footer[0].receiptFooterContent.*",
+                    "type": "array",
+                    "format": {
+                      "type": "string",
+                      "scema": [
+                        {
+                          "variable": "disclaimerContent",
+                          "value": "disclaimer",
+                          "type": "string",
+                          "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
             ]
           }
         ]
