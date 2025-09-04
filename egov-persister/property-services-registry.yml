@@ -518,11 +518,7 @@ serviceMaps:
       - jsonPath: $.Property.auditDetails.lastModifiedTime
 
 
-<<<<<<< HEAD
-    - query: INSERT INTO eg_pt_unit(id, tenantid, propertyid, floorno, unittype, usagecategory, occupancytype, occupancydate, carpetarea, builtuparea, plintharea, superbuiltuparea, arv, ratezone, roadfactor, constructiontype, constructiondate, dimensions, active, createdby, createdtime, lastmodifiedby, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?,?) ON CONFLICT (id) DO UPDATE SET floorno=EXCLUDED.floorno, unittype=EXCLUDED.unittype, usagecategory=EXCLUDED.usagecategory, occupancytype=EXCLUDED.occupancytype, occupancydate=EXCLUDED.occupancydate, carpetarea=EXCLUDED.carpetarea, builtuparea=EXCLUDED.builtuparea, plintharea=EXCLUDED.plintharea, superbuiltuparea=EXCLUDED.superbuiltuparea, arv=EXCLUDED.arv, ratezone=EXCLUDED.ratezone, roadfactor=EXCLUDED.roadfactor, constructiontype=EXCLUDED.constructiontype, constructiondate=EXCLUDED.constructiondate, dimensions=excluded.dimensions, active=EXCLUDED.active, lastmodifiedby=EXCLUDED.lastmodifiedby, lastmodifiedtime=EXCLUDED.lastmodifiedtime;
-=======
     - query: INSERT INTO eg_pt_unit(id, tenantid, propertyid, floorno, unittype, usagecategory, occupancytype, occupancydate, carpetarea, builtuparea, plintharea, superbuiltuparea, arv, ratezone, roadfactor, constructiontype, constructiondate, dimensions, active, createdby, createdtime, lastmodifiedby, lastmodifiedtime,toyear,fromyear) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT (id) DO UPDATE SET floorno=EXCLUDED.floorno, unittype=EXCLUDED.unittype, usagecategory=EXCLUDED.usagecategory, occupancytype=EXCLUDED.occupancytype, occupancydate=EXCLUDED.occupancydate, carpetarea=EXCLUDED.carpetarea, builtuparea=EXCLUDED.builtuparea, plintharea=EXCLUDED.plintharea, superbuiltuparea=EXCLUDED.superbuiltuparea, arv=EXCLUDED.arv, ratezone=EXCLUDED.ratezone, roadfactor=EXCLUDED.roadfactor, constructiontype=EXCLUDED.constructiontype, constructiondate=EXCLUDED.constructiondate, dimensions=excluded.dimensions, active=EXCLUDED.active, lastmodifiedby=EXCLUDED.lastmodifiedby, lastmodifiedtime=EXCLUDED.lastmodifiedtime,toyear=EXCLUDED.toyear,fromyear=EXCLUDED.fromyear;
->>>>>>> IMC_UAT
       basePath: Property.units.*
       jsonMaps:
 
