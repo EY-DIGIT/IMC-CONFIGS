@@ -1599,8 +1599,8 @@
     {
       "module": "PT",
       "indexName": "property-services",
-      "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must\":[{\\\"term\\\":{\\\"Data.status.keyword\\\":\\\"INWORKFLOW\\\"}},{\\\"term\\\":{\\\"Data.tenantId.keyword\\\":\\\"mp.indore\\\"}}]}},\"aggs\":{\"Total Application\":{\"value_count\":{\"field\":\"Data.propertyId.keyword\"}}}}}}",
-      "requestQueryMap": "{\"wardId\":\"Data.ward.name.keyword\",\"district\":\"Data.tenantData.city.districtCode\",\"tenantId\":\"Data.tenantId.keyword\",\"status\":\"Data.status.keyword\"}",
+      "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.status.keyword\":\"INWORKFLOW\"}},{\"term\":{\"Data.tenantId.keyword\":\"mp.indore\"}}]}},\"aggs\":{\"Total Application\":{\"value_count\":{\"field\":\"Data.propertyId.keyword\"}}}}}}",
+       "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\", \r\n  \"district\" : \"Data.tenantData.city.districtCode\", \r\n\"tenantId\" : \"Data.tenantId\" \r\n}",
       "dateRefField": ""
     }
   ],
