@@ -1593,6 +1593,27 @@
     ],
     "_comment": " totol properties count"
   },
+  "totalPropertiesInWorkflow": {
+  "chartName": "DSS_PT_TOTAL_PROPERTIES_INWORKFLOW",
+  "queries": [
+    {
+      "module": "PT",
+      "indexName": "property-services",
+      "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must\":[{\\\"term\\\":{\\\"Data.status.keyword\\\":\\\"INWORKFLOW\\\"}},{\\\"term\\\":{\\\"Data.tenantId.keyword\\\":\\\"mp.indore\\\"}}]}},\"aggs\":{\"Total Application\":{\"value_count\":{\"field\":\"Data.propertyId.keyword\"}}}}}}",
+      "requestQueryMap": "{\"wardId\":\"Data.ward.name.keyword\",\"district\":\"Data.tenantData.city.districtCode\",\"tenantId\":\"Data.tenantId.keyword\",\"status\":\"Data.status.keyword\"}",
+      "dateRefField": ""
+    }
+  ],
+  "chartType": "metric",
+  "valueType": "number",
+  "action": "",
+  "documentType": "_doc",
+  "drillChart": "none",
+  "aggregationPaths": [
+    "Total Application In Workflow"
+  ],
+  "_comment": " total properties in workflow count"
+},
   "propertiesAssessed": {
     "chartName": "DSS_PT_TOTAL_PROPERTIES_ASSESSED",
     "queries": [
