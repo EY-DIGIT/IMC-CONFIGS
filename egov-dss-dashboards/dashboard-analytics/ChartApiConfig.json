@@ -1578,7 +1578,7 @@
       {
         "module": "PT",
         "indexName": "property-services",
-        "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pg.testing\"}}]}},\"aggs\":{\"Total Application\":{\"value_count\":{\"field\":\"Data.propertyId.keyword\"}}}}}}",
+        "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"mp.indore\"}}]}},\"aggs\":{\"Total Application\":{\"value_count\":{\"field\":\"Data.propertyId.keyword\"}}}}}}",
         "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\", \r\n  \"district\" : \"Data.tenantData.city.districtCode\", \r\n\"tenantId\" : \"Data.tenantId\" \r\n}",
         "dateRefField": ""
       }
@@ -1593,14 +1593,14 @@
     ],
     "_comment": " totol properties count"
   },
-  "totalPropertiesInWorkflow": {
-  "chartName": "DSS_PT_TOTAL_PROPERTIES_INWORKFLOW",
+  "totalPropertiesCreated": {
+  "chartName": "DSS_PT_CREATED_PROPERTIES",
   "queries": [
     {
       "module": "PT",
       "indexName": "property-services",
-      "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.status.keyword\":\"INWORKFLOW\"}},{\"term\":{\"Data.tenantId.keyword\":\"mp.indore\"}}]}},\"aggs\":{\"Total Application\":{\"value_count\":{\"field\":\"Data.propertyId.keyword\"}}}}}}",
-       "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\", \r\n  \"district\" : \"Data.tenantData.city.districtCode\", \r\n\"tenantId\" : \"Data.tenantId\" \r\n}",
+      "aggrQuery": "{\"size\":0,\"query\":{\"bool\":{\"must\":[{\"term\":{\"Data.tenantId.keyword\":\"mp.indore\"}},{\"script_score\":{\"query\":{\"match_all\":{}},\"script\":{\"lang\":\"painless\",\"source\":\"if (params._source.Data == null || params._source.Data.history == null || params._source.Data.history.size() == 0) { return 0;} def history = params._source.Data.history; def latest = history[0]; long latestTime = (latest.auditDetails?.createdTime != null) ? latest.auditDetails.createdTime : 0L; for (int i = 1; i < history.size(); i++) { def h = history[i]; if (h == null || h.auditDetails == null) continue; def ct = h.auditDetails.createdTime; if (ct != null && ct > latestTime) { latest = h; latestTime = ct; } } return latest.state != null && latest.state.state == params.state ? 1 : 0;\",\"params\":{\"state\":\"OPEN\"}}}}]}},\"aggs\":{\"total_matching\":{\"sum\":{\"script\":\"_score\"}}}}",
+      "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\", \r\n  \"district\" : \"Data.tenantData.city.districtCode\", \r\n\"tenantId\" : \"Data.tenantId\" \r\n}",
       "dateRefField": ""
     }
   ],
@@ -1612,8 +1612,92 @@
   "aggregationPaths": [
     "Total Application"
   ],
-  "_comment": " total properties in workflow count"
-},
+  "_comment": " total properties created count"
+  },
+  "totalPropertiesForwarded": {
+    "chartName": "DSS_PT_FORWARDED_PROPERTIES",
+    "queries": [
+      {
+        "module": "PT",
+        "indexName": "property-services",
+        "aggrQuery": "{\"size\":0,\"query\":{\"bool\":{\"must\":[{\"term\":{\"Data.tenantId.keyword\":\"mp.indore\"}},{\"script_score\":{\"query\":{\"match_all\":{}},\"script\":{\"lang\":\"painless\",\"source\":\"if (params._source.Data == null || params._source.Data.history == null || params._source.Data.history.size() == 0) { return 0;} def history = params._source.Data.history; def latest = history[0]; long latestTime = (latest.auditDetails?.createdTime != null) ? latest.auditDetails.createdTime : 0L; for (int i = 1; i < history.size(); i++) { def h = history[i]; if (h == null || h.auditDetails == null) continue; def ct = h.auditDetails.createdTime; if (ct != null && ct > latestTime) { latest = h; latestTime = ct; } } return latest.state != null && latest.state.state == params.state ? 1 : 0;\",\"params\":{\"state\":\"FIELDVERIFIED\"}}}}]}},\"aggs\":{\"total_matching\":{\"sum\":{\"script\":\"_score\"}}}}",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\", \r\n  \"district\" : \"Data.tenantData.city.districtCode\", \r\n\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "dateRefField": ""
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Application"
+    ],
+    "_comment": " total properties forwarded count"
+  },
+  "totalPropertiesApproved": {
+    "chartName": "DSS_PT_APPROVED_PROPERTIES",
+    "queries": [
+      {
+        "module": "PT",
+        "indexName": "property-services",
+        "aggrQuery": "{\"size\":0,\"query\":{\"bool\":{\"must\":[{\"term\":{\"Data.tenantId.keyword\":\"mp.indore\"}},{\"script_score\":{\"query\":{\"match_all\":{}},\"script\":{\"lang\":\"painless\",\"source\":\"if (params._source.Data == null || params._source.Data.history == null || params._source.Data.history.size() == 0) { return 0;} def history = params._source.Data.history; def latest = history[0]; long latestTime = (latest.auditDetails?.createdTime != null) ? latest.auditDetails.createdTime : 0L; for (int i = 1; i < history.size(); i++) { def h = history[i]; if (h == null || h.auditDetails == null) continue; def ct = h.auditDetails.createdTime; if (ct != null && ct > latestTime) { latest = h; latestTime = ct; } } return latest.state != null && latest.state.state == params.state ? 1 : 0;\",\"params\":{\"state\":\"APPROVED\"}}}}]}},\"aggs\":{\"total_matching\":{\"sum\":{\"script\":\"_score\"}}}}",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\", \r\n  \"district\" : \"Data.tenantData.city.districtCode\", \r\n\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "dateRefField": ""
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Application"
+    ],
+    "_comment": " total properties approved count"
+  },
+  "totalPropertiesSentBack": {
+    "chartName": "DSS_PT_SENT_BACK_PROPERTIES",
+    "queries": [
+      {
+        "module": "PT",
+        "indexName": "property-services",
+        "aggrQuery": "{\"size\":0,\"query\":{\"bool\":{\"must\":[{\"term\":{\"Data.tenantId.keyword\":\"mp.indore\"}},{\"script_score\":{\"query\":{\"match_all\":{}},\"script\":{\"lang\":\"painless\",\"source\":\"if (params._source.Data == null || params._source.Data.history == null || params._source.Data.history.size() == 0) { return 0;} def history = params._source.Data.history; def latest = history[0]; long latestTime = (latest.auditDetails?.createdTime != null) ? latest.auditDetails.createdTime : 0L; for (int i = 1; i < history.size(); i++) { def h = history[i]; if (h == null || h.auditDetails == null) continue; def ct = h.auditDetails.createdTime; if (ct != null && ct > latestTime) { latest = h; latestTime = ct; } } return latest.state != null && latest.state.state == params.state ? 1 : 0;\",\"params\":{\"state\":\"CORRECTIONPENDING\"}}}}]}},\"aggs\":{\"total_matching\":{\"sum\":{\"script\":\"_score\"}}}}",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\", \r\n  \"district\" : \"Data.tenantData.city.districtCode\", \r\n\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "dateRefField": ""
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Application"
+    ],
+    "_comment": " total properties sent back count"
+  },
+  "totalPropertiesRejected": {
+    "chartName": "DSS_PT_REJECTED_PROPERTIES",
+    "queries": [
+      {
+        "module": "PT",
+        "indexName": "property-services",
+        "aggrQuery": "{\"size\":0,\"query\":{\"bool\":{\"must\":[{\"term\":{\"Data.tenantId.keyword\":\"mp.indore\"}},{\"script_score\":{\"query\":{\"match_all\":{}},\"script\":{\"lang\":\"painless\",\"source\":\"if (params._source.Data == null || params._source.Data.history == null || params._source.Data.history.size() == 0) { return 0;} def history = params._source.Data.history; def latest = history[0]; long latestTime = (latest.auditDetails?.createdTime != null) ? latest.auditDetails.createdTime : 0L; for (int i = 1; i < history.size(); i++) { def h = history[i]; if (h == null || h.auditDetails == null) continue; def ct = h.auditDetails.createdTime; if (ct != null && ct > latestTime) { latest = h; latestTime = ct; } } return latest.state != null && latest.state.state == params.state ? 1 : 0;\",\"params\":{\"state\":\"REJECTED\"}}}}]}},\"aggs\":{\"total_matching\":{\"sum\":{\"script\":\"_score\"}}}}",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\", \r\n  \"district\" : \"Data.tenantData.city.districtCode\", \r\n\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "dateRefField": ""
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Application"
+    ],
+    "_comment": " total properties rejected count"
+  },
   "propertiesAssessed": {
     "chartName": "DSS_PT_TOTAL_PROPERTIES_ASSESSED",
     "queries": [

@@ -1905,8 +1905,40 @@
                   "headers": []
                 },
                  {
-                  "id": "totalPropertiesInWorkflow",
-                  "name": "DSS_PT_TOTAL_PROPERTIES_INWORKFLOW",
+                  "id": "totalPropertiesCreated",
+                  "name": "DSS_PT_CREATED_PROPERTIES",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                 {
+                  "id": "totalPropertiesForwarded",
+                  "name": "DSS_PT_FORWARDED_PROPERTIES",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                 {
+                  "id": "totalPropertiesApproved",
+                  "name": "DSS_PT_APPROVED_PROPERTIES",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                 {
+                  "id": "totalPropertiesSentBack",
+                  "name": "DSS_PT_SENT_BACK_PROPERTIES",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                 {
+                  "id": "totalPropertiesRejected",
+                  "name": "DSS_PT_REJECTED_PROPERTIES",
                   "code": "",
                   "chartType": "metric",
                   "filter": "",
