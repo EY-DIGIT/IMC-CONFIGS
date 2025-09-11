@@ -1610,7 +1610,7 @@
   "documentType": "_doc",
   "drillChart": "none",
   "aggregationPaths": [
-    "Total Application In Workflow"
+    "Total Application"
   ],
   "_comment": " total properties in workflow count"
 },
