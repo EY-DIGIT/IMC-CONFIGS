@@ -10,20 +10,38 @@ ServiceMaps:
       id: $.propertyId, $.tenantId
       isBulk: true
       timeStampField: $.auditDetails.createdTime
-      jsonPath: $.Properties.*
+      jsonPath: $.Assessments.*
       customJsonMapping:
-        indexMapping: {"Data":{"propertyId":"","tenantId":"","propertyDetails":{},"address":{},"ward":{},"tenantData":{},"@timestamp":"timestamp"}}
+        indexMapping: {"Data":{"id":"","tenantId":"","assessmentNumber":"","financialYear":"","propertyId":"","assessmentDate":"","status":"","source":"","unitUsageList":{},"documents":{},"additionalDetails":{},"channel":"","auditDetails":{},"workflow":{}}}
         fieldMapping:
-        - inJsonPath: $.propertyId
-          outJsonPath: $.Data.propertyId
+        - inJsonPath: $.id
+          outJsonPath: $.Data.id
         - inJsonPath: $.tenantId
           outJsonPath: $.Data.tenantId
-        - inJsonPath: $.propertyDetails
-          outJsonPath: $.Data.propertyDetails
-        - inJsonPath: $.address
-          outJsonPath: $.Data.address
-        - inJsonPath: $.@timestamp
-          outJsonPath: $.Data.@timestamp
+        - inJsonPath: $.assessmentNumber
+          outJsonPath: $.Data.assessmentNumber
+        - inJsonPath: $.financialYear
+          outJsonPath: $.Data.financialYear
+        - inJsonPath: $.propertyId
+          outJsonPath: $.Data.propertyId
+        - inJsonPath: $.assessmentDate
+          outJsonPath: $.Data.assessmentDate
+        - inJsonPath: $.status
+          outJsonPath: $.Data.status
+        - inJsonPath: $.source
+          outJsonPath: $.Data.source
+        - inJsonPath: $.unitUsageList
+          outJsonPath: $.Data.unitUsageList
+        - inJsonPath: $.documents
+          outJsonPath: $.Data.documents
+        - inJsonPath: $.additionalDetails
+          outJsonPath: $.Data.additionalDetails
+        - inJsonPath: $.channel
+          outJsonPath: $.Data.channel
+        - inJsonPath: $.auditDetails
+          outJsonPath: $.Data.auditDetails
+        - inJsonPath: $.workflow
+          outJsonPath: $.Data.workflow
         externalUriMapping:
         - path: http://egov-location.egov:8080/egov-location/location/v11/boundarys/_search
           queryParam: hierarchyTypeCode=REVENUE,boundaryType=Block,codes=$.address.locality.code,tenantId=$.tenantId
