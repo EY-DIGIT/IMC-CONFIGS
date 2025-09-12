@@ -7,8 +7,8 @@ ServiceMaps:
     indexes:
     - name: ptindex-v1
       type: property
+      id: $.assessmentNumber, $.tenantId
       jsonPath: $.Assessment.*
-      id: $.propertyId, $.tenantId
       isBulk: true
       timeStampField: $.auditDetails.createdTime
       customJsonMapping:
