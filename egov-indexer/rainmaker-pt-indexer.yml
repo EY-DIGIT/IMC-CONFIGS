@@ -9,7 +9,7 @@ ServiceMaps:
       type: property
       id: $.assessmentNumber,$.tenantId
       jsonPath: $.Assessment
-      isBulk: true
+      isBulk: false
       timeStampField: $.auditDetails.createdTime
       customJsonMapping:
         indexMapping: {"Data":{"id":"","tenantId":"","assessmentNumber":"","financialYear":"","propertyId":"","assessmentDate":"","status":"","source":"","unitUsageList":{},"documents":{},"additionalDetails":{},"channel":"","auditDetails":{},"workflow":{}}}
