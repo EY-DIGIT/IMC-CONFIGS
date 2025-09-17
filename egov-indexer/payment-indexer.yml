@@ -12,47 +12,46 @@ ServiceMaps:
       timeStampField: $.auditDetails.createdTime
       jsonPath: $.Payment
       customJsonMapping:
-        indexMapping: {"Data":{"tenantId":"","id":"","transactionNumber":"","transactionDate":1,"paymentMode":"","paymentStatus":"","payer":{"id":"","name":""},"paidBy":"","paymentDetails":{},"auditDetails":{},"additionalDetails":{},"tenantData":{},"@timestamp":"timestamp"}}
+        indexMapping: {"tenantId":"","id":"","transactionNumber":"","transactionDate":1,"paymentMode":"","paymentStatus":"","payerId":"","payerName":"","paidBy":"","paymentDetails":{},"auditDetails":{},"additionalDetails":{},"tenantData":{},"@timestamp":"timestamp"}
         fieldMapping:
         - inJsonPath: $.tenantId
-          outJsonPath: $.Data.tenantId
+          outJsonPath: $.tenantId
         - inJsonPath: $.id
-          outJsonPath: $.Data.id
+          outJsonPath: $.id
         - inJsonPath: $.transactionNumber
-          outJsonPath: $.Data.transactionNumber
+          outJsonPath: $.transactionNumber
         - inJsonPath: $.transactionDate
-          outJsonPath: $.Data.transactionDate
+          outJsonPath: $.transactionDate
         - inJsonPath: $.paymentMode
-          outJsonPath: $.Data.paymentMode
+          outJsonPath: $.paymentMode
         - inJsonPath: $.paymentStatus
-          outJsonPath: $.Data.paymentStatus	
+          outJsonPath: $.paymentStatus	
         - inJsonPath: $.payerId
-          outJsonPath: $.Data.payer.id
+          outJsonPath: $.payerId
         - inJsonPath: $.payerName
-          outJsonPath: $.Data.payer.name
+          outJsonPath: $.payerName
         - inJsonPath: $.paidBy
-          outJsonPath: $.Data.paidBy
+          outJsonPath: $.paidBy
         - inJsonPath: $.paymentDetails
-          outJsonPath: $.Data.paymentDetails
+          outJsonPath: $.paymentDetails
         - inJsonPath: $.auditDetails
-          outJsonPath: $.Data.auditDetails
+          outJsonPath: $.auditDetails
         - inJsonPath: $.additionalDetails
-          outJsonPath: $.Data.additionalDetails
+          outJsonPath: $.additionalDetails
         - inJsonPath: $.@timestamp
-          outJsonPath: $.Data.@timestamp
+          outJsonPath: $.@timestamp
         mdmsMapping:
         - path: http://egov-mdms-service.egov:8080/egov-mdms-service/v1/_search
           moduleName: tenant
           masterName: tenants
-          tenantId: pb
+          tenantId: mp
           filter: "[?(@.code == $tenant)]"
           filterMapping:
           - variable: $tenant
             valueJsonpath: $.tenantId
           uriResponseMapping:
           - inJsonPath: $.MdmsRes.tenant.tenants
-            outJsonPath: $.Data.tenantData
-            
+            outJsonPath: $.tenantData
             
   - topic: egov.collection.payment-update
     configKey: INDEX
@@ -64,47 +63,46 @@ ServiceMaps:
       timeStampField: $.auditDetails.createdTime
       jsonPath: $.Payment
       customJsonMapping:
-        indexMapping: {"Data":{"tenantId":"","id":"","transactionNumber":"","transactionDate":1,"paymentMode":"","paymentStatus":"","payer":{"id":"","name":""},"paidBy":"","paymentDetails":{},"auditDetails":{},"additionalDetails":{},"tenantData":{},"@timestamp":"timestamp"}}
+        indexMapping: {"tenantId":"","id":"","transactionNumber":"","transactionDate":1,"paymentMode":"","paymentStatus":"","payerId":"","payerName":"","paidBy":"","paymentDetails":{},"auditDetails":{},"additionalDetails":{},"tenantData":{},"@timestamp":"timestamp"}
         fieldMapping:
         - inJsonPath: $.tenantId
-          outJsonPath: $.Data.tenantId
+          outJsonPath: $.tenantId
         - inJsonPath: $.id
-          outJsonPath: $.Data.id
+          outJsonPath: $.id
         - inJsonPath: $.transactionNumber
-          outJsonPath: $.Data.transactionNumber
+          outJsonPath: $.transactionNumber
         - inJsonPath: $.transactionDate
-          outJsonPath: $.Data.transactionDate
+          outJsonPath: $.transactionDate
         - inJsonPath: $.paymentMode
-          outJsonPath: $.Data.paymentMode
+          outJsonPath: $.paymentMode
         - inJsonPath: $.paymentStatus
-          outJsonPath: $.Data.paymentStatus
+          outJsonPath: $.paymentStatus
         - inJsonPath: $.payerId
-          outJsonPath: $.Data.payer.id
+          outJsonPath: $.payerId
         - inJsonPath: $.payerName
-          outJsonPath: $.Data.payer.name
+          outJsonPath: $.payerName
         - inJsonPath: $.paidBy
-          outJsonPath: $.Data.paidBy
+          outJsonPath: $.paidBy
         - inJsonPath: $.paymentDetails
-          outJsonPath: $.Data.paymentDetails
+          outJsonPath: $.paymentDetails
         - inJsonPath: $.auditDetails
-          outJsonPath: $.Data.auditDetails
+          outJsonPath: $.auditDetails
         - inJsonPath: $.additionalDetails
-          outJsonPath: $.Data.additionalDetails
+          outJsonPath: $.additionalDetails
         - inJsonPath: $.@timestamp
-          outJsonPath: $.Data.@timestamp
+          outJsonPath: $.@timestamp
         mdmsMapping:
         - path: http://egov-mdms-service.egov:8080/egov-mdms-service/v1/_search
           moduleName: tenant
           masterName: tenants
-          tenantId: pb
+          tenantId: mp
           filter: "[?(@.code == $tenant)]"
           filterMapping:
           - variable: $tenant
             valueJsonpath: $.tenantId
           uriResponseMapping:
           - inJsonPath: $.MdmsRes.tenant.tenants
-            outJsonPath: $.Data.tenantData
-            
+            outJsonPath: $.tenantData
             
   - topic: egov-payment-legacy-index
     configKey: LEGACYINDEX
@@ -116,43 +114,43 @@ ServiceMaps:
       timeStampField: $.auditDetails.createdTime
       jsonPath: $.Payments.*
       customJsonMapping:
-        indexMapping: {"Data":{"tenantId":"","id":"","transactionNumber":"","transactionDate":1,"paymentMode":"","paymentStatus":"","payer":{"id":"","name":""},"paidBy":"","paymentDetails":{},"auditDetails":{},"additionalDetails":{},"tenantData":{},"@timestamp":"timestamp"}}
+        indexMapping: {"tenantId":"","id":"","transactionNumber":"","transactionDate":1,"paymentMode":"","paymentStatus":"","payerId":"","payerName":"","paidBy":"","paymentDetails":{},"auditDetails":{},"additionalDetails":{},"tenantData":{},"@timestamp":"timestamp"}
         fieldMapping:
         - inJsonPath: $.tenantId
-          outJsonPath: $.Data.tenantId
+          outJsonPath: $.tenantId
         - inJsonPath: $.id
-          outJsonPath: $.Data.id
+          outJsonPath: $.id
         - inJsonPath: $.transactionNumber
-          outJsonPath: $.Data.transactionNumber
+          outJsonPath: $.transactionNumber
         - inJsonPath: $.transactionDate
-          outJsonPath: $.Data.transactionDate
+          outJsonPath: $.transactionDate
         - inJsonPath: $.paymentMode
-          outJsonPath: $.Data.paymentMode
+          outJsonPath: $.paymentMode
         - inJsonPath: $.paymentStatus
-          outJsonPath: $.Data.paymentStatus
+          outJsonPath: $.paymentStatus
         - inJsonPath: $.payerId
-          outJsonPath: $.Data.payer.id
+          outJsonPath: $.payerId
         - inJsonPath: $.payerName
-          outJsonPath: $.Data.payer.name
+          outJsonPath: $.payerName
         - inJsonPath: $.paidBy
-          outJsonPath: $.Data.paidBy
+          outJsonPath: $.paidBy
         - inJsonPath: $.paymentDetails
-          outJsonPath: $.Data.paymentDetails
+          outJsonPath: $.paymentDetails
         - inJsonPath: $.auditDetails
-          outJsonPath: $.Data.auditDetails
+          outJsonPath: $.auditDetails
         - inJsonPath: $.additionalDetails
-          outJsonPath: $.Data.additionalDetails
+          outJsonPath: $.additionalDetails
         - inJsonPath: $.@timestamp
-          outJsonPath: $.Data.@timestamp
+          outJsonPath: $.@timestamp
         mdmsMapping:
         - path: http://egov-mdms-service.egov:8080/egov-mdms-service/v1/_search
           moduleName: tenant
           masterName: tenants
-          tenantId: pb
+          tenantId: mp
           filter: "[?(@.code == $tenant)]"
           filterMapping:
           - variable: $tenant
             valueJsonpath: $.tenantId
           uriResponseMapping:
           - inJsonPath: $.MdmsRes.tenant.tenants
-            outJsonPath: $.Data.tenantData
+            outJsonPath: $.tenantData
