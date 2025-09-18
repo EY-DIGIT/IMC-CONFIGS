@@ -8,8 +8,8 @@ ServiceMaps:
       - name: paymentsindex-v1
         type: payments
         id: $.id
-        jsonPath: $.Payment.*
-        isBulk: true
+        jsonPath: $.Payment
+        isBulk: false
         timeStampField: $.auditDetails.createdTime 
         customJsonMapping:
           indexMapping: {"tenantId":"","id":"","transactionNumber":"","transactionDate":1,"paymentMode":"","paymentStatus":"","payerId":"","payerName":"","paidBy":"","paymentDetails":{},"auditDetails":{},"additionalDetails":{},"tenantData":{},"@timestamp":"timestamp"}
