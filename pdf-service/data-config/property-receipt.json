@@ -370,7 +370,7 @@
               { "variable": "excessAmountPaid", "formula": "{{paidAmount}}>{{dueAmount}}?{{paidAmount}}-{{dueAmount}}:0" },
 
               { "variable": "calcTableTitle", "formula": "'Property Taxes and Other Taxes have been calculated based on the details given below'" },
-
+              { "variable": "assessmentYear", "formula": "({{fromPeriod}}.substring(0,4)) + '-' + ({{toPeriod}}.substring(2,4))" },
               { "variable": "th_usage_type", "formula": "'Usage Type'" },
               { "variable": "th_usage_factor", "formula": "'Usage Factor'" },
               { "variable": "th_floor_no", "formula": "'Floor No.'" },
