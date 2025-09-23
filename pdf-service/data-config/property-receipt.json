@@ -368,7 +368,6 @@
             "derived": [
               { "variable": "pendingAmount", "formula": "{{dueAmount}}>{{paidAmount}}?{{dueAmount}}-{{paidAmount}}:0" },
               { "variable": "excessAmountPaid", "formula": "{{paidAmount}}>{{dueAmount}}?{{paidAmount}}-{{dueAmount}}:0" },
-              { "variable": "assessmentYear", "formula": "{{fromPeriod.slice(0,4)}}-{{toPeriod.slice(2,4)}}" },
               
               { "variable": "calcTableTitle", "formula": "'Property Taxes and Other Taxes have been calculated based on the details given below'" },
              
