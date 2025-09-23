@@ -323,7 +323,7 @@
 
               {
                 "variable": "calcTableData",
-                "value": { "path": "$.Calculation.propertyFYDetails.*" },
+                "value": { "path": "$.Calculation.propertyFYDetails[-1:]" },
                 "type": "array",
                 "format": {
                   "type": "object",
@@ -335,7 +335,8 @@
                     { "variable": "calc_area",             "value": "area",             "type": "string", "defaultValue": "-" },
                     { "variable": "calc_rate",             "value": "factor",           "type": "string", "defaultValue": "-" },
                     { "variable": "calc_alv",              "value": "alv",              "type": "string", "defaultValue": "-" },
-                    { "variable": "calc_year",             "value": "year",             "type": "string", "defaultValue": "-" }
+                    { "variable": "maintainance_discount", "value": "discount",         "type": "string", "defaultValue": "-" },
+                    { "variable": "tax_tpv",               "value": "tpv",              "type": "string", "defaultValue": "-" }
                   ]
                 }
               },
@@ -357,8 +358,7 @@
                     { "variable": "tax_totalTax",      "value": "totalTax",       "type": "number", "defaultValue": 0 },
                     { "variable": "tax_rebate",        "value": "rebate",         "type": "number", "defaultValue": 0 },
                     { "variable": "tax_penalty",       "value": "penalty",        "type": "number", "defaultValue": 0 },
-                    { "variable": "tax_netTotal",      "value": "netTax",         "type": "number", "defaultValue": 0 },
-                    { "variable": "tax_tpv",           "value": "tpv",            "type": "string", "defaultValue": "-" }
+                    { "variable": "tax_netTotal",      "value": "netTax",         "type": "number", "defaultValue": 0 }
                   ]
                 }
               }
@@ -378,7 +378,7 @@
               { "variable": "th_area", "formula": "'Area'" },
               { "variable": "th_rate", "formula": "'Rate'" },
               { "variable": "th_alv", "formula": "'ALV'" },
-              { "variable": "th_maintenance", "formula": "'Maintenance'" },
+              { "variable": "th_maintenance", "formula": "'Maintenance Discount'" },
               { "variable": "th_tpv", "formula": "'TPV'" },
 
               { "variable": "th_year", "formula": "'Year'" },
@@ -392,7 +392,7 @@
               { "variable": "th_total_tax", "formula": "'Total Tax'" },
               { "variable": "th_rebate", "formula": "'Rebate'" },
               { "variable": "th_penalty", "formula": "'Penalty'" },
-              { "variable": "th_net_total", "formula": "'Net Total'" },
+              { "variable": "th_net_total", "formula": "'Net Tax'" },
 
               { "variable": "th_tax_head", "formula": "'Tax Head Code'" },
               { "variable": "th_category", "formula": "'Category'" },
