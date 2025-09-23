@@ -210,12 +210,12 @@
         "margin": [0, 10, 0, 6]
       },
       {
-        "columns": [
-          { "width": "30%", "text": ["Cashier Name: ", { "text": "{{user-name}}" }], "style": "signature-right", "alignment": "left" },
-          { "width": "70%", "text": "Cashier Signature", "style": "signature-left" }
-        ],
-        "margin": [0, 6, 0, 4]
-      }
+      "columns": [
+        { "width": "70%", "text": ["Cashier: ", { "text": "{{user-name}}" }], "style": "signature-left" },
+        { "width": "30%", "text": "Cashier Signature", "style": "signature-right", "alignment": "left" }
+      ],
+      "margin": [0, 5, 0, 6]
+    }
     ],
     "styles": {
       "topline": { "fontSize": 10, "color": "#484848" },
