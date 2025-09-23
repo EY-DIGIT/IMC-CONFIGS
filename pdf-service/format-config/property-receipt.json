@@ -57,7 +57,7 @@
         "style": "calcTable",
         "margin": [0, 0, 0, 10],
         "table": {
-          "widths": ["13%", "13%", "10%", "14%", "9%", "9%", "9%", "14%", "9%"],
+          "widths": ["14%", "13%", "10%", "14%", "9%", "9%", "9%", "14%", "8%"],
           "headerRows": 1,
           "keepWithHeaderRows": 1,
           "dontBreakRows": true,
@@ -81,7 +81,7 @@
       {
         "style": "taxTable",
         "table": {
-          "widths": ["9%", "8%", "8%", "9%", "7%", "8%", "1%", "8%", "8%", "8%", "8%", "8%"],
+          "widths": ["9%", "8%", "8%", "9%", "7%", "8%", "11%", "8%", "8%", "8%", "8%", "8%"],
           "headerRows": 1,
           "keepWithHeaderRows": 1,
           "dontBreakRows": true,
@@ -230,7 +230,7 @@
       "calcTable": { "fontSize": 9, "margin": [0, 0, 0, 0] },
       "taxTable": { "fontSize": 8, "margin": [0, 0, 0, 0] },
       "th": { "alignment": "center","bold": true, "margin": [2, 3, 2, 3] },
-      "td": { "alignment": "center","bold": true, "margin": [2, 3, 2, 3] },
+      "td": { "alignment": "center", "margin": [2, 3, 2, 3] },
       "office-title": { "fontSize": 12, "bold": true, "color": "#000000", "margin": [0, 3, 0, 0] },
       "signature-left": { "fontSize": 10, "color": "#000000", "bold": true },
       "signature-right": { "fontSize": 10, "color": "#000000", "bold": true },
