@@ -57,7 +57,7 @@
         "style": "calcTable",
         "margin": [0, 0, 0, 10],
         "table": {
-          "widths": ["14%", "13%", "10%", "14%", "9%", "9%", "9%", "14%", "8%"],
+          "widths": ["14%", "15%", "9%", "14%", "9%", "8%", "9%", "14%", "8%"],
           "headerRows": 1,
           "keepWithHeaderRows": 1,
           "dontBreakRows": true,

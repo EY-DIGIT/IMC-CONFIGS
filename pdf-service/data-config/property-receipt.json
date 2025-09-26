@@ -314,7 +314,8 @@
 
               { "variable": "arrearAmt",           "value": { "path": "$.Calculation.arrear" } },
               { "variable": "currentYearNetTax",   "value": { "path": "$.Calculation.currentYearTax" } },
-              { "variable": "cumulativeBalance",   "value": { "path": "$.Calculation.propertyFYTaxSummaries[-1:].cumulativeBalance" } },
+              
+              { "variable": "cumulativeBalance", "value": { "path": "$.Calculation.propertyFYTaxSummaries[-1].cumulativeBalance" } },
               { "variable": "totalDemandPayable",  "value": { "path": "$.Calculation.taxAmount" } },
               { "variable": "previousBalance",     "value": { "path": "$.Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')][0].estimateAmount" }, "defaultValue": 0 },
               { "variable": "advanceAmt",          "value": { "path": "$.Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')][0].estimateAmount" }, "defaultValue": 0 },
