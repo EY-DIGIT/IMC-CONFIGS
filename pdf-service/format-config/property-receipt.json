@@ -43,7 +43,7 @@
             "alignment": "right",
             "stack": [
               { "text": ["Date : ", { "text": "{{paymentDate}}", "style": "info-value" }], "style": "info-line", "alignment": "left" },
-              { "text": ["Assessment Year : ", { "text": "{{fromPeriod}} {{to}} {{toPeriod}}", "style": "info-value" }], "style": "info-line", "alignment": "left" },
+              { "text": ["Assessment Year : ", { "text": "{{assessmentYear}}", "style": "info-value" }], "style": "info-line", "alignment": "left" },
               { "text": ["Mobile No : ", { "text": "{{payerContact}}", "style": "info-value" }], "style": "info-line", "alignment": "left" },
               { "text": ["Rate Zone : ", { "text": "{{rateZone}}", "style": "info-value" }], "style": "info-line", "alignment": "left" },
               { "text": ["Plot Area : ", { "text": "{{plotArea}}", "style": "info-value" }], "style": "info-line", "alignment": "left" }
@@ -174,7 +174,7 @@
             "alignment": "right",
             "stack": [
               { "text": ["Date : ", { "text": "{{paymentDate}}", "style": "info-value" }], "style": "info-line", "alignment": "left" },
-              { "text": ["Assessment Year : ", { "text": "{{fromPeriod}} {{to}} {{toPeriod}}", "style": "info-value" }], "style": "info-line", "alignment": "left" },
+              { "text": ["Assessment Year : ", { "text": "{{assessmentYear}}", "style": "info-value" }], "style": "info-line", "alignment": "left" },
               { "text": ["Mobile No : ", { "text": "{{payerContact}}", "style": "info-value" }], "style": "info-line", "alignment": "left" },
               { "text": ["Rate Zone : ", { "text": "{{rateZone}}", "style": "info-value" }], "style": "info-line", "alignment": "left" },
               { "text": ["Plot Area : ", { "text": "{{plotArea}}", "style": "info-value" }], "style": "info-line", "alignment": "left" }
