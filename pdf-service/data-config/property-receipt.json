@@ -315,7 +315,7 @@
               { "variable": "arrearAmt",           "value": { "path": "$.Calculation.arrear" } },
               { "variable": "currentYearNetTax",   "value": { "path": "$.Calculation.currentYearTax" } },
               
-              { "variable": "cumulativeBalance",   "value": { "path": "$.calcTableData[0].tax_cu_balance" } },
+              { "variable": "cumulativeBalance",   "value": { "path": "$.Calculation.propertyFYTaxSummaries[-1:].cumulativeBalance" } },
               { "variable": "totalDemandPayable",  "value": { "path": "$.Calculation.taxAmount" } },
               { "variable": "previousBalance",     "value": { "path": "$.Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')][0].estimateAmount" }, "defaultValue": 0, "type": "number" },
               { "variable": "advanceAmt",          "value": { "path": "$.Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')][0].estimateAmount" }, "defaultValue": 0,  "type": "number" },
@@ -339,8 +339,7 @@
                     { "variable": "calc_rate",             "value": "factor",           "type": "string", "defaultValue": "-" },
                     { "variable": "calc_alv",              "value": "alv",              "type": "string", "defaultValue": "-" },
                     { "variable": "maintainance_discount", "value": "discount",         "type": "string", "defaultValue": "-" },
-                    { "variable": "tax_tpv",               "value": "tpv",              "type": "string", "defaultValue": "-" },
-                    { "variable": "tax_cu_balance",        "value": "cumulativeBalance","type": "string", "defaultValue": "0" }
+                    { "variable": "tax_tpv",               "value": "tpv",              "type": "string", "defaultValue": "-" }
                   ]
                 }
               },
