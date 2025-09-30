@@ -34,7 +34,7 @@
               { "text": ["Receipt No : ", { "text": "{{receiptNo}}", "style": "info-value" }], "style": "info-line" },
               { "text": ["Property ID : ", { "text": "{{consumerID}}", "style": "info-value" }], "style": "info-line" },
               { "text": ["Property Owner Name : ", { "text": "{{payerName}}", "style": "info-value" }], "style": "info-line" },
-              { "text": ["Address : ", { "text": "{{address}}", "style": "info-value" }], "style": "info-line" },
+              { "text": ["Address : ", { "text": "{{ptAddress}}", "style": "info-value" }], "style": "info-line" },
               { "text": ["Zone/Ward : ", { "text": "{{zone}} / {{ward}}", "style": "info-value" }], "style": "info-line" }
             ]
           },
@@ -165,7 +165,7 @@
               { "text": ["Receipt No : ", { "text": "{{receiptNo}}", "style": "info-value" }], "style": "info-line" },
               { "text": ["Property ID : ", { "text": "{{consumerID}}", "style": "info-value" }], "style": "info-line" },
               { "text": ["Property Owner Name : ", { "text": "{{payerName}}", "style": "info-value" }], "style": "info-line" },
-              { "text": ["Address : ", { "text": "{{address}}", "style": "info-value" }], "style": "info-line" },
+              { "text": ["Address : ", { "text": "{{ptAddress}}", "style": "info-value" }], "style": "info-line" },
               { "text": ["Zone/Ward : ", { "text": "{{zone}} / {{ward}}", "style": "info-value" }], "style": "info-line" }
             ]
           },

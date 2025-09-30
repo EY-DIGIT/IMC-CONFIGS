@@ -31,7 +31,7 @@
               { "variable": "dueAmount", "value": { "path": "$.paymentDetails[0].totalDue" } },
               { "variable": "zone", "value": { "path": "$.zone" } },
               { "variable": "rateZone", "value": { "path": "$.rateZone" } },
-              { "variable": "address", "value": { "path": "$.address" } },
+              { "variable": "ptAddress", "value": { "path": "$.address" } },
               { "variable": "ward", "value": { "path": "$.ward" } },
               { "variable": "plotArea", "value": { "path": "$.plotArea" } },
               { "variable": "isCheque", "value": { "path": "$.isCheque" } },
