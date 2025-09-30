@@ -34,8 +34,8 @@
               { "text": ["Receipt No : ", { "text": "{{receiptNo}}", "style": "info-value" }], "style": "info-line" },
               { "text": ["Property ID : ", { "text": "{{consumerID}}", "style": "info-value" }], "style": "info-line" },
               { "text": ["Property Owner Name : ", { "text": "{{payerName}}", "style": "info-value" }], "style": "info-line" },
-              { "text": ["Address : ", { "text": "{{zone}} / {{ward}}", "style": "info-value" }], "style": "info-line" },
-              { "text": ["Zone/Ward : ", { "text": "zone", "style": "info-value" }], "style": "info-line" }
+              { "text": ["Address : ", { "text": "address", "style": "info-value" }], "style": "info-line" },
+              { "text": ["Zone/Ward : ", { "text": "{{zone}} / {{ward}}", "style": "info-value" }], "style": "info-line" }
             ]
           },
           {
@@ -165,34 +165,8 @@
               { "text": ["Receipt No : ", { "text": "{{receiptNo}}", "style": "info-value" }], "style": "info-line" },
               { "text": ["Property ID : ", { "text": "{{consumerID}}", "style": "info-value" }], "style": "info-line" },
               { "text": ["Property Owner Name : ", { "text": "{{payerName}}", "style": "info-value" }], "style": "info-line" },
-              { "text": ["Address : ", { "text": "", "style": "info-value" }], "style": "info-line" },
-              { "text": ["Zone/Ward : ", { "text": "", "style": "info-value" }], "style": "info-line" }
-            ]
-          },
-          {
-            "width": "35%",
-            "alignment": "right",
-            "stack": [
-              { "text": ["Date : ", { "text": "{{paymentDate}}", "style": "info-value" }], "style": "info-line", "alignment": "left" },
-              { "text": ["Assessment Year : ", { "text": "{{assessmentYear}}", "style": "info-value" }], "style": "info-line", "alignment": "left" },
-              { "text": ["Mobile No : ", { "text": "{{payerContact}}", "style": "info-value" }], "style": "info-line", "alignment": "left" },
-              { "text": ["Rate Zone : ", { "text": "{{rateZone}}", "style": "info-value" }], "style": "info-line", "alignment": "left" },
-              { "text": ["Plot Area : ", { "text": "{{plotArea}}", "style": "info-value" }], "style": "info-line", "alignment": "left" }
-            ]
-          }
-        ],
-        "margin": [0, 0, 0, 8]
-      },
-       {
-        "columns": [
-          {
-            "width": "65%",
-            "stack": [
-              { "text": ["Receipt No : ", { "text": "{{receiptNo}}", "style": "info-value" }], "style": "info-line" },
-              { "text": ["Property ID : ", { "text": "{{consumerID}}", "style": "info-value" }], "style": "info-line" },
-              { "text": ["Property Owner Name : ", { "text": "{{payerName}}", "style": "info-value" }], "style": "info-line" },
-              { "text": ["Address : ", { "text": "{{zone}} / {{ward}}", "style": "info-value" }], "style": "info-line" },
-              { "text": ["Zone/Ward : ", { "text": "zone", "style": "info-value" }], "style": "info-line" }
+              { "text": ["Address : ", { "text": "address", "style": "info-value" }], "style": "info-line" },
+              { "text": ["Zone/Ward : ", { "text": "{{zone}} / {{ward}}", "style": "info-value" }], "style": "info-line" }
             ]
           },
           {
@@ -208,6 +182,32 @@
           }
         ],
         "margin": [0, 6, 0, 6]
+      },
+       {
+        "style": "office-columns-block",
+        "stack": [
+          {
+            "columns": [
+              { "width": "25%", "text": [{ "text": "Arrear : ", "style": "meta-label" }, { "text": "{{arrearAmt}}", "style": "meta-value" }] },
+              { "width": "25%", "text": [{ "text": "Current Year Net Tax : ", "style": "meta-label" }, { "text": "{{currentYearNetTax}}", "style": "meta-value" }] },
+              { "width": "25%", "text": [{ "text": "Previous Balance : ", "style": "meta-label" }, { "text": "{{previousBalance}}", "style": "meta-value" }] },
+              { "width": "25%", "text": [{ "text": "Total Demand Payable : ", "style": "meta-label" }, { "text": "{{totalDemandPayable}}", "style": "meta-value" }] }
+            ],
+            "columnGap": 4,
+            "margin": [0, 2, 0, 2]
+          },
+          {
+            "columns": [
+              { "width": "25%", "text": [{ "text": "Total Amount Paid : ", "style": "meta-label" }, { "text": "₹ {{paidAmount}}", "style": "meta-value" }] },
+              { "width": "25%", "text": [{ "text": "Advance : ", "style": "meta-label" }, { "text": "{{advanceAmt}}", "style": "meta-value" }] },
+              { "width": "25%", "text": [{ "text": "Cumulative Balance : ", "style": "meta-label" }, { "text": "{{cumulativeBalance}}", "style": "meta-value" }] },
+              { "width": "25%", "text": [{ "text": "Mode of Payment : ", "style": "meta-label" }, { "text": "{{paymentMode}}", "style": "meta-value" }] }
+            ],
+            "columnGap": 4,
+            "margin": [0, 2, 0, 2]
+          }
+        ],
+        "margin": [0, 10, 0, 6]
       },
       {
       "columns": [
