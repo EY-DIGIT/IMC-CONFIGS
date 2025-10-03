@@ -319,8 +319,6 @@
 
               { "variable": "arrearAmt",           "value": { "path": "$.Calculation.arrear" } },
               { "variable": "currentYearNetTax",   "value": { "path": "$.Calculation.currentYearTax" } },
-              
-              { "variable": "cumulativeBalance",   "value": { "path": "$.Calculation.propertyFYTaxSummaries[-1:].cumulativeBalance" } },
               { "variable": "totalDemandPayable",  "value": { "path": "$.Calculation.taxAmount" } },
               { "variable": "previousBalance",     "value": { "path": "$.Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')][0].estimateAmount" }, "defaultValue": 0, "type": "number" },
               { "variable": "advanceAmt",          "value": { "path": "$.Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')][0].estimateAmount" }, "defaultValue": 0,  "type": "number" },
@@ -376,7 +374,7 @@
             "derived": [
               { "variable": "pendingAmount", "formula": "{{dueAmount}}>{{paidAmount}}?{{dueAmount}}-{{paidAmount}}:0" },
               { "variable": "excessAmountPaid", "formula": "{{paidAmount}}>{{dueAmount}}?{{paidAmount}}-{{dueAmount}}:0" },
-              
+              { "variable": "cumulativeBalance", "formula": "{{totalDemandPayable}}-{{paidAmount}}:0" },
               { "variable": "calcTableTitle", "formula": "'Property Taxes and Other Taxes have been calculated based on the details given below'" },
              
               { "variable": "th_usage_type", "formula": "'Usage Type'" },
