@@ -29,7 +29,12 @@
               { "variable": "consumerID", "value": { "path": "$.paymentDetails[0].bill.consumerCode" } },
               { "variable": "transactionID", "value": { "path": "$.transactionNumber" } },
               { "variable": "dueAmount", "value": { "path": "$.paymentDetails[0].totalDue" } },
-
+              { "variable": "zone", "value": { "path": "$.zone" } },
+              { "variable": "rateZone", "value": { "path": "$.rateZone" } },
+              { "variable": "ptAddress", "value": { "path": "$.address" } },
+              { "variable": "ward", "value": { "path": "$.ward" } },
+              { "variable": "plotArea", "value": { "path": "$.plotArea" } },
+              { "variable": "isCheque", "value": { "path": "$.isCheque" } },
               {
                 "variable": "payment_receipt",
                 "value": {
@@ -306,16 +311,17 @@
                }
               },
 
+              { "variable": "assessmentYear", "value": { "path": "$.Calculation.propertyFYDetails[-1:].year" } },
+              
               { "variable": "chequeDate", "value": { "path": "$.instrumentDate" }, "type": "date" },
               { "variable": "chequeNumber", "value": { "path": "$.instrumentNumber" } },
               { "variable": "chequeBankName", "value": { "path": "$.additionalDetails.bankName" } },
 
               { "variable": "arrearAmt",           "value": { "path": "$.Calculation.arrear" } },
               { "variable": "currentYearNetTax",   "value": { "path": "$.Calculation.currentYearTax" } },
-              { "variable": "cumulativeBalance",   "value": { "path": "$.Calculation.totalAmount" } },
               { "variable": "totalDemandPayable",  "value": { "path": "$.Calculation.taxAmount" } },
-              { "variable": "previousBalance",     "value": { "path": "$.Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')][0].estimateAmount" }, "defaultValue": 0 },
-              { "variable": "advanceAmt",          "value": { "path": "$.Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')][0].estimateAmount" }, "defaultValue": 0 },
+              { "variable": "previousBalance",     "value": { "path": "$.Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')][0].estimateAmount" }, "defaultValue": 0, "type": "number" },
+              { "variable": "advanceAmt",          "value": { "path": "$.Calculation.taxHeadEstimates[?(@.taxHeadCode=='PT_ADVANCE_CARRYFORWARD')][0].estimateAmount" }, "defaultValue": 0,  "type": "number" },
 
               { "variable": "serviceNumber",       "value": { "path": "$.Calculation.serviceNumber" } },
               { "variable": "calcFromDate",        "value": { "path": "$.Calculation.fromDate" }, "type": "date" },
@@ -323,7 +329,7 @@
 
               {
                 "variable": "calcTableData",
-                "value": { "path": "$.Calculation.propertyFYDetails.*" },
+                "value": { "path": "$.Calculation.propertyFYDetails[-1:]" },
                 "type": "array",
                 "format": {
                   "type": "object",
@@ -335,7 +341,8 @@
                     { "variable": "calc_area",             "value": "area",             "type": "string", "defaultValue": "-" },
                     { "variable": "calc_rate",             "value": "factor",           "type": "string", "defaultValue": "-" },
                     { "variable": "calc_alv",              "value": "alv",              "type": "string", "defaultValue": "-" },
-                    { "variable": "calc_year",             "value": "year",             "type": "string", "defaultValue": "-" }
+                    { "variable": "maintainance_discount", "value": "discount",         "type": "string", "defaultValue": "-" },
+                    { "variable": "tax_tpv",               "value": "tpv",              "type": "string", "defaultValue": "-" }
                   ]
                 }
               },
@@ -357,8 +364,7 @@
                     { "variable": "tax_totalTax",      "value": "totalTax",       "type": "number", "defaultValue": 0 },
                     { "variable": "tax_rebate",        "value": "rebate",         "type": "number", "defaultValue": 0 },
                     { "variable": "tax_penalty",       "value": "penalty",        "type": "number", "defaultValue": 0 },
-                    { "variable": "tax_netTotal",      "value": "netTax",         "type": "number", "defaultValue": 0 },
-                    { "variable": "tax_tpv",           "value": "tpv",            "type": "string", "defaultValue": "-" }
+                    { "variable": "tax_netTotal",      "value": "netTax",         "type": "number", "defaultValue": 0 }
                   ]
                 }
               }
@@ -368,9 +374,9 @@
             "derived": [
               { "variable": "pendingAmount", "formula": "{{dueAmount}}>{{paidAmount}}?{{dueAmount}}-{{paidAmount}}:0" },
               { "variable": "excessAmountPaid", "formula": "{{paidAmount}}>{{dueAmount}}?{{paidAmount}}-{{dueAmount}}:0" },
-
+              { "variable": "cumulativeBalance", "formula": "{{totalDemandPayable}}>{{paidAmount}}?{{totalDemandPayable}}-{{paidAmount}}:0" },
               { "variable": "calcTableTitle", "formula": "'Property Taxes and Other Taxes have been calculated based on the details given below'" },
-
+             
               { "variable": "th_usage_type", "formula": "'Usage Type'" },
               { "variable": "th_usage_factor", "formula": "'Usage Factor'" },
               { "variable": "th_floor_no", "formula": "'Floor No.'" },
@@ -378,7 +384,7 @@
               { "variable": "th_area", "formula": "'Area'" },
               { "variable": "th_rate", "formula": "'Rate'" },
               { "variable": "th_alv", "formula": "'ALV'" },
-              { "variable": "th_maintenance", "formula": "'Maintenance'" },
+              { "variable": "th_maintenance", "formula": "'Maintenance Discount'" },
               { "variable": "th_tpv", "formula": "'TPV'" },
 
               { "variable": "th_year", "formula": "'Year'" },
@@ -392,7 +398,7 @@
               { "variable": "th_total_tax", "formula": "'Total Tax'" },
               { "variable": "th_rebate", "formula": "'Rebate'" },
               { "variable": "th_penalty", "formula": "'Penalty'" },
-              { "variable": "th_net_total", "formula": "'Net Total'" },
+              { "variable": "th_net_total", "formula": "'Net Tax'" },
 
               { "variable": "th_tax_head", "formula": "'Tax Head Code'" },
               { "variable": "th_category", "formula": "'Category'" },
