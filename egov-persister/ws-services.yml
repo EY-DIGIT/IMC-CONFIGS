@@ -1,0 +1,154 @@
+serviceMaps:
+ serviceName: ws-services
+ mappings:
+ - version: 1.0
+   description: Persists Water Service details in eg_ws_connection  table
+   fromTopic: save-ws-connection
+   isTransaction: true
+   queryMaps:
+       - query: INSERT INTO eg_ws_connection(id, tenantid, propertyid, applicationno, applicationstatus, status, connectiontype, connectionno, action, pipesize, newconnectioncharges, monthlycharges, servicecharges, createdby, createdtime, lastmodifiedby, lastmodifiedtime,usagetype, usagesubtype, applicationtype) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+         basePath: WaterConnection
+         jsonMaps:
+          - jsonPath: $.WaterConnection.id
+          
+          - jsonPath: $.WaterConnection.tenantId
+
+          - jsonPath: $.WaterConnection.propertyId
+
+          - jsonPath: $.WaterConnection.applicationNo
+
+          - jsonPath: $.WaterConnection.applicationStatus
+
+          - jsonPath: $.WaterConnection.status
+          
+          - jsonPath: $.WaterConnection.connectionType
+          
+          - jsonPath: $.WaterConnection.connectionNo
+          
+          - jsonPath: $.WaterConnection.processInstance.action
+          
+          - jsonPath: $.WaterConnection.pipeSize
+          
+          - jsonPath: $.WaterConnection.newConnectionCharges
+          
+          - jsonPath: $.WaterConnection.monthlyCharges
+          
+          - jsonPath: $.WaterConnection.serviceCharges
+
+          - jsonPath: $.WaterConnection.auditDetails.createdBy
+
+          - jsonPath: $.WaterConnection.auditDetails.createdTime
+
+          - jsonPath: $.WaterConnection.auditDetails.lastModifiedBy
+
+          - jsonPath: $.WaterConnection.auditDetails.lastModifiedTime
+          
+          - jsonPath: $.WaterConnection.usageType
+          
+          - jsonPath: $.WaterConnection.usageSubType
+          
+          - jsonPath: $.WaterConnection.applicationType
+
+
+       - query: INSERT INTO eg_ws_connectionholder_address(tenantid, id, wsid, colony, houseno, zone, locality, ward, city, postalcode, propertytype, createdby, createdtime, lastmodifiedby, lastmodifiedtime)	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+         basePath: WaterConnection.property
+         jsonMaps:
+
+           - jsonPath: $.WaterConnection.property.tenantId
+
+           - jsonPath: $.WaterConnection.property.id
+
+           - jsonPath: $.WaterConnection.property.connectionId
+
+           - jsonPath: $.WaterConnection.property.address.colony
+           
+           - jsonPath: $.WaterConnection.property.address.houseNo
+           
+           - jsonPath: $.WaterConnection.property.address.zone
+           
+           - jsonPath: $.WaterConnection.property.address.locality
+           
+           - jsonPath: $.WaterConnection.property.address.ward
+           
+           - jsonPath: $.WaterConnection.property.address.city
+           
+           - jsonPath: $.WaterConnection.property.address.postalCode
+           
+           - jsonPath: $.WaterConnection.property.address.propertyType
+           
+           - jsonPath: $.WaterConnection.*.property.*.auditDetails.createdBy           
+
+           - jsonPath: $.WaterConnection.*.property.*.auditDetails.createdTime
+           
+           - jsonPath: $.WaterConnection.*.property.*.auditDetails.lastModifiedBy
+
+           - jsonPath: $.WaterConnection.*.propertyDetails.*.auditDetails.lastModifiedTime
+
+       - query: INSERT INTO eg_ws_connectionholder(id, connectionholderaddressid, tenantid, propertyid, ownername, ownernameinhindi, mobilenumber, alternatemobilenumber, gender, email, fatherorhusbandname, relationship, photoidtype, photoid, userid, isprimaryowner, createdby, createdtime, lastmodifiedby, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+         basePath: WaterConnection.property.owners.*
+         jsonMaps:
+
+          - jsonPath: $.WaterConnection.property.owners.*.ids
+          
+          - jsonPath: $.WaterConnection.property.owners.*.connectionHolderAddressId
+          
+          - jsonPath: $.WaterConnection.property.owners.*.tenantId
+          
+          - jsonPath: $.WaterConnection.property.owners.*.propertyId
+          
+          - jsonPath: $.WaterConnection.property.owners.*.ownerName
+          
+          - jsonPath: $.WaterConnection.property.owners.*.ownerNameInHindi
+          
+          - jsonPath: $.WaterConnection.property.owners.*.mobileNumber
+          
+          - jsonPath: $.WaterConnection.property.owners.*.alternateMobileNumber
+          
+          - jsonPath: $.WaterConnection.property.owners.*.gender
+          
+          - jsonPath: $.WaterConnection.property.owners.*.email
+          
+          - jsonPath: $.WaterConnection.property.owners.*.fatherOrHusbandName
+          
+          - jsonPath: $.WaterConnection.property.owners.*.relationship
+          
+          - jsonPath: $.WaterConnection.property.owners.*.identityType.identityType
+          
+          - jsonPath: $.WaterConnection.property.owners.*.identityType.identityNumber
+          
+          - jsonPath: $.WaterConnection.property.owners.*.userId
+          
+          - jsonPath: $.WaterConnection.property.owners.*.isPrimaryOwner
+          
+          - jsonPath: $.WaterConnection.property.owners.*.auditDetails.createdBy
+          
+          - jsonPath: $.WaterConnection.property.owners.*.auditDetails.createdTime
+          
+          - jsonPath: $.WaterConnection.property.owners.*.auditDetails.lastModifiedBy
+          
+          - jsonPath: $.WaterConnection.property.owners.*.auditDetails.lastModifiedTime
+          
+       - query: INSERT INTO eg_ws_applicationdocument(id, tenantid, documenttype, filestoreid, wsid, active, documentuid, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+         basePath: WaterConnection.documents.*
+         jsonMaps:
+          - jsonPath: $.WaterConnection.documents.*.id
+
+          - jsonPath: $.WaterConnection.documents.*.tenantId
+          
+          - jsonPath: $.WaterConnection.documents.*.documentType
+          
+          - jsonPath: $.WaterConnection.documents.*.fileStoreId
+          
+          - jsonPath: $.WaterConnection.documents.*.connectionId
+          
+          - jsonPath: $.WaterConnection.documents.*.status
+          
+          - jsonPath: $.WaterConnection.documents.*.documentUid
+
+          - jsonPath: $.WaterConnection.documents.*.auditDetails.createdBy
+          
+          - jsonPath: $.WaterConnection.documents.*.auditDetails.lastModifiedBy
+
+          - jsonPath: $.WaterConnection.documents.*.auditDetails.createdTime
+
+          - jsonPath: $.WaterConnection.documents.*.auditDetails.lastModifiedTime
