@@ -51,14 +51,14 @@ serviceMaps:
 
 
        - query: INSERT INTO eg_ws_connectionholder_address(tenantid, id, wsid, colony, houseno, zone, locality, ward, city, postalcode, propertytype, createdby, createdtime, lastmodifiedby, lastmodifiedtime)	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
-         basePath: WaterConnection.property
+         basePath: WaterConnection
          jsonMaps:
 
            - jsonPath: $.WaterConnection.property.tenantId
 
            - jsonPath: $.WaterConnection.property.id
 
-           - jsonPath: $.WaterConnection.property.connectionId
+           - jsonPath: $.WaterConnection.id
 
            - jsonPath: $.WaterConnection.property.address.colony
            
@@ -129,7 +129,7 @@ serviceMaps:
           - jsonPath: $.WaterConnection.connectionHolders.*.auditDetails.lastModifiedTime
           
        - query: INSERT INTO eg_ws_applicationdocument(id, tenantid, documenttype, filestoreid, wsid, active, documentuid, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
-         basePath: WaterConnection.documents.*
+         basePath: WaterConnection
          jsonMaps:
           - jsonPath: $.WaterConnection.documents.*.id
 
@@ -139,7 +139,7 @@ serviceMaps:
           
           - jsonPath: $.WaterConnection.documents.*.fileStoreId
           
-          - jsonPath: $.WaterConnection.documents.*.connectionId
+          - jsonPath: $.WaterConnection.id
           
           - jsonPath: $.WaterConnection.documents.*.status
           
@@ -236,7 +236,7 @@ serviceMaps:
            - jsonPath: $.WaterConnection.id
           
        - query: INSERT INTO eg_ws_applicationdocument(id, tenantid, documenttype, filestoreid, wsid, active, documentuid, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT (tenantid,wsid,documenttype) DO UPDATE SET documenttype=?, filestoreid=?, wsid=?, active=?, documentuid=?, lastmodifiedby=?, lastmodifiedtime=?;
-         basePath: WaterConnection.documents.*
+         basePath: WaterConnection
          jsonMaps:
           - jsonPath: $.WaterConnection.documents.*.id
 
@@ -246,7 +246,7 @@ serviceMaps:
           
           - jsonPath: $.WaterConnection.documents.*.fileStoreId
           
-          - jsonPath: $.WaterConnection.documents.*.connectionId
+          - jsonPath: $.WaterConnection.id
           
           - jsonPath: $.WaterConnection.documents.*.status
           
@@ -264,7 +264,7 @@ serviceMaps:
           
           - jsonPath: $.WaterConnection.documents.*.fileStoreId
           
-          - jsonPath: $.WaterConnection.documents.*.connectionId
+          - jsonPath: $.WaterConnection.id
           
           - jsonPath: $.WaterConnection.documents.*.status
           
