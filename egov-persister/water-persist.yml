@@ -123,7 +123,7 @@ serviceMaps:
           - jsonPath: $.WaterConnection.auditDetails.lastModifiedTime
           
        - query: INSERT INTO eg_ws_applicationdocument(id, tenantid, documenttype, filestoreid, wsid, active, documentuid, createdby, createdtime, lastmodifiedby, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
-         basePath: WaterConnection
+         basePath: WaterConnection.documents.*
          jsonMaps:
           - jsonPath: $.WaterConnection.documents.*.id
 
@@ -133,19 +133,19 @@ serviceMaps:
           
           - jsonPath: $.WaterConnection.documents.*.fileStoreId
           
-          - jsonPath: $.WaterConnection.id
+          - jsonPath: $.WaterConnection.documents.*.connectionId
           
           - jsonPath: $.WaterConnection.documents.*.status
           
           - jsonPath: $.WaterConnection.documents.*.documentUid
 
-          - jsonPath: $.WaterConnection.auditDetails.createdBy
+          - jsonPath: $.WaterConnection.documents.*.auditDetails.createdBy
 
-          - jsonPath: $.WaterConnection.auditDetails.createdTime
+          - jsonPath: $.WaterConnection.documents.*.auditDetails.createdTime
 
-          - jsonPath: $.WaterConnection.auditDetails.lastModifiedBy
+          - jsonPath: $.WaterConnection.documents.*.auditDetails.lastModifiedBy
 
-          - jsonPath: $.WaterConnection.auditDetails.lastModifiedTime
+          - jsonPath: $.WaterConnection.documents.*.auditDetails.lastModifiedTime
           
  - version: 1.0
    description: Workflow status update Persists Water Service details in eg_ws_connection  table
