@@ -6,7 +6,7 @@ serviceMaps:
    fromTopic: save-ws-connection
    isTransaction: true
    queryMaps:
-       - query: INSERT INTO eg_ws_connection(id, tenantid, propertyid, applicationno, applicationstatus, status, connectiontype, connectionno, action, pipesize, newconnectioncharges, monthlycharges, servicecharges, createdby, createdtime, lastmodifiedby, lastmodifiedtime,usagetype, usagesubtype, applicationtype) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+       - query: INSERT INTO eg_ws_connection(id, tenantid, propertyid, applicationno, applicationstatus, status, connectiontype, connectionno, action, pipesize, createdby, createdtime, lastmodifiedby, lastmodifiedtime,usagetype, usagesubtype, applicationtype) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
          basePath: WaterConnection
          jsonMaps:
           - jsonPath: $.WaterConnection.id
@@ -28,12 +28,6 @@ serviceMaps:
           - jsonPath: $.WaterConnection.processInstance.action
           
           - jsonPath: $.WaterConnection.pipeSize
-          
-          - jsonPath: $.WaterConnection.newConnectionCharges
-          
-          - jsonPath: $.WaterConnection.monthlyCharges
-          
-          - jsonPath: $.WaterConnection.serviceCharges
 
           - jsonPath: $.WaterConnection.auditDetails.createdBy
 
@@ -60,7 +54,7 @@ serviceMaps:
 
            - jsonPath: $.WaterConnection.id
 
-           - jsonPath: $.WaterConnection.property.address.colony
+           - jsonPath: $.WaterConnection.property.address.locality.name
            
            - jsonPath: $.WaterConnection.property.address.houseNo
            
@@ -180,18 +174,12 @@ serviceMaps:
    fromTopic: update-ws-connection
    isTransaction: true
    queryMaps:
-       - query: UPDATE eg_ws_connection SET connectiontype=?, pipesize=?, newconnectioncharges=?, monthlycharges=?, servicecharges=?, lastmodifiedby=?, lastmodifiedtime=?,usagetype=?, usagesubtype=?, applicationtype=? WHERE tenantid=? and applicationno=?;
+       - query: UPDATE eg_ws_connection SET connectiontype=?, pipesize=?, lastmodifiedby=?, lastmodifiedtime=?,usagetype=?, usagesubtype=?, applicationtype=? WHERE tenantid=? and applicationno=?;
          basePath: WaterConnection
          jsonMaps:
           - jsonPath: $.WaterConnection.connectionType
                               
           - jsonPath: $.WaterConnection.pipeSize
-          
-          - jsonPath: $.WaterConnection.newConnectionCharges
-          
-          - jsonPath: $.WaterConnection.monthlyCharges
-          
-          - jsonPath: $.WaterConnection.serviceCharges
 
           - jsonPath: $.WaterConnection.auditDetails.lastModifiedBy
 
@@ -211,7 +199,7 @@ serviceMaps:
        - query: UPDATE eg_ws_connectionholder_address SET colony=?, houseno=?, zone=?, locality=?, ward=?, city=?, postalcode=?, propertytype=?, lastmodifiedby=?, lastmodifiedtime=? WHERE tenantid=? and wsid=?;
          basePath: WaterConnection
          jsonMaps:
-           - jsonPath: $.WaterConnection.property.address.colony
+           - jsonPath: $.WaterConnection.property.address.locality.name
            
            - jsonPath: $.WaterConnection.property.address.houseNo
            
