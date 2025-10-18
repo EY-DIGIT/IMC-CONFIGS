@@ -78,7 +78,7 @@ serviceMaps:
 
            - jsonPath: $.WaterConnection.auditDetails.lastModifiedTime
 
-       - query: INSERT INTO eg_ws_connectionholder(id, connectionholderaddressid, tenantid, propertyid, ownername, ownernameinhindi, mobilenumber, alternatemobilenumber, gender, email, fatherorhusbandname, relationship, photoidtype, photoid, userid, isprimaryowner, createdby, createdtime, lastmodifiedby, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+       - query: INSERT INTO eg_ws_connectionholder(id, connectionholderaddressid, tenantid, propertyid, ownername, ownernameinhindi, mobilenumber, alternatemobilenumber, gender, email, fatherorhusbandname, relationship, photoidtype, photoid, useruuid, isprimaryowner, createdby, createdtime, lastmodifiedby, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
          basePath: WaterConnection.connectionHolders.*
          jsonMaps:
 
@@ -110,7 +110,7 @@ serviceMaps:
           
           - jsonPath: $.WaterConnection.connectionHolders.*.identityType.identityNumber
           
-          - jsonPath: $.WaterConnection.connectionHolders.*.userId
+          - jsonPath: $.WaterConnection.connectionHolders.*.uuid
           
           - jsonPath: $.WaterConnection.connectionHolders.*.isPrimaryOwner
           
