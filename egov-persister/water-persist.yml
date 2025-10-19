@@ -42,9 +42,8 @@ serviceMaps:
           - jsonPath: $.WaterConnection.usageSubType
           
           - jsonPath: $.WaterConnection.applicationType
-		  
-		  - jsonPath: $.WaterConnection.isPropertyRegistered
 
+          - jsonPath: $.WaterConnection.isPropertyRegistered
 
        - query: INSERT INTO eg_ws_connectionholder_address(tenantid, id, wsid, colony, houseno, zone, locality, ward, city, postalcode, propertytype, createdby, createdtime, lastmodifiedby, lastmodifiedtime)	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
          basePath: WaterConnection
