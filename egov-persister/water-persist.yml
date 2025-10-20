@@ -123,7 +123,7 @@ serviceMaps:
 
           - jsonPath: $.WaterConnection.auditDetails.lastModifiedTime
           
-       - query: INSERT INTO eg_ws_applicationdocument(id, tenantid, documenttype, filestoreid, wsid, status, documentuid, createdby, createdtime, lastmodifiedby, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+       - query: INSERT INTO eg_ws_applicationdocument(id, tenantid, documenttype, filestoreid, wsid,  documentuid, createdby, createdtime, lastmodifiedby, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
          basePath: WaterConnection.documents.*
          jsonMaps:
           - jsonPath: $.WaterConnection.documents.*.id
@@ -135,8 +135,6 @@ serviceMaps:
           - jsonPath: $.WaterConnection.documents.*.fileStoreId
           
           - jsonPath: $.WaterConnection.documents.*.connectionId
-          
-          - jsonPath: $.WaterConnection.documents.*.status
           
           - jsonPath: $.WaterConnection.documents.*.documentUid
 
