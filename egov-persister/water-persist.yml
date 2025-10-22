@@ -292,20 +292,20 @@ serviceMaps:
        - query: UPDATE eg_ws_connection_charges SET  newconnectioncharges=?, monthlycharges=?, servicecharges=?, othercharges=?, isactive=?, lastmodifiedby=?, lastmodifiedtime=? WHERE id=? and wsid=?;
          basePath: WaterConnection
          jsonMaps:
-          - jsonPath: $.WaterConnection.newConnectionCharges
+          - jsonPath: $.WaterConnection.connectionCharges.newConnectionCharges
           
-          - jsonPath: $.WaterConnection.monthlyCharges
+          - jsonPath: $.WaterConnection.connectionCharges.monthlyCharges
           
-          - jsonPath: $.WaterConnection.serviceCharges
+          - jsonPath: $.WaterConnection.connectionCharges.serviceCharges
           
-          - jsonPath: $.WaterConnection.otherCharges
+          - jsonPath: $.WaterConnection.connectionCharges.otherCharges
 
-          - jsonPath: $.WaterConnection.isActive
+          - jsonPath: $.WaterConnection.connectionCharges.isActive
 
-          - jsonPath: $.WaterConnection.auditDetails.lastModifiedBy
+          - jsonPath: $.WaterConnection.connectionCharges.auditDetails.lastModifiedBy
 
-          - jsonPath: $.WaterConnection.auditDetails.lastModifiedTime
+          - jsonPath: $.WaterConnection.connectionCharges.auditDetails.lastModifiedTime
 
-          - jsonPath: $.WaterConnection.id
+          - jsonPath: $.WaterConnection.connectionCharges.id
 
-          - jsonPath: $.WaterConnection.wsconnectionId
+          - jsonPath: $.WaterConnection.connectionCharges.wsconnectionId
