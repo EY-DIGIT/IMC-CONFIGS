@@ -240,7 +240,7 @@ serviceMaps:
            
            - jsonPath: $.WaterConnection.property.address.pincode
            
-           - jsonPath: $.WaterConnection.property.address.propertyType
+           - jsonPath: $.WaterConnection.property.propertyType
            
            - jsonPath: $.WaterConnection.auditDetails.lastModifiedBy
 
