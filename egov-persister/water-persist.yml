@@ -238,7 +238,7 @@ serviceMaps:
            
            - jsonPath: $.WaterConnection.property.address.city
            
-           - jsonPath: $.WaterConnection.property.address.postalCode
+           - jsonPath: $.WaterConnection.property.address.pincode
            
            - jsonPath: $.WaterConnection.property.address.propertyType
            
