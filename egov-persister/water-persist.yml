@@ -151,29 +151,29 @@ serviceMaps:
        - query: INSERT INTO eg_ws_connection_charges(id, tenantid, wsid, newconnectioncharges, monthlycharges, servicecharges, othercharges, isactive, createdby, createdtime, lastmodifiedby, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
          basePath: WaterConnection
          jsonMaps:
-          - jsonPath: $.WaterConnection.id
+          - jsonPath: $.WaterConnection.connectionCharges.id
 
-          - jsonPath: $.WaterConnection.tenantId
+          - jsonPath: $.WaterConnection.connectionCharges.tenantId
           
-          - jsonPath: $.WaterConnection.wsconnectionId
+          - jsonPath: $.WaterConnection.connectionCharges.wsconnectionId
 
-          - jsonPath: $.WaterConnection.newConnectionCharges
+          - jsonPath: $.WaterConnection.connectionCharges.newConnectionCharges
           
-          - jsonPath: $.WaterConnection.monthlyCharges
+          - jsonPath: $.WaterConnection.connectionCharges.monthlyCharges
           
-          - jsonPath: $.WaterConnection.serviceCharges
+          - jsonPath: $.WaterConnection.connectionCharges.serviceCharges
           
-          - jsonPath: $.WaterConnection.otherCharges
+          - jsonPath: $.WaterConnection.connectionCharges.otherCharges
 
-          - jsonPath: $.WaterConnection.isActive
+          - jsonPath: $.WaterConnection.connectionCharges.isActive
 
-          - jsonPath: $.WaterConnection.auditDetails.createdBy
+          - jsonPath: $.WaterConnection.connectionCharges.auditDetails.createdBy
 
-          - jsonPath: $.WaterConnection.auditDetails.createdTime
+          - jsonPath: $.WaterConnection.connectionCharges.auditDetails.createdTime
 
-          - jsonPath: $.WaterConnection.auditDetails.lastModifiedBy
+          - jsonPath: $.WaterConnection.connectionCharges.auditDetails.lastModifiedBy
 
-          - jsonPath: $.WaterConnection.auditDetails.lastModifiedTime
+          - jsonPath: $.WaterConnection.connectionCharges.auditDetails.lastModifiedTime
           
  - version: 1.0
    description: Workflow status update Persists Water Service details in eg_ws_connection  table
