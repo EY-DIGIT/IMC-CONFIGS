@@ -151,29 +151,29 @@ serviceMaps:
        - query: INSERT INTO eg_ws_connection_charges(id, tenantid, wsid, newconnectioncharges, monthlycharges, servicecharges, othercharges, isactive, createdby, createdtime, lastmodifiedby, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
          basePath: WaterConnection
          jsonMaps:
-          - jsonPath: $.WaterConnection.connectionCharges.id
+          - jsonPath: $.WaterConnection.id
 
-          - jsonPath: $.WaterConnection.connectionCharges.tenantId
+          - jsonPath: $.WaterConnection.tenantId
           
-          - jsonPath: $.WaterConnection.connectionCharges.wsconnectionId
+          - jsonPath: $.WaterConnection.wsconnectionId
 
-          - jsonPath: $.WaterConnection.connectionCharges.newConnectionCharges
+          - jsonPath: $.WaterConnection.newConnectionCharges
           
-          - jsonPath: $.WaterConnection.connectionCharges.monthlyCharges
+          - jsonPath: $.WaterConnection.monthlyCharges
           
-          - jsonPath: $.WaterConnection.connectionCharges.serviceCharges
+          - jsonPath: $.WaterConnection.serviceCharges
           
-          - jsonPath: $.WaterConnection.connectionCharges.otherCharges
+          - jsonPath: $.WaterConnection.otherCharges
 
-          - jsonPath: $.WaterConnection.connectionCharges.isActive
+          - jsonPath: $.WaterConnection.isActive
 
-          - jsonPath: $.WaterConnection.connectionCharges.auditDetails.createdBy
+          - jsonPath: $.WaterConnection.auditDetails.createdBy
 
-          - jsonPath: $.WaterConnection.connectionCharges.auditDetails.createdTime
+          - jsonPath: $.WaterConnection.auditDetails.createdTime
 
-          - jsonPath: $.WaterConnection.connectionCharges.auditDetails.lastModifiedBy
+          - jsonPath: $.WaterConnection.auditDetails.lastModifiedBy
 
-          - jsonPath: $.WaterConnection.connectionCharges.auditDetails.lastModifiedTime
+          - jsonPath: $.WaterConnection.auditDetails.lastModifiedTime
           
  - version: 1.0
    description: Workflow status update Persists Water Service details in eg_ws_connection  table
@@ -228,7 +228,7 @@ serviceMaps:
          jsonMaps:
            - jsonPath: $.WaterConnection.property.address.locality.name
            
-           - jsonPath: $.WaterConnection.property.address.houseNo
+           - jsonPath: $.WaterConnection.property.address.doorNo
            
            - jsonPath: $.WaterConnection.property.address.zone
            
@@ -292,20 +292,20 @@ serviceMaps:
        - query: UPDATE eg_ws_connection_charges SET  newconnectioncharges=?, monthlycharges=?, servicecharges=?, othercharges=?, isactive=?, lastmodifiedby=?, lastmodifiedtime=? WHERE id=? and wsid=?;
          basePath: WaterConnection
          jsonMaps:
-          - jsonPath: $.WaterConnection.connectionCharges.newConnectionCharges
+          - jsonPath: $.WaterConnection.newConnectionCharges
           
-          - jsonPath: $.WaterConnection.connectionCharges.monthlyCharges
+          - jsonPath: $.WaterConnection.monthlyCharges
           
-          - jsonPath: $.WaterConnection.connectionCharges.serviceCharges
+          - jsonPath: $.WaterConnection.serviceCharges
           
-          - jsonPath: $.WaterConnection.connectionCharges.otherCharges
+          - jsonPath: $.WaterConnection.otherCharges
 
-          - jsonPath: $.WaterConnection.connectionCharges.isActive
+          - jsonPath: $.WaterConnection.isActive
 
-          - jsonPath: $.WaterConnection.connectionCharges.auditDetails.lastModifiedBy
+          - jsonPath: $.WaterConnection.auditDetails.lastModifiedBy
 
-          - jsonPath: $.WaterConnection.connectionCharges.auditDetails.lastModifiedTime
+          - jsonPath: $.WaterConnection.auditDetails.lastModifiedTime
 
-          - jsonPath: $.WaterConnection.connectionCharges.id
+          - jsonPath: $.WaterConnection.id
 
-          - jsonPath: $.WaterConnection.connectionCharges.wsconnectionId
+          - jsonPath: $.WaterConnection.wsconnectionId
