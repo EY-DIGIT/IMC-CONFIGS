@@ -148,6 +148,33 @@ serviceMaps:
 
           - jsonPath: $.WaterConnection.documents.*.auditDetails.lastModifiedTime
           
+       - query: INSERT INTO eg_ws_connection_charges(id, tenantid, wsid, newconnectioncharges, monthlycharges, servicecharges, othercharges, isactive, createdby, createdtime, lastmodifiedby, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+         basePath: WaterConnection
+         jsonMaps:
+          - jsonPath: $.WaterConnection.id
+
+          - jsonPath: $.WaterConnection.tenantId
+          
+          - jsonPath: $.WaterConnection.wsconnectionId
+
+          - jsonPath: $.WaterConnection.newConnectionCharges
+          
+          - jsonPath: $.WaterConnection.monthlyCharges
+          
+          - jsonPath: $.WaterConnection.serviceCharges
+          
+          - jsonPath: $.WaterConnection.otherCharges
+
+          - jsonPath: $.WaterConnection.isActive
+
+          - jsonPath: $.WaterConnection.auditDetails.createdBy
+
+          - jsonPath: $.WaterConnection.auditDetails.createdTime
+
+          - jsonPath: $.WaterConnection.auditDetails.lastModifiedBy
+
+          - jsonPath: $.WaterConnection.auditDetails.lastModifiedTime
+          
  - version: 1.0
    description: Workflow status update Persists Water Service details in eg_ws_connection  table
    fromTopic: update-ws-workflow
@@ -195,7 +222,6 @@ serviceMaps:
           - jsonPath: $.WaterConnection.tenantId
           
           - jsonPath: $.WaterConnection.applicationNo
-
 
        - query: UPDATE eg_ws_connectionholder_address SET colony=?, houseno=?, zone=?, locality=?, ward=?, city=?, postalcode=?, propertytype=?, lastmodifiedby=?, lastmodifiedtime=? WHERE tenantid=? and wsid=?;
          basePath: WaterConnection
@@ -262,3 +288,24 @@ serviceMaps:
           - jsonPath: $.WaterConnection.auditDetails.lastModifiedBy
 
           - jsonPath: $.WaterConnection.auditDetails.lastModifiedTime
+          
+       - query: UPDATE eg_ws_connection_charges SET  newconnectioncharges=?, monthlycharges=?, servicecharges=?, othercharges=?, isactive=?, lastmodifiedby=?, lastmodifiedtime=? WHERE id=? and wsid=?;
+         basePath: WaterConnection
+         jsonMaps:
+          - jsonPath: $.WaterConnection.newConnectionCharges
+          
+          - jsonPath: $.WaterConnection.monthlyCharges
+          
+          - jsonPath: $.WaterConnection.serviceCharges
+          
+          - jsonPath: $.WaterConnection.otherCharges
+
+          - jsonPath: $.WaterConnection.isActive
+
+          - jsonPath: $.WaterConnection.auditDetails.lastModifiedBy
+
+          - jsonPath: $.WaterConnection.auditDetails.lastModifiedTime
+
+          - jsonPath: $.WaterConnection.id
+
+          - jsonPath: $.WaterConnection.wsconnectionId
