@@ -6,6 +6,10 @@
 			"tenantValue":"Kapurthala"
 		},
 		{
+			"tenantCode": "mp.indore",
+			"tenantValue":"indore"
+		},
+		{
 			"tenantCode": "pb.ropar",
 			"tenantValue":"Ropar"
 		},
