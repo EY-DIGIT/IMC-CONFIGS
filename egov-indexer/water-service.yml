@@ -11,10 +11,8 @@ ServiceMaps:
         jsonPath: $.WaterConnection
         timeStampField: $.auditDetails.createdTime
         customJsonMapping:
-          indexMapping: {"Data":{"workflow": {"state": {}, "action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","connectionHolders":[],"connectionDate":"","connectionType":"","id":"","propertyId":"","usageType":"","usageSubType":"","pipeSize":"","tenantId":"","isPropertyRegistered":"","isOldConnectionNoExist":"","applicationType":"","@timestamp":"timestamp","auditDetails":{},"history":{}}}
+          indexMapping: {"Data":{"workflow": {"action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","connectionHolders":[],"connectionDate":"","connectionType":"","id":"","propertyId":"","usageType":"","usageSubType":"","pipeSize":"","tenantId":"","isPropertyRegistered":"","isOldConnectionNoExist":"","applicationType":"","@timestamp":"timestamp","auditDetails":{},"history":{}}}
           fieldMapping:
-          - inJsonPath: $.applicationStatus.state
-            outJsonPath: $.Data.workflow.state
           - inJsonPath: $.processInstance.action
             outJsonPath: $.Data.workflow.action
           - inJsonPath: $.processInstance.assignes.*.uuid
@@ -33,8 +31,6 @@ ServiceMaps:
             outJsonPath: $.Data.connectionHolders
           - inJsonPath: $.connectionDate
             outJsonPath: $.Data.connectionDate
-          - inJsonPath: $.connectionCategory
-            outJsonPath: $.Data.connectionCategory
           - inJsonPath: $.connectionType
             outJsonPath: $.Data.connectionType
           - inJsonPath: $.additionalDetails
@@ -97,10 +93,8 @@ ServiceMaps:
         jsonPath: $.WaterConnection
         timeStampField: $.auditDetails.lastModifiedTime
         customJsonMapping:
-          indexMapping: {"Data":{"workflow": {"state": {}, "action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","connectionHolders":[],"connectionDate":"","connectionCategory":"","connectionType":"","additionalDetails":{},"id":"","propertyId":"","usageType":"","usageSubType":"","pipeSize":"","tenantId":"","isPropertyRegistered":"","isOldConnectionNoExist":"","applicationType":"","@timestamp":"timestamp","auditDetails":{},"history":{}}}
+          indexMapping: {"Data":{"workflow": {"action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","connectionHolders":[],"connectionDate":"","connectionCategory":"","connectionType":"","additionalDetails":{},"id":"","propertyId":"","usageType":"","usageSubType":"","pipeSize":"","tenantId":"","isPropertyRegistered":"","isOldConnectionNoExist":"","applicationType":"","@timestamp":"timestamp","auditDetails":{},"history":{}}}
           fieldMapping:
-          - inJsonPath: $.applicationStatus.state
-            outJsonPath: $.Data.workflow.state
           - inJsonPath: $.processInstance.action
             outJsonPath: $.Data.workflow.action
           - inJsonPath: $.processInstance.assignes.*.uuid
@@ -182,10 +176,8 @@ ServiceMaps:
         jsonPath: $.WaterConnection
         timeStampField: $.auditDetails.lastModifiedTime
         customJsonMapping:
-          indexMapping: {"Data":{"workflow": {"state": {}, "action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","connectionHolders":[],"connectionDate":"","connectionCategory":"","connectionType":"","additionalDetails":{},"id":"","propertyId":"","usageType":"","usageSubType":"","pipeSize":"","tenantId":"","isPropertyRegistered":"","isOldConnectionNoExist":"","applicationType":"","@timestamp":"timestamp","auditDetails":{},"history":{}}}
+          indexMapping: {"Data":{"workflow": {"action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","connectionHolders":[],"connectionDate":"","connectionCategory":"","connectionType":"","additionalDetails":{},"id":"","propertyId":"","usageType":"","usageSubType":"","pipeSize":"","tenantId":"","isPropertyRegistered":"","isOldConnectionNoExist":"","applicationType":"","@timestamp":"timestamp","auditDetails":{},"history":{}}}
           fieldMapping:
-          - inJsonPath: $.applicationStatus.state
-            outJsonPath: $.Data.workflow.state
           - inJsonPath: $.processInstance.action
             outJsonPath: $.Data.workflow.action
           - inJsonPath: $.processInstance.assignes.*.uuid
