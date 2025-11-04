@@ -6,7 +6,7 @@ serviceMaps:
    fromTopic: save-ws-connection
    isTransaction: true
    queryMaps:
-       - query: INSERT INTO eg_ws_connection(id, tenantid, propertyid, ispropertyregistered, applicationno, applicationstatus, status, connectiontype, connectionno, action, pipesize, createdby, createdtime, lastmodifiedby, lastmodifiedtime,usagetype, usagesubtype, applicationtype,oldconnectionno, connectiondate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+       - query: INSERT INTO eg_ws_connection(id, tenantid, propertyid, ispropertyregistered, applicationno, applicationstatus, status, connectiontype, connectionno, action, pipesize, createdby, createdtime, lastmodifiedby, lastmodifiedtime,usagetype, usagesubtype, applicationtype,oldconnectionno, connectiondate,isoldconnectionnoexist) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
          basePath: WaterConnection
          jsonMaps:
           - jsonPath: $.WaterConnection.id
@@ -48,6 +48,8 @@ serviceMaps:
           - jsonPath: $.WaterConnection.oldConnectionNo
 
           - jsonPath: $.WaterConnection.connectionDate
+          
+          - jsonPath: $.WaterConnection.isOldConnectionNoExist
 
        - query: INSERT INTO eg_ws_connectionholder_address(tenantid, id, wsid, colony, houseno, zone, locality, ward, city, postalcode, propertytype, createdby, createdtime, lastmodifiedby, lastmodifiedtime)	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
          basePath: WaterConnection
