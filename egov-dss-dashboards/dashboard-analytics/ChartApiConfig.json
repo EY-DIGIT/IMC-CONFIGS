@@ -27440,5 +27440,26 @@
     ],
     "insight": {},
     "_comment": " "
+  },
+   "totalWaterConnectionApplication": {
+    "chartName": "DSS_WS_TOTAL_WATERCONNECTIONS",
+    "queries": [
+	  {
+        "module": "WS",
+        "indexName": "water-services",
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Total Application\":{\"value_count\":{\"field\":\"Data.applicationNo.keyword\"}}}}",
+        "requestQueryMap": "{\"tenantId\" : \"Data.tenantId\"}",
+        "dateRefField": ""
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Application"
+    ],
+    "_comment": " total water connection application count"
   }
 }
