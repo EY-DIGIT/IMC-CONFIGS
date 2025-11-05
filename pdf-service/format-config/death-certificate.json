@@ -23,11 +23,11 @@
               {
                 "stack": [
                   {
-                    "text": "GOVERNMENT OF PANJAB",
+                    "text": "GOVERNMENT OF MADHYA PRADESH",
                     "style": "appendix-header-body"
                   },
                   {
-                    "text": "DEPARTMENT OF HEALTH AND FAMILY WELFARE",
+                    "text": "INDORE MUNICIPAL CORPORATION",
                     "style": "appendix-header-body",
                     "margin": [0, 0, 0, 0]
                   } 
@@ -53,7 +53,7 @@
           "body": [
             [
               {
-                "text": "Chief Registrar Births & Deaths, Punjab",
+                "text": "Chief Registrar Births & Deaths, Indore",
                 "style": "title-header"
               }
             ]

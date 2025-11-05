@@ -27440,5 +27440,131 @@
     ],
     "insight": {},
     "_comment": " "
+  },
+   "totalWaterConnectionApplication": {
+    "chartName": "DSS_WS_TOTAL_WATERCONNECTIONS",
+    "queries": [
+	  {
+        "module": "WS",
+        "indexName": "water-services",
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Total Application\":{\"value_count\":{\"field\":\"Data.applicationNo.keyword\"}}}}",
+        "requestQueryMap": "{\"tenantId\" : \"Data.tenantId\"}",
+        "dateRefField": ""
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Application"
+    ],
+    "_comment": " total water connection application count"
+  },
+  "totalWaterConnectionApplicationCreated": {
+  "chartName": "DSS_WS_CREATED_WATERCONNECTION",
+  "queries": [
+    {
+		"module": "WS",
+		"indexName": "water-services",
+      "aggrQuery":"{\"size\":0,\"aggs\":{\"Total Application\":{\"scripted_metric\":{\"init_script\":\"state.count=0L;\",\"map_script\":\"if(params._source==null)return;def data=params._source.Data; if(data==null)return; def history=data.history; if(history==null||history.size()==0)return; def latest=history[0]; long latestTime=0L; if(latest.auditDetails!=null&&latest.auditDetails.createdTime!=null){ latestTime=(latest.auditDetails.createdTime instanceof Number)?latest.auditDetails.createdTime:0L; } for(int i=1;i<history.size();i++){ def h=history[i]; if(h==null||h.auditDetails==null) continue; def ct=h.auditDetails.createdTime; if(ct!=null && ct instanceof Number && ct>latestTime){ latest=h; latestTime=ct; } } if(latest.state!=null && latest.state.state==params.state){ state.count+=1L; }\",\"combine_script\":\"return state.count;\",\"reduce_script\":\"long total=0L; for(s in states){ if(s instanceof Number){ total+=s; } else if(s instanceof List){ for(x in s) if(x instanceof Number) total+=x; } } return total;\",\"params\":{\"state\":\"OPEN\"}}}}}",
+      "requestQueryMap": "{\"tenantId\" : \"Data.tenantId\"}",
+      "dateRefField": ""
+    }
+  ],
+  "chartType": "metric",
+  "valueType": "number",
+  "action": "",
+  "documentType": "_doc",
+  "drillChart": "none",
+  "aggregationPaths": [
+    "Total Application"
+  ],
+  "_comment": " total properties created count"
+  },
+  "totalWaterConnectionApplicationForwarded": {
+    "chartName": "DSS_WS_FORWARDED_WATERCONNECTION",
+    "queries": [
+      {
+        "module": "WS",
+        "indexName": "water-services",
+        "aggrQuery":"{\"size\":0,\"aggs\":{\"Total Application\":{\"scripted_metric\":{\"init_script\":\"state.count=0L;\",\"map_script\":\"if(params._source==null)return;def data=params._source.Data; if(data==null)return; def history=data.history; if(history==null||history.size()==0)return; def latest=history[0]; long latestTime=0L; if(latest.auditDetails!=null&&latest.auditDetails.createdTime!=null){ latestTime=(latest.auditDetails.createdTime instanceof Number)?latest.auditDetails.createdTime:0L; } for(int i=1;i<history.size();i++){ def h=history[i]; if(h==null||h.auditDetails==null) continue; def ct=h.auditDetails.createdTime; if(ct!=null && ct instanceof Number && ct>latestTime){ latest=h; latestTime=ct; } } if(latest.state!=null && latest.state.state==params.state){ state.count+=1L; }\",\"combine_script\":\"return state.count;\",\"reduce_script\":\"long total=0L; for(s in states){ if(s instanceof Number){ total+=s; } else if(s instanceof List){ for(x in s) if(x instanceof Number) total+=x; } } return total;\",\"params\":{\"state\":\"FIELDVERIFIED\"}}}}}",
+        "requestQueryMap": "{\"tenantId\" : \"Data.tenantId\"}",
+        "dateRefField": ""
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Application"
+    ],
+    "_comment": " total properties forwarded count"
+  },
+  "totalWaterConnectionApplicationApproved": {
+    "chartName": "DSS_WS_APPROVED_WATERCONNECTION",
+    "queries": [
+      {
+        "module": "WS",
+        "indexName": "water-services",
+        "aggrQuery":"{\"size\":0,\"aggs\":{\"Total Application\":{\"scripted_metric\":{\"init_script\":\"state.count=0L;\",\"map_script\":\"if(params._source==null)return;def data=params._source.Data; if(data==null)return; def history=data.history; if(history==null||history.size()==0)return; def latest=history[0]; long latestTime=0L; if(latest.auditDetails!=null&&latest.auditDetails.createdTime!=null){ latestTime=(latest.auditDetails.createdTime instanceof Number)?latest.auditDetails.createdTime:0L; } for(int i=1;i<history.size();i++){ def h=history[i]; if(h==null||h.auditDetails==null) continue; def ct=h.auditDetails.createdTime; if(ct!=null && ct instanceof Number && ct>latestTime){ latest=h; latestTime=ct; } } if(latest.state!=null && latest.state.state==params.state){ state.count+=1L; }\",\"combine_script\":\"return state.count;\",\"reduce_script\":\"long total=0L; for(s in states){ if(s instanceof Number){ total+=s; } else if(s instanceof List){ for(x in s) if(x instanceof Number) total+=x; } } return total;\",\"params\":{\"state\":\"APPROVED\"}}}}}",
+        "requestQueryMap": "{\"tenantId\" : \"Data.tenantId\"}",
+        "dateRefField": ""
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Application"
+    ],
+    "_comment": " total properties approved count"
+  },
+  "totalWaterConnectionApplicationSentBack": {
+    "chartName": "DSS_WS_SENT_BACK_WATERCONNECTION",
+    "queries": [
+      {
+        "module": "WS",
+        "indexName": "water-services",
+        "aggrQuery":"{\"size\":0,\"aggs\":{\"Total Application\":{\"scripted_metric\":{\"init_script\":\"state.count=0L;\",\"map_script\":\"if(params._source==null)return;def data=params._source.Data; if(data==null)return; def history=data.history; if(history==null||history.size()==0)return; def latest=history[0]; long latestTime=0L; if(latest.auditDetails!=null&&latest.auditDetails.createdTime!=null){ latestTime=(latest.auditDetails.createdTime instanceof Number)?latest.auditDetails.createdTime:0L; } for(int i=1;i<history.size();i++){ def h=history[i]; if(h==null||h.auditDetails==null) continue; def ct=h.auditDetails.createdTime; if(ct!=null && ct instanceof Number && ct>latestTime){ latest=h; latestTime=ct; } } if(latest.state!=null && latest.state.state==params.state){ state.count+=1L; }\",\"combine_script\":\"return state.count;\",\"reduce_script\":\"long total=0L; for(s in states){ if(s instanceof Number){ total+=s; } else if(s instanceof List){ for(x in s) if(x instanceof Number) total+=x; } } return total;\",\"params\":{\"state\":\"CORRECTIONPENDING\"}}}}}",
+        "requestQueryMap": "{\"tenantId\" : \"Data.tenantId\"}",
+        "dateRefField": ""
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Application"
+    ],
+    "_comment": " total properties sent back count"
+  },
+  "totalWaterConnectionApplicationRejected": {
+    "chartName": "DSS_WS_REJECTED_WATERCONNECTION",
+    "queries": [
+      {
+        "module": "WS",
+        "indexName": "water-services",
+        "aggrQuery":"{\"size\":0,\"aggs\":{\"Total Application\":{\"scripted_metric\":{\"init_script\":\"state.count=0L;\",\"map_script\":\"if(params._source==null)return;def data=params._source.Data; if(data==null)return; def history=data.history; if(history==null||history.size()==0)return; def latest=history[0]; long latestTime=0L; if(latest.auditDetails!=null&&latest.auditDetails.createdTime!=null){ latestTime=(latest.auditDetails.createdTime instanceof Number)?latest.auditDetails.createdTime:0L; } for(int i=1;i<history.size();i++){ def h=history[i]; if(h==null||h.auditDetails==null) continue; def ct=h.auditDetails.createdTime; if(ct!=null && ct instanceof Number && ct>latestTime){ latest=h; latestTime=ct; } } if(latest.state!=null && latest.state.state==params.state){ state.count+=1L; }\",\"combine_script\":\"return state.count;\",\"reduce_script\":\"long total=0L; for(s in states){ if(s instanceof Number){ total+=s; } else if(s instanceof List){ for(x in s) if(x instanceof Number) total+=x; } } return total;\",\"params\":{\"state\":\"REJECTED\"}}}}}",
+        "requestQueryMap": "{\"tenantId\" : \"Data.tenantId\"}",
+        "dateRefField": ""
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Application"
+    ],
+    "_comment": " total properties rejected count"
   }
 }

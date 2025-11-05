@@ -11,10 +11,8 @@ ServiceMaps:
         jsonPath: $.WaterConnection
         timeStampField: $.auditDetails.createdTime
         customJsonMapping:
-          indexMapping: {"Data":{"workflow": {"state": {}, "action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","plumberInfo":[],"roadCuttingInfo":[],"connectionHolders":[],"roadType":"","roadCuttingArea":"","connectionExecutionDate":"","connectionCategory":"","connectionType":"","additionalDetails":{},"id":"","propertyId":"","propertyUsageType":"","rainWaterHarvesting":"","waterSource":"","tenantId":"","meterId":"","meterInstallationDate":"","proposedPipeSize":"","proposedTaps":"","pipeSize":"","noOfTaps":"","applicationType":"","dateEffectiveFrom":"","channel":"","@timestamp":"timestamp","auditDetails":{},"history":{}}}
+          indexMapping: {"Data":{"workflow": {"action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","connectionHolders":[],"connectionDate":"","connectionType":"","id":"","propertyId":"","usageType":"","usageSubType":"","pipeSize":"","tenantId":"","isPropertyRegistered":"","isOldConnectionNoExist":"","applicationType":"","@timestamp":"timestamp","auditDetails":{},"history":{}}}
           fieldMapping:
-          - inJsonPath: $.applicationStatus.state
-            outJsonPath: $.Data.workflow.state
           - inJsonPath: $.processInstance.action
             outJsonPath: $.Data.workflow.action
           - inJsonPath: $.processInstance.assignes.*.uuid
@@ -28,21 +26,11 @@ ServiceMaps:
           - inJsonPath: $.connectionNo
             outJsonPath: $.Data.connectionNo
           - inJsonPath: $.oldConnectionNo
-            outJsonPath: $.Data.oldConnectionNo
-          - inJsonPath: $.plumberInfo
-            outJsonPath: $.Data.plumberInfo
-          - inJsonPath: $.roadCuttingInfo
-            outJsonPath: $.Data.roadCuttingInfo  
+            outJsonPath: $.Data.oldConnectionNo 
           - inJsonPath: $.connectionHolders
             outJsonPath: $.Data.connectionHolders
-          - inJsonPath: $.roadType
-            outJsonPath: $.Data.roadType
-          - inJsonPath: $.roadCuttingArea
-            outJsonPath: $.Data.roadCuttingArea
-          - inJsonPath: $.connectionExecutionDate
-            outJsonPath: $.Data.connectionExecutionDate
-          - inJsonPath: $.connectionCategory
-            outJsonPath: $.Data.connectionCategory
+          - inJsonPath: $.connectionDate
+            outJsonPath: $.Data.connectionDate
           - inJsonPath: $.connectionType
             outJsonPath: $.Data.connectionType
           - inJsonPath: $.additionalDetails
@@ -51,30 +39,18 @@ ServiceMaps:
             outJsonPath: $.Data.id
           - inJsonPath: $.propertyId
             outJsonPath: $.Data.propertyId
-          - inJsonPath: $.rainWaterHarvesting
-            outJsonPath: $.Data.rainWaterHarvesting
-          - inJsonPath: $.waterSource
-            outJsonPath: $.Data.waterSource
-          - inJsonPath: $.tenantId
-            outJsonPath: $.Data.tenantId
-          - inJsonPath: $.meterId
-            outJsonPath: $.Data.meterId
-          - inJsonPath: $.meterInstallationDate
-            outJsonPath: $.Data.meterInstallationDate
-          - inJsonPath: $.proposedPipeSize
-            outJsonPath: $.Data.proposedPipeSize
-          - inJsonPath: $.proposedTaps
-            outJsonPath: $.Data.proposedTaps
+          - inJsonPath: $.usageSubType
+            outJsonPath: $.Data.usageSubType
           - inJsonPath: $.pipeSize
             outJsonPath: $.Data.pipeSize
-          - inJsonPath: $.noOfTaps
-            outJsonPath: $.Data.noOfTaps
+          - inJsonPath: $.tenantId
+            outJsonPath: $.Data.tenantId
+          - inJsonPath: $.isPropertyRegistered
+            outJsonPath: $.Data.isPropertyRegistered
+          - inJsonPath: $.isOldConnectionNoExist
+            outJsonPath: $.Data.isOldConnectionNoExist
           - inJsonPath: $.applicationType
             outJsonPath: $.Data.applicationType
-          - inJsonPath: $.dateEffectiveFrom
-            outJsonPath: $.Data.dateEffectiveFrom
-          - inJsonPath: $.channel
-            outJsonPath: $.Data.channel
           - inJsonPath: $.@timestamp
             outJsonPath: $.Data.@timestamp
           - inJsonPath: $.auditDetails
@@ -94,13 +70,6 @@ ServiceMaps:
               outJsonPath: $.Data.propertyUsageType
             - inJsonPath: $.Properties[0].owners[*].mobileNumber
               outJsonPath: $.Data.ownerMobileNumbers
-          - path: http://egov-location.egov:8080/egov-location/location/v11/boundarys/_search
-            queryParam: hierarchyTypeCode=REVENUE,boundaryType=Block,codes=$.additionalDetails.locality,tenantId=$.tenantId
-            apiRequest: {"RequestInfo": {"apiId": "org.egov.pt","ver": "1.0","ts": 1502890899493,"action": "asd","did": "4354648646","key": "xyz","msgId": "654654", "requesterId": "61",
-            "authToken": "02dbe5be-28df-4d82-954f-3d27c56cca7d","userInfo":{"id":73}}}
-            uriResponseMapping:
-            - inJsonPath: $.TenantBoundary[0].boundary[0]
-              outJsonPath: $.Data.ward
           mdmsMapping:
           - path: http://egov-mdms-service.egov:8080/egov-mdms-service/v1/_search
             moduleName: tenant
@@ -124,10 +93,8 @@ ServiceMaps:
         jsonPath: $.WaterConnection
         timeStampField: $.auditDetails.lastModifiedTime
         customJsonMapping:
-          indexMapping: {"Data":{"workflow": {"state": {}, "action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","plumberInfo":[],"roadCuttingInfo":[],"connectionHolders":[],"roadType":"","roadCuttingArea":"","connectionExecutionDate":"","connectionCategory":"","connectionType":"","additionalDetails":{},"id":"","propertyId":"","propertyUsageType":"","rainWaterHarvesting":"","waterSource":"","tenantId":"","meterId":"","meterInstallationDate":"","proposedPipeSize":"","proposedTaps":"","pipeSize":"","noOfTaps":"","applicationType":"","dateEffectiveFrom":"","channel":"","@timestamp":"timestamp","auditDetails":{},"history":{}}}
+          indexMapping: {"Data":{"workflow": {"action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","connectionHolders":[],"connectionDate":"","connectionCategory":"","connectionType":"","additionalDetails":{},"id":"","propertyId":"","usageType":"","usageSubType":"","pipeSize":"","tenantId":"","isPropertyRegistered":"","isOldConnectionNoExist":"","applicationType":"","@timestamp":"timestamp","auditDetails":{},"history":{}}}
           fieldMapping:
-          - inJsonPath: $.applicationStatus.state
-            outJsonPath: $.Data.workflow.state
           - inJsonPath: $.processInstance.action
             outJsonPath: $.Data.workflow.action
           - inJsonPath: $.processInstance.assignes.*.uuid
@@ -141,21 +108,11 @@ ServiceMaps:
           - inJsonPath: $.connectionNo
             outJsonPath: $.Data.connectionNo
           - inJsonPath: $.oldConnectionNo
-            outJsonPath: $.Data.oldConnectionNo
-          - inJsonPath: $.plumberInfo
-            outJsonPath: $.Data.plumberInfo
-          - inJsonPath: $.roadCuttingInfo
-            outJsonPath: $.Data.roadCuttingInfo  
+            outJsonPath: $.Data.oldConnectionNo 
           - inJsonPath: $.connectionHolders
             outJsonPath: $.Data.connectionHolders
-          - inJsonPath: $.roadType
-            outJsonPath: $.Data.roadType
-          - inJsonPath: $.roadCuttingArea
-            outJsonPath: $.Data.roadCuttingArea
-          - inJsonPath: $.connectionExecutionDate
-            outJsonPath: $.Data.connectionExecutionDate
-          - inJsonPath: $.connectionCategory
-            outJsonPath: $.Data.connectionCategory
+          - inJsonPath: $.connectionDate
+            outJsonPath: $.Data.connectionDate
           - inJsonPath: $.connectionType
             outJsonPath: $.Data.connectionType
           - inJsonPath: $.additionalDetails
@@ -164,30 +121,20 @@ ServiceMaps:
             outJsonPath: $.Data.id
           - inJsonPath: $.propertyId
             outJsonPath: $.Data.propertyId
-          - inJsonPath: $.rainWaterHarvesting
-            outJsonPath: $.Data.rainWaterHarvesting
-          - inJsonPath: $.waterSource
-            outJsonPath: $.Data.waterSource
-          - inJsonPath: $.tenantId
-            outJsonPath: $.Data.tenantId
-          - inJsonPath: $.meterId
-            outJsonPath: $.Data.meterId
-          - inJsonPath: $.meterInstallationDate
-            outJsonPath: $.Data.meterInstallationDate
-          - inJsonPath: $.proposedPipeSize
-            outJsonPath: $.Data.proposedPipeSize
-          - inJsonPath: $.proposedTaps
-            outJsonPath: $.Data.proposedTaps
+          - inJsonPath: $.usageType
+            outJsonPath: $.Data.usageType
+          - inJsonPath: $.usageSubType
+            outJsonPath: $.Data.usageSubType
           - inJsonPath: $.pipeSize
             outJsonPath: $.Data.pipeSize
-          - inJsonPath: $.noOfTaps
-            outJsonPath: $.Data.noOfTaps
+          - inJsonPath: $.tenantId
+            outJsonPath: $.Data.tenantId
+          - inJsonPath: $.isPropertyRegistered
+            outJsonPath: $.Data.isPropertyRegistered
+          - inJsonPath: $.isOldConnectionNoExist
+            outJsonPath: $.Data.isOldConnectionNoExist
           - inJsonPath: $.applicationType
             outJsonPath: $.Data.applicationType
-          - inJsonPath: $.dateEffectiveFrom
-            outJsonPath: $.Data.dateEffectiveFrom
-          - inJsonPath: $.channel
-            outJsonPath: $.Data.channel
           - inJsonPath: $.@timestamp
             outJsonPath: $.Data.@timestamp
           - inJsonPath: $.auditDetails
@@ -207,13 +154,6 @@ ServiceMaps:
               outJsonPath: $.Data.propertyUsageType
             - inJsonPath: $.Properties[0].owners[*].mobileNumber
               outJsonPath: $.Data.ownerMobileNumbers
-          - path: http://egov-location.egov:8080/egov-location/location/v11/boundarys/_search
-            queryParam: hierarchyTypeCode=REVENUE,boundaryType=Block,codes=$.additionalDetails.locality,tenantId=$.tenantId
-            apiRequest: {"RequestInfo": {"apiId": "org.egov.pt","ver": "1.0","ts": 1502890899493,"action": "asd","did": "4354648646","key": "xyz","msgId": "654654", "requesterId": "61",
-            "authToken": "02dbe5be-28df-4d82-954f-3d27c56cca7d","userInfo":{"id":73}}}
-            uriResponseMapping:
-            - inJsonPath: $.TenantBoundary[0].boundary[0]
-              outJsonPath: $.Data.ward
           mdmsMapping:
           - path: http://egov-mdms-service.egov:8080/egov-mdms-service/v1/_search
             moduleName: tenant
@@ -236,10 +176,8 @@ ServiceMaps:
         jsonPath: $.WaterConnection
         timeStampField: $.auditDetails.lastModifiedTime
         customJsonMapping:
-          indexMapping: {"Data":{"workflow": {"state": {}, "action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","plumberInfo":[],"roadCuttingInfo":[],"connectionHolders":[],"roadType":"","roadCuttingArea":"","connectionExecutionDate":"","connectionCategory":"","connectionType":"","additionalDetails":{},"id":"","propertyId":"","rainWaterHarvesting":"","waterSource":"","tenantId":"","meterId":"","meterInstallationDate":"","proposedPipeSize":"","proposedTaps":"","pipeSize":"","noOfTaps":"","applicationType":"","dateEffectiveFrom":"","channel":"","@timestamp":"timestamp","auditDetails":{},"history":{}}}
+          indexMapping: {"Data":{"workflow": {"action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","connectionHolders":[],"connectionDate":"","connectionCategory":"","connectionType":"","additionalDetails":{},"id":"","propertyId":"","usageType":"","usageSubType":"","pipeSize":"","tenantId":"","isPropertyRegistered":"","isOldConnectionNoExist":"","applicationType":"","@timestamp":"timestamp","auditDetails":{},"history":{}}}
           fieldMapping:
-          - inJsonPath: $.applicationStatus.state
-            outJsonPath: $.Data.workflow.state
           - inJsonPath: $.processInstance.action
             outJsonPath: $.Data.workflow.action
           - inJsonPath: $.processInstance.assignes.*.uuid
@@ -253,21 +191,11 @@ ServiceMaps:
           - inJsonPath: $.connectionNo
             outJsonPath: $.Data.connectionNo
           - inJsonPath: $.oldConnectionNo
-            outJsonPath: $.Data.oldConnectionNo
-          - inJsonPath: $.plumberInfo
-            outJsonPath: $.Data.plumberInfo
-          - inJsonPath: $.roadCuttingInfo
-            outJsonPath: $.Data.roadCuttingInfo  
+            outJsonPath: $.Data.oldConnectionNo 
           - inJsonPath: $.connectionHolders
             outJsonPath: $.Data.connectionHolders
-          - inJsonPath: $.roadType
-            outJsonPath: $.Data.roadType
-          - inJsonPath: $.roadCuttingArea
-            outJsonPath: $.Data.roadCuttingArea
-          - inJsonPath: $.connectionExecutionDate
-            outJsonPath: $.Data.connectionExecutionDate
-          - inJsonPath: $.connectionCategory
-            outJsonPath: $.Data.connectionCategory
+          - inJsonPath: $.connectionDate
+            outJsonPath: $.Data.connectionDate
           - inJsonPath: $.connectionType
             outJsonPath: $.Data.connectionType
           - inJsonPath: $.additionalDetails
@@ -276,30 +204,20 @@ ServiceMaps:
             outJsonPath: $.Data.id
           - inJsonPath: $.propertyId
             outJsonPath: $.Data.propertyId
-          - inJsonPath: $.rainWaterHarvesting
-            outJsonPath: $.Data.rainWaterHarvesting
-          - inJsonPath: $.waterSource
-            outJsonPath: $.Data.waterSource
-          - inJsonPath: $.tenantId
-            outJsonPath: $.Data.tenantId
-          - inJsonPath: $.meterId
-            outJsonPath: $.Data.meterId
-          - inJsonPath: $.meterInstallationDate
-            outJsonPath: $.Data.meterInstallationDate
-          - inJsonPath: $.proposedPipeSize
-            outJsonPath: $.Data.proposedPipeSize
-          - inJsonPath: $.proposedTaps
-            outJsonPath: $.Data.proposedTaps
+          - inJsonPath: $.usageType
+            outJsonPath: $.Data.usageType
+          - inJsonPath: $.usageSubType
+            outJsonPath: $.Data.usageSubType
           - inJsonPath: $.pipeSize
             outJsonPath: $.Data.pipeSize
-          - inJsonPath: $.noOfTaps
-            outJsonPath: $.Data.noOfTaps
+          - inJsonPath: $.tenantId
+            outJsonPath: $.Data.tenantId
+          - inJsonPath: $.isPropertyRegistered
+            outJsonPath: $.Data.isPropertyRegistered
+          - inJsonPath: $.isOldConnectionNoExist
+            outJsonPath: $.Data.isOldConnectionNoExist
           - inJsonPath: $.applicationType
             outJsonPath: $.Data.applicationType
-          - inJsonPath: $.dateEffectiveFrom
-            outJsonPath: $.Data.dateEffectiveFrom
-          - inJsonPath: $.channel
-            outJsonPath: $.Data.channel
           - inJsonPath: $.@timestamp
             outJsonPath: $.Data.@timestamp
           - inJsonPath: $.auditDetails
@@ -319,13 +237,6 @@ ServiceMaps:
               outJsonPath: $.Data.propertyUsageType
             - inJsonPath: $.Properties[0].owners[*].mobileNumber
               outJsonPath: $.Data.ownerMobileNumbers
-          - path: http://egov-location.egov:8080/egov-location/location/v11/boundarys/_search
-            queryParam: hierarchyTypeCode=REVENUE,boundaryType=Block,codes=$.additionalDetails.locality,tenantId=$.tenantId
-            apiRequest: {"RequestInfo": {"apiId": "org.egov.pt","ver": "1.0","ts": 1502890899493,"action": "asd","did": "4354648646","key": "xyz","msgId": "654654", "requesterId": "61",
-            "authToken": "02dbe5be-28df-4d82-954f-3d27c56cca7d","userInfo":{"id":73}}}
-            uriResponseMapping:
-            - inJsonPath: $.TenantBoundary[0].boundary[0]
-              outJsonPath: $.Data.ward
           mdmsMapping:
           - path: http://egov-mdms-service.egov:8080/egov-mdms-service/v1/_search
             moduleName: tenant
