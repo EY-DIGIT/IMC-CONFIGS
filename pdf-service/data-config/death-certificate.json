@@ -20,7 +20,7 @@
                 {
                   "variable": "name", 
                   "value": {
-                    "path": "$.fullName"
+                    "path": "$.firstname"
                   },
                   "type":"setEmpty"
                 },
@@ -110,21 +110,21 @@
                 {
                   "variable": "parentsStreet", 
                   "value": {
-                    "path": "$.deathPermaddr.street"
+                    "path": "$.deathPermaddr.zone"
                   },
                   "type":"setEmpty"
                 },
                 {
                   "variable": "parentsTehsil", 
                   "value": {
-                    "path": "$.deathPermaddr.tehsil"
+                    "path": "$.deathPermaddr.ward"
                   },
                   "type":"setEmpty"
                 },
                 {
                   "variable": "parentsDistrict", 
                   "value": {
-                    "path": "$.deathPermaddr.district"
+                    "path": "$.deathPermaddr.locality"
                   },
                   "type":"setEmpty"
                 },

@@ -20,7 +20,7 @@
                 {
                   "variable": "name", 
                   "value": {
-                    "path": "$.fullName"
+                    "path": "$.firstname"
                   },
                   "type":"setEmpty"
                 },
@@ -75,14 +75,14 @@
                 {
                   "variable": "fatherName", 
                   "value": {
-                    "path": "$.birthFatherInfo.fullName"
+                    "path": "$.birthFatherInfo.firstname"
                   },
                   "type":"setEmpty"
                 },
                 {
                   "variable": "motherName", 
                   "value": {
-                    "path": "$.birthMotherInfo.fullName"
+                    "path": "$.birthMotherInfo.firstname"
                   },
                   "type":"setEmpty"
                 },
@@ -110,21 +110,21 @@
                 {
                   "variable": "parentsStreet", 
                   "value": {
-                    "path": "$.birthPermaddr.street"
+                    "path": "$.birthPermaddr.zone"
                   },
                   "type":"setEmpty"
                 },
                 {
                   "variable": "parentsTehsil", 
                   "value": {
-                    "path": "$.birthPermaddr.tehsil"
+                    "path": "$.birthPermaddr.ward"
                   },
                   "type":"setEmpty"
                 },
                 {
                   "variable": "parentsDistrict", 
                   "value": {
-                    "path": "$.birthPermaddr.district"
+                    "path": "$.birthPermaddr.locality"
                   },
                   "type":"setEmpty"
                 },
