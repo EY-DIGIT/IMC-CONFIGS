@@ -23,11 +23,11 @@
               {
                 "stack": [
                   {
-                    "text": "GOVERNMENT OF MADHYA PRADESH",
+                    "text": "Government of Madhya Pradesh / मध्य प्रदेश सरकार",
                     "style": "appendix-header-body"
                   },
                   {
-                    "text": "INDORE MUNICIPAL CORPORATION",
+                    "text": "DEPARTMENT OF PLANNING, ECONOMICS & STATISTICS",
                     "style": "appendix-header-body",
                     "margin": [0, 0, 0, 0]
                   } 
@@ -53,7 +53,7 @@
           "body": [
             [
               {
-                "text": "Chief Registrar Births & Deaths, Indore",
+                "text": "ulb: Indore",
                 "style": "title-header"
               }
             ]
@@ -68,7 +68,7 @@
           "body": [
             [
               {
-                "text": "DEATH CERTIFICATE",
+                "text": "Death Certificate/ मृत्यु प्रमाण पत",
                 "style": "title-header",
                 "decoration": "underline"
               }
@@ -86,7 +86,7 @@
               {
                 "columns": [
                   {
-                    "text": ["This is to certify that the following information has been taken from the original birth record which is registered in the birth register of Local Registrar, Births & Deaths,  {{parentsCity}}, Block/ Police Station-  {{parentsStreet}} Taluk- {{parentsTehsil}}  District-  {{parentsDistrict}} of  {{parentsState}} State of the Year – {{year}}"],
+                    "text": ["This is to certify that the following information has been taken from the original birth record which is registered in the birth register of Local Registrar, Births & Deaths,  {{parentsCity}}, Zone-  {{parentsStreet}} Ward- {{parentsTehsil}} Colony- {{parentsDistrict}} of  MP State of the Year – 2025"],
                     "style": "rule-header"
                   }
                 ]
@@ -307,7 +307,7 @@
       "appendix-header": {
         "color": "#000000",
         "bold": true,
-        "fontSize": 9,
+        "fontSize": 12,
         "fontWeight": 400,
         "alignment": "center"
       },
@@ -342,7 +342,7 @@
       "title-header": {
         "color": "#004d00",
         "bold": true,
-        "fontSize": 14,
+        "fontSize": 10,
         "alignment": "center",
         "margin": [0, -1, 0, 0]
       },
