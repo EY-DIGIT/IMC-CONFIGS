@@ -18,8 +18,7 @@
               {
                 "image": "{{logoImage}}",
                 "width": 50,
-                "height": 61.25,
-				"style": "logo"
+                "height": 61.25
               },
               {
                 "stack": [
@@ -41,9 +40,18 @@
                 ]
               },
               {
-			    "stack": [
+                "stack": [
                   {
-                    "text": "{{paymentDate}}"
+                    "text": "{{address}}"
+                  },
+                  {
+                    "text": "{{phoneNumber}}"
+                  },
+                  {
+                    "text": "{{website}}"
+                  },
+                  {
+                    "text": "{{email}}"
                   }
                 ],
                 "alignment": "right",
@@ -499,24 +507,11 @@
           1
         ]
       },
-	  "logo": {
-          "min-width":72px,
-		  "height":72px,
-		  "display":"flex",
-		  "align-items":"center",
-		  "justify-content":"center",
-		  "background:#fff",
-		  "border-radius":6px,
-		  "border":"1px solid var(--border)",
-		  "font-weight:700,
-		  "color":"var(--brand)",
-		  "font-size":12px
-      },
       "receipt-logo-header": {
-         "margin":0,
-		  "font-size":18px,
-		  "letter-spacing":0.2px,
-		  "color":"var(--brand)",
+        "color": "#000000",
+        "fontSize": 14,
+        "bold": true,
+        "letterSpacing": 0.74,
         "margin": [
           0,
           0,
