@@ -26,30 +26,30 @@
                 },
                 "type": "selectFromRequestInfo"
               },
-			  {
+              {
                 "variable": "paymentType",
                 "value": {
                   "path": "$.paymentMode"
-				}
-			  },
-			  {
+                }
+              },
+              {
                 "variable": "modeOfPayment",
                 "value": {
                   "path": "$.paymentMode"
-				}
-			  },
-			  {
+                }
+              },
+              {
                 "variable": "referenceNo",
                 "value": {
                   "path": "$.paymentDetails[0].receiptNumber"
-				}
-			  },
-			  {
+                }
+              },
+              {
                 "variable": "consumerID",
                 "value": {
                   "path": "$.connectionNumber"
-				}
-			  },
+                }
+              },
               {
                 "variable": "mobileNumber",
                 "value": {
@@ -57,7 +57,7 @@
                 }
               },
               {
-                "variable": "paymentStatus", 
+                "variable": "paymentStatus",
                 "value": {
                   "path": "$.paymentStatus"
                 }
@@ -226,11 +226,11 @@
                   "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_PAYMENT_STATUS"
                 },
                 "type": "label",
-                "localisation":{
-                  "required":true,
+                "localisation": {
+                  "required": true,
                   "prefix": null,
-                  "module":"rainmaker-common"
-               }
+                  "module": "rainmaker-common"
+                }
               },
               {
                 "variable": "service_type",
@@ -522,7 +522,7 @@
             "externalAPI": [
               {
                 "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=pb&filter=%5B?(@.code=='{$.tenantId}')%5D",
+                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=mp&filter=%5B?(@.code=='{$.tenantId}')%5D",
                 "apiRequest": null,
                 "responseMapping": [
                   {
@@ -557,7 +557,7 @@
                   }
                 ]
               },
-			  {
+              {
                 "path": "http://ws-services.egov:8080/ws-services/wc/_search",
                 "queryParam": "applicationNo=IM-WC-25-10-30-000002&tenantId=mp.indore",
                 "apiRequest": null,
@@ -601,7 +601,7 @@
                   {
                     "variable": "connectionStartDate",
                     "value": "$.WaterConnection.auditDetails.createdTime"
-                  }                  
+                  }
                 ]
               }
             ]
