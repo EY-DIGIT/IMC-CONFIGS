@@ -40,18 +40,9 @@
                 ]
               },
               {
-                "stack": [
+			    "stack": [
                   {
-                    "text": "{{address}}"
-                  },
-                  {
-                    "text": "{{phoneNumber}}"
-                  },
-                  {
-                    "text": "{{website}}"
-                  },
-                  {
-                    "text": "{{email}}"
+                    "text": "{{paymentDate}}"
                   }
                 ],
                 "alignment": "right",
