@@ -14,20 +14,44 @@
           {
             "direct": [
               {
-                "variable": "payerName",
+                "variable": "ownerName",
                 "value": {
                   "path": "$.payerName"
                 }
               },
               {
-                "variable": "user-name",
+                "variable": "collectionBy",
                 "value": {
                   "path": "$.userInfo.name"
                 },
                 "type": "selectFromRequestInfo"
               },
+			  {
+                "variable": "paymentType",
+                "value": {
+                  "path": "$.paymentMode"
+				}
+			  },
+			  {
+                "variable": "modeOfPayment",
+                "value": {
+                  "path": "$.paymentMode"
+				}
+			  },
+			  {
+                "variable": "referenceNo",
+                "value": {
+                  "path": "$.paymentDetails[0].receiptNumber"
+				}
+			  },
+			  {
+                "variable": "consumerID",
+                "value": {
+                  "path": "$.connectionNumber"
+				}
+			  },
               {
-                "variable": "payerContact",
+                "variable": "mobileNumber",
                 "value": {
                   "path": "$.mobileNumber"
                 }
@@ -56,7 +80,7 @@
                 }
               },
               {
-                "variable": "paidAmount",
+                "variable": "totalAmountPaid",
                 "value": {
                   "path": "$.paymentDetails[0].totalAmountPaid"
                 }
@@ -466,11 +490,31 @@
             "derived": [
               {
                 "variable": "pendingAmount",
-                "formula": "{{paidAmount}}>{{dueAmount}}?0:{{dueAmount}}-{{paidAmount}}"
+                "formula": "{{totalAmountPaid}}>{{dueAmount}}?0:{{dueAmount}}-{{totalAmountPaid}}"
               },
               {
                 "variable": "advanceAmount",
-                "formula": "{{paidAmount}}>{{dueAmount}}?{{paidAmount}}-{{dueAmount}}:0"
+                "formula": "{{totalAmountPaid}}>{{dueAmount}}?{{totalAmountPaid}}-{{dueAmount}}:0"
+              },
+              {
+                "variable": "totalFees",
+                "formula": "{{totalAmountPaid}}>{{dueAmount}}?{{totalAmountPaid}}-{{dueAmount}}:0"
+              },
+              {
+                "variable": "totalPenalty",
+                "formula": "{{totalAmountPaid}}>{{dueAmount}}?{{totalAmountPaid}}-{{dueAmount}}:0"
+              },
+              {
+                "variable": "currentAmount",
+                "formula": "{{totalAmountPaid}}>{{dueAmount}}?{{totalAmountPaid}}-{{dueAmount}}:0"
+              },
+              {
+                "variable": "arrearAmount",
+                "formula": "{{totalAmountPaid}}>{{dueAmount}}?{{totalAmountPaid}}-{{dueAmount}}:0"
+              },
+              {
+                "variable": "balanceAmount",
+                "formula": "{{totalAmountPaid}}>{{dueAmount}}?{{totalAmountPaid}}-{{dueAmount}}:0"
               }
             ]
           },
@@ -478,7 +522,7 @@
             "externalAPI": [
               {
                 "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=mp",
+                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=pb&filter=%5B?(@.code=='{$.tenantId}')%5D",
                 "apiRequest": null,
                 "responseMapping": [
                   {
@@ -511,6 +555,53 @@
                       "module": "rainmaker-common"
                     }
                   }
+                ]
+              },
+			  {
+                "path": "http://ws-services:8080/ws-services/wc/_search",
+                "queryParam": "applicationNo=$.paymentDetails[0].bill.consumerCode&status=Active",
+                "apiRequest": null,
+                "responseMapping": [
+                  {
+                    "variable": "address",
+                    "value": "$.WaterConnection.property.address.doorNo"
+                  },
+                  {
+                    "variable": "oldConsumerID",
+                    "value": "$.WaterConnection.oldConnectionNo"
+                  },
+                  {
+                    "variable": "billingType",
+                    "value": "$.WaterConnection.connectionType"
+                  },
+                  {
+                    "variable": "connectionSize",
+                    "value": "$.WaterConnection.pipeSize"
+                  },
+                  {
+                    "variable": "consumerID",
+                    "value": "$.WaterConnection.logoId"
+                  },
+                  {
+                    "variable": "ward",
+                    "value": "$.WaterConnection.property.address.ward"
+                  },
+                  {
+                    "variable": "zone",
+                    "value": "$.WaterConnection.property.address.zone"
+                  },
+                  {
+                    "variable": "connectionUsageType",
+                    "value": "$.WaterConnection.usageType"
+                  },
+                  {
+                    "variable": "connectionUsageSubType",
+                    "value": "$.WaterConnection.usageSubType"
+                  },
+                  {
+                    "variable": "connectionStartDate",
+                    "value": "$.WaterConnection.auditDetails.createdTime"
+                  }                  
                 ]
               }
             ]
