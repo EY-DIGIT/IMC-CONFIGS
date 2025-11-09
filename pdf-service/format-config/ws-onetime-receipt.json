@@ -18,7 +18,8 @@
               {
                 "image": "{{logoImage}}",
                 "width": 50,
-                "height": 61.25
+                "height": 61.25,
+				"style": "logo"
               },
               {
                 "stack": [
@@ -498,11 +499,24 @@
           1
         ]
       },
+	  "logo": {
+          "min-width":72px,
+		  "height":72px,
+		  "display":"flex",
+		  "align-items":"center",
+		  "justify-content":"center",
+		  "background:#fff",
+		  "border-radius":6px,
+		  "border":"1px solid var(--border)",
+		  "font-weight:700,
+		  "color":"var(--brand)",
+		  "font-size":12px
+      },
       "receipt-logo-header": {
-        "color": "#000000",
-        "fontSize": 14,
-        "bold": true,
-        "letterSpacing": 0.74,
+         "margin":0,
+		  "font-size":18px,
+		  "letter-spacing":0.2px,
+		  "color":"var(--brand)",
         "margin": [
           0,
           0,
