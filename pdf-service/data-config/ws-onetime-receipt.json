@@ -558,8 +558,8 @@
                 ]
               },
 			  {
-                "path": "http://ws-services:8080/ws-services/wc/_search",
-                "queryParam": "applicationNo=IM-WC-25-10-30-000002",
+                "path": "http://ws-services.egov:8080/ws-services/wc/_search",
+                "queryParam": "applicationNo=IM-WC-25-10-30-000002&tenantId=mp.indore",
                 "apiRequest": null,
                 "responseMapping": [
                   {
