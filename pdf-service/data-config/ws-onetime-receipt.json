@@ -559,7 +559,7 @@
               },
 			  {
                 "path": "http://ws-services:8080/ws-services/wc/_search",
-                "queryParam": "applicationNo=$.paymentDetails[0].bill.consumerCode&status=Active",
+                "queryParam": "applicationNo=$.paymentDetails[0].bill.consumerCode",
                 "apiRequest": null,
                 "responseMapping": [
                   {
