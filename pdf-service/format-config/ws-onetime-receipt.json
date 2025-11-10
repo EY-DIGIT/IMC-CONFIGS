@@ -598,7 +598,7 @@
         {
           "text": [
             {
-              "text": "{{variable35}} NAGAR PANCHAYAT",
+              "text": "<span style="text-transform:uppercase">{{variable35}} NAGAR PANCHAYAT </span>",
               "bold": true
             }
           ],
