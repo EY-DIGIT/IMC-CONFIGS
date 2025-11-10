@@ -278,6 +278,8 @@
           "*",
           "*",
           "*",
+          "*",
+          "*",
           "*"
         ],
         "body": [
@@ -319,10 +321,8 @@
                 true,
                 true
               ]
-            }
-          ],
-          [
-            {
+            },
+			{
               "text": "Arrear Amount",
               "border": [
                 true,
@@ -340,7 +340,9 @@
                 true,
                 true
               ]
-            },
+            }
+          ],
+          [
             {
               "text": "{{variable17}}",
               "border": [
