@@ -911,7 +911,7 @@
       "bold": true,
       "decoration": "underline",
       "decorationColor": "#484848",
-	  "text-transform": capitalize
+	  "text-transform": "capitalize"
     },
     "receipt-logo-sub-header": {
       "color": "#484848",
