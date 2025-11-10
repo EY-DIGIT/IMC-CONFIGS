@@ -77,7 +77,7 @@
                      {
                         "variable":"variable7",
                         "value":{
-                           "path":""                            
+                           "path":"$.payerName"                            
                         }  
                      },            
                      {
@@ -89,7 +89,7 @@
                      {
                         "variable":"variable9",
                         "value":{
-                           "path":""                            
+                           "path":"$.payerName"                            
                         }  
                      },            
                      {
@@ -107,31 +107,31 @@
                      {
                         "variable":"variable12",
                         "value":{
-                           "path":""                            
+                           "path":"$.payerName"                            
                         }  
                      },            
                      {
                         "variable":"variable13",
                         "value":{
-                           "path":""                            
+                           "path":"$.payerName"                            
                         }  
                      },            
                      {
                         "variable":"variable14",
                         "value":{
-                           "path":""                            
+                           "path":"$.payerName"                            
                         }  
                      },            
                      {
                         "variable":"variable15",
                         "value":{
-                           "path":""                            
+                           "path":"$.payerName"                            
                         }  
                      },            
                      {
                         "variable":"variable16",
                         "value":{
-                           "path":""                            
+                           "path":"$.payerName"                            
                         }  
                      },            
                      {
@@ -149,7 +149,7 @@
                      {
                         "variable":"variable19",
                         "value":{
-                           "path":""                            
+                           "path":"$.payerName"                            
                         }  
                      },            
                      {
@@ -161,19 +161,19 @@
                      {
                         "variable":"variable21",
                         "value":{
-                           "path":""                            
+                           "path":"$.payerName"                            
                         }  
                      },            
                      {
                         "variable":"variable22",
                         "value":{
-                           "path":""                            
+                           "path":"$.payerName"                            
                         }  
                      },            
                      {
                         "variable":"variable23",
                         "value":{
-                           "path":""                            
+                           "path":"$.payerName"                            
                         }  
                      },            
                      {
@@ -185,7 +185,7 @@
                      {
                         "variable":"variable25",
                         "value":{
-                           "path":""                            
+                           "path":"$.payerName"                            
                         }  
                      }
                   ]
