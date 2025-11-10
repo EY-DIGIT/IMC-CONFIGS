@@ -598,7 +598,7 @@
         {
           "text": [
             {
-              "text": "<span style="text-transform:uppercase">{{variable35}} NAGAR PANCHAYAT </span>",
+              "text": "{{variable35}} NAGAR PANCHAYAT",
               "bold": true
             }
           ],
@@ -911,7 +911,7 @@
       "bold": true,
       "decoration": "underline",
       "decorationColor": "#484848",
-	  "text-transform": "uppercase"
+	  "text-transform": capitalize
     },
     "receipt-logo-sub-header": {
       "color": "#484848",
