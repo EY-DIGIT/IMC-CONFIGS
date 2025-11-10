@@ -32,7 +32,7 @@
             {
               "stack": [
                 {
-                  "text": "{{variable35}} NAGAR PANCHAYAT",
+                  "text": "{{variable35}} Nagar Panchayat",
                   "style": "receipt-logo-header"
                 },
                 {
@@ -67,10 +67,10 @@
       "style": "receipt-header-details",
       "table": {
         "widths": [
-          "*",
-          "*",
-          "*",
-          "*"
+          "20",
+          "30",
+          "20",
+          "30"
         ],
         "body": [
           [
@@ -607,11 +607,11 @@
             {
               "stack": [
 				{
-                  "text": "Water Tax Payment Receipt",
+                  "text": "Office Copy",
                   "style": "receipt-logo-sub-header"
                 },
                 {
-                  "text": "{{variable35}} NAGAR PANCHAYAT",
+                  "text": "{{variable35}} Nagar Panchayat",
                   "style": "receipt-logo-header"
                 }                
               ],
@@ -642,10 +642,10 @@
       "style": "receipt-header-details",
       "table": {
         "widths": [
-          "*",
-          "*",
-          "*",
-          "*"
+          "20",
+          "30",
+          "20",
+          "30"
         ],
         "body": [
           [
@@ -967,39 +967,54 @@
                 false
               ]
             }
+          ],
+		  [
+            {
+              "text": "Total Amount Paid: ",
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ],
+              "style": "receipt-table-key"
+            },
+            {
+              "text": "{{variable17}}",
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            {
+              "text": "Collection By: ",
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ],
+              "style": "receipt-table-key"
+            },
+            {
+              "text": "{{variable24}}",
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ]
+            }
           ]
         ]
       },
       "layout": {}
     },
-    {
-      "style": "receipt-header-details",
-      "columns": [
-	    {
-          "text": [
-            {
-              "text": "Total Amount Paid: ",
-              "bold": true
-            },
-            "{{variable17}}"
-          ],
-          "alignment": "right"
-        }
-      ]
-    },
 	{
       "style": "receipt-header-details",
       "columns": [
-       	{
-          "text": [
-            {
-              "text": "Collection By: ",
-              "bold": true
-            },
-            "{{variable24}}"
-          ],
-          "alignment": "left"
-        },
 		{
           "text": [
             {
@@ -1008,7 +1023,7 @@
             },
             "{{variable25}}"
           ],
-          "alignment": "right"
+          "alignment": "left"
         }
       ]
     }
