@@ -576,250 +576,406 @@
 	  "style": "ws-reciept-citizen-subheader"
     },
     {
-      "text": "_______________________________________________________________________________________"
+      "text": "_______________________________________________________________________________________________________"
     },
 	{
-      "style": "receipt-header-details",
-      "columns": [
-        {
-          "text": [
+      "style": "ws-reciept-citizen-table",
+      "margin": [
+        0,
+        0,
+        0,
+        18
+      ],
+      "table": {
+        "widths": [
+          50,
+          "*",
+          100
+        ],
+        "body": [
+          [
             {
-              "text": "Office Copy",
-              "bold": true
-            }
-          ],
-          "alignment": "center"
-        }
-      ]
-    },
-	{
-      "style": "receipt-header-details",
-      "columns": [
-        {
-          "text": [
-            {
-              "text": "{{variable35}} NAGAR PANCHAYAT",
-              "bold": true
-            }
-          ],
-          "alignment": "center"
-        },
-		{
-          "text": [
-            {
-              "text": "Date: ",
-              "bold": true
+              "image": "{{variable38}}",
+              "width": 30,
+              "margin": [
+                10,
+                10,
+                10,
+                10
+              ]
             },
-            "{{variable0}}"
-          ],
-          "alignment": "left"
-        }
-      ]
+            {
+              "stack": [
+				{
+                  "text": "Water Tax Payment Receipt",
+                  "style": "receipt-logo-sub-header"
+                },
+                {
+                  "text": "{{variable35}} NAGAR PANCHAYAT",
+                  "style": "receipt-logo-header"
+                }                
+              ],
+              "alignment": "center",
+              "margin": [
+                0,
+                5,
+                0,
+                0
+              ]
+            },
+            {
+              "text": [
+                {
+                  "text": "Date: ",
+                  "bold": true
+                },
+                "{{variable0}}"
+              ],
+              "margin": [10, 10, 10, 2]
+            }
+          ]
+        ]
+      },
+      "layout": {}
     },
     {
       "style": "receipt-header-details",
-      "columns": [
-        {
-          "text": [
+      "table": {
+        "widths": [
+          "*",
+          "*",
+          "*",
+          "*"
+        ],
+        "body": [
+          [
             {
               "text": "Owner Name: ",
-              "bold": true
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ],
+              "style": "receipt-table-key"
             },
-            "{{variable1}}"
-          ],
-          "alignment": "left"
-        }
-      ]
-    },
-    {
-      "style": "receipt-header-details",
-      "columns": [
-        {
-          "text": [
+            {
+              "text": "{{variable1}}",
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
             {
               "text": "Address: ",
-              "bold": true
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ],
+              "style": "receipt-table-key"
             },
-            "{{variable2}}"
+            {
+              "text": "{{variable2}}",
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ]
+            }
           ],
-          "alignment": "left"
-        },
-        {
-          "text": [
+          [
             {
               "text": "Payment Type: ",
-              "bold": true
+              "border": [
+               false,
+                false,
+                false,
+                false
+              ],
+              "style": "receipt-table-key"
             },
-            "{{variable3}}"
-          ],
-          "alignment": "right"
-        }
-      ]
-    },
-    {
-      "style": "receipt-header-details",
-      "columns": [
-        {
-          "text": [
+            {
+              "text": "{{variable3}}",
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
             {
               "text": "Receipt No: ",
-              "bold": true
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ],
+              "style": "receipt-table-key"
             },
-            "{{variable4}}"
+            {
+              "text": "{{variable4}}",
+              "border": [
+               false,
+                false,
+                false,
+                false
+              ]
+            }
           ],
-          "alignment": "left"
-        },
-        {
-          "text": [
+		  [
             {
               "text": "Mode of Payment: ",
-              "bold": true
+              "border": [
+               false,
+                false,
+                false,
+                false
+              ],
+              "style": "receipt-table-key"
             },
-            "{{variable5}}"
-          ],
-          "alignment": "right"
-        }
-      ]
-    },
-    {
-      "style": "receipt-header-details",
-      "columns": [
-        {
-          "text": [
+            {
+              "text": "{{variable5}}",
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
             {
               "text": "Reference No: ",
-              "bold": true
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ],
+              "style": "receipt-table-key"
             },
-            "{{variable6}}"
+            {
+              "text": "{{variable6}}",
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ]
+            }
           ],
-          "alignment": "left"
-        },
-        {
-          "text": [
+		  [
             {
               "text": "Old consumer ID: ",
-              "bold": true
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ],
+              "style": "receipt-table-key"
             },
-            "{{variable7}}"
-          ],
-          "alignment": "right"
-        }
-      ]
-    },
-    {
-      "style": "receipt-header-details",
-      "columns": [
-        {
-          "text": [
+            {
+              "text": "{{variable7}}",
+              "border": [
+               false,
+                false,
+                false,
+                false
+              ]
+            },
             {
               "text": "Billing Type: ",
-              "bold": true
+              "border": [
+               false,
+                false,
+                false,
+                false
+              ],
+              "style": "receipt-table-key"
             },
-            "{{variable8}}"
+            {
+              "text": "{{variable8}}",
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ]
+            }
           ],
-          "alignment": "left"
-        },
-        {
-          "text": [
+		  [
             {
               "text": "Connection Size: ",
-              "bold": true
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ],
+              "style": "receipt-table-key"
             },
-            "{{variable9}}"
-          ],
-          "alignment": "right"
-        }
-      ]
-    },
-    {
-      "style": "receipt-header-details",
-      "columns": [
-        {
-          "text": [
+            {
+              "text": "{{variable9}}",
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
             {
               "text": "Consumer ID: ",
-              "bold": true
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ],
+              "style": "receipt-table-key"
             },
-            "{{variable10}}"
+            {
+              "text": "{{variable10}}",
+              "border": [
+               false,
+                false,
+                false,
+                false
+              ]
+            }
           ],
-          "alignment": "left"
-        },
-        {
-          "text": [
+		  [
             {
               "text": "Mobile Number: ",
-              "bold": true
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ],
+              "style": "receipt-table-key"
             },
-            "{{variable11}}"
-          ],
-          "alignment": "right"
-        }
-      ]
-    },
-    {
-      "style": "receipt-header-details",
-      "columns": [
-        {
-          "text": [
+            {
+              "text": "{{variable11}}",
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
             {
               "text": "Ward: ",
-              "bold": true
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ],
+              "style": "receipt-table-key"
             },
-            "{{variable12}}"
+            {
+              "text": "{{variable12}}",
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ]
+            }
           ],
-          "alignment": "left"
-        },
-        {
-          "text": [
+		  [
             {
               "text": "Connection Usage Type: ",
-              "bold": true
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ],
+              "style": "receipt-table-key"
             },
-            "{{variable13}}"
-          ],
-          "alignment": "right"
-        }
-      ]
-    },
-    {
-      "style": "receipt-header-details",
-      "columns": [
-        {
-          "text": [
+            {
+              "text": "{{variable13}}",
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
             {
               "text": "Zone: ",
-              "bold": true
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ],
+              "style": "receipt-table-key"
             },
-            "{{variable14}}"
+            {
+              "text": "{{variable14}}",
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ]
+            }
           ],
-          "alignment": "left"
-        },
-        {
-          "text": [
+		  [
             {
               "text": "Connection Usage Sub Type: ",
-              "bold": true
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ],
+              "style": "receipt-table-key"
             },
-            "{{variable15}}"
-          ],
-          "alignment": "right"
-        }
-      ]
+            {
+              "text": "{{variable15}}",
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            {
+              "text": "Connection Start Date: ",
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ],
+              "style": "receipt-table-key"
+            },
+            {
+              "text": "{{variable16}}",
+              "border": [
+                false,
+                false,
+                false,
+                false
+              ]
+            }
+          ]
+        ]
+      },
+      "layout": {}
     },
     {
       "style": "receipt-header-details",
       "columns": [
-        {
-          "text": [
-            {
-              "text": "Connection Start Date: ",
-              "bold": true
-            },
-            "{{variable16}}"
-          ],
-          "alignment": "left"
-        },
-		{
+	    {
           "text": [
             {
               "text": "Total Amount Paid: ",
@@ -910,8 +1066,7 @@
       "fontSize": 16,
       "bold": true,
       "decoration": "underline",
-      "decorationColor": "#484848",
-	  "text-transform": "capitalize"
+      "decorationColor": "#484848"
     },
     "receipt-logo-sub-header": {
       "color": "#484848",
