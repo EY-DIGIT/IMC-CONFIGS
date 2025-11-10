@@ -178,9 +178,7 @@
                      },            
                      {
                         "variable":"variable24",
-                        "value":{
-                           "path":"Bill Collector"                            
-                        }  
+                        "value":"Bill Collector"
                      },            
                      {
                         "variable":"variable25",
