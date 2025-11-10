@@ -178,7 +178,9 @@
                      },            
                      {
                         "variable":"variable24",
-                        "value":"Bill Collector"
+                        "value":{
+                           "path":"$.payerName"                            
+                        }
                      },            
                      {
                         "variable":"variable25",
