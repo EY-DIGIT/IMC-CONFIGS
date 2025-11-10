@@ -67,10 +67,10 @@
       "style": "receipt-header-details",
       "table": {
         "widths": [
-          "20",
-          "30",
-          "20",
-          "30"
+          "20%",
+          "30%",
+          "20%",
+          "30%"
         ],
         "body": [
           [
@@ -642,10 +642,10 @@
       "style": "receipt-header-details",
       "table": {
         "widths": [
-          "20",
-          "30",
-          "20",
-          "30"
+          "20%",
+          "30%",
+          "20%",
+          "30%"
         ],
         "body": [
           [
