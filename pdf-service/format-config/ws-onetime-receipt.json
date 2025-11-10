@@ -64,7 +64,7 @@
       "layout": {}
     },
     	{
-      "style": "pt-reciept-citizen-table",
+      "style": "receipt-header-details",
       "table": {
         "widths": [
           "*",
@@ -398,7 +398,7 @@
       "layout": {}
     },
     {
-      "style": "pt-reciept-citizen-table",
+      "style": "receipt-header-details",
       "table": {
         "widths": [
           "*",
@@ -427,7 +427,8 @@
                 true,
                 true,
                 true
-              ]
+              ],
+              "style": "receipt-table-key"
             },
             {
               "text": "Total Penalty",
@@ -446,7 +447,8 @@
                 true,
                 true,
                 true
-              ]
+              ],
+              "style": "receipt-table-key"
             },
 			{
               "text": "Arrear Amount",
@@ -465,7 +467,8 @@
                 true,
                 true,
                 true
-              ]
+              ],
+              "style": "receipt-table-key"
             }
           ],
           [
@@ -595,7 +598,7 @@
         {
           "text": [
             {
-              "text": "{{variable1}} NAGAR PANCHAYAT",
+              "text": "{{variable35}} NAGAR PANCHAYAT",
               "bold": true
             }
           ],
@@ -607,7 +610,7 @@
               "text": "Date: ",
               "bold": true
             },
-            "{{variable1}}"
+            "{{variable0}}"
           ],
           "alignment": "left"
         }
