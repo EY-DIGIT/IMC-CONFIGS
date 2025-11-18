@@ -186,12 +186,16 @@ serviceMaps:
    fromTopic: update-ws-workflow
    isTransaction: true
    queryMaps:
-       - query: UPDATE eg_ws_connection set applicationstatus=?,status=?,action=?,lastmodifiedby=?, lastmodifiedtime=? WHERE tenantid=? and applicationno=?;
+       - query: UPDATE eg_ws_connection set applicationstatus=?,status=?,connectionno=?,connectiondate=?,action=?,lastmodifiedby=?, lastmodifiedtime=? WHERE tenantid=? and applicationno=?;
          basePath: WaterConnection
          jsonMaps:
           - jsonPath: $.WaterConnection.applicationStatus
           
           - jsonPath: $.WaterConnection.status
+          
+          - jsonPath: $.WaterConnection.connectionNo
+          
+          - jsonPath: $.WaterConnection.connectionDate
 
           - jsonPath: $.WaterConnection.processInstance.action
           
