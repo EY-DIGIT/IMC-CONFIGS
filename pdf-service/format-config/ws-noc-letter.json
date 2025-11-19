@@ -134,6 +134,34 @@
 			{
 			  "text": [
 				{
+				  "text": " ",
+				  "bold": true
+				} 
+			  ],
+			  "alignment": "left"
+			}
+		  ]
+		},
+		{
+		  "style": "receipt-header-details",
+		  "columns": [
+			{
+			  "text": [
+				{
+				  "text": "Water Connection ID {{variable11}} with the following Usage Details:",
+				  "bold": true
+				}
+			  ],
+			  "alignment": "left"
+			}
+		  ]
+		},
+		{
+		  "style": "receipt-header-details",
+		  "columns": [
+			{
+			  "text": [
+				{
 				  "text": " Usage Type: ",
 				  "bold": true
 				},
@@ -194,9 +222,23 @@
 			{
 			  "text": [
 				{
-				  "text": "Water Connection ID {{variable11}} with the following Usage Details:",
+				  "text": " ",
 				  "bold": true
-				}
+				} 
+			  ],
+			  "alignment": "left"
+			}
+		  ]
+		},
+		{
+		  "style": "receipt-header-details",
+		  "columns": [
+			{
+			  "text": [
+				{
+				  "text": " ",
+				  "bold": true
+				} 
 			  ],
 			  "alignment": "left"
 			}
@@ -236,6 +278,34 @@
 			{
 			  "text": [
 				{
+				  "text": " ",
+				  "bold": true
+				} 
+			  ],
+			  "alignment": "left"
+			}
+		  ]
+		},
+		{
+		  "style": "receipt-header-details",
+		  "columns": [
+			{
+			  "text": [
+				{
+				  "text": " ",
+				  "bold": true
+				} 
+			  ],
+			  "alignment": "left"
+			}
+		  ]
+		},
+		{
+		  "style": "receipt-header-details",
+		  "columns": [
+			{
+			  "text": [
+				{
 				  "text": "Remarks : ",
 				  "bold": true
 				},
@@ -255,7 +325,7 @@
           "body": [
             [
               {
-                "text": "E-sign",
+                "text": " ",
                 "border": [
                   false,
                   false,
@@ -359,7 +429,7 @@
       },
       "receipt-logo-sub-header": {
         "color": "#484848",
-        "fontSize": 13,
+        "fontSize": 10,
         "decoration": "underline",
         "decorationColor": "#484848"
       },
