@@ -1,0 +1,378 @@
+{
+  "key": "ws-noc-letter",
+  "config": {
+    "content": [
+      {
+        "style": "ws-reciept-citizen-table",
+        "margin": [
+          0,
+          0,
+          0,
+          18
+        ],
+        "table": {
+          "widths": [
+            50,
+            "*",
+            100
+          ],
+          "body": [
+            [
+              {
+                "image": "{{variable38}}",
+                "width": 30,
+                "margin": [
+                  10,
+                  10,
+                  10,
+                  10
+                ]
+              },
+              {
+                "stack": [
+                  {
+                    "text": "{{variable35}} Nagar Panchayat",
+                    "style": "receipt-logo-header"
+                  },
+                  {
+                    "text": "Water Tax",
+                    "style": "receipt-logo-sub-header"
+                  },
+                  {
+                    "text": "No Dues Certificate",
+                    "style": "receipt-logo-sub-header"
+                  }
+                ],
+                "alignment": "left",
+                "margin": [
+                  0,
+                  5,
+                  0,
+                  0
+                ]
+              },
+              {
+                "text": [
+                  {
+                    "text": "Date: ",
+                    "bold": true
+                  },
+                  "{{variable0}}"
+                ],
+                "margin": [
+                  10,
+                  10,
+                  10,
+                  2
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": {}
+      },
+		{
+		  "style": "receipt-header-details",
+		  "columns": [
+			{
+			  "text": [
+				{
+				  "text": "Certificate No: ",
+				  "bold": true
+				},
+				"{{variable1}}"
+			  ],
+			  "alignment": "left"
+			}
+		  ]
+		},
+		{
+		  "style": "receipt-header-details",
+		  "columns": [
+			{
+			  "text": [
+				{
+				  "text": "No Dues Certificate",
+				  "bold": true
+				}
+			  ],
+			  "alignment": "center"
+			}
+		  ]
+		},
+		{
+		  "style": "receipt-header-details",
+		  "columns": [
+			{
+			  "text": [
+				{
+				  "text": "   ",
+				  "bold": true
+				}
+			  ],
+			  "alignment": "center"
+			}
+		  ]
+		},
+		{
+		  "style": "receipt-header-details",
+		  "columns": [
+			{
+			  "text": [
+				{
+				  "text": "  This certifies that {{variable2}} {{variable3}} is registered on the Placeholder portal with the address {{variable4}}, {{variable5}}, H/No. {{variable6}} {{variable7}}, Locality - {{variable8}}, City - {{variable9}}, Pincode - {{variable10}}",
+				  "bold": true
+				}
+			  ],
+			  "alignment": "left"
+			}
+		  ]
+		},
+		{
+		  "style": "receipt-header-details",
+		  "columns": [
+			{
+			  "text": [
+				{
+				  "text": " Usage Type: ",
+				  "bold": true
+				},
+				"{{variable13}}"
+			  ],
+			  "alignment": "left"
+			}
+		  ]
+		},
+		{
+		  "style": "receipt-header-details",
+		  "columns": [
+			{
+			  "text": [
+				{
+				  "text": " Usage Sub Type ",
+				  "bold": true
+				},
+				"{{variable14}}"
+			  ],
+			  "alignment": "left"
+			}
+		  ]
+		},
+		{
+		  "style": "receipt-header-details",
+		  "columns": [
+			{
+			  "text": [
+				{
+				  "text": " Billing Type: ",
+				  "bold": true
+				},
+				"{{variable15}}"
+			  ],
+			  "alignment": "left"
+			}
+		  ]
+		},
+		{
+		  "style": "receipt-header-details",
+		  "columns": [
+			{
+			  "text": [
+				{
+				  "text": " Connection Size: ",
+				  "bold": true
+				},
+				"{{variable16}}"
+			  ],
+			  "alignment": "left"
+			}
+		  ]
+		},
+		{
+		  "style": "receipt-header-details",
+		  "columns": [
+			{
+			  "text": [
+				{
+				  "text": "Water Connection ID {{variable11}} with the following Usage Details:",
+				  "bold": true
+				}
+			  ],
+			  "alignment": "left"
+			}
+		  ]
+		},
+		{
+		  "style": "receipt-header-details",
+		  "columns": [
+			{
+			  "text": [
+				{
+				  "text": "There are no pending charges or other dues registered for the said consumer on the Placeholder portal.",
+				  "bold": true
+				}
+			  ],
+			  "alignment": "left"
+			}
+		  ]
+		},
+		{
+		  "style": "receipt-header-details",
+		  "columns": [
+			{
+			  "text": [
+				{
+				  "text": " This No Dues Certificate is issued in accordance with the applicant's request.",
+				  "bold": true
+				}
+			  ],
+			  "alignment": "left"
+			}
+		  ]
+		},
+		{
+		  "style": "receipt-header-details",
+		  "columns": [
+			{
+			  "text": [
+				{
+				  "text": "Remarks : ",
+				  "bold": true
+				},
+				"{{variable12}}"
+			  ],
+			  "alignment": "left"
+			}
+		  ]
+		},
+      {
+        "style": "receipt-header-details",
+        "table": {
+          "widths": [
+            "50%",
+			"50%"
+          ],
+          "body": [
+            [
+              {
+                "text": "E-sign",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              },
+              {
+                "text": "E-sign",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  false
+                ],
+                "style": "receipt-table-key",
+			    "alignment": "center"
+              }
+			],
+			[
+              {
+                "text": " ",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              },
+              {
+                "text": "Water Charges / Revenue Officer/Commissioner",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  false
+                ],
+                "style": "receipt-table-key",
+			    "alignment": "center"
+              }
+			]
+          ]
+        },
+        "layout": {}
+      }
+    ],
+    "styles": {
+      "ws-reciept-citizen-subheader": {
+        "fontSize": 10,
+        "bold": true,
+        "margin": [
+          0,
+          16,
+          0,
+          8
+        ],
+        "color": "#484848"
+      },
+      "ws-reciept-citizen-table": {
+        "fontSize": 10,
+        "color": "#484848"
+      },
+      "receipt-assess-table": {
+        "fontSize": 10,
+        "color": "#484848",
+        "margin": [
+          0,
+          8,
+          0,
+          0
+        ]
+      },
+      "receipt-assess-table-header": {
+        "bold": true,
+        "fillColor": "#D8D8D8",
+        "color": "#484848"
+      },
+      "receipt-header-details": {
+        "fontSize": 9,
+        "margin": [
+          0,
+          0,
+          0,
+          8
+        ],
+        "color": "#484848"
+      },
+      "receipt-table-key": {
+        "color": "#484848",
+        "bold": true
+      },
+      "receipt-table-value": {
+        "color": "#484848"
+      },
+      "receipt-logo-header": {
+        "color": "#484848",
+        "fontSize": 16,
+        "bold": true,
+        "decoration": "underline",
+        "decorationColor": "#484848"
+      },
+      "receipt-logo-sub-header": {
+        "color": "#484848",
+        "fontSize": 13,
+        "decoration": "underline",
+        "decorationColor": "#484848"
+      },
+      "receipt-footer": {
+        "color": "#484848",
+        "fontSize": 8,
+        "margin": [
+          0,
+          0,
+          0,
+          5
+        ]
+      }
+    }
+  }
+}
