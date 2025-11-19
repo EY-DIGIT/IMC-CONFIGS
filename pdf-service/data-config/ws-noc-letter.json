@@ -3,7 +3,7 @@
    "DataConfigs": {
       "serviceName": "rainmaker-ws",
       "version": "1.0.0",
-      "baseKeyPath": "$.Payments.*",
+      "baseKeyPath": "$.WaterNoc.*",
       "entityIdPath":"$.id",
       "isCommonTableBorderRequired":true,
       "mappings": [
@@ -35,157 +35,61 @@
                      {
                         "variable":"variable0",
                         "value":{
-                           "path":"$.transactionDate"                            
+                           "path":"$.date"                            
                         }  
                      },            
                      {
                         "variable":"variable1",
                         "value":{
-                           "path":"$.payerName"                            
+                           "path":"$.connectionNocNo"                            
                         }  
                      },            
                      {
                         "variable":"variable2",
                         "value":{
-                           "path":"$.payerAddress"                            
+                           "path":"$.conectionOwnerName"                            
                         }  
                      },            
                      {
                         "variable":"variable3",
                         "value":{
-                           "path":"$.paymentMode"                            
+                           "path":"$.ownerAddress"                            
                         }  
                      },            
                      {
                         "variable":"variable4",
                         "value":{
-                           "path":"$.paymentDetails[0].receiptNumber"                            
+                           "path":"$.connectionNo"                            
                         }  
                      },            
                      {
                         "variable":"variable5",
                         "value":{
-                           "path":"$.paymentMode"                            
+                           "path":"$.usageType"                            
                         }  
                      },            
                      {
                         "variable":"variable6",
                         "value":{
-                           "path":"$.paymentDetails[0].receiptNumber"                            
+                           "path":"$.usageSubType"                            
                         }  
                      },            
                      {
                         "variable":"variable7",
                         "value":{
-                           "path":"$.payerName"                            
+                           "path":"$.billingType"                            
                         }  
                      },            
                      {
                         "variable":"variable8",
                         "value":{
-                           "path":"$.paymentDetails[0].receiptType"                            
+                           "path":"$.connectionSize"                            
                         }  
                      },            
                      {
                         "variable":"variable9",
                         "value":{
-                           "path":"$.payerName"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable10",
-                        "value":{
-                           "path":"$.paymentDetails[0].bill.consumerCode"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable11",
-                        "value":{
-                           "path":"$.mobileNumber"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable12",
-                        "value":{
-                           "path":"$.payerName"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable13",
-                        "value":{
-                           "path":"$.payerName"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable14",
-                        "value":{
-                           "path":"$.payerName"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable15",
-                        "value":{
-                           "path":"$.payerName"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable16",
-                        "value":{
-                           "path":"$.payerName"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable17",
-                        "value":{
-                           "path":"$.totalAmountPaid"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable18",
-                        "value":{
-                           "path":"$.totalDue"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable19",
-                        "value":{
-                           "path":"$.payerName"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable20",
-                        "value":{
-                           "path":"$.totalAmountPaid"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable21",
-                        "value":{
-                           "path":"$.payerName"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable22",
-                        "value":{
-                           "path":"$.payerName"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable23",
-                        "value":{
-                           "path":"$.payerName"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable24",
-                        "value":{
-                           "path":"$.payerName"                            
-                        }
-                     },            
-                     {
-                        "variable":"variable25",
-                        "value":{
-                           "path":"$.payerName"                            
+                           "path":"$.remarks"                            
                         }  
                      }
                   ]
