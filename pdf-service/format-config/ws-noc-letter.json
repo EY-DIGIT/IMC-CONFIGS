@@ -120,7 +120,7 @@
 			{
 			  "text": [
 				{
-				  "text": "  This certifies that {{variable2} is registered on the Placeholder portal with the address {{variable3}}",
+				  "text": "  This certifies that {{variable2}} is registered on the Placeholder portal with the address {{variable3}}",
 				  "bold": true
 				}
 			  ],
