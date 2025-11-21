@@ -13,7 +13,7 @@
                   "direct": [ 
                      {
                         "variable": "variable38",                        
-                        "url":"https://devtfstatep7f19.blob.core.windows.net/imc-dev-assets/image%2014.svg",
+                        "url":"https://raw.githubusercontent.com/egovernments/egov-web-app/master/web/rainmaker/dev-packages/egov-ui-kit-dev/src/assets/images/pblogo.png",
                         "type":"image"
                      },       
                      {
@@ -126,12 +126,6 @@
                         "variable":"variable15",
                         "value":{
                            "path":"$.remarks"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable16",
-                        "value":{
-                           "path":"$.payerName"                            
                         }  
                      },            
                      {
