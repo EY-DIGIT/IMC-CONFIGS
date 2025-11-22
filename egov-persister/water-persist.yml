@@ -132,7 +132,7 @@ serviceMaps:
       queryMaps:
         - query: 
             UPDATE eg_ws_connection set
-            applicationstatus=?,status=?,connectionno=?,disconnectiondate=?,connectiondate=?,action=?,lastmodifiedby=?,
+            applicationstatus=?,status=?,connectionno=?,connectiondate=?,disconnectiondate=?,action=?,lastmodifiedby=?,
             lastmodifiedtime=? WHERE tenantid=? and applicationno=?;
           basePath: WaterConnection
           jsonMaps:
