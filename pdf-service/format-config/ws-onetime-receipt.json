@@ -389,8 +389,7 @@
                 "bold": true
               },
               "{{variable13}}"
-            ],
-            "alignment": "left"
+            ]
           },
           {
             "text": [
@@ -399,8 +398,7 @@
                 "bold": true
               },
               "{{variable14}}"
-            ],
-            "alignment": "left"
+            ]
           }
         ]
       },
@@ -414,8 +412,7 @@
                 "bold": true
               },
               "{{variable15}}"
-            ],
-            "alignment": "left"
+            ]
           }
         ]
       },
@@ -813,8 +810,7 @@
                 "bold": true
               },
               "{{variable13}}"
-            ],
-            "alignment": "left"
+            ]
           },
           {
             "text": [
@@ -823,8 +819,7 @@
                 "bold": true
               },
               "{{variable14}}"
-            ],
-            "alignment": "left"
+            ]
           }
         ]
       },
@@ -838,8 +833,7 @@
                 "bold": true
               },
               "{{variable15}}"
-            ],
-            "alignment": "left"
+            ]
           }
         ]
       }
