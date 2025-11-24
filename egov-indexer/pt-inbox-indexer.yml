@@ -12,7 +12,7 @@ ServiceMaps:
         timeStampField: $.auditDetails.createdTime
         isBulk: false
         customJsonMapping:
-          indexMapping: { "Data": { "id": "","tenantId": "", "propertyId": "","owners": [{}],"mobileNumber": "","acknowldgementNumber": "","status": "","creationReason": {},"locality": "","@timestamp": "timestamp","auditDetails": {},"currentProcessInstance": {}}}      
+          indexMapping: { "Data": { "id": "","tenantId": "", "propertyId": "","owners": [{}],"mobileNumber": "","acknowldgementNumber": "","status": "","creationReason": {},"locality": "","@timestamp": "timestamp","auditDetails": {},"currentProcessInstance": {},"publishedOn": ""}}      
           fieldMapping:
           - inJsonPath: $.id
             outJsonPath: $.Data.id
@@ -38,6 +38,8 @@ ServiceMaps:
             outJsonPath: $.Data.auditDetails
           - inJsonPath: $.processInstance
             outJsonPath: $.Data.currentProcessInstance
+          - inJsonPath: $.publishedOn
+            outJsonPath: $.Data.publishedOn  
             
   - topic: pg-inbox-pt-events-legacyindex
     configKey: LEGACYINDEX

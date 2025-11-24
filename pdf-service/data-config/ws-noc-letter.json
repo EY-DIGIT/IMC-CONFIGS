@@ -1,9 +1,9 @@
 {
-   "key":"ws-onetime-receipt",
+   "key":"ws-noc-letter",
    "DataConfigs": {
       "serviceName": "rainmaker-ws",
       "version": "1.0.0",
-      "baseKeyPath": "$.Payments.*",
+      "baseKeyPath": "$.WaterNoc.*",
       "entityIdPath":"$.id",
       "isCommonTableBorderRequired":true,
       "mappings": [
@@ -41,13 +41,13 @@
                      {
                         "variable":"variable1",
                         "value":{
-                           "path":"$.applicationNo"                            
+                           "path":"$.connectionNocNo"                            
                         }  
                      },            
                      {
                         "variable":"variable2",
                         "value":{
-                           "path":"$.ownerName"                            
+                           "path":"$.conectionOwnerName"                            
                         }  
                      },            
                      {
@@ -59,85 +59,37 @@
                      {
                         "variable":"variable4",
                         "value":{
-                           "path":"$.receiptNumber"                            
+                           "path":"$.connectionNo"                            
                         }  
                      },            
                      {
                         "variable":"variable5",
                         "value":{
-                           "path":"$.paymentMode"                            
+                           "path":"$.usageType"                            
                         }  
                      },            
                      {
                         "variable":"variable6",
                         "value":{
-                           "path":"$.billingType"                            
+                           "path":"$.usageSubType"                            
                         }  
                      },            
                      {
                         "variable":"variable7",
                         "value":{
-                           "path":"$.connectionSize"                            
+                           "path":"$.billingType"                            
                         }  
                      },            
                      {
                         "variable":"variable8",
                         "value":{
-                           "path":"$.mobileNumber"                            
+                           "path":"$.connectionSize"                            
                         }  
                      },            
                      {
                         "variable":"variable9",
                         "value":{
-                           "path":"$.ward"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable10",
-                        "value":{
-                           "path":"$.usageType"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable11",
-                        "value":{
-                           "path":"$.zone"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable12",
-                        "value":{
-                           "path":"$.usageSubType"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable13",
-                        "value":{
-                           "path":"$.amountInWords"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable14",
-                        "value":{
-                           "path":"$.collectedBy"                            
-                        }  
-                     },            
-                     {
-                        "variable":"variable15",
-                        "value":{
                            "path":"$.remarks"                            
-                        }  
-                     },            
-                     {
-                        "variable":"totalPaidAmount",
-                        "value":{
-                           "path":"$.totalAmountPaid"                            
-                        }  
-                     },            
-                     {
-                        "variable":"totalAmount",
-                        "value":{
-                           "path":"$.totalAmount"                            
                         }  
                      }
                   ]
