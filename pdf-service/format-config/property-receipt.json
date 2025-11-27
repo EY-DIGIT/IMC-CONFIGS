@@ -137,7 +137,7 @@
         "margin": [0, 0, 0, 0]
       },
       {
-        "text": "{{chequeDisclaimer}}",
+        "text": ["{{chequeDisclaimer}}"],
         "style": "pt-disclaimer-value",
         "margin": [0, 2, 0, 3]
       },
