@@ -231,7 +231,33 @@ serviceMaps:
             - jsonPath: $.WaterConnection.connectionCharges.otherCharges
             - jsonPath: $.WaterConnection.connectionCharges.isActive
             - jsonPath: $.WaterConnection.connectionCharges.auditDetails.lastModifiedBy
-            - jsonPath: 
-                $.WaterConnection.connectionCharges.auditDetails.lastModifiedTime
+            - jsonPath: $.WaterConnection.connectionCharges.auditDetails.lastModifiedTime
             - jsonPath: $.WaterConnection.connectionCharges.id
             - jsonPath: $.WaterConnection.connectionCharges.wsconnectionId
+
+    - version: 1
+      description: save waters meter connection eg_ws_connection_meters  table
+      fromTopic: save-ws-meter-connection
+      isTransaction: true
+      queryMaps:
+        - query: INSERT INTO public.eg_ws_connection_meters(id, wsid, connectionno, tenantid, meternumber, manufacturer, model, metertype, initialreading, meterphoto, postingdate, latitude, longitude, isactive, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+          basePath: MeterDetails
+          jsonMaps:
+            - jsonPath: $.MeterDetails.id
+            - jsonPath: $.MeterDetails.wsId
+            - jsonPath: $.MeterDetails.connectionNo
+            - jsonPath: $.MeterDetails.tenantId
+            - jsonPath: $.MeterDetails.meterNumber
+            - jsonPath: $.MeterDetails.manufacturer
+            - jsonPath: $.MeterDetails.model
+            - jsonPath: $.MeterDetails.meterType
+            - jsonPath: $.MeterDetails.initialReading
+            - jsonPath: $.MeterDetails.meterPhoto
+            - jsonPath: $.MeterDetails.postingDate
+            - jsonPath: $.MeterDetails.latitude
+            - jsonPath: $.MeterDetails.longitude
+            - jsonPath: $.MeterDetails.isActive
+            - jsonPath: $.MeterDetails.auditDetails.createdby
+            - jsonPath: $.MeterDetails.auditDetails.lastModifiedBy
+            - jsonPath: $.MeterDetails.auditDetails.createdtime
+            - jsonPath: $.MeterDetails.auditDetails.lastModifiedTime
