@@ -274,12 +274,12 @@ serviceMaps:
             - jsonPath: $.MeterReadings.connectionNo
             - jsonPath: $.MeterReadings.tenantId
             - jsonPath: $.MeterReadings.previousReading
-            - jsonPath: $.MeterReadings.currentreading
-            - jsonPath: $.MeterReadings.readingdate
-            - jsonPath: $.MeterReadings.readingmonth
-            - jsonPath: $.MeterReadings.readingyear
+            - jsonPath: $.MeterReadings.currentReading
+            - jsonPath: $.MeterReadings.readingDate
+            - jsonPath: $.MeterReadings.readingMonth
+            - jsonPath: $.MeterReadings.readingYear
             - jsonPath: $.MeterReadings.consumption
-            - jsonPath: $.MeterReadings.isbilled
+            - jsonPath: $.MeterReadings.isBilled
             - jsonPath: $.MeterReadings.isActive
             - jsonPath: $.MeterReadings.auditDetails.createdby
             - jsonPath: $.MeterReadings.auditDetails.lastModifiedBy
