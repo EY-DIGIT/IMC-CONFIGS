@@ -261,3 +261,27 @@ serviceMaps:
             - jsonPath: $.MeterDetails.auditDetails.lastModifiedBy
             - jsonPath: $.MeterDetails.auditDetails.createdtime
             - jsonPath: $.MeterDetails.auditDetails.lastModifiedTime
+    - version: 1
+      description: save waters meter reading eg_ws_meter_readings  table
+      fromTopic: save-ws-meter-reading
+      isTransaction: true
+      queryMaps:
+        - query: INSERT INTO public.eg_ws_meter_readings(id, meterid, connectionno, tenantid, previousreading, currentreading, readingdate, readingmonth, readingyear, consumption, isbilled, isactive, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+          basePath: MeterReadings
+          jsonMaps:
+            - jsonPath: $.MeterReadings.id
+            - jsonPath: $.MeterReadings.meterId
+            - jsonPath: $.MeterReadings.connectionNo
+            - jsonPath: $.MeterReadings.tenantId
+            - jsonPath: $.MeterReadings.previousReading
+            - jsonPath: $.MeterReadings.currentreading
+            - jsonPath: $.MeterReadings.readingdate
+            - jsonPath: $.MeterReadings.readingmonth
+            - jsonPath: $.MeterReadings.readingyear
+            - jsonPath: $.MeterReadings.consumption
+            - jsonPath: $.MeterReadings.isbilled
+            - jsonPath: $.MeterReadings.isActive
+            - jsonPath: $.MeterReadings.auditDetails.createdby
+            - jsonPath: $.MeterReadings.auditDetails.lastModifiedBy
+            - jsonPath: $.MeterReadings.auditDetails.createdtime
+            - jsonPath: $.MeterReadings.auditDetails.lastModifiedTime
