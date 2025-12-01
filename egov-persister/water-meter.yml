@@ -1,40 +1,68 @@
 serviceMaps:
- serviceName: Meter Connection Service
- mappings:
- - version: 1.0
-   name: MeterConnection
-   description: create meter reading for particular connection number
-   fromTopic: save-ws-meter
-   isTransaction: true
-   queryMaps:
-    - query: INSERT INTO eg_ws_meterreading (id, tenantid, connectionNo, billingPeriod, meterStatus, lastReading, lastReadingDate, currentReading, currentReadingDate, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?,?,?,?,?,?, ?);
-      basePath: $.meterReadings
-      jsonMaps:
-       - jsonPath: $.meterReadings.id
-       
-       - jsonPath: $.meterReadings.tenantId
-       
-       - jsonPath: $.meterReadings.connectionNo
-
-       - jsonPath: $.meterReadings.billingPeriod
-       
-       - jsonPath: $.meterReadings.meterStatus
-
-       - jsonPath: $.meterReadings.lastReading
-       
-       - jsonPath: $.meterReadings.lastReadingDate
-
-       - jsonPath: $.meterReadings.currentReading
-
-       - jsonPath: $.meterReadings.currentReadingDate
-       
-       - jsonPath: $.meterReadings.auditDetails.createdBy
-
-       - jsonPath: $.meterReadings.auditDetails.lastModifiedBy
-
-       - jsonPath: $.meterReadings.auditDetails.createdTime
-
-       - jsonPath: $.meterReadings.auditDetails.lastModifiedTime
-
-      
- 
+  serviceName: Meter Connection Service
+  mappings:
+    - version: 1
+      name: MeterConnection
+      description: create meter reading for particular connection number
+      fromTopic: save-ws-meter
+      isTransaction: true
+      queryMaps:
+        - query:
+            INSERT INTO eg_ws_meterreading (id, tenantid, connectionNo,
+            billingPeriod, meterStatus, lastReading, lastReadingDate,
+            currentReading, currentReadingDate, createdby, lastmodifiedby,
+            createdtime, lastmodifiedtime,isbilled, isactive, meterid,
+            readingmonth, readingyear) VALUES (?, ?, ?, ?, ?, ?, ?,?,?,?,?,?,
+            ?);
+          basePath: $.meterReadings
+          jsonMaps:
+            - jsonPath: $.meterReadings.id
+            - jsonPath: $.meterReadings.tenantId
+            - jsonPath: $.meterReadings.connectionNo
+            - jsonPath: $.meterReadings.billingPeriod
+            - jsonPath: $.meterReadings.meterStatus
+            - jsonPath: $.meterReadings.lastReading
+            - jsonPath: $.meterReadings.lastReadingDate
+            - jsonPath: $.meterReadings.currentReading
+            - jsonPath: $.meterReadings.currentReadingDate
+            - jsonPath: $.meterReadings.auditDetails.createdBy
+            - jsonPath: $.meterReadings.auditDetails.lastModifiedBy
+            - jsonPath: $.meterReadings.auditDetails.createdTime
+            - jsonPath: $.meterReadings.auditDetails.lastModifiedTime
+            - jsonPath: $.meterReadings.isBilled
+            - jsonPath: $.meterReadings.isActive
+            - jsonPath: $.meterReadings.meterId
+            - jsonPath: $.meterReadings.readingMonth
+            - jsonPath: $.meterReadings.readingYear
+    - version: 1
+      name: MeterConnection
+      description: create meter registration for particular connection number
+      fromTopic: save-ws-meter-connection
+      isTransaction: true
+      queryMaps:
+        - query:
+            INSERT INTO public.eg_ws_connection_meters(id, wsid, connectionno,
+            tenantid, meternumber, manufacturer, model, metertype,
+            initialreading, meterphoto, postingdate, latitude, longitude,
+            isactive, createdby, lastmodifiedby, createdtime, lastmodifiedtime)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+          basePath: $.MeterDetails
+          jsonMaps:
+            - jsonPath: $.MeterDetails.id
+            - jsonPath: $.MeterDetails.wsId
+            - jsonPath: $.MeterDetails.connectionNo
+            - jsonPath: $.MeterDetails.tenantId
+            - jsonPath: $.MeterDetails.meterNumber
+            - jsonPath: $.MeterDetails.manufacturer
+            - jsonPath: $.MeterDetails.model
+            - jsonPath: $.MeterDetails.meterType
+            - jsonPath: $.MeterDetails.initialReading
+            - jsonPath: $.MeterDetails.meterPhoto
+            - jsonPath: $.MeterDetails.postingDate
+            - jsonPath: $.MeterDetails.latitude
+            - jsonPath: $.MeterDetails.longitude
+            - jsonPath: $.MeterDetails.isActive
+            - jsonPath: $.MeterDetails.auditDetails.createdby
+            - jsonPath: $.MeterDetails.auditDetails.lastModifiedBy
+            - jsonPath: $.MeterDetails.auditDetails.createdtime
+            - jsonPath: $.MeterDetails.auditDetails.lastModifiedTime
