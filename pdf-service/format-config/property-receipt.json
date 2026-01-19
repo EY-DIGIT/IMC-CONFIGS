@@ -137,6 +137,11 @@
         "margin": [0, 0, 0, 0]
       },
       {
+        "text": ["{{chequeDisclaimer}}"],
+        "style": "pt-disclaimer-value",
+        "margin": [0, 2, 0, 3]
+      },
+      {
         "columns": [
           { "width": "70%", "text": ["Cashier: ", { "text": "{{user-name}}" }], "style": "signature-left" },
           {
