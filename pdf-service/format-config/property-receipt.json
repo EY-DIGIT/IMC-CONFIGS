@@ -143,10 +143,10 @@
       },
       {
         "columns": [
-          { "width": "70%", "text": ["Cashier: ", { "text": "{{user-name}}" }], "style": "signature-left" },
+          { "width": "70%", "text": ["Cashier: ", { "text": "{{cashierName}}" }], "style": "signature-left" },
           {
             "width": "30%",
-            "text": ["Cashier Signature: ", { "text": "{{user-name}}" }],
+            "text": ["Cashier Signature: ", { "text": "{{cashierName}}" }],
             "style": "signature-right",
             "alignment": "left"
           }
@@ -216,8 +216,8 @@
       },
       {
       "columns": [
-        { "width": "70%", "text": ["Cashier: ", { "text": "{{user-name}}" }], "style": "signature-left" },
-        { "width": "30%", "text": ["Cashier Signature: ", { "text": "{{user-name}}" }], "style": "signature-right", "alignment": "left" }
+        { "width": "70%", "text": ["Cashier: ", { "text": "{{cashierName}}" }], "style": "signature-left" },
+        { "width": "30%", "text": ["Cashier Signature: ", { "text": "{{cashierName}}" }], "style": "signature-right", "alignment": "left" }
       ],
       "margin": [0, 5, 0, 6]
     }

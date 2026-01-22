@@ -35,6 +35,7 @@
               { "variable": "ward", "value": { "path": "$.ward" } },
               { "variable": "plotArea", "value": { "path": "$.plotArea" } },
               { "variable": "isCheque", "value": { "path": "$.isCheque" } },
+              { "variable": "paidBy", "value": { "path": "$.paidBy" } },
               {
                 "variable": "payment_receipt",
                 "value": {
@@ -377,6 +378,8 @@
               { "variable": "cumulativeBalance", "formula": "{{totalDemandPayable}}>{{paidAmount}}?{{totalDemandPayable}}-{{paidAmount}}:0" },
               { "variable": "calcTableTitle", "formula": "'Property Taxes and Other Taxes have been calculated based on the details given below'" },
               { "variable": "chequeDisclaimer", "formula": "'{{paymentMode}}' == 'Cheque' ? '**This property tax receipt paid via cheque shall be acknowledged upon successful clearance of the cheque' : ''" },
+              { "variable": "cashierName", "formula": "'{{paymentMode}}' != 'Online' ? '{{paidBy}}' : ''"},
+              { "variable": "cashierSignature", "formula": "'{{paymentMode}}' != 'Online' ? '{{paidBy}}' : ''"},
               { "variable": "th_usage_type", "formula": "'Usage Type'" },
               { "variable": "th_usage_factor", "formula": "'Usage Factor'" },
               { "variable": "th_floor_no", "formula": "'Floor No.'" },
