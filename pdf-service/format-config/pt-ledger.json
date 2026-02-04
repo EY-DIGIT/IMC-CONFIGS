@@ -51,6 +51,8 @@
       [
         { "text": "Owner Name", "style": "th" },
         { "text": "{{th_property_tax}}", "colSpan": 3, "style": "td" },
+        {},
+        {},
         { "text": "Connection Date", "style": "th" },
         { "text": "{{th_property_tax}}", "style": "td" }
       ],
