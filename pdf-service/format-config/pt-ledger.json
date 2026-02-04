@@ -101,7 +101,6 @@
           "style": "tableHeader",
           "colSpan": 9,
           "alignment": "center",
-          "fillColor": "#f0f0f0",
           "bold": true
         },
         {},
