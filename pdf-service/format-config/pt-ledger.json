@@ -51,7 +51,9 @@
       [
         { "text": "Owner Name", "style": "th" },
         { "text": "{{ownerName}}", "colSpan": 3, "style": "td" },
-        {}, {}, {}, {}
+        { "text": "Connection Date", "style": "th"},
+        { "text": "{{connectionDate}}","style":"td"}
+        
       ],
       [
         { "text": "Address", "style": "th" },
