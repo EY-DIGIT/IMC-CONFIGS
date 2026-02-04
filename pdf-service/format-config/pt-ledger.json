@@ -50,20 +50,23 @@
       ],
       [
         { "text": "Owner Name", "style": "th" },
-        { "text": "{{ownerName}}", "colSpan": 3, "style": "td" }
-
+        { "text": "{{ownerName}}", "colSpan": 3, "style": "td" },
+        {}, {}, {}, {}
       ],
       [
         { "text": "Address", "style": "th" },
-        { "text": "{{address}}", "colSpan": 3, "style": "td" }
+        { "text": "{{address}}", "colSpan": 3, "style": "td" },
+        {}, {}, {}, {}
       ],
       [
         {"text":"Mobile No","style":"th"},
-        {"text":"{{mobileNumber}}","colSpan":2,"style":"td"}
+        {"text":"{{mobileNumber}}","colSpan":2,"style":"td"},
+        {}, {}, {}, {}
       ],
       [
         {"text":"Email","style":"th"},
-        {"text":"{{email}}","colSpan":2,"style":"td"}
+        {"text":"{{email}}","colSpan":2,"style":"td"},
+        {}, {}, {}, {}
       ],
       [
         { "text": "Date", "style": "th" },
@@ -71,7 +74,8 @@
       ],
       [
         { "text": "Exemption", "style": "th" },
-        { "text": "{{exemption}}", "colSpan": 3, "style": "td" }
+        { "text": "{{exemption}}", "colSpan": 3, "style": "td" },
+        {}, {}, {}, {}
       ]
     ]
   }
