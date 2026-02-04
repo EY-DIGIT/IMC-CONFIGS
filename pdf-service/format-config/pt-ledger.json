@@ -42,35 +42,33 @@
     "body": [
       [
         { "text": "Property ID", "style": "th" },
-        { "text": "{{mobileNumber}}", "style": "td" },
+        { "text": "{{propertyId}}", "style": "td" },
         { "text": "Old Property ID", "style": "th" },
-        { "text": "{{mobileNumber}}", "style": "td" },
+        { "text": "{{oldPropertyId}}", "style": "td" },
         { "text": "Rate Zone", "style": "th" },
-        { "text": "{{mobileNumber}}", "style": "td" }
+        { "text": "{{rateZone}}", "style": "td" }
       ],
       [
         { "text": "Owner Name", "style": "th" },
-        { "text": "{{mobileNumber}}", "colSpan": 3, "style": "td" },
-        { "text": "Connection Date", "style": "th"},
-        { "text": "{{mobileNumber}}","style":"td"}
-        
+        { "text": "{{ownerName}}", "colSpan": 3, "style": "td" },
+        {}, {}, {}, {}
       ],
       [
         { "text": "Address", "style": "th" },
-        { "text": "{{mobileNumber}}", "colSpan": 3, "style": "td" },
+        { "text": "{{address}}", "colSpan": 3, "style": "td" },
         {}, {}, {}, {}
       ],
       [
         { "text": "Mobile No", "style": "th" },
         { "text": "{{mobileNumber}}", "style": "td" },
         { "text": "Email", "style": "th" },
-        { "text": "{{mobileNumber}}", "style": "td" },
+        { "text": "{{email}}", "style": "td" },
         { "text": "Date", "style": "th" },
-        { "text": "{{mobileNumber}}", "style": "td" }
+        { "text": "{{connectionDate}}", "style": "td" }
       ],
       [
         { "text": "Exemption", "style": "th" },
-        { "text": "{{mobileNumber}}", "colSpan": 3, "style": "td" },
+        { "text": "{{exemption}}", "colSpan": 3, "style": "td" },
         {}, {}, {}, {}
       ]
     ]
