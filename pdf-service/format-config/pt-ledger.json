@@ -30,10 +30,7 @@
         "margin": [0, 0, 0, 10]
       },
 
-    
-
-      { "text": "Dimension Details", "style": "section-title" },
-
+  
      {
   "style": "infoTable",
   "margin": [0, 10, 0, 10],
@@ -134,7 +131,9 @@
       "ledger-title": { "fontSize": 14, "bold": true, "margin": [0, 4, 0, 2] },
       "ledger-date": { "fontSize": 9, "color": "#484848" },
       "info-block": { "fontSize": 10 },
-      "section-title": { "fontSize": 10, "bold": true }
+      "section-title": { "fontSize": 10, "bold": true },
+      "th": { "fontSize": 8,"alignment": "center","bold": true, "margin": [2, 3, 2, 3] },
+      "td": { "fontSize": 8,"alignment": "center", "margin": [2, 3, 2, 3] }
     }
   }
 }
