@@ -126,40 +126,8 @@
     ]
   },
   "layout": {}
-},
-{
-  "style": "calcTable",
-  "margin": [0, 0, 0, 10],
-  "table": {
-    "widths": ["25%", "25%", "25%", "25%"],
-    "headerRows": 2,
-    "keepWithHeaderRows": 1,
-    "dontBreakRows": true,
-    "body": [
-      [
-        {
-          "text": "Summary Ledger",
-          "style": "tableHeader",
-          "colSpan": 4,
-          "alignment": "center",
-          "fillColor": "#f0f0f0",
-          "bold": true
-        },
-        {},
-        {},
-        {}
-      ],
-      [
-        { "text": "Year", "style": "th" },
-        { "text": "Demand", "style": "th" },
-        { "text": "Collection/Paid", "style": "th" },
-        { "text": "Cumulative Balance", "style": "th" }
-      ],
-      "{{#summaryLedgerData}}[{\"text\":\"{{year}}\",\"style\":\"td\"},{\"text\":\"{{demand}}\",\"style\":\"td\"},{\"text\":\"{{collection_paid}}\",\"style\":\"td\"},{\"text\":\"{{cumulative_balance}}\",\"style\":\"td\"}]{{/summaryLedgerData}}"
-    ]
-  },
-  "layout": {}
 }
+
      
 
       
