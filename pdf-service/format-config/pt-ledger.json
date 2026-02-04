@@ -1,0 +1,127 @@
+{
+  "key": "pt-ledger",
+  "config": {
+    "pageSize": "A4",
+    "pageMargins": [18, 15, 18, 15],
+    "defaultStyle": { "font": "Cambay" },
+    "content": [
+
+      {
+        "alignment": "center",
+        "stack": [
+          { "text": "Indore Municipal Corporation", "style": "header-title" },
+          { "text": "Property Tax", "style": "header-subtitle" },
+          { "text": "Municipal Act 1956 Sec. 186", "style": "info-value" },
+          { "text": "Ledger", "style": "ledger-title" },
+          { "text": "{{paymentDate}}", "style": "ledger-date" }
+        ],
+        "margin": [0, 0, 0, 10]
+      },
+
+      {
+        "style": "info-block",
+        "stack": [
+          {
+            "columns": [
+              {
+                "width": "70%",
+                "stack": [
+                  { "text": ["Property ID : ", { "text": "{{consumerID}}", "style": "info-value" }] },
+                  { "text": ["Owner Name : ", { "text": "{{payerName}}", "style": "info-value" }] },
+                  { "text": ["Address : ", { "text": "{{ptAddress}}", "style": "info-value" }] }
+                ]
+              },
+              {
+                "width": "30%",
+                "stack": [
+                  { "text": ["Ledger No : ", { "text": "{{receiptNo}}", "style": "info-value" }] },
+                  { "text": ["Rate Zone : ", { "text": "{{rateZone}}", "style": "info-value" }] },
+                  { "text": ["Mobile No : ", { "text": "{{payerContact}}", "style": "info-value" }] }
+                ]
+              }
+            ]
+          }
+        ],
+        "margin": [0, 6, 0, 10]
+      },
+
+      { "text": "Dimension Details", "style": "section-title" },
+
+      {
+        "style": "calcTable",
+        "table": {
+          "widths": ["14%", "15%", "9%", "14%", "9%", "8%", "9%", "14%", "8%"],
+          "headerRows": 1,
+          "body": [
+            [
+              { "text": "{{th_usage_type}}", "style": "th" },
+              { "text": "{{th_usage_factor}}", "style": "th" },
+              { "text": "{{th_floor_no}}", "style": "th" },
+              { "text": "{{th_construction_type}}", "style": "th" },
+              { "text": "{{th_area}}", "style": "th" },
+              { "text": "{{th_rate}}", "style": "th" },
+              { "text": "{{th_alv}}", "style": "th" },
+              { "text": "{{th_maintenance}}", "style": "th" },
+              { "text": "{{th_tpv}}", "style": "th" }
+            ],
+            "{{#calcTableData}}[{\"text\":\"{{calc_usageType}}\",\"style\":\"td\"},{\"text\":\"{{calc_usageFactor}}\",\"style\":\"td\"},{\"text\":\"{{calc_floorNo}}\",\"style\":\"td\"},{\"text\":\"{{calc_constructionType}}\",\"style\":\"td\"},{\"text\":\"{{calc_area}}\",\"style\":\"td\"},{\"text\":\"{{calc_rate}}\",\"style\":\"td\"},{\"text\":\"{{calc_alv}}\",\"style\":\"td\"},{\"text\":\"{{maintainance_discount}}\",\"style\":\"td\"},{\"text\":\"{{tax_tpv}}\",\"style\":\"td\"}]{{/calcTableData}}"
+          ]
+        }
+      },
+
+      { "text": "Ledger (Year-wise)", "style": "section-title", "margin": [0, 8, 0, 4] },
+
+      {
+        "style": "taxTable",
+        "table": {
+          "widths": ["9%", "8%", "8%", "9%", "7%", "8%", "11%", "8%", "8%", "8%", "8%", "8%"],
+          "headerRows": 1,
+          "body": [
+            [
+              { "text": "{{th_year}}", "style": "th" },
+              { "text": "{{th_property_tax}}", "style": "th" },
+              { "text": "{{th_samekit_tax}}", "style": "th" },
+              { "text": "{{th_education_cess}}", "style": "th" },
+              { "text": "{{th_water_cess}}", "style": "th" },
+              { "text": "{{th_drainage_cess}}", "style": "th" },
+              { "text": "{{th_urban_dev_cess}}", "style": "th" },
+              { "text": "{{th_service_charge}}", "style": "th" },
+              { "text": "{{th_total_tax}}", "style": "th" },
+              { "text": "{{th_rebate}}", "style": "th" },
+              { "text": "{{th_penalty}}", "style": "th" },
+              { "text": "{{th_net_total}}", "style": "th" }
+            ],
+            "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"{{tax_propertyTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_samekitTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_educationCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_waterCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_drainageCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_urbanDevCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_serviceCharge}}\",\"style\":\"td\"},{\"text\":\"{{tax_totalTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_rebate}}\",\"style\":\"td\"},{\"text\":\"{{tax_penalty}}\",\"style\":\"td\"},{\"text\":\"{{tax_netTotal}}\",\"style\":\"td\"}]{{/taxTableData}}"
+          ]
+        }
+      },
+
+      { "text": "Summary Ledger", "style": "section-title", "margin": [0, 8, 0, 4] },
+
+      {
+        "style": "office-columns-block",
+        "columns": [
+          { "width": "25%", "text": ["Arrear : ", { "text": "{{arrearAmt}}", "style": "meta-value" }] },
+          { "width": "25%", "text": ["Current Year : ", { "text": "{{currentYearNetTax}}", "style": "meta-value" }] },
+          { "width": "25%", "text": ["Paid Amount : ₹ ", { "text": "{{paidAmount}}", "style": "meta-value" }] },
+          { "width": "25%", "text": ["Balance : ", { "text": "{{cumulativeBalance}}", "style": "meta-value" }] }
+        ]
+      },
+
+      {
+        "columns": [
+          { "width": "70%", "text": ["Generated By : ", { "text": "{{cashierName}}" }] },
+          { "width": "30%", "text": ["Signature"], "alignment": "right" }
+        ],
+        "margin": [0, 10, 0, 0]
+      }
+    ],
+
+    "styles": {
+      "ledger-title": { "fontSize": 14, "bold": true, "margin": [0, 4, 0, 2] },
+      "ledger-date": { "fontSize": 9, "color": "#484848" },
+      "info-block": { "fontSize": 10 },
+      "section-title": { "fontSize": 10, "bold": true }
+    }
+  }
+}
