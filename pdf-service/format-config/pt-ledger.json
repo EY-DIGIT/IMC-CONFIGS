@@ -59,7 +59,11 @@
       [
         { "text": "Address", "style": "th" },
         { "text": "{{th_property_tax}}", "colSpan": 3, "style": "td" },
-        {}, {}, {}, {}
+        {}, 
+        {},
+        { "text": "Zone/Ward", "style": "th" },
+        { "text": "{{th_property_tax}}", "style": "td" }
+
       ],
       [
         { "text": "Mobile No", "style": "th" },
