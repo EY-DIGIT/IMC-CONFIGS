@@ -182,20 +182,21 @@
   "layout": {}
 },
 {
-  "margin": [5, 10, 0, 10],
+  "margin": [5, 6, 5, 6],
   "table": {
     "widths": ["25%", "25%", "25%", "25%"],
     "body": [
       [
-        { "text": "Arrear: {{arrearAmt}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 8 },
-        { "text": "Current Year Net Tax: {{currentYearNetTax}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 8 },
-        { "text": "Previous Balance: {{previousBalance}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 8 },
-        { "text": "Total Payable Amount: {{totalDemandPayable}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 8 }
+        { "text": "Arrear: {{arrearAmt}}", "bold": true, "fontSize": 8, "fillColor": "#FFF2E6", "margin": [6, 6, 6, 6] },
+        { "text": "Current Year Net Tax: {{currentYearNetTax}}", "bold": true, "fontSize": 8, "fillColor": "#FFF2E6", "margin": [6, 6, 6, 6] },
+        { "text": "Previous Balance: {{previousBalance}}", "bold": true, "fontSize": 8, "fillColor": "#FFF2E6", "margin": [6, 6, 6, 6] },
+        { "text": "Total Payable Amount: {{totalDemandPayable}}", "bold": true, "fontSize": 8, "fillColor": "#FFF2E6", "margin": [6, 6, 6, 6] }
       ]
     ]
   },
   "layout": "noBorders"
 },
+
 
 {
         "style": "ws-head",
