@@ -39,7 +39,7 @@
     "body": [
       [
         { "text": "Property ID", "style": "th" },
-        { "text": "{{th_property_tax}}", "style": "td" },
+        { "text": "{{consumerID}}", "style": "td" },
         { "text": "Old Property ID", "style": "th" },
         { "text": "{{th_property_tax}}", "style": "td" },
         { "text": "Rate Zone", "style": "th" },
