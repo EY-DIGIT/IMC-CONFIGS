@@ -43,15 +43,15 @@
         { "text": "Old Property ID", "style": "th" },
         { "text": "{{th_property_tax}}", "style": "td" },
         { "text": "Rate Zone", "style": "th" },
-        { "text": "{{th_property_tax}}", "style": "td" }
+        { "text": "{{rateZone}}", "style": "td" }
       ],
       [
         { "text": "Owner Name", "style": "th" },
-        { "text": "{{th_property_tax}}", "colSpan": 3, "style": "td" },
+        { "text": "{{payerName}}", "colSpan": 3, "style": "td" },
         {},
         {},
         { "text": "Connection Date", "style": "th" },
-        { "text": "{{th_property_tax}}", "style": "td" }
+        { "text": "{{paymentDate}}", "style": "td" }
       ],
       [
         { "text": "Address", "style": "th" },
@@ -76,7 +76,7 @@
         { "text": "{{th_property_tax}}", "colSpan": 3, "style": "td" },
         {}, {}, 
         { "text": "Date", "style": "th" },
-        { "text": "{{th_property_tax}}",  "style": "td" }
+        { "text": "{{paymentDate}}",  "style": "td" }
 
       ]
     ]
