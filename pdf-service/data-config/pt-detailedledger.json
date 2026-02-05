@@ -38,6 +38,9 @@
               { "variable": "paidBy", "value": { "path": "$.paidBy" } },
               { "variable": "ownerEmail", "value": { "path": "$.email" }},
               { "variable": "oldpropertyid", "value": { "path": "$.oldPropertyId" }},
+              { "variable": "lokadalat", "value": { "path": "$.lokAdalatDiscount" }},
+
+
               {
                 "variable": "payment_receipt",
                 "value": {
