@@ -154,7 +154,7 @@
         { "text": "Collection/Paid", "style": "th" },
         { "text": "Cumulative Balance", "style": "th" }
       ],
-            "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"{{totalDemandPayable}}\",\"style\":\"td\"},{\"text\":\"{{paidAmount}}\",\"style\":\"td\"},{\"text\":\"{{tax_educationCess}}\",\"style\":\"td\"}]{{/taxTableData}}"
+            "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"{{totalDemandPayable}}\",\"style\":\"td\"},{\"text\":\"{{paidAmount}}\",\"style\":\"td\"},{\"text\":\"{{cumulativeBalance}}\",\"style\":\"td\"}]{{/taxTableData}}"
     ]
   },
   "layout": {}
