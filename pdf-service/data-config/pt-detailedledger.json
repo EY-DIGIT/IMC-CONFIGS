@@ -36,6 +36,8 @@
               { "variable": "plotArea", "value": { "path": "$.plotArea" } },
               { "variable": "isCheque", "value": { "path": "$.isCheque" } },
               { "variable": "paidBy", "value": { "path": "$.paidBy" } },
+              { "variable": "ownerEmail", "value": { "path": "$.email" }},
+              { "variable": "oldpropertyid", "value": { "path": "$.oldPropertyId" }},
               {
                 "variable": "payment_receipt",
                 "value": {
