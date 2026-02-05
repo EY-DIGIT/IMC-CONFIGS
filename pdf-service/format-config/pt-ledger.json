@@ -41,7 +41,7 @@
         { "text": "Property ID", "style": "th" },
         { "text": "{{consumerID}}", "style": "td" },
         { "text": "Old Property ID", "style": "th" },
-        { "text": "{{}}", "style": "td" },
+        { "text": "{{oldpropertyid}}", "style": "td" },
         { "text": "Rate Zone", "style": "th" },
         { "text": "{{rateZone}}", "style": "td" }
       ],

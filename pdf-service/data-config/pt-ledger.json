@@ -37,6 +37,9 @@
               { "variable": "isCheque", "value": { "path": "$.isCheque" } },
               { "variable": "paidBy", "value": { "path": "$.paidBy" } },
               { "variable": "ownerEmail", "value": { "path": "$.payerEmail" }},
+              { "variable": "oldpropertyid", "value": { "path": "$.oldPropertyId" }},
+
+
 
               {
                 "variable": "payment_receipt",
