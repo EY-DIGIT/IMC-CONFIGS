@@ -180,7 +180,22 @@
     ]
   },
   "layout": {}
-}
+},
+{
+        "style": "ws-head",
+        "table": {
+          "widths": ["*"],
+          "body": [
+            [  
+              {
+                "text": "**This is a computer-generated document and does not require any physical signature.",
+                "style": "footer"
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      }
 
      
 
