@@ -73,7 +73,7 @@
       ],
       [
         { "text": "Exemption", "style": "th" },
-        { "text": "{{th_property_tax}}", "colSpan": 3, "style": "td" },
+        { "text": "{{}}", "colSpan": 3, "style": "td" },
         {}, {}, 
         { "text": "Date", "style": "th" },
         { "text": "{{paymentDate}}",  "style": "td" }
