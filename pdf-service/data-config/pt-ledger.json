@@ -330,7 +330,7 @@
 
               {
                 "variable": "calcTableData",
-                "value": { "path": "$.Calculation.propertyFYDetails[-1:]" },
+                "value": { "path": "$.Calculation.propertyFYDetails" },
                 "type": "array",
                 "format": {
                   "type": "object",
@@ -349,7 +349,7 @@
               },
               {
                 "variable": "taxTableData",
-                "value": { "path": "$.Calculation.propertyFYTaxSummaries[-1:]" },
+                "value": { "path": "$.Calculation.propertyFYTaxSummaries" },
                 "type": "array",
                 "format": {
                   "type": "object",
