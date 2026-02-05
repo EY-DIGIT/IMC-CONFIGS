@@ -201,6 +201,16 @@
 
       
     ],
+    "footer": {
+        "color": "#000000",
+        "alignment": "left",
+        "margin": [
+          0,
+          30,
+          0,
+          0
+        ]
+      },
 
     "styles": {
       "topline": { "fontSize": 10, "color": "#484848" },
