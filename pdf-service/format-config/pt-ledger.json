@@ -67,7 +67,7 @@
         { "text": "{{payerContact}}", "colSpan": 2, "style": "td" },
         {},
         { "text": "Email", "style": "th" },
-        { "text": "{{th_property_tax}}", "colSpan": 2, "style": "td" },
+        { "text": "{{ownerEmail}}", "colSpan": 2, "style": "td" },
         {}
         
       ],
