@@ -187,10 +187,10 @@
     "widths": ["25%", "25%", "25%", "25%"],
     "body": [
       [
-        { "text": "Arrear: {{arrearAmt}}", "bold": true, "fillColor": "#FFF2E6" },
-        { "text": "Current Year Net Tax: {{currentYearNetTax}}", "bold": true, "fillColor": "#FFF2E6" },
-        { "text": "Previous Balance: {{previousBalance}}", "bold": true, "fillColor": "#FFF2E6" },
-        { "text": "Total Payable Amount: {{totalDemandPayable}}", "bold": true, "fillColor": "#FFF2E6" }
+        { "text": "Arrear: {{arrearAmt}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 6 },
+        { "text": "Current Year Net Tax: {{currentYearNetTax}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 6 },
+        { "text": "Previous Balance: {{previousBalance}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 6 },
+        { "text": "Total Payable Amount: {{totalDemandPayable}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 6 }
       ]
     ]
   },
