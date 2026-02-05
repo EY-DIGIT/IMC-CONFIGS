@@ -55,16 +55,16 @@
       ],
       [
         { "text": "Address", "style": "th" },
-        { "text": "{{th_property_tax}}", "colSpan": 3, "style": "td" },
+        { "text": "{{ptAddress}}", "colSpan": 3, "style": "td" },
         {}, 
         {},
         { "text": "Zone/Ward", "style": "th" },
-        { "text": "{{th_property_tax}}", "style": "td" }
+        { "text": "{{zone}} / {{ward}}", "style": "td" }
 
       ],
       [
         { "text": "Mobile No", "style": "th" },
-        { "text": "{{mobileNumber}}", "colSpan": 2, "style": "td" },
+        { "text": "{{payerContact}}", "colSpan": 2, "style": "td" },
         {},
         { "text": "Email", "style": "th" },
         { "text": "{{th_property_tax}}", "colSpan": 2, "style": "td" },
