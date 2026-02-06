@@ -257,11 +257,7 @@
 
       
     ],
-    "qr-code": {
-        "color": "#000000",
-        "alignment": "left",
-        "margin": [0, 0, 0, 0]
-      },
+   
     
 
     "styles": {
@@ -273,7 +269,12 @@
       "info-block": { "fontSize": 10 },
       "section-title": { "fontSize": 10, "bold": true },
       "th": { "fontSize": 9,"bold": true, "margin": [2, 3, 2, 3] },
-      "td": { "fontSize": 9, "margin": [2, 3, 2, 3] }
+      "td": { "fontSize": 9, "margin": [2, 3, 2, 3] },
+       "qr-code": {
+        "color": "#000000",
+        "alignment": "left",
+        "margin": [0, 0, 0, 0]
+      }
     }
   }
 }
