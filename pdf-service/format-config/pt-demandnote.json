@@ -274,8 +274,8 @@
       "ledger-date": { "fontSize": 9, "color": "#484848" },
       "info-block": { "fontSize": 10 },
       "section-title": { "fontSize": 10, "bold": true },
-      "th": { "fontSize": 9,"bold": true, "margin": [2, 3, 2, 3] },
-      "td": { "fontSize": 9, "margin": [2, 3, 2, 3] },
+      "th": { "fontSize": 7,"bold": true, "margin": [2, 3, 2, 3] },
+      "td": { "fontSize": 7, "margin": [2, 3, 2, 3] },
        "qr-code": {
         "color": "#000000",
         "alignment": "left",
