@@ -290,7 +290,14 @@
                   "module":"rainmaker-common"
                }
               },
-              
+              {
+                "qrcodeConfig": [
+                  {
+                      "variable": "qr_code_image",
+                      "value":"{{https://citizenservicesdev.eydemoapp.in/}}"
+                  }
+                ]
+            },
               {
                 "variable": "to",
                 "value": {
