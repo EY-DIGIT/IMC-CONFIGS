@@ -291,13 +291,11 @@
                }
               },
               {
-                "qrcodeConfig": [
-                  {
-                      "variable": "qr_code_image",
-                      "value":"{{https://citizenservicesdev.eydemoapp.in/}}"
-                  }
-                ]
-            },
+  "variable": "qr_code_image",
+  "url": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://citizenservicesdev.eydemoapp.in/",
+  "type": "image"
+},
+
               {
                 "variable": "to",
                 "value": {
