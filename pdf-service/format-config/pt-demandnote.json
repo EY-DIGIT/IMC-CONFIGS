@@ -246,10 +246,16 @@
       "alignment": "left"
     }
   ]
-}
+},
 
 
       
+{
+  "margin": [0, 40, 0, 0],
+  "text": "This is a computer-generated document and does not require any physical signature.",
+  "fontSize": 9,
+  "alignment": "left"
+}
 
 
 
@@ -258,13 +264,7 @@
 
       
     ],
-    "footer": {
-  "text": "**This is a computer-generated document and does not require any physical signature.",
-  "fontSize": 9,
-  "alignment": "center",
-  "margin": [0, 0, 0, 10]
-},
-
+    
 
 
     
