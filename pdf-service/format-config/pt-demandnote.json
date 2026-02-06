@@ -218,24 +218,6 @@
   "margin": [0, 0, 0, 10]
 },
 
-{
-  "style": "ws-head",
-  "table": {
-    "widths": ["*"],
-    "body": [
-      [
-        {
-          "image": "{{qr_code_image}}",
-          "width": 70,
-          "height": 70,
-          "style": "qr-code"
-        }
-      ]
-    ]
-  },
-  "layout": "noBorders"
-},
-
 
 {
         "style": "ws-head",
@@ -258,11 +240,6 @@
       
     ],
     
-    "qr-code": {
-  "color": "#000000",
-  "alignment": "left",
-  "margin": [0, 0, 0, 0]
-},
 
     "styles": {
       "topline": { "fontSize": 10, "color": "#484848" },
