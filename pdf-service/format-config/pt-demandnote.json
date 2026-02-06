@@ -219,22 +219,32 @@
 },
 
 {
-        "style": "ws-head",
-        "table": {
-          "widths": ["*"],
-          "body": [
-            [  
-              {
-                "image": "{{qr_code_image}}",
-                "width": 70,
-                "height": 70,
-                "style": "qr-code"
-              }
-            ]
-          ]
+  "margin": [0, 10, 0, 10],
+  "stack": [
+    {
+      "image": "{{qr_code_image}}",
+      "width": 70,
+      "height": 70,
+      "alignment": "left",
+      "margin": [0, 0, 0, 6]
+    },
+    {
+      "text": [
+        { "text": "Scan to pay or goto ", "fontSize": 9 },
+        {
+          "text": "citizenservicesdev.eydemoapp.in",
+          "fontSize": 9,
+          "color": "blue",
+          "link": "https://citizenservicesdev.eydemoapp.in"
         },
-        "layout": "noBorders"
-      },
+        { "text": " to pay property bill online.", "fontSize": 9 }
+      ],
+      "alignment": "left"
+    }
+  ]
+},
+
+      
 
 
 {
