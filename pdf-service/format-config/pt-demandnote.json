@@ -2,7 +2,7 @@
   "key": "pt-demandnote",
   "config": {
     "pageSize": "A4",
-    "pageMargins": [18, 15, 18, 30],
+    "pageMargins": [18, 15, 18, 15],
     "defaultStyle": { "font": "Cambay" },
     "content": [
 
