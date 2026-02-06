@@ -291,6 +291,15 @@
                }
               },
               {
+  "qrcodeConfig": [
+    {
+      "variable": "qr_code_image",
+      "value": "https://citizenservicesdev.eydemoapp.in/"
+    }
+  ]
+},
+
+              {
                 "variable": "to",
                 "value": {
                   "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_TO"
