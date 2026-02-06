@@ -237,7 +237,7 @@
           "color": "blue",
           "link": "https://citizenservicesdev.eydemoapp.in"
         },
-        { "text": "\n" },
+        { "text": "\u000A" },
         { "text": " to pay property bill online.", "fontSize": 9 }
       ],
       "alignment": "left"
