@@ -220,10 +220,14 @@ serviceMaps:
             - jsonPath: 
                 $.WaterConnection.connectionCharges.auditDetails.lastModifiedTime
         - query: 
+            delete from eg_ws_connection_plumbings where applicationno=?;
+          basePath: WaterConnection
+          jsonMaps:
+            - jsonPath: $.WaterConnection.applicationNo
+        - query: 
             INSERT INTO eg_ws_connection_plumbings(id, applicationno, materialCode,
             quantity, createdby, createdtime, lastmodifiedby, lastmodifiedtime)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT (id, applicationno) DO UPDATE SET materialCode=?, quantity=?, lastmodifiedby=?,
-            lastmodifiedtime=?;
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?);
           basePath: WaterConnection
           jsonMaps:
             - jsonPath: $.WaterConnection.plumbingDetails.*.id
@@ -232,9 +236,5 @@ serviceMaps:
             - jsonPath: $.WaterConnection.plumbingDetails.*.quantity
             - jsonPath: $.WaterConnection.plumbingDetails.*.auditDetails.createdBy
             - jsonPath: $.WaterConnection.plumbingDetails.*.auditDetails.createdTime
-            - jsonPath: $.WaterConnection.plumbingDetails.*.auditDetails.lastModifiedBy
-            - jsonPath: $.WaterConnection.plumbingDetails.*.auditDetails.lastModifiedTime
-            - jsonPath: $.WaterConnection.plumbingDetails.*.materialDetails.code
-            - jsonPath: $.WaterConnection.plumbingDetails.*.quantity
             - jsonPath: $.WaterConnection.plumbingDetails.*.auditDetails.lastModifiedBy
             - jsonPath: $.WaterConnection.plumbingDetails.*.auditDetails.lastModifiedTime
