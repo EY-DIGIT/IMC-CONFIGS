@@ -222,7 +222,7 @@ serviceMaps:
         - query: 
             INSERT INTO eg_ws_connection_plumbings(id, applicationno, materialCode,
             quantity, createdby, createdtime, lastmodifiedby, lastmodifiedtime)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?);
           basePath: WaterConnection
           jsonMaps:
             - jsonPath: $.WaterConnection.plumbingDetails.*.id
