@@ -1,6 +1,6 @@
 {
-  "key": "property-receipt",
-  "documentType": "PROPERTYRECEIPT",
+  "key": "pt-demandnote",
+  "documentType": "PROPERTYDEMANDNOTE",
   "DataConfigs": {
     "moduleName": "PT",
     "version": "1.0.0",
@@ -36,6 +36,9 @@
               { "variable": "plotArea", "value": { "path": "$.plotArea" } },
               { "variable": "isCheque", "value": { "path": "$.isCheque" } },
               { "variable": "paidBy", "value": { "path": "$.paidBy" } },
+              { "variable": "ownerEmail", "value": { "path": "$.payerEmail" }},
+              { "variable": "oldpropertyid", "value": { "path": "$.oldPropertyId" }},
+              { "variable": "lokadalat", "value": { "path": "$.lokAdalatDiscount" }},
               {
                 "variable": "payment_receipt",
                 "value": {
@@ -287,6 +290,12 @@
                   "module":"rainmaker-common"
                }
               },
+              {
+  "variable": "qr_code_image",
+  "url": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://citizenservicesdev.eydemoapp.in/",
+  "type": "image"
+},
+
               {
                 "variable": "to",
                 "value": {

@@ -1,6 +1,6 @@
 {
-  "key": "property-receipt",
-  "documentType": "PROPERTYRECEIPT",
+  "key": "pt-ledger",
+  "documentType": "PROPERTYLEDGER",
   "DataConfigs": {
     "moduleName": "PT",
     "version": "1.0.0",
@@ -36,6 +36,11 @@
               { "variable": "plotArea", "value": { "path": "$.plotArea" } },
               { "variable": "isCheque", "value": { "path": "$.isCheque" } },
               { "variable": "paidBy", "value": { "path": "$.paidBy" } },
+              { "variable": "ownerEmail", "value": { "path": "$.payerEmail" }},
+              { "variable": "oldpropertyid", "value": { "path": "$.oldPropertyId" }},
+
+
+
               {
                 "variable": "payment_receipt",
                 "value": {
@@ -330,7 +335,7 @@
 
               {
                 "variable": "calcTableData",
-                "value": { "path": "$.Calculation.propertyFYDetails[-1:]" },
+                "value": { "path": "$.Calculation.propertyFYDetails[*]" },
                 "type": "array",
                 "format": {
                   "type": "object",
@@ -349,7 +354,7 @@
               },
               {
                 "variable": "taxTableData",
-                "value": { "path": "$.Calculation.propertyFYTaxSummaries[-1:]" },
+                "value": { "path": "$.Calculation.propertyFYTaxSummaries[*]" },
                 "type": "array",
                 "format": {
                   "type": "object",

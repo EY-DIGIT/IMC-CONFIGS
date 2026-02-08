@@ -1,0 +1,292 @@
+{
+  "key": "pt-demandnote",
+  "config": {
+    "pageSize": "A4",
+    "pageMargins": [18, 15, 18, 15],
+    "defaultStyle": { "font": "Cambay" },
+    "content": [
+
+      {
+        "image": "{{logoImage}}",
+        "width": 300,
+        "absolutePosition": { "x": 150, "y": 200 }
+      },
+      {
+        "columns": [
+          { "text": "Demand Note", "style": "topline" },
+          { "text": "{{paymentDate}}", "alignment": "right", "style": "topline" }
+        ],
+        "margin": [0, 0, 0, 10]
+      },
+
+      {
+        "alignment": "center",
+        "stack": [
+          { "text": "Indore Municipal Corporation", "style": "header-title" },
+          { "text": "Property Tax", "style": "header-subtitle" },
+          { "text": "Municipal Act 1956 Sec. 186", "style": "info-value" },
+          { "text": "Demand Note", "style": "ledger-title" }
+        ],
+        "margin": [0, 0, 0, 10]
+      },
+
+  
+     {
+  "style": "infoTable",
+  "margin": [0, 10, 0, 10],
+  "table": {
+    "widths": ["15%", "20%", "15%", "20%", "15%", "15%"],
+    "body": [
+      [
+        { "text": "Property ID", "style": "th" },
+        { "text": "{{consumerID}}", "style": "td" },
+        { "text": "Old Property ID", "style": "th" },
+        { "text": "{{oldpropertyid}}", "style": "td" },
+        { "text": "Rate Zone", "style": "th" },
+        { "text": "{{rateZone}}", "style": "td" }
+      ],
+      [
+        { "text": "Owner Name", "style": "th" },
+        { "text": "{{payerName}}", "colSpan": 3, "style": "td" },
+        {},
+        {},
+        { "text": "Connection Date", "style": "th" },
+        { "text": "{{paymentDate}}", "style": "td" }
+      ],
+      [
+        { "text": "Address", "style": "th" },
+        { "text": "{{ptAddress}}", "colSpan": 3, "style": "td" },
+        {}, 
+        {},
+        { "text": "Zone/Ward", "style": "th" },
+        { "text": "{{zone}} / {{ward}}", "style": "td" }
+
+      ],
+      [
+        { "text": "Mobile No", "style": "th" },
+        { "text": "{{payerContact}}", "colSpan": 2, "style": "td" },
+        {},
+        { "text": "Email", "style": "th" },
+        { "text": "{{ownerEmail}}", "colSpan": 2, "style": "td" },
+        {}
+        
+      ],
+      [
+        { "text": "Exemption", "style": "th" },
+        { "text": "{{}}", "colSpan": 3, "style": "td" },
+        {}, {}, 
+        { "text": "Date", "style": "th" },
+        { "text": "{{paymentDate}}",  "style": "td" }
+
+      ]
+    ]
+  }
+},
+
+
+
+      {
+  "style": "calcTable",
+  "margin": [0, 0, 0, 10],
+  "table": {
+    "widths": ["14%", "15%", "9%", "14%", "9%", "8%", "9%", "14%", "8%"],
+    "headerRows": 2,
+    "keepWithHeaderRows": 1,
+    "dontBreakRows": true,
+    "body": [
+      [
+        {
+          "text": "Dimension Details",
+          "style": "tableHeader",
+          "colSpan": 9,
+          "alignment": "center",
+          "bold": true
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        { "text": "{{th_usage_type}}", "style": "th" },
+        { "text": "{{th_usage_factor}}", "style": "th" },
+        { "text": "{{th_floor_no}}", "style": "th" },
+        { "text": "{{th_construction_type}}", "style": "th" },
+        { "text": "{{th_area}}", "style": "th" },
+        { "text": "{{th_rate}}", "style": "th" },
+        { "text": "{{th_alv}}", "style": "th" },
+        { "text": "{{th_maintenance}}", "style": "th" },
+        { "text": "{{th_tpv}}", "style": "th" }
+      ],
+      "{{#calcTableData}}[{\"text\":\"{{calc_usageType}}\",\"style\":\"td\"},{\"text\":\"{{calc_usageFactor}}\",\"style\":\"td\"},{\"text\":\"{{calc_floorNo}}\",\"style\":\"td\"},{\"text\":\"{{calc_constructionType}}\",\"style\":\"td\"},{\"text\":\"{{calc_area}}\",\"style\":\"td\"},{\"text\":\"{{calc_rate}}\",\"style\":\"td\"},{\"text\":\"{{calc_alv}}\",\"style\":\"td\"},{\"text\":\"{{maintainance_discount}}\",\"style\":\"td\"},{\"text\":\"{{tax_tpv}}\",\"style\":\"td\"}]{{/calcTableData}}"
+    ]
+  },
+  "layout": {}
+},
+     {
+  "style": "taxTable",
+  "margin": [0, 0, 0, 10],
+  "table": {
+    "widths": ["6%", "7%", "7%", "7%", "6%", "7%", "7%", "7%", "7%", "6%", "6%", "7%", "7%", "7%", "6%"],
+    "headerRows": 2,
+    "keepWithHeaderRows": 1,
+    "dontBreakRows": true,
+    "body": [
+      [
+        {
+          "text": "Summary Ledger",
+          "style": "tableHeader",
+          "colSpan": 15,
+          "alignment": "center",
+          "bold": true
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        { "text": "Year", "style": "th" },
+        { "text": "Property Tax", "style": "th" },
+        { "text": "Consolidated Tax", "style": "th" },
+        { "text": "Education Cess", "style": "th" },
+        { "text": "Water Cess", "style": "th" },
+        { "text": "Drainage Cess", "style": "th" },
+        { "text": "Urban Development Cess", "style": "th" },
+        { "text": "Service Charge", "style": "th" },
+        { "text": "Total Tax", "style": "th" },
+        { "text": "Penalty", "style": "th" },
+        { "text": "Rebate", "style": "th" },
+        { "text": "Lok Adalat Discount", "style": "th" },
+        { "text": "Net Tax", "style": "th" },
+        { "text": "Collection/Paid", "style": "th" },
+        { "text": "Cumulative Balance", "style": "th" }
+      ],
+            "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"{{tax_propertyTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_samekitTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_educationCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_waterCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_drainageCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_urbanDevCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_serviceCharge}}\",\"style\":\"td\"},{\"text\":\"{{tax_totalTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_penalty}}\",\"style\":\"td\"},{\"text\":\"{{tax_rebate}}\",\"style\":\"td\"},{\"text\":\"{{lokadalat}}\",\"style\":\"td\"},{\"text\":\"{{tax_netTotal}}\",\"style\":\"td\"},{\"text\":\"{{paidAmount}}\",\"style\":\"td\"},{\"text\":\"{{cumulativeBalance}}\",\"style\":\"td\"}]{{/taxTableData}}"
+    ]
+  },
+  "layout": {}
+},
+{
+  "margin": [0, 10, 0, 10],
+  "table": {
+    "widths": ["25%", "25%", "25%", "25%"],
+    "body": [
+      [
+        { "text": "Arrear: {{arrearAmt}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 8 },
+        { "text": "Current Year Net Tax: {{currentYearNetTax}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 8 },
+        { "text": "Previous Balance: {{previousBalance}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 8 },
+        { "text": "Total Payable Amount: {{totalDemandPayable}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 8 }
+      ]
+    ]
+  },
+  "layout": "noBorders"
+},
+
+
+{
+  "text": "Terms & Condition",
+  "bold": true,
+  "fontSize": 9,
+  "margin": [0, 10, 0, 6]
+},
+{
+  "ol": [
+    "The amount of this bill shall be paid within 15 days from the date of issue. Failing which, recovery proceedings shall be initiated under Sections 174/175 of the Madhya Pradesh Municipal Corporation Act, 1956.",
+    "In case the amount mentioned in this bill has already been deposited into the Municipal Corporation treasury, this bill shall be treated as null and void.",
+    "The citizen is requested to provide their mobile number at the time of payment so that payment-related information and confirmation may be communicated through SMS.",
+    "Payment of all types of taxes, service charges, and dues may be made at the cash counter of the Municipal Corporation or with the Assistant Revenue Inspector through Cash, UPI, Cheque, Demand Draft (DD), NEFT, RTGS, or Credit/Debit Cards."
+  ],
+  "fontSize": 7,
+  "margin": [0, 0, 0, 10]
+},
+
+
+
+{
+  "margin": [0, 10, 0, 10],
+  "stack": [
+    {
+      "image": "{{qr_code_image}}",
+      "width": 40,
+      "height": 40,
+      "alignment": "left",
+      "margin": [0, 0, 0, 6]
+    },
+    {
+      "text": [
+        { "text": "Scan to pay or goto ", "fontSize": 9 },
+        {
+          "text": "citizenservicesdev.eydemoapp.in",
+          "fontSize": 9,
+          "color": "blue",
+          "link": "https://citizenservicesdev.eydemoapp.in"
+        }
+      ],
+      "alignment": "left",
+      "margin": [0, 0, 0, 2]
+    },
+    {
+      "text": "to pay property bill online.",
+      "fontSize": 9,
+      "alignment": "left"
+    }
+  ]
+},
+
+
+      
+{
+  "margin": [0, 60, 0, 0],
+  "text": "**This is a computer-generated document and does not require any physical signature.",
+  "fontSize": 9,
+  "alignment": "left"
+}
+
+
+
+
+     
+
+      
+    ],
+    
+
+
+    
+
+   
+    
+
+    "styles": {
+      "topline": { "fontSize": 10, "color": "#484848" },
+      "header-title": { "fontSize": 17,"bold": true, "color": "#000000", "margin": [0, -3, 0, 0] },
+      "header-subtitle": { "fontSize": 14,"bold": true, "color": "#000000", "margin": [0, 2, 0, 0] },
+      "ledger-title": { "fontSize": 14, "bold": true, "margin": [0, 4, 0, 2] },
+      "ledger-date": { "fontSize": 9, "color": "#484848" },
+      "info-block": { "fontSize": 10 },
+      "section-title": { "fontSize": 10, "bold": true },
+      "th": { "fontSize": 7,"bold": true, "margin": [2, 3, 2, 3] },
+      "td": { "fontSize": 7, "margin": [2, 3, 2, 3] },
+       "qr-code": {
+        "color": "#000000",
+        "alignment": "left",
+        "margin": [0, 0, 0, 0]
+      }
+    }
+  }
+}
