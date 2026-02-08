@@ -222,7 +222,8 @@ serviceMaps:
         - query: 
             INSERT INTO eg_ws_connection_plumbings(id, applicationno, materialCode,
             quantity, createdby, createdtime, lastmodifiedby, lastmodifiedtime)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?);
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT (id, applicationno) DO UPDATE SET materialCode=?, quantity=?, lastmodifiedby=?,
+            lastmodifiedtime=?;
           basePath: WaterConnection
           jsonMaps:
             - jsonPath: $.WaterConnection.plumbingDetails.*.id
@@ -232,5 +233,8 @@ serviceMaps:
             - jsonPath: $.WaterConnection.plumbingDetails.*.auditDetails.createdBy
             - jsonPath: $.WaterConnection.plumbingDetails.*.auditDetails.createdTime
             - jsonPath: $.WaterConnection.plumbingDetails.*.auditDetails.lastModifiedBy
-            - jsonPath: 
-                $.WaterConnection.plumbingDetails.*.auditDetails.lastModifiedTime
+            - jsonPath: $.WaterConnection.plumbingDetails.*.auditDetails.lastModifiedTime
+            - jsonPath: $.WaterConnection.plumbingDetails.*.materialDetails.code
+            - jsonPath: $.WaterConnection.plumbingDetails.*.quantity
+            - jsonPath: $.WaterConnection.plumbingDetails.*.auditDetails.lastModifiedBy
+            - jsonPath: $.WaterConnection.plumbingDetails.*.auditDetails.lastModifiedTime
