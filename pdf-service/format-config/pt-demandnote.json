@@ -222,8 +222,8 @@
   "stack": [
     {
       "image": "{{qr_code_image}}",
-      "width": 50,
-      "height": 50,
+      "width": 40,
+      "height": 40,
       "alignment": "left",
       "margin": [0, 0, 0, 6]
     },
