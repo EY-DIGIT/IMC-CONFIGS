@@ -127,60 +127,96 @@
   },
   "layout": {}
 },
-     {
+    "{{#yearChunks}}",
+{
   "style": "taxTable",
-  "margin": [0, 0, 0, 10],
+  "margin": [0, 10, 0, 15],
   "table": {
-    "widths": ["6%", "7%", "7%", "7%", "6%", "7%", "7%", "7%", "7%", "6%", "6%", "7%", "7%", "7%", "6%"],
-    "headerRows": 2,
-    "keepWithHeaderRows": 1,
-    "dontBreakRows": true,
+    "headerRows": 1,
+    "widths": ["22%","15%","15%","15%","15%","15%"],
     "body": [
-      [
-        {
-          "text": "Summary Ledger",
-          "style": "tableHeader",
-          "colSpan": 15,
-          "alignment": "center",
-          "bold": true
-        },
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ],
+
       [
         { "text": "Year", "style": "th" },
-        { "text": "Property Tax", "style": "th" },
-        { "text": "Consolidated Tax", "style": "th" },
-        { "text": "Education Cess", "style": "th" },
-        { "text": "Water Cess", "style": "th" },
-        { "text": "Drainage Cess", "style": "th" },
-        { "text": "Urban Development Cess", "style": "th" },
-        { "text": "Service Charge", "style": "th" },
-        { "text": "Total Tax", "style": "th" },
-        { "text": "Penalty", "style": "th" },
-        { "text": "Rebate", "style": "th" },
-        { "text": "Lok Adalat Discount", "style": "th" },
-        { "text": "Net Tax", "style": "th" },
-        { "text": "Collection/Paid", "style": "th" },
-        { "text": "Cumulative Balance", "style": "th" }
+        "{{#years}}{ \"text\": \"{{tax_year}}\", \"style\": \"th\" },{{/years}}"
       ],
-            "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"{{tax_propertyTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_samekitTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_educationCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_waterCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_drainageCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_urbanDevCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_serviceCharge}}\",\"style\":\"td\"},{\"text\":\"{{tax_totalTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_penalty}}\",\"style\":\"td\"},{\"text\":\"{{tax_rebate}}\",\"style\":\"td\"},{\"text\":\"{{lokadalat}}\",\"style\":\"td\"},{\"text\":\"{{tax_netTotal}}\",\"style\":\"td\"},{\"text\":\"{{paidAmount}}\",\"style\":\"td\"},{\"text\":\"{{cumulativeBalance}}\",\"style\":\"td\"}]{{/taxTableData}}"
+
+      [
+        { "text": "Property Tax", "style": "th" },
+        "{{#years}}{ \"text\": \"{{tax_propertyTax}}\", \"style\": \"td\" },{{/years}}"
+      ],
+
+      [
+        { "text": "Consolidated Tax", "style": "th" },
+        "{{#years}}{ \"text\": \"{{tax_samekitTax}}\", \"style\": \"td\" },{{/years}}"
+      ],
+
+      [
+        { "text": "Education Cess", "style": "th" },
+        "{{#years}}{ \"text\": \"{{tax_educationCess}}\", \"style\": \"td\" },{{/years}}"
+      ],
+
+      [
+        { "text": "Water Cess", "style": "th" },
+        "{{#years}}{ \"text\": \"{{tax_waterCess}}\", \"style\": \"td\" },{{/years}}"
+      ],
+
+      [
+        { "text": "Drainage Cess", "style": "th" },
+        "{{#years}}{ \"text\": \"{{tax_drainageCess}}\", \"style\": \"td\" },{{/years}}"
+      ],
+
+      [
+        { "text": "Urban Development Cess", "style": "th" },
+        "{{#years}}{ \"text\": \"{{tax_urbanDevCess}}\", \"style\": \"td\" },{{/years}}"
+      ],
+
+      [
+        { "text": "Service Charge", "style": "th" },
+        "{{#years}}{ \"text\": \"{{tax_serviceCharge}}\", \"style\": \"td\" },{{/years}}"
+      ],
+
+      [
+        { "text": "Total Tax", "style": "th" },
+        "{{#years}}{ \"text\": \"{{tax_totalTax}}\", \"style\": \"td\" },{{/years}}"
+      ],
+
+      [
+        { "text": "Penalty", "style": "th" },
+        "{{#years}}{ \"text\": \"{{tax_penalty}}\", \"style\": \"td\" },{{/years}}"
+      ],
+
+      [
+        { "text": "Rebate", "style": "th" },
+        "{{#years}}{ \"text\": \"{{tax_rebate}}\", \"style\": \"td\" },{{/years}}"
+      ],
+
+      [
+        { "text": "Lok Adalat Discount", "style": "th" },
+        "{{#years}}{ \"text\": \"{{lokadalat}}\", \"style\": \"td\" },{{/years}}"
+      ],
+
+      [
+        { "text": "Net Tax", "style": "th" },
+        "{{#years}}{ \"text\": \"{{tax_netTotal}}\", \"style\": \"td\" },{{/years}}"
+      ],
+
+      [
+        { "text": "Collection/Paid", "style": "th" },
+        "{{#years}}{ \"text\": \"{{paidAmount}}\", \"style\": \"td\" },{{/years}}"
+      ],
+
+      [
+        { "text": "Cumulative Balance", "style": "th" },
+        "{{#years}}{ \"text\": \"{{cumulativeBalance}}\", \"style\": \"td\" },{{/years}}"
+      ]
+
     ]
   },
-  "layout": {}
-}
+  "layout": "lightHorizontalLines"
+},
+"{{/yearChunks}}"
+
 
      
 
