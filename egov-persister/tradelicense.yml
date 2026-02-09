@@ -409,34 +409,34 @@ serviceMaps:
 
       - jsonPath: $.Licenses.*.auditDetails.lastModifiedTime
 
-  - query: INSERT INTO eg_tl_itemdetails( id, tenantid, itemcode, description, quantity, rate, totalamount, no, tradelicenseid, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
-    basePath: Licenses.*.itemDetails.*
-    jsonMaps:
-    - jsonPath: $.Licenses.*.itemDetails.*.id
+    - query: INSERT INTO eg_tl_itemdetails( id, tenantid, itemcode, description, quantity, rate, totalamount, no, tradelicenseid, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+      basePath: Licenses.*.itemDetails.*
+      jsonMaps:
+      - jsonPath: $.Licenses.*.itemDetails.*.id
 
-    - jsonPath: $.Licenses.*.itemDetails.*.tenantId
+      - jsonPath: $.Licenses.*.itemDetails.*.tenantId
 
-    - jsonPath: $.Licenses.*.itemDetails.*.itemCode
+      - jsonPath: $.Licenses.*.itemDetails.*.itemCode
 
-    - jsonPath: $.Licenses.*.itemDetails.*.description
+      - jsonPath: $.Licenses.*.itemDetails.*.description
 
-    - jsonPath: $.Licenses.*.itemDetails.*.quantity
+      - jsonPath: $.Licenses.*.itemDetails.*.quantity
 
-    - jsonPath: $.Licenses.*.itemDetails.*.rate
+      - jsonPath: $.Licenses.*.itemDetails.*.rate
 
-    - jsonPath: $.Licenses.*.itemDetails.*.totalAmount
+      - jsonPath: $.Licenses.*.itemDetails.*.totalAmount
 
-    - jsonPath: $.Licenses.*.itemDetails.*.no
+      - jsonPath: $.Licenses.*.itemDetails.*.no
 
-    - jsonPath: $.Licenses.*.itemDetails.*.tradeLicenseId
+      - jsonPath: $.Licenses.*.itemDetails.*.tradeLicenseId
 
-    - jsonPath: $.Licenses[*][?({id} in @.itemDetails[*].id)].auditDetails.createdBy
+      - jsonPath: $.Licenses[*][?({id} in @.itemDetails[*].id)].auditDetails.createdBy
 
-    - jsonPath: $.Licenses[*][?({id} in @.itemDetails[*].id)].auditDetails.lastModifiedBy
+      - jsonPath: $.Licenses[*][?({id} in @.itemDetails[*].id)].auditDetails.lastModifiedBy
 
-    - jsonPath: $.Licenses[*][?({id} in @.itemDetails[*].id)].auditDetails.createdTime
+      - jsonPath: $.Licenses[*][?({id} in @.itemDetails[*].id)].auditDetails.createdTime
 
-    - jsonPath: $.Licenses[*][?({id} in @.itemDetails[*].id)].auditDetails.lastModifiedTime
+      - jsonPath: $.Licenses[*][?({id} in @.itemDetails[*].id)].auditDetails.lastModifiedTime
 
 
 
