@@ -226,14 +226,14 @@ serviceMaps:
             - jsonPath: $.WaterConnection.applicationNo
         - query: 
             INSERT INTO eg_ws_connection_plumbings(id, applicationno, materialCode,
-            quantity, createdby, createdtime, lastmodifiedby, lastmodifiedtime)
+            requestedquantity, createdby, createdtime, lastmodifiedby, lastmodifiedtime)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?);
-          basePath: WaterConnection
+          basePath: WaterConnection.plumbingDetails.*
           jsonMaps:
             - jsonPath: $.WaterConnection.plumbingDetails.*.id
             - jsonPath: $.WaterConnection.applicationNo
             - jsonPath: $.WaterConnection.plumbingDetails.*.materialDetails.code
-            - jsonPath: $.WaterConnection.plumbingDetails.*.quantity
+            - jsonPath: $.WaterConnection.plumbingDetails.*.requestedQuantity
             - jsonPath: $.WaterConnection.plumbingDetails.*.auditDetails.createdBy
             - jsonPath: $.WaterConnection.plumbingDetails.*.auditDetails.createdTime
             - jsonPath: $.WaterConnection.plumbingDetails.*.auditDetails.lastModifiedBy
