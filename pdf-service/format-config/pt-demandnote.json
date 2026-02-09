@@ -127,46 +127,60 @@
   },
   "layout": {}
 },
-     { 
-"style": "TaxTable", 
-"margin": [0, 10, 0, 10], 
-"table": { 
-"widths": ["50%", "50%"], 
-"body": [ 
-[ 
-{ "text": "Summary Ledger", "style": "tableHeader", "alignment": "left", "bold": true }, 
-{ "text": "", "style": "tableHeader" } 
-], 
-[ 
-{ "text": "Year", "style": "th" }, 
-{ "text": "{{tax_year}}", "style": "td" } , 
-{ "text": "Property Tax", "style": "th" }, 
-{ "text": "{{tax_propertyTax}}", "style": "td" }, 
-{ "text": "Consolidated Tax", "style": "th" }, 
-{ "text": "{{tax_samekitTax}}", "style": "td" },
-{ "text": "Education Cess", "style": "th" }, 
-{ "text": "{{tax_educationCess}}", "style": "td" },
-{ "text": "Water Cess", "style": "th" }, 
-{ "text": "{{tax_waterCess}}", "style": "td" } ,
-{ "text": "Drainage Cess", "style": "th" }, 
-{ "text": "{{tax_drainageCess}}", "style": "td" } ,
-{ "text": "Urban Development Cess", "style": "th" }, 
-{ "text": "{{tax_urbanDevCess}}", "style": "td" } ,
-{ "text": "Service Charge", "style": "th" }, 
-{ "text": "{{tax_serviceCharge}}", "style": "td" } ,
-{ "text": "Total Tax", "style": "th" }, 
-{ "text": "{{tax_totalTax}}", "style": "td" } ,
-{ "text": "Penalty", "style": "th" }, 
-{ "text": "{{tax_penalty}}", "style": "td" } ,
-{ "text": "Rebate", "style": "th" }, 
-{ "text": "{{tax_rebate}}", "style": "td" } ,
-{ "text": "Net Tax", "style": "th" }, 
-{ "text": "{{tax_netTotal}}", "style": "td" } 
-] 
-]
-}, 
-"layout": {} 
-} ,
+     {
+  "style": "taxTable",
+  "margin": [0, 0, 0, 10],
+  "table": {
+    "widths": ["6%", "7%", "7%", "7%", "6%", "7%", "7%", "7%", "7%", "6%", "6%", "7%", "7%", "7%", "6%"],
+    "headerRows": 2,
+    "keepWithHeaderRows": 1,
+    "dontBreakRows": true,
+    "body": [
+      [
+        {
+          "text": "Summary Ledger",
+          "style": "tableHeader",
+          "colSpan": 15,
+          "alignment": "center",
+          "bold": true
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        { "text": "Year", "style": "th" },
+        { "text": "Property Tax", "style": "th" },
+        { "text": "Consolidated Tax", "style": "th" },
+        { "text": "Education Cess", "style": "th" },
+        { "text": "Water Cess", "style": "th" },
+        { "text": "Drainage Cess", "style": "th" },
+        { "text": "Urban Development Cess", "style": "th" },
+        { "text": "Service Charge", "style": "th" },
+        { "text": "Total Tax", "style": "th" },
+        { "text": "Penalty", "style": "th" },
+        { "text": "Rebate", "style": "th" },
+        { "text": "Lok Adalat Discount", "style": "th" },
+        { "text": "Net Tax", "style": "th" },
+        { "text": "Collection/Paid", "style": "th" },
+        { "text": "Cumulative Balance", "style": "th" }
+      ],
+            "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"{{tax_propertyTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_samekitTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_educationCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_waterCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_drainageCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_urbanDevCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_serviceCharge}}\",\"style\":\"td\"},{\"text\":\"{{tax_totalTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_penalty}}\",\"style\":\"td\"},{\"text\":\"{{tax_rebate}}\",\"style\":\"td\"},{\"text\":\"{{lokadalat}}\",\"style\":\"td\"},{\"text\":\"{{tax_netTotal}}\",\"style\":\"td\"},{\"text\":\"{{paidAmount}}\",\"style\":\"td\"},{\"text\":\"{{cumulativeBalance}}\",\"style\":\"td\"}]{{/taxTableData}}"
+    ]
+  },
+  "layout": {}
+},
 {
   "margin": [0, 10, 0, 10],
   "table": {
