@@ -131,78 +131,56 @@
   "style": "taxTable",
   "margin": [0, 0, 0, 10],
   "table": {
-    "headerRows": 1,
+    "widths": ["6%", "7%", "7%", "7%", "6%", "7%", "7%", "7%", "7%", "6%", "6%", "7%", "7%", "7%", "6%"],
+    "headerRows": 2,
+    "keepWithHeaderRows": 1,
     "dontBreakRows": true,
-    "widths": [60, "*", "*", "*", "*", "*"],
     "body": [
-
+      [
+        {
+          "text": "Summary Ledger",
+          "style": "tableHeader",
+          "colSpan": 15,
+          "alignment": "center",
+          "bold": true
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
       [
         { "text": "Year", "style": "th" },
-        "{{#taxTableData}}{ \"text\": \"{{tax_year}}\", \"style\": \"th\" }{{/taxTableData}}"
-      ],
-
-      [
         { "text": "Property Tax", "style": "th" },
-        "{{#taxTableData}}{ \"text\": \"{{tax_propertyTax}}\", \"style\": \"td\" }{{/taxTableData}}"
-      ],
-      [
         { "text": "Consolidated Tax", "style": "th" },
-        "{{#taxTableData}}{ \"text\": \"{{tax_samekitTax}}\", \"style\": \"td\" }{{/taxTableData}}"
-      ],
-      [
         { "text": "Education Cess", "style": "th" },
-        "{{#taxTableData}}{ \"text\": \"{{tax_educationCess}}\", \"style\": \"td\" }{{/taxTableData}}"
-      ],
-      [
         { "text": "Water Cess", "style": "th" },
-        "{{#taxTableData}}{ \"text\": \"{{tax_waterCess}}\", \"style\": \"td\" }{{/taxTableData}}"
-      ],
-      [
         { "text": "Drainage Cess", "style": "th" },
-        "{{#taxTableData}}{ \"text\": \"{{tax_drainageCess}}\", \"style\": \"td\" }{{/taxTableData}}"
-      ],
-      [
         { "text": "Urban Development Cess", "style": "th" },
-        "{{#taxTableData}}{ \"text\": \"{{tax_urbanDevCess}}\", \"style\": \"td\" }{{/taxTableData}}"
-      ],
-      [
         { "text": "Service Charge", "style": "th" },
-        "{{#taxTableData}}{ \"text\": \"{{tax_serviceCharge}}\", \"style\": \"td\" }{{/taxTableData}}"
-      ],
-      [
         { "text": "Total Tax", "style": "th" },
-        "{{#taxTableData}}{ \"text\": \"{{tax_totalTax}}\", \"style\": \"td\" }{{/taxTableData}}"
-      ],
-      [
         { "text": "Penalty", "style": "th" },
-        "{{#taxTableData}}{ \"text\": \"{{tax_penalty}}\", \"style\": \"td\" }{{/taxTableData}}"
-      ],
-      [
         { "text": "Rebate", "style": "th" },
-        "{{#taxTableData}}{ \"text\": \"{{tax_rebate}}\", \"style\": \"td\" }{{/taxTableData}}"
-      ],
-      [
         { "text": "Lok Adalat Discount", "style": "th" },
-        "{{#taxTableData}}{ \"text\": \"{{lokadalat}}\", \"style\": \"td\" }{{/taxTableData}}"
-      ],
-      [
         { "text": "Net Tax", "style": "th" },
-        "{{#taxTableData}}{ \"text\": \"{{tax_netTotal}}\", \"style\": \"td\" }{{/taxTableData}}"
-      ],
-      [
         { "text": "Collection/Paid", "style": "th" },
-        "{{#taxTableData}}{ \"text\": \"{{paidAmount}}\", \"style\": \"td\" }{{/taxTableData}}"
+        { "text": "Cumulative Balance", "style": "th" }
       ],
-      [
-        { "text": "Cumulative Balance", "style": "th" },
-        "{{#taxTableData}}{ \"text\": \"{{cumulativeBalance}}\", \"style\": \"td\" }{{/taxTableData}}"
-      ]
-
+            "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"{{tax_propertyTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_samekitTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_educationCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_waterCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_drainageCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_urbanDevCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_serviceCharge}}\",\"style\":\"td\"},{\"text\":\"{{tax_totalTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_penalty}}\",\"style\":\"td\"},{\"text\":\"{{tax_rebate}}\",\"style\":\"td\"},{\"text\":\"{{lokadalat}}\",\"style\":\"td\"},{\"text\":\"{{tax_netTotal}}\",\"style\":\"td\"},{\"text\":\"{{paidAmount}}\",\"style\":\"td\"},{\"text\":\"{{cumulativeBalance}}\",\"style\":\"td\"}]{{/taxTableData}}"
     ]
   },
-  "layout": "lightHorizontalLines"
+  "layout": {}
 },
-
 {
   "margin": [0, 10, 0, 10],
   "table": {
