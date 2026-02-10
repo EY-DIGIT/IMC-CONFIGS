@@ -188,10 +188,6 @@
   "margin": [0, 0, 0, 10]
 },
 
-{
-  "text": " ",
-  "margin": [0, 20, 0, 0]
-},
 
 {
   "margin": [0, 10, 0, 10],
@@ -256,8 +252,8 @@
       "ledger-date": { "fontSize": 9, "color": "#484848" },
       "info-block": { "fontSize": 10 },
       "section-title": { "fontSize": 10, "bold": true },
-      "th": { "fontSize": 7,"bold": true, "margin": [2, 3, 2, 3] },
-      "td": { "fontSize": 7, "margin": [2, 3, 2, 3] },
+      "th": { "fontSize": 9,"bold": true, "margin": [2, 3, 2, 3] },
+      "td": { "fontSize": 9, "margin": [2, 3, 2, 3] },
        "qr-code": {
         "color": "#000000",
         "alignment": "left",
