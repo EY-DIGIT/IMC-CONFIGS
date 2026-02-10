@@ -201,10 +201,10 @@
     },
     {
       "text": [
-        { "text": "Scan to pay or goto ", "fontSize": 9 },
+        { "text": "Scan to pay or goto ", "fontSize": 10 },
         {
           "text": "citizenservicesdev.eydemoapp.in",
-          "fontSize": 9,
+          "fontSize": 10,
           "color": "blue",
           "link": "https://citizenservicesdev.eydemoapp.in"
         }
@@ -214,7 +214,7 @@
     },
     {
       "text": "to pay property bill online.",
-      "fontSize": 9,
+      "fontSize": 10,
       "alignment": "left"
     }
   ]
