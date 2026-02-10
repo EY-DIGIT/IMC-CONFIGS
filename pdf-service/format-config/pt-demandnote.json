@@ -170,7 +170,7 @@
 {
   "text": "Terms & Condition",
   "bold": true,
-  "fontSize": 9,
+  "fontSize": 11,
   "margin": [0, 40, 0, 6]
 },
 {
@@ -180,7 +180,7 @@
     "The citizen is requested to provide their mobile number at the time of payment so that payment-related information and confirmation may be communicated through SMS.",
     "Payment of all types of taxes, service charges, and dues may be made at the cash counter of the Municipal Corporation or with the Assistant Revenue Inspector through Cash, UPI, Cheque, Demand Draft (DD), NEFT, RTGS, or Credit/Debit Cards."
   ],
-  "fontSize": 7,
+  "fontSize": 9,
   "margin": [0, 0, 0, 10]
 },
 
