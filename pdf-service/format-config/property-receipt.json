@@ -81,7 +81,7 @@
       {
         "style": "taxTable",
         "table": {
-          "widths": ["9%", "8%", "8%", "9%", "7%", "8%", "11%", "8%", "8%", "8%", "8%", "8%"],
+          "widths": ["5%", "9%", "9%", "9%", "7%", "9%", "11%", "9%", "8%", "8%", "8%", "8%"],
           "headerRows": 1,
           "keepWithHeaderRows": 1,
           "dontBreakRows": true,
