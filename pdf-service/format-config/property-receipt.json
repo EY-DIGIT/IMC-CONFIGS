@@ -81,7 +81,7 @@
       {
         "style": "taxTable",
         "table": {
-          "widths": ["5%", "9%", "9%", "9%", "7%", "9%", "11%", "9%", "8%", "8%", "8%", "8%"],
+          "widths": ["7%", "7%", "7%", "8%", "7%", "8%", "10%", "8%", "8%", "7%", "7%","8%", "8%"],
           "headerRows": 1,
           "keepWithHeaderRows": 1,
           "dontBreakRows": true,
@@ -98,9 +98,11 @@
               { "text": "{{th_total_tax}}", "style": "th" },
               { "text": "{{th_rebate}}", "style": "th" },
               { "text": "{{th_penalty}}", "style": "th" },
+              { "text": "{{th_penalty}}", "style": "th" },
+
               { "text": "{{th_net_total}}", "style": "th" }
             ],
-            "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"{{tax_propertyTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_samekitTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_educationCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_waterCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_drainageCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_urbanDevCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_serviceCharge}}\",\"style\":\"td\"},{\"text\":\"{{tax_totalTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_rebate}}\",\"style\":\"td\"},{\"text\":\"{{tax_penalty}}\",\"style\":\"td\"},{\"text\":\"{{tax_netTotal}}\",\"style\":\"td\"}]{{/taxTableData}}"
+            "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"{{tax_propertyTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_samekitTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_educationCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_waterCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_drainageCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_urbanDevCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_serviceCharge}}\",\"style\":\"td\"},{\"text\":\"{{tax_totalTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_rebate}}\",\"style\":\"td\"},{\"text\":\"{{tax_penalty}}\",\"style\":\"td\"},{\"text\":\"{{tax_penalty}}\",\"style\":\"td\"},{\"text\":\"{{tax_netTotal}}\",\"style\":\"td\"}]{{/taxTableData}}"
           ]
         },
         "layout": {}
