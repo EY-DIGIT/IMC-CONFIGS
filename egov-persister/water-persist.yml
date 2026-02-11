@@ -144,7 +144,7 @@ serviceMaps:
         - query: 
             UPDATE eg_ws_connection SET connectiontype=?, pipesize=?,
             lastmodifiedby=?, lastmodifiedtime=?,usagetype=?, usagesubtype=?,
-            applicationtype=? WHERE tenantid=? and applicationno=?;
+            applicationtype=?, latitude=?, longitude=?, meterphotoid=?, installationdate=? WHERE tenantid=? and applicationno=?;
           basePath: WaterConnection
           jsonMaps:
             - jsonPath: $.WaterConnection.connectionType
@@ -154,6 +154,10 @@ serviceMaps:
             - jsonPath: $.WaterConnection.usageType
             - jsonPath: $.WaterConnection.usageSubType
             - jsonPath: $.WaterConnection.applicationType
+            - jsonPath: $.WaterConnection.latitude
+            - jsonPath: $.WaterConnection.longitude
+            - jsonPath: $.WaterConnection.meterphotoid
+            - jsonPath: $.WaterConnection.installationdate
             - jsonPath: $.WaterConnection.tenantId
             - jsonPath: $.WaterConnection.applicationNo
         - query: 
@@ -234,6 +238,7 @@ serviceMaps:
             - jsonPath: $.WaterConnection.applicationNo
             - jsonPath: $.WaterConnection.plumbingDetails.*.materialDetails.code
             - jsonPath: $.WaterConnection.plumbingDetails.*.requestedQuantity
+            - jsonPath: $.WaterConnection.plumbingDetails.*.amount
             - jsonPath: $.WaterConnection.plumbingDetails.*.auditDetails.createdBy
             - jsonPath: $.WaterConnection.plumbingDetails.*.auditDetails.createdTime
             - jsonPath: $.WaterConnection.plumbingDetails.*.auditDetails.lastModifiedBy
