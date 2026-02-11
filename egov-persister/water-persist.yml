@@ -156,8 +156,8 @@ serviceMaps:
             - jsonPath: $.WaterConnection.applicationType
             - jsonPath: $.WaterConnection.latitude
             - jsonPath: $.WaterConnection.longitude
-            - jsonPath: $.WaterConnection.meterphotoid
-            - jsonPath: $.WaterConnection.installationdate
+            - jsonPath: $.WaterConnection.meterPhotoId
+            - jsonPath: $.WaterConnection.installationDate
             - jsonPath: $.WaterConnection.tenantId
             - jsonPath: $.WaterConnection.applicationNo
         - query: 
