@@ -4,20 +4,13 @@
     "pageSize": "A4",
     "pageMargins": [18, 15, 18, 15],
     "defaultStyle": { "font": "Cambay" },
-    "header": {
-  "margin": [0, 10, 0, 0],
-  "columns": [
-    {
-      "image": "{{logoImage}}",
-      "width": 120,
-      "alignment": "center"
-    }
-  ]
-},
-
     "content": [
 
-      
+      {
+        "image": "{{logoImage}}",
+        "width": 300,
+        "absolutePosition": { "x": 150, "y": 200 }
+      },
       {
         "columns": [
           { "text": "Ledger", "style": "topline" },
