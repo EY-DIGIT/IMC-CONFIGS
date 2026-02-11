@@ -131,7 +131,7 @@
   "style": "taxTable",
   "margin": [0, 0, 0, 10],
   "table": {
-    "widths": ["6%", "7%", "7%", "7%", "6%", "7%", "7%", "7%", "7%", "6%", "6%", "7%", "7%", "7%", "6%"],
+"widths": ["7%", "7%", "7%", "7%", "6%", "6%", "8%", "7%", "7%", "6%", "6%", "8%", "7%", "7%", "8%"],
     "headerRows": 2,
     "keepWithHeaderRows": 1,
     "dontBreakRows": true,
@@ -160,21 +160,21 @@
         {}
       ],
       [
-        { "text": "Year", "style": "th" },
-        { "text": "Property Tax", "style": "th" },
-        { "text": "Consolidated Tax", "style": "th" },
-        { "text": "Education Cess", "style": "th" },
-        { "text": "Water Cess", "style": "th" },
-        { "text": "Drainage Cess", "style": "th" },
-        { "text": "Urban Development Cess", "style": "th" },
-        { "text": "Service Charge", "style": "th" },
-        { "text": "Total Tax", "style": "th" },
-        { "text": "Penalty", "style": "th" },
-        { "text": "Rebate", "style": "th" },
-        { "text": "Lok Adalat Discount", "style": "th" },
-        { "text": "Net Tax", "style": "th" },
-        { "text": "Collection/Paid", "style": "th" },
-        { "text": "Cumulative Balance", "style": "th" }
+        { "text": "Year", "style": "taxHeader" },
+        { "text": "Property Tax", "style": "taxHeader" },
+        { "text": "Consolidated Tax", "style": "taxHeader" },
+        { "text": "Education Cess", "style": "taxHeader" },
+        { "text": "Water Cess", "style": "taxHeader" },
+        { "text": "Drainage Cess", "style": "taxHeader" },
+        { "text": "Urban Development\nCess", "style": "taxHeader" },
+        { "text": "Service Charge", "style": "taxHeader" },
+        { "text": "Total Tax", "style": "taxHeader" },
+        { "text": "Penalty", "style": "taxHeader" },
+        { "text": "Rebate", "style": "taxHeader" },
+        { "text": "Lok Adalat\nDiscount", "style": "taxHeader" },
+        { "text": "Net Tax", "style": "taxHeader" },
+        { "text": "Collection/Paid", "style": "taxHeader" },
+        { "text": "Cumulative\nBalance", "style": "taxHeader" }
       ],
             "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"{{tax_propertyTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_samekitTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_educationCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_waterCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_drainageCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_urbanDevCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_serviceCharge}}\",\"style\":\"td\"},{\"text\":\"{{tax_totalTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_penalty}}\",\"style\":\"td\"},{\"text\":\"{{tax_rebate}}\",\"style\":\"td\"},{\"text\":\"{{lokadalat}}\",\"style\":\"td\"},{\"text\":\"{{tax_netTotal}}\",\"style\":\"td\"},{\"text\":\"{{paidAmount}}\",\"style\":\"td\"},{\"text\":\"{{cumulativeBalance}}\",\"style\":\"td\"}]{{/taxTableData}}"
     ]
@@ -196,7 +196,9 @@
       "info-block": { "fontSize": 10 },
       "section-title": { "fontSize": 10, "bold": true },
       "th": { "fontSize": 7,"bold": true, "margin": [2, 3, 2, 3] },
-      "td": { "fontSize": 7, "margin": [2, 3, 2, 3] }
+      "td": { "fontSize": 7, "margin": [2, 3, 2, 3] },
+      "taxHeader": { "fontSize": 6, "bold": true, "margin": [2, 2, 2, 2] }
+
     }
   }
 }
