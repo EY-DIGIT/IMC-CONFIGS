@@ -2,8 +2,6 @@
   "key": "pt-detailedledger",
   "config": {
     "pageSize": "A4",
-      "pageOrientation": "landscape",
-
     "pageMargins": [18, 15, 18, 15],
     "defaultStyle": { "font": "Cambay" },
     "content": [
