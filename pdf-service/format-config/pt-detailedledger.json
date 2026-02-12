@@ -118,7 +118,7 @@
         { "text": "{{th_usage_factor}}", "style": "th" },
         { "text": "{{th_floor_no}}", "style": "th" },
         { "text": "{{th_construction_type}}", "style": "th" },
-        { "text": "{{th_area}}", "style": "th" },
+        { "text": "Area (Sq. ft.)", "style": "th" },
         { "text": "{{th_rate}}", "style": "th" },
         { "text": "{{th_alv}}", "style": "th" },
         { "text": "{{th_maintenance}}", "style": "th" },
