@@ -158,15 +158,9 @@
     ]
   },
   "layout": {}
-},
+}
 
      
-{
-  "text": "Page {{pageNumber}} of {{pageCount}}",
-  "alignment": "right",
-  "fontSize": 9,
-  "margin": [0, 20, 18, 0]
-}
 
       
     ],
