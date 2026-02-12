@@ -370,7 +370,11 @@
                     { "variable": "tax_totalTax",      "value": "totalTax",       "type": "number", "defaultValue": 0 },
                     { "variable": "tax_rebate",        "value": "rebate",         "type": "number", "defaultValue": 0 },
                     { "variable": "tax_penalty",       "value": "penalty",        "type": "number", "defaultValue": 0 },
-                    { "variable": "tax_netTotal",      "value": "netTax",         "type": "number", "defaultValue": 0 }
+                    { "variable": "tax_netTotal",      "value": "netTax",         "type": "number", "defaultValue": 0 },
+                                        { "variable": "tax_cumulative",    "value": "cumulativeBalance",      "type": "number", "defaultValue": 0 },
+                                                            { "variable": "tax_paid",          "value": "paidAmount",          "type": "number", "defaultValue": 0 }
+
+
                   ]
                 }
               }
