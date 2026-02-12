@@ -7,33 +7,6 @@
     "content": [
 
       {
-    "layout": "noBorders",
-    "table": {
-      "headerRows": 1,
-      "widths": ["*"],
-      "body": [
-        [
-          {
-            "stack": [
-              {
-                "columns": [
-                  { "text": "Ledger", "style": "topline" },
-                  { "text": "{{paymentDate}}", "alignment": "right", "style": "topline" }
-                ]
-              },
-              {
-                "image": "{{logoImage}}",
-                "width": 120,
-                "alignment": "center",
-                "margin": [0, 5, 0, 10]
-              }
-            ]
-          }
-        ],
-        [
-          {
-            "stack": [
-              {
         "image": "{{logoImage}}",
         "width": 300,
         "absolutePosition": { "x": 150, "y": 200 }
@@ -186,13 +159,7 @@
   },
   "layout": {}
 }
- 
-            ]
-          }
-        ]
-      ]
-    }
-  }
+
      
 
       
