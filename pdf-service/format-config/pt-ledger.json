@@ -127,6 +127,18 @@
   },
   "layout": {}
 },
+{
+  "text": "Ledger",
+  "style": "topline",
+  "margin": [18, 10, 0, 0]
+},
+{
+  "text": "{{paymentDate}}",
+  "alignment": "right",
+  "style": "topline",
+  "margin": [0, -15, 18, 10]
+},
+
      {
   "style": "taxTable",
   "margin": [0, 0, 0, 10],
