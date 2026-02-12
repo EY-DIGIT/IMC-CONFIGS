@@ -158,23 +158,19 @@
     ]
   },
   "layout": {}
-}
+},
 
      
+{
+  "text": "Page {{pageNumber}} of {{pageCount}}",
+  "alignment": "right",
+  "fontSize": 9,
+  "margin": [0, 20, 18, 0]
+}
 
       
     ],
-    "footer": {
-  "columns": [
-    {
-      "text": "Page {{pageNumber}} of {{pageCount}}",
-      "alignment": "right",
-      "margin": [0, 0, 18, 10],
-      "fontSize": 9
-    }
-  ]
-},
-
+    
 
     "styles": {
       "topline": { "fontSize": 10, "color": "#484848" },
