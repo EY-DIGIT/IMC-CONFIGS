@@ -164,6 +164,17 @@
 
       
     ],
+    "footer": {
+  "columns": [
+    {
+      "text": "Page {{pageNumber}} of {{pageCount}}",
+      "alignment": "right",
+      "margin": [0, 0, 18, 10],
+      "fontSize": 9
+    }
+  ]
+},
+
 
     "styles": {
       "topline": { "fontSize": 10, "color": "#484848" },
