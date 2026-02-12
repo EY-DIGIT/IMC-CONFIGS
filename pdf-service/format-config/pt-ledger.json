@@ -4,6 +4,22 @@
     "pageSize": "A4",
     "pageMargins": [18, 15, 18, 15],
     "defaultStyle": { "font": "Cambay" },
+    "header": {
+  "columns": [
+    {
+      "text": "Ledger",
+      "style": "topline",
+      "margin": [18, 10, 0, 0]
+    },
+    {
+      "text": "{{paymentDate}}",
+      "alignment": "right",
+      "style": "topline",
+      "margin": [0, 10, 18, 0]
+    }
+  ]
+},
+
     "content": [
 
       {
@@ -11,13 +27,7 @@
         "width": 300,
         "absolutePosition": { "x": 150, "y": 200 }
       },
-      {
-        "columns": [
-          { "text": "Ledger", "style": "topline" },
-          { "text": "{{paymentDate}}", "alignment": "right", "style": "topline" }
-        ],
-        "margin": [0, 0, 0, 10]
-      },
+     
 
       {
         "alignment": "center",
