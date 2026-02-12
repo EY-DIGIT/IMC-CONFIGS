@@ -4,6 +4,14 @@
     "pageSize": "A4",
     "pageMargins": [18, 15, 18, 15],
     "defaultStyle": { "font": "Cambay" },
+    "watermark": {
+  "text": "Ledger        {{paymentDate}}",
+  "color": "#000000",
+  "opacity": 1,
+  "bold": true,
+  "fontSize": 10
+},
+
     "content": [
 
       {
@@ -11,13 +19,7 @@
         "width": 300,
         "absolutePosition": { "x": 150, "y": 200 }
       },
-      {
-        "columns": [
-          { "text": "Ledger", "style": "topline" },
-          { "text": "{{paymentDate}}", "alignment": "right", "style": "topline" }
-        ],
-        "margin": [0, 0, 0, 10]
-      },
+      
 
       {
         "alignment": "center",
