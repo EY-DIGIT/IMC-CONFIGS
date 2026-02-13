@@ -4,13 +4,15 @@
     "pageSize": "A4",
     "pageMargins": [18, 15, 18, 15],
     "defaultStyle": { "font": "Cambay" },
+    "background": {
+  "image": "{{logoImage}}",
+  "width": 300,
+  "absolutePosition": { "x": 150, "y": 200 }
+}
+,
     "content": [
 
-      {
-        "image": "{{logoImage}}",
-        "width": 300,
-        "absolutePosition": { "x": 150, "y": 200 }
-      },
+      
       {
         "columns": [
           { "text": "Demand Note", "style": "topline" },
