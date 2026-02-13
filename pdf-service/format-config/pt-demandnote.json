@@ -241,6 +241,21 @@
       
     ],
     
+"footer": {
+  "columns": [
+    {
+      "text": [
+        { "text": "Page " },
+        { "text": { "currentPage": true } },
+        { "text": " of " },
+        { "text": { "pageCount": true } }
+      ],
+      "alignment": "center",
+      "fontSize": 9
+    }
+  ],
+  "margin": [0, 0, 0, 10]
+},
 
 
     
