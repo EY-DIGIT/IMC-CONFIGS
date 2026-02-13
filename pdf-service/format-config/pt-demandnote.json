@@ -230,7 +230,19 @@
   "text": "**This is a computer-generated document and does not require any physical signature.",
   "fontSize": 10,
   "alignment": "left"
+},
+{
+  "text": [
+    { "text": "Page " },
+    { "text": { "currentPage": true } },
+    { "text": " of " },
+    { "text": { "pageCount": true } }
+  ],
+  "fontSize": 9,
+  "alignment": "center",
+  "absolutePosition": { "x": 0, "y": 820 }
 }
+
 
 
 
