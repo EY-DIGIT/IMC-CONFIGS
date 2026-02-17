@@ -11,7 +11,7 @@
       {
         "image": "{{logoImage}}",
         "width": 300,
-        "absolutePosition": { "x": 230, "y": 200 }
+        "absolutePosition": { "x": 250, "y": 200 }
       },
       {
         "columns": [
