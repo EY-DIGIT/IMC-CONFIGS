@@ -454,7 +454,7 @@ serviceMaps:
       - jsonPath: $.Licenses.*.id
 
 
-    - query: UPDATE eg_tl_tradelicense SET tradeName = ?,licenseNumber = ?,licensetype = ?, oldlicensenumber = ?, propertyid = ?, oldpropertyid = ?, applicationdate = ?, commencementdate = ?, issueddate = ?, financialyear = ?, validfrom = ?, validto = ?, action = ?, status = ?, itemfees = ?, servicecharge = ?, formfees = ?, totalamount = ?, declaration = ?, applicationdetailsid = ?,  lastmodifiedby = ?,  lastmodifiedtime = ? WHERE id=?;
+    - query: UPDATE eg_tl_tradelicense SET tradeName = ?,licenseNumber = ?,licensetype = ?, oldlicensenumber = ?, propertyid = ?, oldpropertyid = ?, applicationdate = ?, commencementdate = ?, issueddate = ?, financialyear = ?, validfrom = ?, validto = ?, action = ?, status = ?, itemfees = ?, servicecharge = ?, formfees = ?, totalamount = ?, declaration = ?, applicationdetailsid = ?,  lastmodifiedby = ?,  lastmodifiedtime = ?, businessservice = ?, applicationtype = ?, workflowcode = ?  WHERE id=?;
       basePath: Licenses.*
       jsonMaps:
       - jsonPath: $.Licenses.*.tradeName
