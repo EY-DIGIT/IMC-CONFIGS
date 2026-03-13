@@ -1,5 +1,5 @@
 {
-  "key": "pt-ledger",
+  "key": "tl-receipt",
   "documentType": "PROPERTYLEDGER",
   "DataConfigs": {
     "moduleName": "PT",
