@@ -6,14 +6,20 @@
            },
           "content": [
             {
-              "image": "{{qrCode}}",
-              "absolutePosition" : {
-                "x" : 480,
-                "y" : 5
-              },
-              "width": 100,
-              "height": 100
-            },
+        "image": "{{logoImage}}",
+        "width": 300,
+        "absolutePosition": { "x": 150, "y": 200 }
+      },
+      {
+        "alignment": "center",
+        "stack": [
+          { "text": "Indore Municipal Corporation", "style": "header-title" },
+          { "text": "Property Tax", "style": "header-subtitle" },
+          { "text": "Municipal Act 1956 Sec. 186", "style": "info-value" },
+          { "text": "Ledger", "style": "ledger-title" }
+        ],
+        "margin": [0, 0, 0, 10]
+      },
              {
                "style":"noc-head",
                "table":{
