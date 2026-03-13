@@ -70,45 +70,7 @@
   "layout": "lightHorizontalLines",
   "margin": [0, 10, 0, 10]
 },
-{
-  "table": {
-    "widths": ["25%", "25%", "25%", "25%"],
-    "body": [
-      [
-        { "text": "Applicant Name", "bold": true, "margin": [0, 6, 0, 6] },
-        { "text": "applicantName", "margin": [0, 6, 0, 6] },
-        { "text": "Application Date", "bold": true, "margin": [0, 6, 0, 6] },
-        { "text": "applicationDate", "margin": [0, 6, 0, 6] }
-      ],
-      [
-        { "text": "S/O", "bold": true, "margin": [0, 6, 0, 6] },
-        { "text": "soName", "margin": [0, 6, 0, 6] },
-        { "text": "Serial No.", "bold": true, "margin": [0, 6, 0, 6] },
-        { "text": "serialNo", "margin": [0, 6, 0, 6] }
-      ],
-      [
-        { "text": "Firm Type", "bold": true, "margin": [0, 6, 0, 6] },
-        { "text": "firmType", "margin": [0, 6, 0, 6] },
-        { "text": "Trade Type", "bold": true, "margin": [0, 6, 0, 6] },
-        { "text": "tradeType", "margin": [0, 6, 0, 6] }
-      ],
-      [
-        { "text": "Zone", "bold": true, "margin": [0, 6, 0, 6] },
-        { "text": "zone", "margin": [0, 6, 0, 6] },
-        { "text": "Ward", "bold": true, "margin": [0, 6, 0, 6] },
-        { "text": "ward", "margin": [0, 6, 0, 6] }
-      ],
-      [
-        { "text": "Total Fee", "bold": true, "margin": [0, 6, 0, 6] },
-        { "text": "₹ totalFee", "margin": [0, 6, 0, 6] },
-        { "text": "Address", "bold": true, "margin": [0, 6, 0, 6] },
-        { "text": "address", "margin": [0, 6, 0, 6] }
-      ]
-    ]
-  },
-  "layout": "noBorders",
-  "margin": [0, 10, 0, 10]
-},
+
              {
                "style":"noc-head",
                "table":{
