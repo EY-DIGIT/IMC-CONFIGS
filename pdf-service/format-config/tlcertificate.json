@@ -70,6 +70,45 @@
   "layout": "lightHorizontalLines",
   "margin": [0, 10, 0, 10]
 },
+{
+  "table": {
+    "widths": ["25%", "25%", "25%", "25%"],
+    "body": [
+      [
+        { "text": "Applicant Name", "bold": true },
+        { "text": "applicantName" },
+        { "text": "Application Date", "bold": true },
+        { "text": "applicationDate" }
+      ],
+      [
+        { "text": "S/O", "bold": true },
+        { "text": "soName" },
+        { "text": "Serial No.", "bold": true },
+        { "text": "serialNo" }
+      ],
+      [
+        { "text": "Firm Type", "bold": true },
+        { "text": "firmType" },
+        { "text": "Trade Type", "bold": true },
+        { "text": "tradeType" }
+      ],
+      [
+        { "text": "Zone", "bold": true },
+        { "text": "zone" },
+        { "text": "Ward", "bold": true },
+        { "text": "ward" }
+      ],
+      [
+        { "text": "Total Fee", "bold": true },
+        { "text": "₹ totalFee" },
+        { "text": "Address", "bold": true },
+        { "text": "address" }
+      ]
+    ]
+  },
+  "layout": "noBorders",
+  "margin": [0, 10, 0, 10]
+},
 
              {
                "style":"noc-head",
@@ -508,10 +547,7 @@
            "styles": {
             "noc-head": {
               "margin": [
-                -30,
-                -35,
-                0,
-                -2
+                0, 10, 0, 0
               ]
             },
              "receipt-approver": {
