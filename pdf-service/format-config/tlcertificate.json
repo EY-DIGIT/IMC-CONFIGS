@@ -44,6 +44,40 @@
   ],
   "margin": [0, 0, 0, 10]
 },
+{
+  "table": {
+    "widths": ["33.33%", "33.33%", "33.33%"],
+    "body": [
+      [
+        { "text": "Firm Name", "bold": true, "color": "#000000", "alignment": "left", "margin": [10, 8, 0, 8], "fillColor": "#E6E6E6", "fontSize": 12 },
+        { "text": "Registration ID", "bold": true, "color": "#000000", "alignment": "left", "margin": [10, 8, 0, 8], "fillColor": "#E6E6E6", "fontSize": 12 },
+        { "text": "License Validity", "bold": true, "color": "#000000", "alignment": "left", "margin": [10, 8, 0, 8], "fillColor": "#E6E6E6", "fontSize": 12 }
+      ],
+      [
+        { "text": "{{firmName}}", "color": "#333333", "alignment": "left", "margin": [10, 10, 0, 10], "fontSize": 12 },
+        { "text": "{{registrationId}}", "color": "#333333", "alignment": "left", "margin": [10, 10, 0, 10], "fontSize": 12 },
+        {
+          "stack": [
+            { "text": "From {{licenseValidityFrom}}", "color": "#333333", "alignment": "left", "margin": [10, 6, 0, 2], "fontSize": 11 },
+            { "text": "To {{licenseValidityTo}}", "color": "#333333", "alignment": "left", "margin": [10, 2, 0, 6], "fontSize": 11 }
+          ]
+        }
+      ]
+    ]
+  },
+  "layout": {
+    "hLineColor": "#BDBDBD",
+    "vLineColor": "#BDBDBD",
+    "hLineWidth": 0.75,
+    "vLineWidth": 0.75,
+    "paddingLeft": 0,
+    "paddingRight": 10,
+    "paddingTop": 0,
+    "paddingBottom": 0
+  },
+  "margin": [0, 8, 0, 14]
+},
+
              {
                "style":"noc-head",
                "table":{
