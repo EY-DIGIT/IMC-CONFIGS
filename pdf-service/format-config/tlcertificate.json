@@ -44,6 +44,31 @@
   ],
   "margin": [0, 0, 0, 10]
 },
+{
+  "table": {
+    "widths": ["33%", "33%", "34%"],
+    "body": [
+      [
+        { "text": "Firm Name", "bold": true, "alignment": "center", "fillColor": "#E6E6E6", "margin": [0, 8, 0, 8] },
+        { "text": "Registration ID", "bold": true, "alignment": "center", "fillColor": "#E6E6E6", "margin": [0, 8, 0, 8] },
+        { "text": "License Validity", "bold": true, "alignment": "center", "fillColor": "#E6E6E6", "margin": [0, 8, 0, 8] }
+      ],
+      [
+        { "text": "firmName", "alignment": "center", "margin": [0, 8, 0, 8] },
+        { "text": "registrationId", "alignment": "center", "margin": [0, 8, 0, 8] },
+        {
+          "stack": [
+            { "text": "From date", "alignment": "center" },
+            { "text": "To date", "alignment": "center" }
+          ],
+          "margin": [0, 4, 0, 4]
+        }
+      ]
+    ]
+  },
+  "layout": "lightHorizontalLines",
+  "margin": [0, 10, 0, 10]
+},
              {
                "style":"noc-head",
                "table":{
