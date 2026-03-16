@@ -76,33 +76,33 @@
     "body": [
       [
         { "text": "Applicant Name", "bold": true, "alignment": "center" },
-        { "text": "applicantName", "alignment": "center" },
+        { "text": "applicantName" },
         { "text": "Application Date", "bold": true, "alignment": "center" },
-        { "text": "applicationDate", "alignment": "center" }
+        { "text": "applicationDate" }
       ],
       [
         { "text": "S/O", "bold": true, "alignment": "center" },
-        { "text": "soName", "alignment": "center" },
+        { "text": "soName" },
         { "text": "Serial No.", "bold": true, "alignment": "center" },
-        { "text": "serialNo", "alignment": "center" }
+        { "text": "serialNo" }
       ],
       [
         { "text": "Firm Type", "bold": true, "alignment": "center" },
-        { "text": "firmType", "alignment": "center" },
+        { "text": "firmType" },
         { "text": "Trade Type", "bold": true, "alignment": "center" },
-        { "text": "tradeType", "alignment": "center" }
+        { "text": "tradeType" }
       ],
       [
         { "text": "Zone", "bold": true, "alignment": "center" },
-        { "text": "zone", "alignment": "center" },
+        { "text": "zone" },
         { "text": "Ward", "bold": true, "alignment": "center" },
-        { "text": "ward", "alignment": "center" }
+        { "text": "ward" }
       ],
       [
         { "text": "Total Fee", "bold": true, "alignment": "center" },
-        { "text": "₹ totalFee", "alignment": "center" },
+        { "text": "₹ totalFee" },
         { "text": "Address", "bold": true, "alignment": "center" },
-        { "text": "address", "alignment": "center" }
+        { "text": "address" }
       ]
     ]
   },
