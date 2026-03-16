@@ -17,7 +17,7 @@
     "image": "{{logoImage}}",
     "width": 80,
     "alignment": "center",
-    "margin": [0, 16, 0, 6],
+    "margin": [0, 0, 0, 6],
     "opacity": 1
   },
 
