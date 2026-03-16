@@ -13,7 +13,7 @@
 {
     "image": "{{logoImage}}",
     "width": 200,
-    "absolutePosition": { "x": 200, "y": 340 }
+    "absolutePosition": { "x": 200, "y": 320 }
   },
   
 {
