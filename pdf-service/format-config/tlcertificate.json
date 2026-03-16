@@ -209,84 +209,32 @@
   "columns": [
     { "width": "*", "text": "" },
     {
-      "width": 240,
+      "width": 200,
       "table": {
-        "widths": ["*"],
+        "widths": ["*","*"],
         "body": [
           [
-            {
-              "stack": [
-                {
-                  "image": "signatureImageBase64Here",
-                  "fit": [140, 50],
-                  "alignment": "right",
-                  "margin": [0, 6, 0, 2],
-                  "opacity": 1
-                },
-                {
-                  "canvas": [
-                    { 
-                      "type": "line", 
-                      "x1": 0, 
-                      "y1": 0, 
-                      "x2": 210, 
-                      "y2": 0, 
-                      "lineWidth": 1, 
-                      "lineColor": "#333333" 
-                    }
-                  ],
-                  "margin": [0, 6, 0, 2]
-                },
-                {
-                  "text": "Sadhna Chowdhary",
-                  "bold": true,
-                  "fontSize": 10,
-                  "alignment": "right",
-                  "margin": [0, 2, 0, 0]
-                },
-                {
-                  "text": "Signatory, Indore Nagar Nigam",
-                  "fontSize": 9,
-                  "color": "#444444",
-                  "alignment": "right",
-                  "margin": [0, 2, 0, 6]
-                },
-                {
-                  "columns": [
-                    {
-                      "width": "*",
-                      "text": "Date: 16-03-2026",
-                      "fontSize": 9
-                    },
-                    {
-                      "width": "*",
-                      "text": "Place: Indore",
-                      "alignment": "right",
-                      "fontSize": 9
-                    }
-                  ],
-                  "margin": [0, 2, 0, 0]
-                }
-              ],
-              "margin": [10, 8, 10, 8]
-            }
+            { "text": "Signature", "bold": true, "margin": [0, 5, 0, 5] },
+            { "text": "", "margin": [0, 5, 0, 5] }
+          ],
+          [
+            { "text": "Name:", "margin": [0, 5, 0, 5] },
+            { "text": "Sadhna Chowdhary", "margin": [0, 5, 0, 5] }
+          ],
+          [
+            { "text": "Designation:", "margin": [0, 5, 0, 5] },
+            { "text": "Signatory", "margin": [0, 5, 0, 5] }
+          ],
+          [
+            { "text": "Date:", "margin": [0, 5, 0, 5] },
+            { "text": "16-03-2026", "margin": [0, 5, 0, 5] }
           ]
         ]
       },
-      "layout": {
-        "hLineWidth": 0.8,
-        "vLineWidth": 0.8,
-        "hLineColor": "#AFAFAF",
-        "vLineColor": "#AFAFAF",
-        "paddingLeft": 8,
-        "paddingRight": 8,
-        "paddingTop": 6,
-        "paddingBottom": 6
-      },
-      "margin": [0, 6, 0, 0]
+      "layout": "lightHorizontalLines",
+      "margin": [0, 10, 0, 0]
     }
-  ],
-  "margin": [0, 8, 0, 0]
+  ]
 }
 
              
