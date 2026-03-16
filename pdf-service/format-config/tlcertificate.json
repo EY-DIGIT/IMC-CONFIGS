@@ -81,28 +81,28 @@
         { "text": "applicationDate", "alignment": "center" }
       ],
       [
-        { "text": "S/O", "bold": true },
-        { "text": "soName" },
-        { "text": "Serial No.", "bold": true },
-        { "text": "serialNo" }
+        { "text": "S/O", "bold": true, "alignment": "center" },
+        { "text": "soName", "alignment": "center" },
+        { "text": "Serial No.", "bold": true, "alignment": "center" },
+        { "text": "serialNo", "alignment": "center" }
       ],
       [
-        { "text": "Firm Type", "bold": true },
-        { "text": "firmType" },
-        { "text": "Trade Type", "bold": true },
-        { "text": "tradeType" }
+        { "text": "Firm Type", "bold": true, "alignment": "center" },
+        { "text": "firmType", "alignment": "center" },
+        { "text": "Trade Type", "bold": true, "alignment": "center" },
+        { "text": "tradeType", "alignment": "center" }
       ],
       [
-        { "text": "Zone", "bold": true },
-        { "text": "zone" },
-        { "text": "Ward", "bold": true },
-        { "text": "ward" }
+        { "text": "Zone", "bold": true, "alignment": "center" },
+        { "text": "zone", "alignment": "center" },
+        { "text": "Ward", "bold": true, "alignment": "center" },
+        { "text": "ward", "alignment": "center" }
       ],
       [
-        { "text": "Total Fee", "bold": true },
-        { "text": "₹ totalFee" },
-        { "text": "Address", "bold": true },
-        { "text": "address" }
+        { "text": "Total Fee", "bold": true, "alignment": "center" },
+        { "text": "₹ totalFee", "alignment": "center" },
+        { "text": "Address", "bold": true, "alignment": "center" },
+        { "text": "address", "alignment": "center" }
       ]
     ]
   },
