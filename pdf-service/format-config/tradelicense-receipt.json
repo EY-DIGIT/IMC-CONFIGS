@@ -44,6 +44,48 @@
   ],
   "margin": [0, 0, 0, 0]
 },
+ {
+  "style": "infoTable",
+  "margin": [0, 10, 0, 10],
+  "table": {
+    "widths": ["25%", "25%", "25%", "25%"],
+    "body": [
+      [
+        { "text": "Receipt No", "style": "th" },
+        { "text": "12345xxx", "style": "td" },
+        { "text": "Date", "style": "th" },
+        { "text": "13/03/2025", "style": "td" }
+      ],
+      [
+        { "text": "Registration No", "style": "th" },
+        { "text": "12345xxx", "style": "td" },
+        { "text": "Registration Date", "style": "th" },
+        { "text": "13/03/2025", "style": "td" }
+      ],
+      [
+       { "text": "Firm", "style": "th" },
+        { "text": "12345xxx", "style": "td" },
+        { "text": "Owner", "style": "th" },
+        { "text": "13/03/2025", "style": "td" }
+
+      ],
+      [
+        { "text": "Address", "style": "th" },
+        { "text": "abcd", "colSpan": 3, "style": "td" },
+        {},
+        {}
+        
+      ],
+      [
+         { "text": "Mobile", "style": "th" },
+        { "text": "12345xxx", "style": "td" },
+        { "text": "Email", "style": "th" },
+        { "text": "13/03/2025", "style": "td" }
+
+      ]
+    ]
+  }
+},
       {
         "style": "noc-head",
         "table": {
