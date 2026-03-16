@@ -12,12 +12,15 @@
     "width": 200,
     "absolutePosition": { "x": 150, "y": 260 }
   },
-  {
+  
+{
     "image": "{{logoImage}}",
     "width": 80,
     "alignment": "center",
-    "margin": [0, 16, 0, 6]
+    "margin": [0, 16, 0, 6],
+    "opacity": 1
   },
+
 
 
             {
