@@ -374,47 +374,29 @@
         },
         {
           "externalAPI": [     
-          {
-  "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-  "queryParam": "moduleName=tenant&amp;masterName=tenants&amp;tenantId=mp&amp;filter=%5B?(@.code=='{$.tenantId}')%5D",
-  "apiRequest": null,
-  "responseMapping": [
-    { "variable": "address", "value": "$.MdmsRes.tenant.tenants[0].address" },
-    { "variable": "phoneNumber", "value": "$.MdmsRes.tenant.tenants[0].contactNumber" },
-    { "variable": "website", "value": "$.MdmsRes.tenant.tenants[0].domainUrl" },
-    { "variable": "email", "value": "$.MdmsRes.tenant.tenants[0].emailId" },
-    { "variable": "logoImage", "value": "$.MdmsRes.tenant.tenants[0].logoId", "type": "image" },
-    {
-      "variable": "logo-header",
-      "value": "$.MdmsRes.tenant.tenants[0].code",
-      "localisation": { "required": true, "prefix": "TENANT_TENANTS", "module": "rainmaker-common" }
-    }
-  ]
-},
-{
-  "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-  "queryParam": "moduleName=tenant&amp;masterName=footer&amp;tenantId=mp&amp;filter=%5B?(@.code=='{$.tenantId}' %26%26 @.service=='{$.paymentDetails[0].businessService}')%5D",
-  "apiRequest": null,
-  "responseMapping": [
-    {
-      "variable": "variable11",
-      "value": "$.MdmsRes.tenant.footer[0].receiptFooterContent.*",
-      "type": "array",
-      "format": {
-        "type": "string",
-        "scema": [
-          {
-            "variable": "disclaimerContent",
-            "value": "disclaimer",
-            "type": "string",
-            "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" }
-          }
-        ]
-      }
-    }
-  ]
-},
-
+            { 
+                "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
+                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=pb&filter=%5B?(@.code=='{$.tenantId}')%5D",
+                "apiRequest": null,
+                "responseMapping":[
+                  {             
+                    "variable":"ulb-address",
+                    "value":"$.MdmsRes.tenant.tenants[0].address"
+                  },
+                  {
+                    "variable":"corporationContact",
+                    "value":"$.MdmsRes.tenant.tenants[0].contactNumber"
+                  },
+                  {
+                    "variable":"corporationWebsite",
+                    "value":"$.MdmsRes.tenant.tenants[0].domainUrl"
+                  },
+                  {
+                    "variable":"corporationEmail",
+                    "value":"$.MdmsRes.tenant.tenants[0].emailId"
+                  }
+                ]
+            },
             {
               "path": "http://collection-services:8080/collection-services/payments/TL/_search",
               "queryParam": "tenantId=$.tenantId,consumerCodes=$.applicationNumber,businessServices=TL",
