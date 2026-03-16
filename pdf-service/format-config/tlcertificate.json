@@ -75,10 +75,10 @@
     "widths": ["25%", "25%", "25%", "25%"],
     "body": [
       [
-        { "text": "Applicant Name", "bold": true },
-        { "text": "applicantName" },
-        { "text": "Application Date", "bold": true },
-        { "text": "applicationDate" }
+        { "text": "Applicant Name", "bold": true, "alignment": "center" },
+        { "text": "applicantName", "alignment": "center" },
+        { "text": "Application Date", "bold": true, "alignment": "center" },
+        { "text": "applicationDate", "alignment": "center" }
       ],
       [
         { "text": "S/O", "bold": true },
