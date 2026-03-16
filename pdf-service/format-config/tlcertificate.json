@@ -209,30 +209,51 @@
   "columns": [
     { "width": "*", "text": "" },
     {
-      "width": 200,
+      "width": 220,
       "table": {
-        "widths": ["*","*"],
+        "widths": ["40%", "60%"],
         "body": [
           [
-            { "text": "Signature", "bold": true, "margin": [0, 5, 0, 5] },
-            { "text": "", "margin": [0, 5, 0, 5] }
+            { "text": "Signature", "bold": true, "margin": [0, 4, 0, 6], "colSpan": 2, "alignment": "center" },
+            {}
           ],
           [
-            { "text": "Name:", "margin": [0, 5, 0, 5] },
-            { "text": "Sadhna Chowdhary", "margin": [0, 5, 0, 5] }
+            { "text": "Name:", "margin": [0, 4, 0, 4] },
+            {
+              "stack": [
+                { "text": "Sadhna Chowdhary", "margin": [0, 0, 0, 2] },
+                {
+                  "canvas": [ { "type": "line", "x1": 0, "y1": 0, "x2": 110, "y2": 0, "lineWidth": 0.8 } ]
+                }
+              ]
+            }
           ],
           [
-            { "text": "Designation:", "margin": [0, 5, 0, 5] },
-            { "text": "Signatory", "margin": [0, 5, 0, 5] }
+            { "text": "Designation:", "margin": [0, 4, 0, 4] },
+            {
+              "stack": [
+                { "text": "Signatory", "margin": [0, 0, 0, 2] },
+                {
+                  "canvas": [ { "type": "line", "x1": 0, "y1": 0, "x2": 110, "y2": 0, "lineWidth": 0.8 } ]
+                }
+              ]
+            }
           ],
           [
-            { "text": "Date:", "margin": [0, 5, 0, 5] },
-            { "text": "16-03-2026", "margin": [0, 5, 0, 5] }
+            { "text": "Date:", "margin": [0, 4, 0, 4] },
+            {
+              "stack": [
+                { "text": "16-03-2026", "margin": [0, 0, 0, 2] },
+                {
+                  "canvas": [ { "type": "line", "x1": 0, "y1": 0, "x2": 110, "y2": 0, "lineWidth": 0.8 } ]
+                }
+              ]
+            }
           ]
         ]
       },
-      "layout": "lightHorizontalLines",
-      "margin": [0, 10, 0, 0]
+      "layout": "noBorders",
+      "margin": [0, 5, 0, 0]
     }
   ]
 }
