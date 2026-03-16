@@ -6,11 +6,10 @@
            },
           "content": [
             {
-  "image": "{{logoImage}}",
-  "width": 320,
-  "opacity": 0.08,
-  "absolutePosition": { "x": 150, "y": 180 }
-},
+        "image": "{{logoImage}}",
+        "width": 300,
+        "absolutePosition": { "x": 150, "y": 200 }
+      },
             {
   "alignment": "center",
   "stack": [
