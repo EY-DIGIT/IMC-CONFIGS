@@ -175,7 +175,7 @@
 {
   "text": "Terms & Condition",
   "bold": true,
-  "fontSize": 13,
+  "fontSize": 9,
   "margin": [0, 5, 0, 6]
 },
 {
@@ -187,6 +187,36 @@
   ],
   "fontSize": 7,
   "margin": [0, 0, 0, 10]
+},
+{
+  "margin": [0, 10, 0, 10],
+  "stack": [
+    {
+      "image": "{{qr_code_image}}",
+      "width": 50,
+      "height": 50,
+      "alignment": "left",
+      "margin": [0, 0, 0, 6]
+    },
+    {
+      "text": [
+        { "text": "Scan to pay or goto ", "fontSize": 10 },
+        {
+          "text": "citizenservicesdev.eydemoapp.in",
+          "fontSize": 10,
+          "color": "blue",
+          "link": "https://citizenservicesdev.eydemoapp.in"
+        }
+      ],
+      "alignment": "left",
+      "margin": [0, 0, 0, 2]
+    },
+    {
+      "text": "to pay property bill online.",
+      "fontSize": 10,
+      "alignment": "left"
+    }
+  ]
 },
 
              {
