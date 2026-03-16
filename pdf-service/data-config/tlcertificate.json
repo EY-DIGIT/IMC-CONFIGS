@@ -11,11 +11,7 @@
         "mappings": [
           {
             "direct": [
-              {
-                  "variable": "logoImage",                        
-                  "url":"https://raw.githubusercontent.com/egovernments/egov-web-app/master/web/rainmaker/dev-packages/egov-ui-kit-dev/src/assets/images/pblogo.png",
-                  "type":"image"      
-              },
+              
               {
                   "variable": "tradeLicenseNo",
                   "value": {
@@ -374,29 +370,34 @@
         },
         {
           "externalAPI": [     
-            { 
-                "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=pb&filter=%5B?(@.code=='{$.tenantId}')%5D",
-                "apiRequest": null,
-                "responseMapping":[
-                  {             
-                    "variable":"ulb-address",
-                    "value":"$.MdmsRes.tenant.tenants[0].address"
-                  },
-                  {
-                    "variable":"corporationContact",
-                    "value":"$.MdmsRes.tenant.tenants[0].contactNumber"
-                  },
-                  {
-                    "variable":"corporationWebsite",
-                    "value":"$.MdmsRes.tenant.tenants[0].domainUrl"
-                  },
-                  {
-                    "variable":"corporationEmail",
-                    "value":"$.MdmsRes.tenant.tenants[0].emailId"
-                  }
-                ]
-            },
+            {
+  "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
+  "queryParam": "moduleName=tenant&masterName=tenants&tenantId=mp&filter=%5B?(@.code=='{$.tenantId}')%5D",
+  "apiRequest": null,
+  "responseMapping": [
+    {
+      "variable": "ulb-address",
+      "value": "$.MdmsRes.tenant.tenants[0].address"
+    },
+    {
+      "variable": "corporationContact",
+      "value": "$.MdmsRes.tenant.tenants[0].contactNumber"
+    },
+    {
+      "variable": "corporationWebsite",
+      "value": "$.MdmsRes.tenant.tenants[0].domainUrl"
+    },
+    {
+      "variable": "corporationEmail",
+      "value": "$.MdmsRes.tenant.tenants[0].emailId"
+    },
+    {
+      "variable": "logoImage",
+      "value": "$.MdmsRes.tenant.tenants[0].logoId",
+      "type": "image"
+    }
+  ]
+},
             {
               "path": "http://collection-services:8080/collection-services/payments/TL/_search",
               "queryParam": "tenantId=$.tenantId,consumerCodes=$.applicationNumber,businessServices=TL",

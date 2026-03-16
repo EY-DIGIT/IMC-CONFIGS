@@ -5,7 +5,11 @@
           "font": "Cambay"
            },
           "content": [
-           
+            {
+        "image": "{{logoImage}}",
+        "width": 300,
+        "absolutePosition": { "x": 150, "y": 200 }
+      },
             {
   "alignment": "center",
   "stack": [
