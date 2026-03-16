@@ -13,7 +13,7 @@
 {
     "image": "{{logoImage}}",
     "width": 200,
-    "absolutePosition": { "x": 150, "y": 260 }
+    "absolutePosition": { "x": 200, "y": 260 }
   },
   
 {
@@ -101,24 +101,36 @@
         { "text": "Application Date", "bold": true, "alignment": "center" },
         { "text": "applicationDate" }
       ],
+      
+      [ { "text": "", "colSpan": 4, "margin": [0, 6, 0, 6] }, {}, {}, {} ],
+
       [
         { "text": "S/O", "bold": true, "alignment": "center" },
         { "text": "soName" },
         { "text": "Serial No.", "bold": true, "alignment": "center" },
         { "text": "serialNo" }
       ],
+      
+      [ { "text": "", "colSpan": 4, "margin": [0, 6, 0, 6] }, {}, {}, {} ],
+
       [
         { "text": "Firm Type", "bold": true, "alignment": "center" },
         { "text": "firmType" },
         { "text": "Trade Type", "bold": true, "alignment": "center" },
         { "text": "tradeType" }
       ],
+      
+      [ { "text": "", "colSpan": 4, "margin": [0, 6, 0, 6] }, {}, {}, {} ],
+
       [
         { "text": "Zone", "bold": true, "alignment": "center" },
         { "text": "zone" },
         { "text": "Ward", "bold": true, "alignment": "center" },
         { "text": "ward" }
       ],
+      
+      [ { "text": "", "colSpan": 4, "margin": [0, 6, 0, 6] }, {}, {}, {} ],
+
       [
         { "text": "Total Fee", "bold": true, "alignment": "center" },
         { "text": "₹ totalFee" },
@@ -128,7 +140,7 @@
     ]
   },
   "layout": "noBorders",
-  "margin": [0, 10, 0, 10]
+  "margin": [0, 8, 0, 10]
 },
 {
   "text": "TRADE TYPE",
