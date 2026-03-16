@@ -209,53 +209,49 @@
   "columns": [
     { "width": "*", "text": "" },
     {
-      "width": 220,
+      "width": 260,
+      "unbreakable": true,
       "table": {
-        "widths": ["40%", "60%"],
+        "widths": ["50%", "50%"],
         "body": [
           [
-            { "text": "Signature", "bold": true, "margin": [0, 4, 0, 6], "colSpan": 2, "alignment": "center" },
+            {
+              "text": "Sadhana Chowdhury",
+              "bold": true,
+              "alignment": "center",
+              "margin": [0, 8, 0, 8],
+              "colSpan": 2
+            },
             {}
           ],
           [
-            { "text": "Name:", "margin": [0, 4, 0, 4] },
-            {
-              "stack": [
-                { "text": "Sadhna Chowdhary", "margin": [0, 0, 0, 2] },
-                {
-                  "canvas": [ { "type": "line", "x1": 0, "y1": 0, "x2": 110, "y2": 0, "lineWidth": 0.8 } ]
-                }
-              ]
-            }
+            { "text": "Digitally Signed By", "margin": [8, 4, 0, 4] },
+            { "text": "xxxxxSadhana Chowdhury", "alignment": "right", "margin": [0, 4, 8, 4] }
           ],
           [
-            { "text": "Designation:", "margin": [0, 4, 0, 4] },
-            {
-              "stack": [
-                { "text": "Signatory", "margin": [0, 0, 0, 2] },
-                {
-                  "canvas": [ { "type": "line", "x1": 0, "y1": 0, "x2": 110, "y2": 0, "lineWidth": 0.8 } ]
-                }
-              ]
-            }
+            { "text": "Updated On", "margin": [8, 4, 0, 4] },
+            { "text": "xxxxx", "alignment": "right", "margin": [0, 4, 8, 4] }
           ],
           [
-            { "text": "Date:", "margin": [0, 4, 0, 4] },
-            {
-              "stack": [
-                { "text": "16-03-2026", "margin": [0, 0, 0, 2] },
-                {
-                  "canvas": [ { "type": "line", "x1": 0, "y1": 0, "x2": 110, "y2": 0, "lineWidth": 0.8 } ]
-                }
-              ]
-            }
+            { "text": "Downloaded On", "margin": [8, 4, 0, 8] },
+            { "text": "xxxxx", "alignment": "right", "margin": [0, 4, 8, 8] }
           ]
         ]
       },
-      "layout": "noBorders",
-      "margin": [0, 5, 0, 0]
+      "layout": {
+        "hLineWidth": 0.8,
+        "vLineWidth": 0.8,
+        "hLineColor": "#BDBDBD",
+        "vLineColor": "#BDBDBD",
+        "paddingLeft": 8,
+        "paddingRight": 8,
+        "paddingTop": 2,
+        "paddingBottom": 2
+      },
+      "margin": [0, 6, 0, 0]
     }
-  ]
+  ],
+  "margin": [0, 6, 0, 0]
 }
 
              
