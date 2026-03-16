@@ -172,6 +172,22 @@
   "fillColor": "#D0D0D0"
 
 },
+{
+  "text": "Terms & Condition",
+  "bold": true,
+  "fontSize": 13,
+  "margin": [0, 20, 0, 6]
+},
+{
+  "ol": [
+    "The amount of this bill shall be paid within 15 days from the date of issue. Failing which, recovery proceedings shall be initiated under Sections 174/175 of the Madhya Pradesh Municipal Corporation Act, 1956.",
+    "In case the amount mentioned in this bill has already been deposited into the Municipal Corporation treasury, this bill shall be treated as null and void.",
+    "The citizen is requested to provide their mobile number at the time of payment so that payment-related information and confirmation may be communicated through SMS.",
+    "Payment of all types of taxes, service charges, and dues may be made at the cash counter of the Municipal Corporation or with the Assistant Revenue Inspector through Cash, UPI, Cheque, Demand Draft (DD), NEFT, RTGS, or Credit/Debit Cards."
+  ],
+  "fontSize": 11,
+  "margin": [0, 0, 0, 10]
+},
 
              {
                "style":"noc-head",
