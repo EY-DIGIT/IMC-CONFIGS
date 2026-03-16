@@ -204,54 +204,6 @@
       "margin": [0, 0, 0, 6]
     }
   ]
-},
-{
-  "columns": [
-    { "width": "*", "text": "" },
-    {
-      "width": 260,
-      "unbreakable": true,
-      "table": {
-        "widths": ["50%", "50%"],
-        "body": [
-          [
-            {
-              "text": "Sadhana Chowdhury",
-              "bold": true,
-              "alignment": "center",
-              "margin": [0, 8, 0, 8],
-              "colSpan": 2
-            },
-            {}
-          ],
-          [
-            { "text": "Digitally Signed By", "margin": [8, 4, 0, 4] },
-            { "text": "xxxxxSadhana Chowdhury", "alignment": "right", "margin": [0, 4, 8, 4] }
-          ],
-          [
-            { "text": "Updated On", "margin": [8, 4, 0, 4] },
-            { "text": "xxxxx", "alignment": "right", "margin": [0, 4, 8, 4] }
-          ],
-          [
-            { "text": "Downloaded On", "margin": [8, 4, 0, 8] },
-            { "text": "xxxxx", "alignment": "right", "margin": [0, 4, 8, 8] }
-          ]
-        ]
-      },
-      "layout": {
-        "hLineWidth": 0.8,
-        "vLineWidth": 0.8,
-        "hLineColor": "#BDBDBD",
-        "vLineColor": "#BDBDBD",
-        "paddingLeft": 8,
-        "paddingRight": 8,
-        "paddingTop": 2,
-        "paddingBottom": 2
-      },
-      "margin": [0, 6, 0, 0]
-    }
-  ],
-  "margin": [0, 6, 0, 0]
 }
 
              
