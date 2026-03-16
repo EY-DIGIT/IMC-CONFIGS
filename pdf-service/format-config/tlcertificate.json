@@ -5,24 +5,20 @@
           "font": "Cambay"
            },
            
-"background": {
-      "image": "{{logoImage}}",
-      "width": 220,
-      "opacity": 0.08,
-      "alignment": "center",
-      "margin": [0, 220, 0, 0]
-    },
-
           "content": [
             
-
 {
-        "image": "{{logoImage}}",
-        "width": 80,
-        "alignment": "center",
-        "margin": [0, 16, 0, 6]
-      },
-
+    "image": "{{logoImage}}",
+    "width": 100,
+    "opacity": 0.08,
+    "absolutePosition": { "x": 150, "y": 260 }
+  },
+  {
+    "image": "{{logoImage}}",
+    "width": 80,
+    "alignment": "center",
+    "margin": [0, 16, 0, 6]
+  },
 
 
             {
