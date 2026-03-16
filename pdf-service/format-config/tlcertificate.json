@@ -12,10 +12,11 @@
       },
       
 {
-    "image": "{{logoImage}}",
-    "width": 65,
-    "absolutePosition": { "x": 270, "y": 20 }
-  },
+  "image": "{{logoImage}}",
+  "width": 80,
+  "margin": [0, 10, 0, 10],
+  "alignment": "center"
+},
 
             {
   "alignment": "center",
