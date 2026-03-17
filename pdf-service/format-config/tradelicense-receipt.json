@@ -96,8 +96,8 @@
     "dontBreakRows": true,
     "body": [
       [
-        { "text": "Item code", "style": "th","border": [true,  false, true,  false] },
-        { "text": "Description", "style": "th","border": [true,  false, true,  false] },
+        { "text": "Item code", "style": "th" },
+        { "text": "Description", "style": "th" },
         { "text": "Quantity", "style": "th", "alignment": "right" },
         { "text": "Rate", "style": "th", "alignment": "right" },
         { "text": "Total Amount", "style": "th", "alignment": "right" }
