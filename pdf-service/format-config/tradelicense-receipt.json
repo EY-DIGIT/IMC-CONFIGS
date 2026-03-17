@@ -86,50 +86,33 @@
     ]
   }
 },
-
 {
-
-        "style": "calcTable",
-
-        "margin": [0, 0, 0, 10],
-
-        "table": {
-
-          "widths": ["20%", "20%", "20%", "20%", "20%"],
-
-          "headerRows": 1,
-
-          "keepWithHeaderRows": 1,
-
-          "dontBreakRows": true,
-
-          "body": [
-
-            [
-
-              { "text": "Item code", "style": "th" },
-
-              { "text": "Description", "style": "th" },
-
-              { "text": "Quantity", "style": "th" },
-
-              { "text": "Rate", "style": "th" },
-
-              { "text": "Total Amount", "style": "th" }
-
-          
-
-            ],
-
-            "{{#calcTableData}}[{\"text\":\"22209\",\"style\":\"td\"},{\"text\":\"abcdefg\",\"style\":\"td\"},{\"text\":\"1.0\",\"style\":\"td\"},{\"text\":\"1000.0\",\"style\":\"td\"},{\"text\":\"1000.0\",\"style\":\"td\"}]{{/calcTableData}}"
-
-          ]
-
-        },
-
-        "layout": {}
-
-      },
+  "style": "calcTable",
+  "margin": [0, 0, 0, 10],
+  "table": {
+    "widths": ["20%", "20%", "20%", "20%", "20%"],
+    "headerRows": 1,
+    "keepWithHeaderRows": 1,
+    "dontBreakRows": true,
+    "body": [
+      [
+        { "text": "Item code", "style": "th" },
+        { "text": "Description", "style": "th" },
+        { "text": "Quantity", "style": "th", "alignment": "right" },
+        { "text": "Rate", "style": "th", "alignment": "right" },
+        { "text": "Total Amount", "style": "th", "alignment": "right" }
+      ],
+      [
+        { "text": "22209", "style": "td" },
+        { "text": "abcdefg", "style": "td" },
+        { "text": "1.0", "style": "td", "alignment": "right" },
+        { "text": "1000.0", "style": "td", "alignment": "right" },
+        { "text": "1000.0", "style": "td", "alignment": "right" }
+      ]
+    ]
+  },
+  "layout": "lightHorizontalLines"
+},
       {
         "style": "noc-head",
         "table": {
