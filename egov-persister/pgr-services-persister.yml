@@ -38,7 +38,7 @@ serviceMaps:
 
       - jsonPath: $.service.auditDetails.lastModifiedTime
 
-    - query: INSERT INTO eg_pgr_address_v2(id, tenantid, parentid, doorno, plotno, buildingname, street, landmark, city, pincode, locality, district, region, state, country, latitude, longitude, additionaldetails, createdby, createdtime, lastmodifiedby, lastmodifiedtime, ward, zone) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+    - query: INSERT INTO eg_pgr_address_v2(id, tenantid, parentid, doorno, plotno, buildingname, street, landmark, city, pincode, locality, district, region, state, country, latitude, longitude, additionaldetails, createdby, createdtime, lastmodifiedby, lastmodifiedtime, ward, zone, colony) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
       basePath: service.address
       jsonMaps:
       - jsonPath: $.service.address.id
@@ -89,7 +89,9 @@ serviceMaps:
    
       - jsonPath: $.service.address.ward
     
-      - jsonPath: $.service.address.zone   
+      - jsonPath: $.service.address.zone  
+
+      - jsonPath: $.service.address.colony 
 
 
 
@@ -125,7 +127,7 @@ serviceMaps:
       - jsonPath: $.service.id
 
 
-    - query: UPDATE eg_pgr_address_v2 SET doorno=?, plotno=?, buildingname=?, street=?, landmark=?, city=?, pincode=?, locality=?, district=?, region=?, state=?, country=?, latitude=?, longitude=?,additionaldetails=?, lastmodifiedby=?, lastmodifiedtime=?, ward=?, zone=? WHERE id=?;
+    - query: UPDATE eg_pgr_address_v2 SET doorno=?, plotno=?, buildingname=?, street=?, landmark=?, city=?, pincode=?, locality=?, district=?, region=?, state=?, country=?, latitude=?, longitude=?,additionaldetails=?, lastmodifiedby=?, lastmodifiedtime=?, ward=?, zone=?, colony=? WHERE id=?;
       basePath: service.address
       jsonMaps:
       - jsonPath: $.service.address.doorNo
@@ -169,6 +171,8 @@ serviceMaps:
       - jsonPath: $.service.address.zone
 
       - jsonPath: $.service.address.id
+
+      - jsonPath: $.service.address.colony
 
 
   - version: 1.0

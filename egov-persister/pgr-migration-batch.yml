@@ -42,7 +42,7 @@ serviceMaps:
 
       - jsonPath: $.service.active
 
-    - query: INSERT INTO eg_pgr_address_v2(id, tenantid, parentid, doorno, plotno, buildingname, street, landmark, city, pincode, locality, district, region, state, country, latitude, longitude, additionaldetails, createdby, createdtime, lastmodifiedby, lastmodifiedtime, ward, zone) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+    - query: INSERT INTO eg_pgr_address_v2(id, tenantid, parentid, doorno, plotno, buildingname, street, landmark, city, pincode, locality, district, region, state, country, latitude, longitude, additionaldetails, createdby, createdtime, lastmodifiedby, lastmodifiedtime, ward, zone, colony) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
       basePath: service.address
       jsonMaps:
       - jsonPath: $.service.address.id
@@ -94,6 +94,8 @@ serviceMaps:
       - jsonPath: $.service.address.ward
 
       - jsonPath: $.service.address.zone
+
+      - jsonPath: $.service.address.colony
 
 
 
