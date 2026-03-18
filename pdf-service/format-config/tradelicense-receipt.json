@@ -59,7 +59,7 @@
 
  {
   "style": "infoTable",
-  "margin": [0, 10, 0, 30],
+  "margin": [0, 40, 0, 30],
   "table": {
     "widths": ["25%", "25%", "25%", "25%"],
     "body": [
@@ -67,33 +67,33 @@
         { "text": "Receipt No", "style": "th" },
         { "text": "12345xxx", "style": "td" },
         { "text": "Date", "style": "th" },
-        { "text": "13/03/2025", "style": "td" }
+        { "text": "18/03/2025", "style": "td" }
       ],
       [
         { "text": "Registration No", "style": "th" },
         { "text": "12345xxx", "style": "td" },
         { "text": "Registration Date", "style": "th" },
-        { "text": "13/03/2025", "style": "td" }
+        { "text": "18/03/2025", "style": "td" }
       ],
       [
        { "text": "Firm", "style": "th" },
-        { "text": "12345xxx", "style": "td" },
+        { "text": "xyz", "style": "td" },
         { "text": "Owner", "style": "th" },
-        { "text": "13/03/2025", "style": "td" }
+        { "text": "Mr. Jatin", "style": "td" }
 
       ],
       [
         { "text": "Address", "style": "th" },
-        { "text": "abcd", "colSpan": 3, "style": "td" },
+        { "text": "House: SHOP NO 18, 2ND FLOOR", "colSpan": 3, "style": "td" },
         {},
         {}
         
       ],
       [
          { "text": "Mobile", "style": "th" },
-        { "text": "12345xxx", "style": "td" },
+        { "text": "986xxxxxxx", "style": "td" },
         { "text": "Email", "style": "th" },
-        { "text": "13/03/2025", "style": "td" }
+        { "text": "dummy@gmail.com", "style": "td" }
 
       ]
     ]
@@ -281,7 +281,7 @@
 },
     {
   "text": "Note: this is a system generated receipt/certificate and does not need a signature",
-  "margin": [0, 130, 0, 0],
+  "margin": [0, 100, 0, 0],
   "fontSize": 9,
   "bold": true
 }
