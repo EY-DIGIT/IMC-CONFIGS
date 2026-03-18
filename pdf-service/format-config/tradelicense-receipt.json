@@ -95,7 +95,7 @@
 },
 {
   "style": "calcTable",
-  "margin": [0, 0, 0, 10],
+  "margin": [0, 0, 0, 20],
   "table": {
     "widths": ["20%", "20%", "20%", "20%", "20%"],
     "headerRows": 1,
@@ -122,7 +122,7 @@
 },
 {
   "style": "payTable",
-  "margin": [0, 0, 0, 10],
+  "margin": [0, 0, 0, 20],
   "table": {
     "widths": ["20%", "20%", "20%", "20%", "20%"],
     "headerRows": 2,
@@ -156,7 +156,7 @@
 
   "style": "fourthTable",
 
-  "margin": [0, 0, 0, 10],
+  "margin": [0, 0, 0, 20],
 
   "table": {
 
@@ -213,7 +213,7 @@
 
   "style": "fifthTable",
 
-  "margin": [0, 10, 0, 10],
+  "margin": [0, 10, 0, 20],
 
   "table": {
 
