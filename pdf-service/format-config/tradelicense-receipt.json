@@ -255,7 +255,7 @@
     {
       "width": "auto",
       "stack": [
-        { "text": "E-sign", "style": "td" },
+        { "text": "E-sign","alignment":"center", "style": "td" },
         { "text": "Received By", "bold": true, "style": "td", "margin": [0, 2, 0, 0] }
       ]
     }
