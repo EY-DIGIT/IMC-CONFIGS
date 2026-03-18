@@ -190,7 +190,15 @@
 
         { "text": "0", "style": "td" }
 
+      ],
+      
+      [
+        { "text": "Total", "style": "td", "bold": true, "colSpan": 2, "alignment": "left" },
+        {},
+        { "text": "1005", "style": "td", "bold": true, "alignment": "right", "colSpan": 2 },
+        {}
       ]
+
 
 ]
 
