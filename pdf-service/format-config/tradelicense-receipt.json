@@ -10,7 +10,7 @@
       {
     "image": "{{logoImage}}",
     "width": 250,
-    "absolutePosition": { "x": 180, "y": 200 }
+    "absolutePosition": { "x": 190, "y": 200 }
   },
 {
   "alignment": "center",
