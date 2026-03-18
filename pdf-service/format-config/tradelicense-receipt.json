@@ -15,7 +15,7 @@
   {
         "columns": [
           { "text": "Receipt/Acknowledgement", "style": "topline" },
-          { "text": "Date: {{G8ReceiptDate}}", "alignment": "right", "style": "topline" }
+          { "text": "Date: 18/03/2026", "alignment": "right", "style": "topline" }
         ],
         "margin": [0, 0, 0, 10]
       },
@@ -284,7 +284,8 @@
 }
     ],
     "styles":{
-            "calcTable": { "fontSize": 9, "margin": [0, 0, 0, 0] }
+      "topline": { "fontSize": 8, "color": "#484848" },
+      "calcTable": { "fontSize": 9, "margin": [0, 0, 0, 0] }
 
     }
     
