@@ -1,6 +1,6 @@
 {
   "key": "namantaran-receipt",
-  "documentType": "PROPERTYRECEIPT",
+  "documentType": "NAMANTARANRECEIPT",
   "DataConfigs": {
     "moduleName": "PT",
     "version": "1.0.0",
