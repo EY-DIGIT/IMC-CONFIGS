@@ -206,6 +206,48 @@
 
 "layout": {}
 
+},
+{
+
+  "style": "fifthTable",
+
+  "margin": [0, 10, 0, 10],
+
+  "table": {
+
+    "widths": ["25%", "25%", "25%", "25%"],
+
+    "body": [
+
+      [
+
+        { "text": "Total", "style": "th" },
+
+        { "text": "1005", "style": "td" },
+
+        { "text": "In Words", "style": "th" },
+
+        { "text": "INR One Thousand And Five Only", "style": "td" }
+
+      ],
+
+      [
+
+        { "text": "Remarks", "style": "th" },
+
+        { "text": "abc", "colSpan": 3, "style": "td" },
+
+        {},
+
+        {}
+
+      ]
+
+
+    ]
+
+  }
+
 }
     
     ],
