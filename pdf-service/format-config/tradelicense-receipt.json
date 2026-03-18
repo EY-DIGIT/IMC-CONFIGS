@@ -13,12 +13,62 @@
     "absolutePosition": { "x": 180, "y": 220 }
   },
   {
-        "columns": [
-          { "text": "Receipt/Acknowledgement", "style": "topline" },
-          { "text": "Date: 18/03/2026", "alignment": "right", "style": "topline" }
-        ],
-        "margin": [0, 0, 0, 10]
-      },
+  "table": {
+    "widths": [60, "*", "auto"],
+    "body": [
+      [
+        {
+          "image": "{{logoImage}}",
+          "width": 48,
+          "margin": [0, 4, 10, 4],
+          "border": [false, false, false, false]
+        },
+        {
+          "stack": [
+            {
+              "text": "Indore Nagar Nigam",
+              "fontSize": 14,
+              "bold": true,
+              "color": "#E06C2B",
+              "margin": [0, 0, 0, 1]
+            },
+            {
+              "text": "Trade License",
+              "fontSize": 10,
+              "color": "#6B7280",
+              "margin": [0, 0, 0, 1]
+            },
+            {
+              "text": "Renewal Receipt",
+              "fontSize": 11,
+              "bold": true,
+              "color": "#111827"
+            }
+          ],
+          "border": [false, false, false, false]
+        },
+        {
+          "text": "Date: 18/03/2026",
+          "alignment": "right",
+          "color": "#6B7280",
+          "fontSize": 10,
+          "margin": [0, 2, 0, 0],
+          "border": [false, false, false, false]
+        }
+      ]
+    ]
+  },
+  "layout": {
+    "defaultBorder": false,
+    "paddingLeft": 10,
+    "paddingRight": 10,
+    "paddingTop": 8,
+    "paddingBottom": 8,
+    "fillColor": "#F5F7FA"
+  },
+  "margin": [0, 0, 0, 10]
+},
+  
 {
   "alignment": "center",
   "stack": [
