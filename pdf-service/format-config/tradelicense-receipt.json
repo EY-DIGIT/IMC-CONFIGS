@@ -15,7 +15,7 @@
   {
         "columns": [
           { "text": "Receipt/Acknowledgement", "style": "topline" },
-          { "text": "Customer Copy {{paymentDate}}", "alignment": "right", "style": "topline" }
+          { "text": "Date: {{G8ReceiptDate}}", "alignment": "right", "style": "topline" }
         ],
         "margin": [0, 0, 0, 10]
       },
