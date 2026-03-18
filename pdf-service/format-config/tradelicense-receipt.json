@@ -103,16 +103,16 @@
       [
         { "text": "Item code", "style": "th" },
         { "text": "Description", "style": "th" },
-        { "text": "Quantity", "style": "th", "alignment": "right" },
-        { "text": "Rate", "style": "th", "alignment": "right" },
-        { "text": "Total Amount", "style": "th", "alignment": "right" }
+        { "text": "Quantity", "style": "th" },
+        { "text": "Rate", "style": "th" },
+        { "text": "Total Amount", "style": "th" }
       ],
       [
         { "text": "22209", "style": "td" },
         { "text": "abcdefg", "style": "td" },
-        { "text": "1.0", "style": "td", "alignment": "right" },
-        { "text": "1000.0", "style": "td", "alignment": "right" },
-        { "text": "1000.0", "style": "td", "alignment": "right" }
+        { "text": "1.0", "style": "td" },
+        { "text": "1000.0", "style": "td" },
+        { "text": "1000.0", "style": "td" }
       ]
     ]
   },
