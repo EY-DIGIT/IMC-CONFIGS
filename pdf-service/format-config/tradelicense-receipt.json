@@ -149,6 +149,55 @@
     ]
   },
   "layout": {}
+},
+{
+
+  "style": "fourthTable",
+
+  "margin": [0, 0, 0, 10],
+
+  "table": {
+
+    "widths": ["25%", "25%", "25%", "25%"],
+
+    "headerRows": 1,
+
+    "keepWithHeaderRows": 1,
+
+    "dontBreakRows": true,
+
+    "body": [
+
+      [
+
+        { "text": "Fees", "style": "th" },
+
+        { "text": "Service Tax/Charges", "style": "th" },
+
+        { "text": "Penalty", "style": "th" },
+
+        { "text": "Form Fees", "style": "th" }
+
+      ],
+
+      [
+
+        { "text": "000", "style": "td" },
+
+        { "text": "5", "style": "td" },
+
+        { "text": "0", "style": "td" },
+
+        { "text": "0", "style": "td" }
+
+      ]
+
+]
+
+},
+
+"layout": {}
+
 }
     
     ],
