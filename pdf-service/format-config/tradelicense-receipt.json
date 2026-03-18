@@ -132,7 +132,7 @@
           "text": "Payment Mode",
           "style": "tableHeader",
           "colSpan": 5,
-          "alignment": "center",
+          "alignment": "left",
           "bold": true
         },
         {}, {}, {}, {}
