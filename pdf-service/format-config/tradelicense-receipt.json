@@ -9,7 +9,7 @@
     "content": [
       {
     "image": "{{logoImage}}",
-    "width": 200,
+    "width": 250,
     "absolutePosition": { "x": 200, "y": 320 }
   },
 {
