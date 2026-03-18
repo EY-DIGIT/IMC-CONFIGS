@@ -56,45 +56,7 @@
   "columnGap": 8,
   "margin": [0, 0, 0, 10]
 },
-{
-  "alignment": "center",
-  "stack": [
-    {
-      "text": "Indore Nagar Nigam",
-      "fontSize": 16,
-      "bold": true,
-      "color": "#E06C2B",
-      "margin": [0, 5, 0, 2]
-    },
-    {
-      "text": "Trade License Certificate",
-      "fontSize": 14,
-      "bold": true,
-      "color": "#000000",
-      "margin": [0, 2, 0, 2]
-    },
-    {
-      "text": "Issued under Section 366 and 427 of the Municipal Corporation Act, 1956",
-      "fontSize": 12,
-      "color": "#555555",
-      "margin": [0, 2, 0, 3]
-    },
-    {
-      "text": "0437 : Barhi Nagar Parishad",
-      "fontSize": 13,
-      "bold": true,
-      "color": "#000000",
-      "margin": [0, 3, 0, 2]
-    },
-    {
-      "text": "2025 - 26",
-      "fontSize": 12,
-      "color": "#555555",
-      "margin": [0, 2, 0, 10]
-    }
-  ],
-  "margin": [0, 0, 0, 0]
-},
+
  {
   "style": "infoTable",
   "margin": [0, 10, 0, 20],
