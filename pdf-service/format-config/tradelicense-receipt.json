@@ -172,12 +172,10 @@
         { "text": "0", "style": "td" }
       ],
       [
-       { "text": "Total", "colSpan": 1, "style": "td" },
-       {}
+       { "text": "Total", "colSpan": 1, "style": "td" }
       ],
      [
-       { "text": "1005", "colSpan": 1, "style": "td" },
-       {}
+       { "text": "1005", "colSpan": 1, "style": "td" }
       ]
     ]
   },
