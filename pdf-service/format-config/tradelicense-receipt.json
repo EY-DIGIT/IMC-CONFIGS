@@ -234,13 +234,17 @@
 
       [
 
-        { "text": "Total", "style": "th" },
+        { "text": "Total", "style": "th", 
+          "fillColor": "#F7E7DB" },
 
-        { "text": "1005", "style": "td" },
+        { "text": "1005", "style": "td",
+          "fillColor": "#F7E7DB" },
 
-        { "text": "In Words", "style": "th" },
+        { "text": "In Words", "style": "th",
+          "fillColor": "#F7E7DB" },
 
-        { "text": "INR One Thousand And Five Only", "style": "td" }
+        { "text": "INR One Thousand And Five Only", "style": "td",
+          "fillColor": "#F7E7DB" }
 
       ],
 
