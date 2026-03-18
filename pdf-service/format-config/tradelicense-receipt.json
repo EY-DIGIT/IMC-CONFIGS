@@ -261,8 +261,13 @@
     }
   ],
   "margin": [0, 10, 0, 0]
+},
+    {
+  "text": "Note: this is a system generated receipt/certificate and does not need a signature",
+  "margin": [0, 20, 0, 0],
+  "fontSize": 9,
+  "bold": false
 }
-    
     ],
     "styles":{
             "calcTable": { "fontSize": 9, "margin": [0, 0, 0, 0] }
