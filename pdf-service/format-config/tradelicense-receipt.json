@@ -7,6 +7,11 @@
            "pageMargins": [26, 20, 18, 15],
 
     "content": [
+      {
+    "image": "{{logoImage}}",
+    "width": 200,
+    "absolutePosition": { "x": 200, "y": 320 }
+  },
 {
   "alignment": "center",
   "stack": [
