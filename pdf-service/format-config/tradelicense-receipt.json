@@ -264,7 +264,7 @@
 },
     {
   "text": "Note: this is a system generated receipt/certificate and does not need a signature",
-  "margin": [0, 150, 0, 0],
+  "margin": [0, 130, 0, 0],
   "fontSize": 9,
   "bold": false
 }
