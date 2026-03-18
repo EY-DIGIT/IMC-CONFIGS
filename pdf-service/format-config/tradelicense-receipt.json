@@ -117,6 +117,38 @@
     ]
   },
   "layout": {}
+},
+{
+  "style": "payTable",
+  "margin": [0, 0, 0, 10],
+  "table": {
+    "widths": ["20%", "20%", "20%", "20%", "20%"],
+    "headerRows": 2,
+    "keepWithHeaderRows": 1,
+    "dontBreakRows": true,
+    "body": [
+      [
+        {
+          "text": "Payment Mode",
+          "style": "tableHeader",
+          "colSpan": 5,
+          "alignment": "center",
+          "bold": true
+        },
+        {}, {}, {}, {}
+      ],
+      [
+        {
+          "text": "Cash",
+          "style": "td",
+          "colSpan": 5,
+          "alignment": "left"
+        },
+        {}, {}, {}, {}
+      ]
+    ]
+  },
+  "layout": {}
 }
     
     ],
