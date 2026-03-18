@@ -12,6 +12,13 @@
     "width": 250,
     "absolutePosition": { "x": 180, "y": 220 }
   },
+  {
+        "columns": [
+          { "text": "Receipt/Acknowledgement", "style": "topline" },
+          { "text": "Customer Copy {{paymentDate}}", "alignment": "right", "style": "topline" }
+        ],
+        "margin": [0, 0, 0, 10]
+      },
 {
   "alignment": "center",
   "stack": [
