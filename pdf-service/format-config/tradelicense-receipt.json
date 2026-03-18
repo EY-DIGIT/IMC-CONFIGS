@@ -87,6 +87,11 @@
   }
 },
 {
+  "text": "{{calcTableTitle}}",
+  "style": "section-title",
+  "margin": [0, 0, 0, 6]
+},
+{
   "style": "calcTable",
   "margin": [0, 0, 0, 10],
   "table": {
@@ -111,10 +116,14 @@
       ]
     ]
   },
-  "layout": "lightHorizontalLines"
+  "layout": {}
 }
     
-    ]
+    ],
+    "styles":{
+            "calcTable": { "fontSize": 9, "margin": [0, 0, 0, 0] }
+
+    }
     
   }
 }
