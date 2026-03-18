@@ -59,7 +59,7 @@
 
  {
   "style": "infoTable",
-  "margin": [0, 10, 0, 20],
+  "margin": [0, 10, 0, 30],
   "table": {
     "widths": ["25%", "25%", "25%", "25%"],
     "body": [
@@ -106,7 +106,7 @@
 },
 {
   "style": "calcTable",
-  "margin": [0, 0, 0, 20],
+  "margin": [0, 0, 0, 30],
   "table": {
     "widths": ["20%", "20%", "20%", "20%", "20%"],
     "headerRows": 1,
@@ -167,7 +167,7 @@
 
   "style": "fourthTable",
 
-  "margin": [0, 0, 0, 20],
+  "margin": [0, 0, 0, 30],
 
   "table": {
 
@@ -224,7 +224,7 @@
 
   "style": "fifthTable",
 
-  "margin": [0, 10, 0, 20],
+  "margin": [0, 10, 0, 30],
 
   "table": {
 
