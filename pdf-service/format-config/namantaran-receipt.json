@@ -60,21 +60,13 @@
 
       ],
       [
+        { "text": "Colony", "style": "th" },
+        { "text": "Demo", "colSpan": 2, "style": "td" },
+        {},
         { "text": "Mobile No", "style": "th" },
         { "text": "{{payerContact}}", "colSpan": 2, "style": "td" },
-        {},
-        { "text": "Email", "style": "th" },
-        { "text": "{{ownerEmail}}", "colSpan": 2, "style": "td" },
         {}
         
-      ],
-      [
-        { "text": "Exemption", "style": "th" },
-        { "text": "{{}}", "colSpan": 3, "style": "td" },
-        {}, {}, 
-        { "text": "Date", "style": "th" },
-        { "text": "{{paymentDate}}",  "style": "td" }
-
       ]
     ]
   }
