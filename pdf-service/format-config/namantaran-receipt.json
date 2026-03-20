@@ -37,10 +37,10 @@
       [
         { "text": "Property ID", "style": "th" },
         { "text": "{{consumerID}}", "style": "td" },
-        { "text": "Old Property ID", "style": "th" },
+        { "text": "Receipt No", "style": "th" },
         { "text": "{{oldpropertyid}}", "style": "td" },
-        { "text": "Rate Zone", "style": "th" },
-        { "text": "{{rateZone}}", "style": "td" }
+        { "text": "Payment Mode", "style": "th" },
+        { "text": "{{paymentMode}}", "style": "td" }
       ],
       [
         { "text": "Owner Name", "style": "th" },
