@@ -71,6 +71,28 @@
     ]
   }
 },
+{
+  "style": "TaxTable",
+  "margin": [0, 10, 0, 10],
+  "table": {
+    "widths": ["50%", "50%"],
+    "body": [
+[
+        {
+          "text": "Summary Ledger",
+          "style": "tableHeader",
+          "colSpan": 2,
+          "alignment": "center",
+          "bold": true
+        },
+        {}
+      ],
+"{{#taxTableData}}[{\"text\":\"Year\",\"style\":\"th\"},{\"text\":\"{{tax_year}}\",\"style\":\"td\"}],[{\"text\":\"Property Tax\",\"style\":\"th\"},{\"text\":\"₹ {{tax_propertyTax}}\",\"style\":\"td\"}],[{\"text\":\"Consolidated Tax\",\"style\":\"th\"},{\"text\":\"₹ {{tax_samekitTax}}\",\"style\":\"td\"}],[{\"text\":\"Education Cess\",\"style\":\"th\"},{\"text\":\"₹ {{tax_educationCess}}\",\"style\":\"td\"}],[{\"text\":\"Water Cess\",\"style\":\"th\"},{\"text\":\"₹ {{tax_waterCess}}\",\"style\":\"td\"}],[{\"text\":\"Drainage Cess\",\"style\":\"th\"},{\"text\":\"₹ {{tax_drainageCess}}\",\"style\":\"td\"}],[{\"text\":\"Urban Development Cess\",\"style\":\"th\"},{\"text\":\"₹ {{tax_urbanDevCess}}\",\"style\":\"td\"}],[{\"text\":\"Service Charge\",\"style\":\"th\"},{\"text\":\"₹ {{tax_serviceCharge}}\",\"style\":\"td\"}],[{\"text\":\"Total Tax\",\"style\":\"th\"},{\"text\":\"₹ {{tax_totalTax}}\",\"style\":\"td\"}],[{\"text\":\"Penalty\",\"style\":\"th\"},{\"text\":\"₹ {{tax_penalty}}\",\"style\":\"td\"}],[{\"text\":\"Rebate\",\"style\":\"th\"},{\"text\":\"₹ {{tax_rebate}}\",\"style\":\"td\"}],[{\"text\":\"Lok Adalat Discount\",\"style\":\"th\"},{\"text\":\"₹ {{lokadalat}}\",\"style\":\"td\"}],[{\"text\":\"Net Tax\",\"style\":\"th\"},{\"text\":\"₹ {{tax_netTotal}}\",\"style\":\"td\"}],[{\"text\":\"Collection/Paid\",\"style\":\"th\"},{\"text\":\"₹ {{tax_paid}}\",\"style\":\"td\"}],[{\"text\":\"Cumulative Balance\",\"style\":\"th\"},{\"text\":\"₹ {{tax_cumulative}}\",\"style\":\"td\"}]{{/taxTableData}}"
+]
+
+  },
+  "layout": {}
+},
       {
         "columns": [
           {
