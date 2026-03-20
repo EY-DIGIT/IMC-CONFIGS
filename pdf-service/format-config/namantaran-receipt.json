@@ -22,7 +22,9 @@
         "stack": [
           { "text": "Indore Nagar Nigam", "style": "header-title" },
           { "text": "Property Tax", "style": "header-subtitle" },
-          { "text": "Municipal Act 1956 Sec. 186", "style": "info-value" }
+          { "text": "Municipal Act 1956 Sec. 186", "style": "info-value" },
+          { "text": "Namantran Receipt", "style": "info-value" }
+
         ],
         "margin": [0, 0, 0, 6]
       },
