@@ -51,7 +51,7 @@
         { "text": "{{paymentDate}}", "style": "td" }
       ],
       [
-        { "text": "Address", "style": "th" },
+        { "text": "Property Address", "style": "th" },
         { "text": "{{ptAddress}}", "colSpan": 3, "style": "td" },
         {}, 
         {},
