@@ -47,7 +47,7 @@
         { "text": "{{payerName}}", "colSpan": 3, "style": "td" },
         {},
         {},
-        { "text": "Connection Date", "style": "th" },
+        { "text": "Date", "style": "th" },
         { "text": "{{paymentDate}}", "style": "td" }
       ],
       [
