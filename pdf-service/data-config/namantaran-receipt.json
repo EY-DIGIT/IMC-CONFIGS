@@ -143,7 +143,13 @@
                   "variable": "rajwadFees",
                   "value": {
                     "path": "$.rajwadFees"
-                  }
+                  } 
+              },
+               {
+                  "variable": "totalAmountPaid",
+                  "value": {
+                    "path": "$.totalAmountPaid"
+                  } 
               },
 
               {
