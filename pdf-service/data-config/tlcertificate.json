@@ -84,6 +84,13 @@
                     "path": "$.tradeLicenseDetail.tradeUnits[0].tradeType"
                   }
               },
+               {
+                  "variable": "applicationDate",
+                  "value": {
+                    "path": "$.applicationDate"
+                  },
+                  "type": "date"
+              },
               {
                   "variable": "applicationNo",
                   "value": {

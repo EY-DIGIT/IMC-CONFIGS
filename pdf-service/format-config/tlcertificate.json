@@ -99,7 +99,7 @@
         { "text": "Applicant Name", "bold": true, "alignment": "center" },
         { "text": "{{applicantname}}" },
         { "text": "Application Date", "bold": true, "alignment": "center" },
-        { "text": "applicationDate" }
+        { "text": "{{applicationDate}}" }
       ],
       
       [ { "text": "", "colSpan": 4, "margin": [0, 3, 0, 3] }, {}, {}, {} ],
