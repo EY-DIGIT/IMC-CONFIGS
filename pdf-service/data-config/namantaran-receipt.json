@@ -151,6 +151,12 @@
                     "path": "$.totalAmountPaid"
                   } 
               },
+              {
+                  "variable": "propertyId",
+                  "value": {
+                    "path": "$.Payments[0].Calculation.propertyFYDetails[-1:].propertyId"
+                  } 
+              },
 
               {
                 "variable": "billing_period",
