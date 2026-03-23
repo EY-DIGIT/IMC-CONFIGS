@@ -477,6 +477,11 @@
       "variable": "logoImage",
       "value": "$.MdmsRes.tenant.tenants[0].logoId",
       "type": "image"
+    },
+     {
+      "variable": "headLogo",
+      "value": "$.MdmsRes.tenant.tenants[0].headerLogo",
+      "type": "image"
     }
   ]
 },
