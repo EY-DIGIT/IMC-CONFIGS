@@ -10,6 +10,18 @@
         "width": 300,
         "absolutePosition": { "x": 150, "y": 200 }
       },
+      
+ {
+        "text": "Cancelled",
+        "fontSize": 120,
+        "color": "#969696",
+        "opacity": 0.25,
+        "bold": true,
+        "italics": true,
+        "absolutePosition": { "x": 100, "y": 300 },
+        "rotation": 325
+      },
+
       {
         "columns": [
           { "text": "Receipt/Acknowledgement", "style": "topline" },
