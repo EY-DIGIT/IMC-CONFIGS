@@ -154,7 +154,7 @@
               {
                   "variable": "propertyId",
                   "value": {
-                    "path": "$.Payments[0].Calculation.propertyFYDetails[-1:].propertyId"
+                    "path": "$.Calculation.propertyFYDetails[(@.length-1)].propertyId"
                   } 
               },
 
