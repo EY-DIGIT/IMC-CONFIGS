@@ -79,11 +79,6 @@
                   }
               },
               {
-  "variable": "imcLogo",
-  "url": "https://devtfstatep7f19.blob.core.windows.net/imc-dev-assets/image%2014.svg",
-  "type": "image"
-},
-              {
                   "variable": "tradeType",
                   "value": {
                     "path": "$.tradeLicenseDetail.tradeUnits[0].tradeType"
