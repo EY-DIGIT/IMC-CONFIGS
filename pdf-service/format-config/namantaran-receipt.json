@@ -87,7 +87,7 @@
         },
         {}
       ],
-"{{#taxTableData}}[{\"text\":\"Head\",\"style\":\"th\"},{\"text\":\"Amount (₹)\",\"style\":\"th\"}],[{\"text\":\"Namantran Fees\",\"style\":\"th\"},{\"text\":\"{{namantranFees}}\",\"style\":\"td\"}],[{\"text\":\"Rajwad Fees\",\"style\":\"th\"},{\"text\":\"XX.XX\",\"style\":\"td\"}],[{\"text\":\"Total Payable Amount\",\"style\":\"th\"},{\"text\":\"XX.XX\",\"style\":\"td\"}]{{/taxTableData}}"
+"{{#taxTableData}}[{\"text\":\"Head\",\"style\":\"th\"},{\"text\":\"Amount (₹)\",\"style\":\"th\"}],[{\"text\":\"Namantran Fees\",\"style\":\"th\"},{\"text\":\"{{namantranFees}}\",\"style\":\"td\"}],[{\"text\":\"Rajwad Fees\",\"style\":\"th\"},{\"text\":\"{{rajwadFees}}\",\"style\":\"td\"}],[{\"text\":\"Total Payable Amount\",\"style\":\"th\"},{\"text\":\"XX.XX\",\"style\":\"td\"}]{{/taxTableData}}"
 ]
 
   },
