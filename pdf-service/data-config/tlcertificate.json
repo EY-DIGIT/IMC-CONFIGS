@@ -138,17 +138,7 @@
                   "module": "rainmaker-common"
                }
             },
-            {
-              "variable": "tradeType",
-              "value": {
-                "path": "$.tradeLicenseDetail.tradeUnits[0].tradeType"
-              },
-              "localisation":{
-                "required":true,
-                "prefix": "TRADELICENSE_TRADETYPE",
-                "module": "rainmaker-tl"
-             }
-          },
+            
               {
                   "variable": "accessories",
                   "value": {
