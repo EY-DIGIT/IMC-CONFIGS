@@ -19,6 +19,12 @@
                   }
               },
               {
+                  "variable": "applicantname",
+                  "value": {
+                    "path": "$.Licenses[0].tradeLicenseDetail.owners[0].name"
+                  }
+              },
+              {
                   "variable": "applicationNo",
                   "value": {
                     "path": "$.applicationNumber"
