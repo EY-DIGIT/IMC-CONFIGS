@@ -38,7 +38,7 @@
         { "text": "Property ID", "style": "th" },
         { "text": "{{consumerID}}", "style": "td" },
         { "text": "Receipt No", "style": "th" },
-        { "text": "{{oldpropertyid}}", "style": "td" },
+        { "text": "{{receiptNo}}", "style": "td" },
         { "text": "Payment Mode", "style": "th" },
         { "text": "{{paymentMode}}", "style": "td" }
       ],
