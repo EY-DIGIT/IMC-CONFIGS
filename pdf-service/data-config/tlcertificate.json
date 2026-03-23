@@ -25,6 +25,12 @@
                   }
               },
               {
+                  "variable": "address",
+                  "value": {
+                    "path": "$.tradeLicenseDetail.owners[0].permanentAddress"
+                  }
+              }, 
+              {
                   "variable": "applicationNo",
                   "value": {
                     "path": "$.applicationNumber"
