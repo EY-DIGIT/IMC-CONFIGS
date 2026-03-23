@@ -42,6 +42,12 @@
                     "path": "$.applicationDetails.applicantAddress.ward"
                   }
               }, 
+               {
+                  "variable": "fatherHusbandName",
+                  "value": {
+                    "path": "$.applicationDetails.fatherHusbandName"
+                  }
+              },
               {
                   "variable": "applicationNo",
                   "value": {

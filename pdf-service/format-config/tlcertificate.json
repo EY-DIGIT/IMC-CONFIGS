@@ -106,7 +106,7 @@
 
       [
         { "text": "S/O", "bold": true, "alignment": "center" },
-        { "text": "soName" },
+        { "text": "{{fatherHusbandName}}" },
         { "text": "Serial No.", "bold": true, "alignment": "center" },
         { "text": "serialNo" }
       ],
