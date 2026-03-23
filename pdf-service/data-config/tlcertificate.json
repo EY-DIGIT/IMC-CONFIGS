@@ -27,7 +27,7 @@
               {
                   "variable": "address",
                   "value": {
-                    "path": "Licenses[0].tradeLicenseDetail.owners[0].permanentAddress"
+                    "path": "$.tradeLicenseDetail.owners[0].permanentAddress"
                   }
               }, 
               {

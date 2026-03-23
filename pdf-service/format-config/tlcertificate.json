@@ -135,7 +135,7 @@
         { "text": "Total Fee", "bold": true, "alignment": "center" },
         { "text": "₹ totalFee" },
         { "text": "Address", "bold": true, "alignment": "center" },
-        { "text": "address" }
+        { "text": "{{address}}" }
       ]
     ]
   },
