@@ -117,7 +117,7 @@
         { "text": "Firm Type", "bold": true, "alignment": "center" },
         { "text": "firmType" },
         { "text": "Trade Type", "bold": true, "alignment": "center" },
-        { "text": "tradeType" }
+        { "text": "{{tradeType}}" }
       ],
       
       [ { "text": "", "colSpan": 4, "margin": [0, 3, 0, 3] }, {}, {}, {} ],
