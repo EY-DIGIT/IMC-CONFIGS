@@ -19,7 +19,7 @@
   },
   
 {
-    "image": "{{logoImage}}",
+    "image": "{{imcLogo}}",
     "width": 50,
     "alignment": "center",
     "margin": [0, 0, 0, 6],
