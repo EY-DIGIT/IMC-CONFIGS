@@ -7,8 +7,8 @@
     
  "watermark": {
       "text": "Cancelled",
-      "color": "#9e9e9e",
-      "opacity": 0.22,
+      "color": "#6e6e6e",
+      "opacity": 0.30,
       "bold": true,
       "italics": true
     },
