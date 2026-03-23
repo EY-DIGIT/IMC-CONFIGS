@@ -140,6 +140,13 @@
                   }
               },
               {
+                  "variable": "rajwadFees",
+                  "value": {
+                    "path": "$.rajwadFees"
+                  }
+              },
+
+              {
                 "variable": "billing_period",
                 "value": {
                   "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_BILLING_PERIOD"
