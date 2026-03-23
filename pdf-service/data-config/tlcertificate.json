@@ -31,6 +31,18 @@
                   }
               }, 
               {
+                  "variable": "zone",
+                  "value": {
+                    "path": "$.applicationDetails.applicantAddress.zone"
+                  }
+              }, 
+              {
+                  "variable": "ward",
+                  "value": {
+                    "path": "$.applicationDetails.applicantAddress.ward"
+                  }
+              }, 
+              {
                   "variable": "applicationNo",
                   "value": {
                     "path": "$.applicationNumber"

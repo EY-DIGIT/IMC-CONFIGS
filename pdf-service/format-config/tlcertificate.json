@@ -124,9 +124,9 @@
 
       [
         { "text": "Zone", "bold": true, "alignment": "center" },
-        { "text": "zone" },
+        { "text": "{{zone}}" },
         { "text": "Ward", "bold": true, "alignment": "center" },
-        { "text": "ward" }
+        { "text": "{{ward}}" }
       ],
       
       [ { "text": "", "colSpan": 4, "margin": [0, 3, 0, 3] }, {}, {}, {} ],
