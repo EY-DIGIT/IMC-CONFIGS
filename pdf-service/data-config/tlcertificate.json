@@ -91,6 +91,20 @@
                   },
                   "type": "date"
               },
+               {
+                  "variable": "validFrom",
+                  "value": {
+                    "path": "$.validFrom"
+                  },
+                  "type": "date"
+              },
+              {
+                  "variable": "validTo",
+                  "value": {
+                    "path": "$.validTo"
+                  },
+                  "type": "date"
+              },
               {
                   "variable": "applicationNo",
                   "value": {
