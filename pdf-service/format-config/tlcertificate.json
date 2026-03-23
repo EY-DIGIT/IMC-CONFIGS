@@ -97,7 +97,7 @@
     "body": [
       [
         { "text": "Applicant Name", "bold": true, "alignment": "center" },
-        { "text": "applicantName" },
+        { "text": "applicantname" },
         { "text": "Application Date", "bold": true, "alignment": "center" },
         { "text": "applicationDate" }
       ],
