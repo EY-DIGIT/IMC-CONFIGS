@@ -19,12 +19,12 @@
   },
   
 {
-  "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMB/aqkq6kAAAAASUVORK5CYII=",
-  "width": 50,
-  "alignment": "center",
-  "margin": [0, 0, 0, 6],
-  "opacity": 1
-},
+    "image": "{{logoImage}}",
+    "width": 50,
+    "alignment": "center",
+    "margin": [0, 0, 0, 6],
+    "opacity": 1
+  },
 
 
 
