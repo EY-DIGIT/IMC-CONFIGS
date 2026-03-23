@@ -21,7 +21,7 @@
               {
                   "variable": "applicantname",
                   "value": {
-                    "path": "$.tradeLicenseDetail.owners[0].name"
+                    "path": "$.Licenses[0].tradeLicenseDetail.owners[0].name"
                   }
               },
               {
