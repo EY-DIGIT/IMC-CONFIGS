@@ -49,6 +49,36 @@
                   }
               },
               {
+                  "variable": "itemCode",
+                  "value": {
+                    "path": "$.itemDetails[0].itemCode"
+                  }
+              },
+               {
+                  "variable": "quantity",
+                  "value": {
+                    "path": "$.itemDetails[0].quantity"
+                  }
+              },
+              {
+                  "variable": "rate",
+                  "value": {
+                    "path": "$.itemDetails[0].rate"
+                  }
+              },
+              {
+                  "variable": "amount",
+                  "value": {
+                    "path": "$.itemDetails[0].totalAmount"
+                  }
+              },
+              {
+                  "variable": "description",
+                  "value": {
+                    "path": "$.itemDetails[0].description"
+                  }
+              },
+              {
                   "variable": "applicationNo",
                   "value": {
                     "path": "$.applicationNumber"
