@@ -1,0 +1,296 @@
+{
+  "key": "tl-ledger",
+  "config": {
+    "defaultStyle": {
+      "font": "Cambay"
+     },
+           "pageMargins": [26, 20, 18, 15],
+
+    "content": [
+      {
+    "image": "{{logoImage}}",
+    "width": 250,
+    "absolutePosition": { "x": 180, "y": 220 }
+  },
+  
+  {
+  "columns": [
+    {
+      "image": "{{logoImage}}",
+      "width": 48,
+      "margin": [0, 2, 8, 2]
+    },
+    {
+      "width": "*",
+      "stack": [
+        {
+          "text": "Indore Nagar Nigam",
+          "fontSize": 14,
+          "bold": true,
+          "color": "#E06C2B",
+          "margin": [0, 0, 0, 1]
+        },
+        {
+          "text": "Trade License",
+          "fontSize": 10,
+          "color": "#6B7280",
+          "margin": [0, 0, 0, 1]
+        },
+        {
+          "text": "Renewal Receipt",
+          "fontSize": 11,
+          "bold": true,
+          "color": "#111827"
+        }
+      ]
+    },
+    {
+      "width": "auto",
+      "text": "Date: {{applicationDate}}",
+      "alignment": "right",
+      "color": "#6B7280",
+      "fontSize": 10,
+      "margin": [0, 2, 0, 0]
+    }
+  ],
+  "columnGap": 8,
+  "margin": [0, 0, 0, 10]
+},
+
+ {
+  "style": "infoTable",
+  "margin": [0, 40, 0, 30],
+  "table": {
+    "widths": ["25%", "25%", "25%", "25%"],
+    "body": [
+      [
+        { "text": "Receipt No", "style": "th" },
+        { "text": "12345xxx", "style": "td" },
+        { "text": "Date", "style": "th" },
+        { "text": "{{applicationDate}}", "style": "td" }
+      ],
+      [
+        { "text": "Registration No", "style": "th" },
+        { "text": "12345xxx", "style": "td" },
+        { "text": "Registration Date", "style": "th" },
+        { "text": "{{applicationDate}}", "style": "td" }
+      ],
+      [
+       { "text": "Firm", "style": "th" },
+        { "text": "xyz", "style": "td" },
+        { "text": "Owner", "style": "th" },
+        { "text": "{{name}}", "style": "td" }
+
+      ],
+      [
+        { "text": "Address", "style": "th" },
+        { "text": "{{address}}", "colSpan": 3, "style": "td" },
+        {},
+        {}
+        
+      ],
+      [
+         { "text": "Mobile", "style": "th" },
+        { "text": "{{mobile}}", "style": "td" },
+        { "text": "Email", "style": "th" },
+        { "text": "{{email}}", "style": "td" }
+
+      ]
+    ]
+  }
+},
+{
+  "text": "{{calcTableTitle}}",
+  "style": "section-title",
+  "margin": [0, 0, 0, 6]
+},
+{
+  "style": "calcTable",
+  "margin": [0, 0, 0, 30],
+  "table": {
+    "widths": ["20%", "20%", "20%", "20%", "20%"],
+    "headerRows": 1,
+    "keepWithHeaderRows": 1,
+    "dontBreakRows": true,
+    "body": [
+      [
+        { "text": "Item code", "style": "th" },
+        { "text": "Description", "style": "th" },
+        { "text": "Quantity", "style": "th" },
+        { "text": "Rate", "style": "th" },
+        { "text": "Total Amount", "style": "th" }
+      ],
+      [
+        { "text": "{{itemCode}}", "style": "td" },
+        { "text": "{{description}}", "style": "td" },
+        { "text": "{{quantity}}", "style": "td" },
+        { "text": "₹ {{rate}}", "style": "td" },
+        { "text": "₹ {{amount}}", "style": "td" }
+      ]
+    ]
+  },
+  "layout": {}
+},
+{
+  "style": "payTable",
+  "margin": [0, 0, 0, 20],
+  "table": {
+    "widths": ["20%", "20%", "20%", "20%", "20%"],
+    "headerRows": 2,
+    "keepWithHeaderRows": 1,
+    "dontBreakRows": true,
+    "body": [
+      [
+        {
+          "text": "Payment Mode",
+          "style": "tableHeader",
+          "colSpan": 5,
+          "alignment": "left",
+          "bold": true
+        },
+        {}, {}, {}, {}
+      ],
+      [
+        {
+          "text": "Cash",
+          "style": "td",
+          "colSpan": 5,
+          "alignment": "left"
+        },
+        {}, {}, {}, {}
+      ]
+    ]
+  },
+  "layout": {}
+},
+{
+
+  "style": "fourthTable",
+
+  "margin": [0, 0, 0, 30],
+
+  "table": {
+
+    "widths": ["25%", "25%", "25%", "25%"],
+
+    "headerRows": 1,
+
+    "keepWithHeaderRows": 1,
+
+    "dontBreakRows": true,
+
+    "body": [
+
+      [
+
+        { "text": "Fees", "style": "th" },
+
+        { "text": "Service Tax/Charges", "style": "th" },
+
+        { "text": "Penalty", "style": "th" },
+
+        { "text": "Form Fees", "style": "th" }
+
+      ],
+
+      [
+
+        { "text": "{{itemFees}}", "style": "td" },
+
+        { "text": "{{serviceCharge}}", "style": "td" },
+
+        { "text": "0", "style": "td" },
+
+        { "text": "{{formFees}}", "style": "td" }
+
+      ],
+      
+      [
+        { "text": "Total", "style": "td", "bold": true, "colSpan": 2, "alignment": "left" },
+        {},
+        { "text": "{{totalAmount}}", "style": "td", "bold": true, "alignment": "left", "colSpan": 2 },
+        {}
+      ]
+
+
+]
+
+},
+
+"layout": {}
+
+},
+{
+
+  "style": "fifthTable",
+
+  "margin": [0, 10, 0, 30],
+
+  "table": {
+
+    "widths": ["25%", "25%", "25%", "25%"],
+
+    "body": [
+
+      [
+
+        { "text": "Total", "style": "th", 
+          "fillColor": "#F7E7DB" },
+
+        { "text": "{{totalAmount}}", "style": "td",
+          "fillColor": "#F7E7DB" },
+
+        { "text": "In Words", "style": "th",
+          "fillColor": "#F7E7DB" },
+
+        { "text": "INR One Thousand And Five Only", "style": "td",
+          "fillColor": "#F7E7DB" }
+
+      ],
+
+      [
+
+        { "text": "Remarks", "style": "th" },
+
+        { "text": "abc", "colSpan": 3, "style": "td" },
+
+        {},
+
+        {}
+
+      ]
+
+
+    ]
+
+  }
+
+},
+{
+  "columns": [
+    { "width": "*", "text": "" },
+    {
+      "width": "auto",
+      "stack": [
+        { "text": "E-sign","alignment":"center", "style": "td" },
+        { "text": "Received By", "bold": true, "style": "td", "margin": [0, 2, 2, 0] }
+      ]
+    }
+  ],
+  "margin": [0, 10, 0, 0]
+},
+    {
+  "text": "Note: this is a system generated receipt/certificate and does not need a signature",
+  "margin": [0, 100, 0, 0],
+  "fontSize": 9,
+  "bold": true
+}
+    ],
+    "styles":{
+      "topline": { "fontSize": 8, "color": "#484848" },
+      "calcTable": { "fontSize": 9, "margin": [0, 0, 0, 0] }
+
+    }
+    
+  }
+}
