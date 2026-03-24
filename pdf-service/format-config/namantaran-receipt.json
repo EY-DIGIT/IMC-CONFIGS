@@ -61,7 +61,7 @@
       ],
       [
         { "text": "Colony", "style": "th" },
-        { "text": "Demo", "colSpan": 2, "style": "td" },
+        { "text": "{{colony}}", "colSpan": 2, "style": "td" },
         {},
         { "text": "Mobile No", "style": "th" },
         { "text": "{{payerContact}}", "colSpan": 2, "style": "td" },

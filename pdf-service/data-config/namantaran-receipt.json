@@ -33,6 +33,8 @@
               { "variable": "rateZone", "value": { "path": "$.rateZone" } },
               { "variable": "ptAddress", "value": { "path": "$.address" } },
               { "variable": "ward", "value": { "path": "$.ward" } },
+              { "variable": "colony", "value": { "path": "$.colony" } },
+
               { "variable": "plotArea", "value": { "path": "$.plotArea" } },
               { "variable": "isCheque", "value": { "path": "$.isCheque" } },
               { "variable": "paidBy", "value": { "path": "$.paidBy" } },
