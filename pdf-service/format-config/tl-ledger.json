@@ -112,39 +112,52 @@
     ]
   }
 },
-
-{
-  "text": "{{calcTableTitle}}",
-  "style": "section-title",
-  "margin": [0, 0, 0, 6]
-},
 {
   "style": "calcTable",
-  "margin": [0, 0, 0, 30],
+  "margin": [0, 0, 0, 10],
   "table": {
-    "widths": ["20%", "20%", "20%", "20%", "20%"],
-    "headerRows": 1,
+    "widths": ["10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%"],
+    "headerRows": 2,
     "keepWithHeaderRows": 1,
     "dontBreakRows": true,
     "body": [
       [
-        { "text": "Item code", "style": "th" },
-        { "text": "Description", "style": "th" },
-        { "text": "Quantity", "style": "th" },
-        { "text": "Rate", "style": "th" },
-        { "text": "Total Amount", "style": "th" }
+        {
+          "text": "Financial summary",
+          "style": "tableHeader",
+          "colSpan": 10,
+          "alignment": "center",
+          "bold": true
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
       ],
       [
-        { "text": "{{itemCode}}", "style": "td" },
-        { "text": "{{description}}", "style": "td" },
-        { "text": "{{quantity}}", "style": "td" },
-        { "text": "₹ {{rate}}", "style": "td" },
-        { "text": "₹ {{amount}}", "style": "td" }
-      ]
+        { "text": "Year", "style": "th" },
+        { "text": "Fees", "style": "th" },
+        { "text": "Penalty", "style": "th" },
+        { "text": "Service", "style": "th" },
+        { "text": "Form", "style": "th" },
+        { "text": "Arrear", "style": "th" },
+        { "text": "Advance", "style": "th" },
+        { "text": "Total", "style": "th" },
+        { "text": "Paid", "style": "th" },
+        { "text": "Balance", "style": "th" }
+
+      ],
+      "{{#calcTableData}}[{\"text\":\"{{financialYear}}\",\"style\":\"td\"},{\"text\":\"{{itemFees}}\",\"style\":\"td\"},{\"text\":\"{{serviceCharge}}\",\"style\":\"td\"},{\"text\":\"{{formFees}}\",\"style\":\"td\"},{\"text\":\"₹ {{totalAmount}}\",\"style\":\"td\"},{\"text\":\"{{financialYear}}\",\"style\":\"td\"},{\"text\":\"{{financialYear}}\",\"style\":\"td\"},{\"text\":\"{{financialYear}}\",\"style\":\"td\"},{\"text\":\"{{financialYear}}\",\"style\":\"td\"},{\"text\":\"{{financialYear}}\",\"style\":\"td\"}]{{/calcTableData}}"
     ]
   },
   "layout": {}
 },
+
 {
   "style": "payTable",
   "margin": [0, 0, 0, 20],
