@@ -146,7 +146,7 @@
       [
         { "text": "{{financialYear}}", "style": "td" },
         { "text": "{{itemFees}}", "style": "td" },
-        { "text": "XXXX", "style": "td" },
+        { "text": "0", "style": "td" },
         { "text": "{{serviceCharge}}", "style": "td" },
         { "text": "{{formFees}}", "style": "td" },
         { "text": "XXXX", "style": "td" },
