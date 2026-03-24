@@ -2,7 +2,9 @@
   "key": "tl-ledger",
   "config": {
     "defaultStyle": {
-      "font": "Cambay"
+      "font": "Cambay",
+      "fontSize": 9
+
      },
            "pageMargins": [26, 20, 18, 15],
 
