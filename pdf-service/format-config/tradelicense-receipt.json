@@ -67,13 +67,13 @@
         { "text": "Receipt No", "style": "th" },
         { "text": "12345xxx", "style": "td" },
         { "text": "Date", "style": "th" },
-        { "text": "18/03/2025", "style": "td" }
+        { "text": "{{applicationDate}}", "style": "td" }
       ],
       [
         { "text": "Registration No", "style": "th" },
         { "text": "12345xxx", "style": "td" },
         { "text": "Registration Date", "style": "th" },
-        { "text": "18/03/2025", "style": "td" }
+        { "text": "{{applicationDate}}", "style": "td" }
       ],
       [
        { "text": "Firm", "style": "th" },

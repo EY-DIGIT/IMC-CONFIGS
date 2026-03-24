@@ -97,6 +97,13 @@
                   }
               },
               {
+                  "variable": "applicationDate",
+                  "value": {
+                    "path": "$.applicationDate"
+                  },
+                  "type": "date"
+              },
+              {
                 "variable": "user-name", 
                 "value": {
                   "path": "$.userInfo.name"
