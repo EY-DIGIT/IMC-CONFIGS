@@ -195,20 +195,20 @@
 
       [
 
-        { "text": "000", "style": "td" },
+        { "text": "{{itemFees}}", "style": "td" },
 
-        { "text": "5", "style": "td" },
+        { "text": "{{serviceCharge}}", "style": "td" },
 
         { "text": "0", "style": "td" },
 
-        { "text": "0", "style": "td" }
+        { "text": "{{formFees}}", "style": "td" }
 
       ],
       
       [
         { "text": "Total", "style": "td", "bold": true, "colSpan": 2, "alignment": "left" },
         {},
-        { "text": "1005", "style": "td", "bold": true, "alignment": "left", "colSpan": 2 },
+        { "text": "{{totalAmount}}", "style": "td", "bold": true, "alignment": "left", "colSpan": 2 },
         {}
       ]
 
@@ -237,7 +237,7 @@
         { "text": "Total", "style": "th", 
           "fillColor": "#F7E7DB" },
 
-        { "text": "1005", "style": "td",
+        { "text": "{{totalAmount}}", "style": "td",
           "fillColor": "#F7E7DB" },
 
         { "text": "In Words", "style": "th",

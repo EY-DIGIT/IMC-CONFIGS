@@ -73,6 +73,30 @@
                   }
               },
               {
+                  "variable": "serviceCharge",
+                  "value": {
+                    "path": "$.serviceCharge"
+                  }
+              },
+              {
+                  "variable": "itemFees",
+                  "value": {
+                    "path": "$.itemFees"
+                  }
+              },
+              {
+                  "variable": "formFees",
+                  "value": {
+                    "path": "$.formFees"
+                  }
+              },
+              {
+                  "variable": "totalAmount",
+                  "value": {
+                    "path": "$.totalAmount"
+                  }
+              },
+              {
                 "variable": "user-name", 
                 "value": {
                   "path": "$.userInfo.name"
