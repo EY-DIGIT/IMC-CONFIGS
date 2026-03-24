@@ -11,12 +11,12 @@
     "content": [
       {
     "image": "{{logoImage}}",
-    "width": 250,
+    "width": 300,
     "absolutePosition": { "x": 180, "y": 220 }
   },
   {
     "image": "{{logoImage}}",
-    "width": 50,
+    "width": 80,
     "alignment": "center",
     "margin": [0, 0, 0, 6],
     "opacity": 1
@@ -28,8 +28,7 @@
     
     {
       "text": "Indore Nagar Nigam",
-      "fontSize": 10,
-      "color": "#555555",
+      "fontSize": 15,
       "margin": [0, 2, 0, 3]
     },
     {
@@ -174,161 +173,8 @@
     ]
   },
   "layout": {}
-},
-{
-  "style": "payTable",
-  "margin": [0, 0, 0, 20],
-  "table": {
-    "widths": ["20%", "20%", "20%", "20%", "20%"],
-    "headerRows": 2,
-    "keepWithHeaderRows": 1,
-    "dontBreakRows": true,
-    "body": [
-      [
-        {
-          "text": "Payment Mode",
-          "style": "tableHeader",
-          "colSpan": 5,
-          "alignment": "left",
-          "bold": true
-        },
-        {}, {}, {}, {}
-      ],
-      [
-        {
-          "text": "Cash",
-          "style": "td",
-          "colSpan": 5,
-          "alignment": "left"
-        },
-        {}, {}, {}, {}
-      ]
-    ]
-  },
-  "layout": {}
-},
-{
-
-  "style": "fourthTable",
-
-  "margin": [0, 0, 0, 30],
-
-  "table": {
-
-    "widths": ["25%", "25%", "25%", "25%"],
-
-    "headerRows": 1,
-
-    "keepWithHeaderRows": 1,
-
-    "dontBreakRows": true,
-
-    "body": [
-
-      [
-
-        { "text": "Fees", "style": "th" },
-
-        { "text": "Service Tax/Charges", "style": "th" },
-
-        { "text": "Penalty", "style": "th" },
-
-        { "text": "Form Fees", "style": "th" }
-
-      ],
-
-      [
-
-        { "text": "{{itemFees}}", "style": "td" },
-
-        { "text": "{{serviceCharge}}", "style": "td" },
-
-        { "text": "0", "style": "td" },
-
-        { "text": "{{formFees}}", "style": "td" }
-
-      ],
-      
-      [
-        { "text": "Total", "style": "td", "bold": true, "colSpan": 2, "alignment": "left" },
-        {},
-        { "text": "{{totalAmount}}", "style": "td", "bold": true, "alignment": "left", "colSpan": 2 },
-        {}
-      ]
-
-
-]
-
-},
-
-"layout": {}
-
-},
-{
-
-  "style": "fifthTable",
-
-  "margin": [0, 10, 0, 30],
-
-  "table": {
-
-    "widths": ["25%", "25%", "25%", "25%"],
-
-    "body": [
-
-      [
-
-        { "text": "Total", "style": "th", 
-          "fillColor": "#F7E7DB" },
-
-        { "text": "{{totalAmount}}", "style": "td",
-          "fillColor": "#F7E7DB" },
-
-        { "text": "In Words", "style": "th",
-          "fillColor": "#F7E7DB" },
-
-        { "text": "INR One Thousand And Five Only", "style": "td",
-          "fillColor": "#F7E7DB" }
-
-      ],
-
-      [
-
-        { "text": "Remarks", "style": "th" },
-
-        { "text": "abc", "colSpan": 3, "style": "td" },
-
-        {},
-
-        {}
-
-      ]
-
-
-    ]
-
-  }
-
-},
-{
-  "columns": [
-    { "width": "*", "text": "" },
-    {
-      "width": "auto",
-      "stack": [
-        { "text": "E-sign","alignment":"center", "style": "td" },
-        { "text": "Received By", "bold": true, "style": "td", "margin": [0, 2, 2, 0] }
-      ]
-    }
-  ],
-  "margin": [0, 10, 0, 0]
-},
-    {
-  "text": "Note: this is a system generated receipt/certificate and does not need a signature",
-  "margin": [0, 100, 0, 0],
-  "fontSize": 9,
-  "bold": true
 }
+
     ],
     "styles":{
       "topline": { "fontSize": 8, "color": "#484848" },
