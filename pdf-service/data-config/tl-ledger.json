@@ -110,16 +110,23 @@
                   },
                   "type": "date"
               },
-              {
-  "variable": "itemDetails",
-  "value": {
-    "path": "$.itemDetails[*]"
-  }
-},
+              
               {
                   "variable": "licenseNumber",
                   "value": {
                     "path": "$.licenseNumber"
+                  }
+              },
+               {
+                  "variable": "itemCode",
+                  "value": {
+                    "path": "$.itemDetails[0].itemCode"
+                  }
+              },
+              {
+                  "variable": "description",
+                  "value": {
+                    "path": "$.itemDetails[0].description"
                   }
               },
               {
