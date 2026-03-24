@@ -436,10 +436,7 @@
                   "queryParam": "moduleName=tenant&masterName=tenants&tenantId=mp&filter=%5B?(@.code=='{$.tenantId}')%5D",
                   "apiRequest": null,
                   "responseMapping":[
-                    {             
-                      "variable":"address",
-                      "value":"$.MdmsRes.tenant.tenants[0].address"
-                    },
+                    
                     {
                       "variable":"phoneNumber",
                       "value":"$.MdmsRes.tenant.tenants[0].contactNumber"
