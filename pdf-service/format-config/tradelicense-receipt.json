@@ -91,9 +91,9 @@
       ],
       [
          { "text": "Mobile", "style": "th" },
-        { "text": "986xxxxxxx", "style": "td" },
+        { "text": "{{mobile}}", "style": "td" },
         { "text": "Email", "style": "th" },
-        { "text": "dummy@gmail.com", "style": "td" }
+        { "text": "{{email}}", "style": "td" }
 
       ]
     ]

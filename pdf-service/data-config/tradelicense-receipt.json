@@ -31,6 +31,18 @@
                   }
               },
               {
+                  "variable": "mobile",
+                  "value": {
+                    "path": "$.tradeLicenseDetail.owners[0].mobileNumber"
+                  }
+              },
+              {
+                  "variable": "email",
+                  "value": {
+                    "path": "$.tradeLicenseDetail.owners[0].emailId"
+                  }
+              },
+              {
                 "variable": "user-name", 
                 "value": {
                   "path": "$.userInfo.name"
