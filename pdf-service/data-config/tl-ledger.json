@@ -112,14 +112,12 @@
               },
               {
   "variable": "itemDetails",
-  "value": {
-    "path": {
-      "itemCode": "$.itemDetails[0].itemCode",
-      "description": "$.itemDetails[0].description",
-      "quantity": "$.itemDetails[0].quantity",
-      "rate": "$.itemDetails[0].rate"
-    }
-  }
+  "value": [
+    "$.itemDetails[0].itemCode",
+    "$.itemDetails[0].description",
+    "$.itemDetails[0].quantity",
+    "$.itemDetails[0].rate"
+  ]
 },
               {
                   "variable": "licenseNumber",
