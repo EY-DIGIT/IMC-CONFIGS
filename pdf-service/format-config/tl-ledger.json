@@ -152,7 +152,7 @@
         { "text": "Balance", "style": "th" }
 
       ],
-      "{{#calcTableData}}[{\"text\":\"{{financialYear}}\",\"style\":\"td\"},{\"text\":\"{{itemFees}}\",\"style\":\"td\"},{\"text\":\"XXXX\",\"style\":\"td\"},{\"text\":\"{{serviceCharge}}\",\"style\":\"td\"},{\"text\":\"{{formFees}}\",\"style\":\"td\"},{\"text\":\"₹ XXXX\",\"style\":\"td\"},{\"text\":\"₹ XXXX\",\"style\":\"td\"},{\"text\":\"₹ {{totalAmount}}\",\"style\":\"td\"},{\"text\":\"₹ XXXX\",\"style\":\"td\"},{\"text\":\"XXXX\",\"style\":\"td\"}]{{/calcTableData}}"
+      "{{#calcTableData}}[{\"text\":\"{{financialYear}}\",\"style\":\"td\"},{\"text\":\"{{itemFees}}\",\"style\":\"td\"},{\"text\":\"{{serviceCharge}}\",\"style\":\"td\"},{\"text\":\"{{formFees}}\",\"style\":\"td\"},{\"text\":\"₹ {{totalAmount}}\",\"style\":\"td\"},{\"text\":\"{{financialYear}}\",\"style\":\"td\"},{\"text\":\"{{financialYear}}\",\"style\":\"td\"},{\"text\":\"{{financialYear}}\",\"style\":\"td\"},{\"text\":\"{{financialYear}}\",\"style\":\"td\"},{\"text\":\"{{financialYear}}\",\"style\":\"td\"}]{{/calcTableData}}"
     ]
   },
   "layout": {}
