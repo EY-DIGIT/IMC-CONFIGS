@@ -111,6 +111,17 @@
                   "type": "date"
               },
               {
+  "variable": "itemDetails",
+  "value": {
+    "paths": {
+      "itemCode": "$.itemDetails[0].itemCode",
+      "description": "$.itemDetails[0].description",
+      "quantity": "$.itemDetails[0].quantity",
+      "rate": "$.itemDetails[0].rate"
+    }
+  }
+},
+              {
                   "variable": "licenseNumber",
                   "value": {
                     "path": "$.licenseNumber"

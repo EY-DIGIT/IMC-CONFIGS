@@ -84,7 +84,7 @@
       ],
       [
          { "text": "Item Details", "style": "th" },
-        { "text": "XXXX", "colSpan": 3, "style": "td" },
+        { "text": "{{itemDetails}}", "colSpan": 3, "style": "td" },
         {},
         {},
         { "text": "Report Generated on", "style": "th" },
