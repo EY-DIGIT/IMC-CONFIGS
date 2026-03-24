@@ -25,6 +25,12 @@
                   }
               },
               {
+                  "variable": "licenseNumber",
+                  "value": {
+                    "path": "$.licenseNumber"
+                  }
+              },
+              {
                   "variable": "address",
                   "value": {
                     "path": "$.tradeLicenseDetail.owners[0].permanentAddress"
