@@ -173,7 +173,20 @@
         { "text": "XXXX", "style": "td" },
         { "text": "XXXX", "style": "td" }
 
+      ],
+      
+      [
+        { "text": "Total", "bold": true, "style": "td", "colSpan": 6, "fillColor": "#F7E7DB" },
+        {}, 
+        {}, 
+        {}, 
+        {},  
+        {},
+        { "text": "{{totalAmount}}", "bold": true, "style": "td", "fillColor": "#F7E7DB" },
+        { "text": "{{totalAmount}}", "bold": true, "style": "td", "fillColor": "#F7E7DB" },
+        { "text": "00", "bold": true, "style": "td", "fillColor": "#F7E7DB" }
       ]
+
     ]
   },
   "layout": {}
