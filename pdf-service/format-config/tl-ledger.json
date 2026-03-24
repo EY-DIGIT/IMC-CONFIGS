@@ -15,7 +15,7 @@
     "absolutePosition": { "x": 150, "y": 220 }
   },
   {
-    "image": "{{logoImage}}",
+    "image": "{{headLogo}}",
     "width": 80,
     "alignment": "center",
     "margin": [0, 0, 0, 6],
