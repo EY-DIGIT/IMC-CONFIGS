@@ -176,11 +176,12 @@
       ],
       
       [
-        { "text": "Total", "bold": true, "style": "td", "colSpan": 6, "fillColor": "#F7E7DB" },
+        { "text": "Total", "bold": true, "style": "td", "colSpan": 7, "fillColor": "#F7E7DB" },
         {}, 
         {}, 
         {}, 
-        {},  
+        {}, 
+        {}, 
         {},
         { "text": "{{totalAmount}}", "bold": true, "style": "td", "fillColor": "#F7E7DB" },
         { "text": "{{totalAmount}}", "bold": true, "style": "td", "fillColor": "#F7E7DB" },
