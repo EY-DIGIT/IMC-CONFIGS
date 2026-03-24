@@ -19,6 +19,12 @@
                 }
               },
               {
+                  "variable": "address",
+                  "value": {
+                    "path": "$.tradeLicenseDetail.owners[0].permanentAddress"
+                  }
+              }, 
+              {
                 "variable": "user-name", 
                 "value": {
                   "path": "$.userInfo.name"
