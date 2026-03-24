@@ -122,24 +122,36 @@
   "style": "calcTable",
   "margin": [0, 0, 0, 30],
   "table": {
-    "widths": ["20%", "20%", "20%", "20%", "20%"],
+    "widths": ["10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%"],
     "headerRows": 1,
     "keepWithHeaderRows": 1,
     "dontBreakRows": true,
     "body": [
       [
-        { "text": "Item code", "style": "th" },
-        { "text": "Description", "style": "th" },
-        { "text": "Quantity", "style": "th" },
-        { "text": "Rate", "style": "th" },
-        { "text": "Total Amount", "style": "th" }
+        { "text": "Year", "style": "th" },
+        { "text": "Fees", "style": "th" },
+        { "text": "Penalty", "style": "th" },
+        { "text": "Service", "style": "th" },
+        { "text": "Form", "style": "th" },
+        { "text": "Arrear", "style": "th" },
+        { "text": "Advance", "style": "th" },
+        { "text": "Total", "style": "th" },
+        { "text": "Paid", "style": "th" },
+        { "text": "Balance", "style": "th" }
+
       ],
       [
-        { "text": "{{itemCode}}", "style": "td" },
-        { "text": "{{description}}", "style": "td" },
-        { "text": "{{quantity}}", "style": "td" },
-        { "text": "₹ {{rate}}", "style": "td" },
-        { "text": "₹ {{amount}}", "style": "td" }
+        { "text": "{{financialYear}}", "style": "td" },
+        { "text": "{{itemFees}}", "style": "td" },
+        { "text": "XXXX", "style": "td" },
+        { "text": "{{serviceCharge}}", "style": "td" },
+        { "text": "{{formFees}}", "style": "td" },
+        { "text": "XXXX", "style": "td" },
+        { "text": "XXXX", "style": "td" },
+        { "text": "{{totalAmount}}", "style": "td" },
+        { "text": "XXXX", "style": "td" },
+        { "text": "XXXX", "style": "td" }
+
       ]
     ]
   },
