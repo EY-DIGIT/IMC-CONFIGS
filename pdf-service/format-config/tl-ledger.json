@@ -75,7 +75,7 @@
       ],
       [
         { "text": "Firm Name", "style": "th" },
-        { "text": "XXXX", "colSpan": 2, "style": "td" },
+        { "text": "{{tradeName}}", "colSpan": 2, "style": "td" },
         {},
         { "text": "Mobile", "style": "th" },
         { "text": "{{mobile}}", "colSpan": 2, "style": "td" },
@@ -88,7 +88,7 @@
         {},
         {},
         { "text": "Report Generated on", "style": "th" },
-        { "text": "Date", "style": "td" }
+        { "text": "{{issuedDate}}", "style": "td" }
 
       ]
     ]

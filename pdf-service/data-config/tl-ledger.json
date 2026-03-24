@@ -104,11 +104,25 @@
                   "type": "date"
               },
               {
+                  "variable": "issuedDate",
+                  "value": {
+                    "path": "$.issuedDate"
+                  },
+                  "type": "date"
+              },
+              {
                   "variable": "licenseNumber",
                   "value": {
                     "path": "$.licenseNumber"
                   }
               },
+              {
+                  "variable": "tradeName",
+                  "value": {
+                    "path": "$.tradeName"
+                  }
+              },
+              
               {
                   "variable": "oldLicenseNumber",
                   "value": {
