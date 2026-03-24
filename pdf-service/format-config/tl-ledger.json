@@ -12,7 +12,7 @@
       {
     "image": "{{logoImage}}",
     "width": 300,
-    "absolutePosition": { "x": 200, "y": 200 }
+    "absolutePosition": { "x": 150, "y": 220 }
   },
   {
     "image": "{{logoImage}}",
@@ -158,16 +158,16 @@
       ],
       
       [
-        { "text": "Total", "bold": true, "style": "td", "colSpan": 7, "fillColor": "#F7E7DB80" },
+        { "text": "Total", "bold": true, "style": "td", "colSpan": 7, "fillColor": "#F7E7DB" },
         {}, 
         {}, 
         {}, 
         {}, 
         {}, 
         {},
-        { "text": "{{totalAmount}}", "bold": true, "style": "td", "fillColor": "#F7E7DB80" },
-        { "text": "{{totalAmount}}", "bold": true, "style": "td", "fillColor": "#F7E7DB80" },
-        { "text": "00", "bold": true, "style": "td", "fillColor": "#F7E7DB80" }
+        { "text": "{{totalAmount}}", "bold": true, "style": "td", "fillColor": "#F7E7DB" },
+        { "text": "{{totalAmount}}", "bold": true, "style": "td", "fillColor": "#F7E7DB" },
+        { "text": "00", "bold": true, "style": "td", "fillColor": "#F7E7DB" }
       ]
 
     ]
