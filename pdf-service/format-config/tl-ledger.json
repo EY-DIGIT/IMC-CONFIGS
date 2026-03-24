@@ -123,10 +123,31 @@
   "margin": [0, 0, 0, 30],
   "table": {
     "widths": ["10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%"],
-    "headerRows": 1,
+    "headerRows": 2,
     "keepWithHeaderRows": 1,
     "dontBreakRows": true,
     "body": [
+      [
+
+        {
+          "text": "Financial Summary",
+          "colSpan": 10,
+          "alignment": "center",
+          "style": "tableHeader",
+          "bold": true
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+        
+
+      ],
       [
         { "text": "Year", "style": "th" },
         { "text": "Fees", "style": "th" },
