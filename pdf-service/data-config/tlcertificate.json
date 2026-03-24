@@ -117,6 +117,24 @@
                     "path": "$.applicationNumber"
                   }
               },
+               {
+                  "variable": "financialYear",
+                  "value": {
+                    "path": "$.financialYear"
+                  }
+              },
+              {
+                  "variable": "tradeName",
+                  "value": {
+                    "path": "$.tradeName"
+                  }
+              },
+              {
+                  "variable": "applicationNumber",
+                  "value": {
+                    "path": "$.applicationNumber"
+                  }
+              },
               {
                   "variable": "financialYear",
                   "value": {
