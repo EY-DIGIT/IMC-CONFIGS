@@ -25,6 +25,12 @@
                   }
               }, 
               {
+                  "variable": "name",
+                  "value": {
+                    "path": "$.tradeLicenseDetail.owners[0].name"
+                  }
+              },
+              {
                 "variable": "user-name", 
                 "value": {
                   "path": "$.userInfo.name"

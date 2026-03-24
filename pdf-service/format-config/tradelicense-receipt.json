@@ -79,12 +79,12 @@
        { "text": "Firm", "style": "th" },
         { "text": "xyz", "style": "td" },
         { "text": "Owner", "style": "th" },
-        { "text": "Mr. Jatin", "style": "td" }
+        { "text": "{{name}}", "style": "td" }
 
       ],
       [
         { "text": "Address", "style": "th" },
-        { "text": "House: SHOP NO 18, 2ND FLOOR", "colSpan": 3, "style": "td" },
+        { "text": "{{address}}", "colSpan": 3, "style": "td" },
         {},
         {}
         
