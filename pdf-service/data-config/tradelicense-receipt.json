@@ -457,10 +457,7 @@
                       "variable":"website",
                       "value":"$.MdmsRes.tenant.tenants[0].domainUrl"
                     },
-                    {
-                      "variable":"email",
-                      "value":"$.MdmsRes.tenant.tenants[0].emailId"
-                    },
+                    
                     {
                       "variable": "logoImage",                        
                       "value":"$.MdmsRes.tenant.tenants[0].logoId",
