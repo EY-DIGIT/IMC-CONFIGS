@@ -16,8 +16,8 @@
   {
   "columns": [
     {
-      "image": "{{logoImage}}",
-      "width": 48,
+      "image": "{{headLogo}}",
+      "width": 50,
       "margin": [0, 2, 8, 2]
     },
     {
@@ -54,7 +54,7 @@
     }
   ],
   "columnGap": 8,
-  "margin": [0, 0, 0, 10]
+  "margin": [0, 0, 0, 5]
 },
 
  {
