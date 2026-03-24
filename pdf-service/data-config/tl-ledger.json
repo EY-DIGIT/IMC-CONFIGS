@@ -104,6 +104,18 @@
                   "type": "date"
               },
               {
+                  "variable": "licenseNumber",
+                  "value": {
+                    "path": "$.licenseNumber"
+                  }
+              },
+              {
+                  "variable": "oldLicenseNumber",
+                  "value": {
+                    "path": "$.oldLicenseNumber"
+                  }
+              },
+              {
                 "variable": "user-name", 
                 "value": {
                   "path": "$.userInfo.name"

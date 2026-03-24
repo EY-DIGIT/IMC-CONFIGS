@@ -61,39 +61,50 @@
   "style": "infoTable",
   "margin": [0, 40, 0, 30],
   "table": {
-    "widths": ["25%", "25%", "25%", "25%"],
+    "widths": ["17%", "16%", "16%", "17%", "17%", "17%"],
     "body": [
       [
-        { "text": "Receipt No", "style": "th" },
-        { "text": "12345xxx", "style": "td" },
-        { "text": "Date", "style": "th" },
-        { "text": "{{applicationDate}}", "style": "td" }
-      ],
-      [
-        { "text": "Registration No", "style": "th" },
-        { "text": "12345xxx", "style": "td" },
+        { "text": "Registration Number", "style": "th" },
+        { "text": "{{licenseNumber}}", "style": "td" },
+        { "text": "Old Registration ", "style": "th" },
+        { "text": "{{oldLicenseNumber}}", "style": "td" },
         { "text": "Registration Date", "style": "th" },
         { "text": "{{applicationDate}}", "style": "td" }
-      ],
-      [
-       { "text": "Firm", "style": "th" },
-        { "text": "xyz", "style": "td" },
-        { "text": "Owner", "style": "th" },
-        { "text": "{{name}}", "style": "td" }
+
 
       ],
       [
-        { "text": "Address", "style": "th" },
-        { "text": "{{address}}", "colSpan": 3, "style": "td" },
+        { "text": "Owner Name", "style": "th" },
+        { "text": "{{name}}", "colSpan": 3, "style": "td" },
         {},
+        {},
+        { "text": "Application Date", "style": "th" },
+        { "text": "{{applicationDate}}", "style": "td" }
+      ],
+      [
+       { "text": "Firm Address", "style": "th" },
+        { "text": "{{address}}", "colSpan": 5, "style": "td" },
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        { "text": "Firm Name", "style": "th" },
+        { "text": "XXXX", "colSpan": 2, "style": "td" },
+        {},
+        { "text": "Mobile", "style": "th" },
+        { "text": "{{mobile}}", "colSpan": 2, "style": "td" },
         {}
         
       ],
       [
-         { "text": "Mobile", "style": "th" },
-        { "text": "{{mobile}}", "style": "td" },
-        { "text": "Email", "style": "th" },
-        { "text": "{{email}}", "style": "td" }
+         { "text": "Item Details", "style": "th" },
+        { "text": "XXXX", "colSpan": 3, "style": "td" },
+        {},
+        {},
+        { "text": "Report Generated on", "style": "th" },
+        { "text": "Date", "style": "td" }
 
       ]
     ]
