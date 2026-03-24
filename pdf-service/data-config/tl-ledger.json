@@ -113,7 +113,7 @@
               {
   "variable": "itemDetails",
   "value": {
-    "paths": {
+    "path": {
       "itemCode": "$.itemDetails[0].itemCode",
       "description": "$.itemDetails[0].description",
       "quantity": "$.itemDetails[0].quantity",
