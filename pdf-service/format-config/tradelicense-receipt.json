@@ -121,11 +121,11 @@
         { "text": "Total Amount", "style": "th" }
       ],
       [
-        { "text": "22209", "style": "td" },
-        { "text": "abcdefg", "style": "td" },
-        { "text": "1.0", "style": "td" },
-        { "text": "1000.0", "style": "td" },
-        { "text": "1000.0", "style": "td" }
+        { "text": "{{itemCode}}", "style": "td" },
+        { "text": "{{description}}", "style": "td" },
+        { "text": "{{quantity}}", "style": "td" },
+        { "text": "₹ {{rate}}", "style": "td" },
+        { "text": "₹ {{amount}}", "style": "td" }
       ]
     ]
   },
