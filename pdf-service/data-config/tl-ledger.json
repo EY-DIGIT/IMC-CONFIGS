@@ -116,6 +116,12 @@
                   }
               },
               {
+                  "variable": "financialYear",
+                  "value": {
+                    "path": "$.financialYear"
+                  }
+              },
+              {
                 "variable": "user-name", 
                 "value": {
                   "path": "$.userInfo.name"
