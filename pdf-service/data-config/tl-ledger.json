@@ -110,15 +110,7 @@
                   },
                   "type": "date"
               },
-              {
-  "variable": "itemDetails",
-  "value": [
-    "$.itemDetails[0].itemCode",
-    "$.itemDetails[0].description",
-    "$.itemDetails[0].quantity",
-    "$.itemDetails[0].rate"
-  ]
-},
+              
               {
                   "variable": "licenseNumber",
                   "value": {
