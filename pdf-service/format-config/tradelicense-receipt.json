@@ -46,7 +46,7 @@
     },
     {
       "width": "auto",
-      "text": "Date: 18/03/2026",
+      "text": "Date: {{applicationDate}}",
       "alignment": "right",
       "color": "#6B7280",
       "fontSize": 10,
