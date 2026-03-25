@@ -71,7 +71,7 @@
       ],
       [
         { "text": "Registration No", "style": "th" },
-        { "text": "{{licenseNumber}}", "style": "td" },
+        { "text": "{{tradeLicenseNo}}", "style": "td" },
         { "text": "Registration Date", "style": "th" },
         { "text": "{{applicationDate}}", "style": "td" }
       ],
