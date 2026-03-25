@@ -1,6 +1,6 @@
 {
-  "key": "property-receipt",
-  "documentType": "PROPERTYRECEIPT",
+  "key": "property-receipt-cancel",
+  "documentType": "PROPERTYRECEIPTCANCEL",
   "DataConfigs": {
     "moduleName": "PT",
     "version": "1.0.0",

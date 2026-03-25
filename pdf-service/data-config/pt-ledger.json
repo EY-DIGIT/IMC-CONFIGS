@@ -1,6 +1,6 @@
 {
-  "key": "property-receipt",
-  "documentType": "PROPERTYRECEIPT",
+  "key": "pt-ledger",
+  "documentType": "PROPERTYLEDGER",
   "DataConfigs": {
     "moduleName": "PT",
     "version": "1.0.0",
@@ -36,8 +36,11 @@
               { "variable": "plotArea", "value": { "path": "$.plotArea" } },
               { "variable": "isCheque", "value": { "path": "$.isCheque" } },
               { "variable": "paidBy", "value": { "path": "$.paidBy" } },
-              { "variable": "lokadalat", "value": { "path": "$.lokAdalatDiscount" }},
-              {"variable": "propertyId", "value": {"path": "$.Calculation.propertyFYDetails[-1:].propertyId"}},
+              { "variable": "ownerEmail", "value": { "path": "$.payerEmail" }},
+              { "variable": "oldpropertyid", "value": { "path": "$.oldPropertyId" }},
+
+
+
               {
                 "variable": "payment_receipt",
                 "value": {
@@ -332,7 +335,7 @@
 
               {
                 "variable": "calcTableData",
-                "value": { "path": "$.Calculation.propertyFYDetails[-1:]" },
+                "value": { "path": "$.Calculation.propertyFYDetails[*]" },
                 "type": "array",
                 "format": {
                   "type": "object",
@@ -351,7 +354,7 @@
               },
               {
                 "variable": "taxTableData",
-                "value": { "path": "$.Calculation.propertyFYTaxSummaries[-1:]" },
+                "value": { "path": "$.Calculation.propertyFYTaxSummaries[*]" },
                 "type": "array",
                 "format": {
                   "type": "object",
@@ -367,7 +370,13 @@
                     { "variable": "tax_totalTax",      "value": "totalTax",       "type": "number", "defaultValue": 0 },
                     { "variable": "tax_rebate",        "value": "rebate",         "type": "number", "defaultValue": 0 },
                     { "variable": "tax_penalty",       "value": "penalty",        "type": "number", "defaultValue": 0 },
-                    { "variable": "tax_netTotal",      "value": "netTax",         "type": "number", "defaultValue": 0 }
+                    { "variable": "tax_netTotal",      "value": "netTax",         "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_cumulative",    "value": "cumulativeBalance",      "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_demand",        "value": "netTax",          "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_paid",          "value": "paidAmount",          "type": "number", "defaultValue": 0 }
+
+
+
                   ]
                 }
               }
@@ -391,7 +400,7 @@
               { "variable": "th_alv", "formula": "'ALV'" },
               { "variable": "th_maintenance", "formula": "'Maintenance Discount'" },
               { "variable": "th_tpv", "formula": "'TPV'" },
-              { "variable": "displaypropertyId", "formula": "{{totalDemandPayable}} == 0 ? '{{propertyId}}':'{{consumerID}}'"},
+
               { "variable": "th_year", "formula": "'Year'" },
               { "variable": "th_property_tax", "formula": "'Property Tax'" },
               { "variable": "th_samekit_tax", "formula": "'Samekit Tax'" },

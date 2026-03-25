@@ -1,15 +1,25 @@
 {
-  "key": "property-receipt",
+  "key": "property-receipt-cancel",
   "config": {
     "pageSize": "A4",
     "pageMargins": [18, 15, 18, 15],
     "defaultStyle": { "font": "Cambay" },
+    
+ "watermark": {
+      "text": "Cancelled",
+      "color": "#555555",
+      "opacity": 0.40,
+      "bold": true,
+      "italics": true
+    },
+
     "content": [
       {
         "image": "{{logoImage}}",
         "width": 300,
         "absolutePosition": { "x": 150, "y": 200 }
       },
+      
       {
         "columns": [
           { "text": "Receipt/Acknowledgement", "style": "topline" },

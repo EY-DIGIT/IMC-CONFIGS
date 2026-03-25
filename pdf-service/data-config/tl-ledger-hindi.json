@@ -1,5 +1,5 @@
 {
-  "key": "tradelicense-receipt",
+  "key": "tl-ledger-hindi",
   "DataConfigs": {
     "serviceName": "rainmaker-common",
     "version": "1.0.0",
@@ -21,25 +21,25 @@
               {
                   "variable": "address",
                   "value": {
-                    "path": "$.payerAddress"
+                    "path": "$.tradeLicenseDetail.owners[0].permanentAddress"
                   }
               }, 
               {
                   "variable": "name",
                   "value": {
-                    "path": "$.payerName"
+                    "path": "$.tradeLicenseDetail.owners[0].name"
                   }
               },
               {
                   "variable": "mobile",
                   "value": {
-                    "path": "$.mobileNumber"
+                    "path": "$.tradeLicenseDetail.owners[0].mobileNumber"
                   }
               },
               {
                   "variable": "email",
                   "value": {
-                    "path": "$.payerEmail"
+                    "path": "$.tradeLicenseDetail.owners[0].emailId"
                   }
               },
               {
@@ -104,9 +104,48 @@
                   "type": "date"
               },
               {
-                  "variable": "tradeLicenseNo",
+                  "variable": "issuedDate",
+                  "value": {
+                    "path": "$.issuedDate"
+                  },
+                  "type": "date"
+              },
+              
+              {
+                  "variable": "licenseNumber",
                   "value": {
                     "path": "$.licenseNumber"
+                  }
+              },
+               {
+                  "variable": "itemCode",
+                  "value": {
+                    "path": "$.itemDetails[0].itemCode"
+                  }
+              },
+              {
+                  "variable": "description",
+                  "value": {
+                    "path": "$.itemDetails[0].description"
+                  }
+              },
+              {
+                  "variable": "tradeName",
+                  "value": {
+                    "path": "$.tradeName"
+                  }
+              },
+              
+              {
+                  "variable": "oldLicenseNumber",
+                  "value": {
+                    "path": "$.oldLicenseNumber"
+                  }
+              },
+              {
+                  "variable": "financialYear",
+                  "value": {
+                    "path": "$.financialYear"
                   }
               },
               {
@@ -530,11 +569,11 @@
                       "value":"$.MdmsRes.tenant.tenants[0].logoId",
                       "type":"image"      
                     },
-                     {
-      "variable": "headLogo",
-      "value": "$.MdmsRes.tenant.tenants[0].headerLogo",
-      "type": "image"
-    },
+                    {
+                       "variable": "headLogo",
+                        "value": "$.MdmsRes.tenant.tenants[0].headerLogo",
+                        "type": "image"
+                    },                    
                     {
                       "variable": "logo-header",
                       "value":"$.MdmsRes.tenant.tenants[0].code",
