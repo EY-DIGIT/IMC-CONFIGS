@@ -70,11 +70,11 @@
       ],
       [
         { "text": "Road Factor", "style": "th" },
-        { "text": "Main Road / Others", "colSpan": 2, "style": "td" },
+        { "text": "Main Road / Others", "style": "td" },
         { "text": "Exemption", "style": "th" },
-        { "text": "136 (a) : xyz", "colSpan": 2, "style": "td" },
+        { "text": "136 (a) : xyz", "style": "td" },
         { "text": "Essential Tax", "style": "th" },
-        { "text": "ATM / multiplex, etc.", "colSpan": 2, "style": "td" }      
+        { "text": "ATM / multiplex, etc.", "style": "td" }      
         
       ],
       [
