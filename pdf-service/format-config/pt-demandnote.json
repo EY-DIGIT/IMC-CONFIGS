@@ -13,7 +13,7 @@
       },
       {
         "columns": [
-          { "text": "Demand Note", "style": "topline" },
+          { "text": "Demand Note u/s 173", "style": "topline" },
           { "text": "{{paymentDate}}", "alignment": "right", "style": "topline" }
         ],
         "margin": [0, 0, 0, 10]
