@@ -146,7 +146,8 @@
           "style": "tableHeader",
           "colSpan": 2,
           "alignment": "center",
-          "bold": true
+          "bold": true,
+          "fillColor": "#DAE1F3"
         },
         {}
       ],
