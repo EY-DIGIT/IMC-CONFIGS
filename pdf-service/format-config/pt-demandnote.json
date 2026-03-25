@@ -136,12 +136,39 @@
 },
 {
   "style": "TaxTable",
+  "margin": [0, 0, 0, 10],
+
   "table": {
     "widths": ["25%", "25%", "25%", "25%"],
-    "headerRows": 1,
+    "headerRows": 2,
     "keepWithHeaderRows": 1,
     "dontBreakRows": true,
     "body": [
+      [
+
+        {
+
+          "text": "Summary Ledger",
+
+          "style": "tableHeader",
+
+          "colSpan": 4,
+
+          "alignment": "center",
+
+          "bold": true,
+
+          "fillColor": "#DAE1F3"
+
+        },
+
+        {},
+
+        {},
+
+        {}
+
+      ],
       [
         { "text": "Year", "style": "th" },
         { "text": "Demand", "style": "th" },
