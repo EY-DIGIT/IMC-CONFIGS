@@ -44,28 +44,28 @@
     "widths": ["15%", "20%", "15%", "20%", "15%", "15%"],
     "body": [
       [
-        { "text": "Property ID", "style": "th" },
+        { "text": "Property ID:", "style": "th" },
         { "text": "{{consumerID}}", "style": "td" },
-        { "text": "Old Property ID", "style": "th" },
+        { "text": "Old Property ID:", "style": "th" },
         { "text": "{{oldpropertyid}}", "style": "td" },
-        { "text": "Rate Zone", "style": "th" },
-        { "text": "{{rateZone}}", "style": "td" }
-      ],
-      [
-        { "text": "Owner Name", "style": "th" },
-        { "text": "{{payerName}}", "colSpan": 3, "style": "td" },
-        {},
-        {},
-        { "text": "Connection Date", "style": "th" },
+        { "text": "Connection Date:", "style": "th" },
         { "text": "{{paymentDate}}", "style": "td" }
       ],
       [
-        { "text": "Address", "style": "th" },
+        { "text": "Owner Name:", "style": "th" },
+        { "text": "{{payerName}}", "colSpan": 3, "style": "td" },
+        {},
+        {},
+        { "text": "Mobile No:", "style": "th" },
+        { "text": "{{payerContact}}", "style": "td" }
+      ],
+      [
+        { "text": "Address:", "style": "th" },
         { "text": "{{ptAddress}}", "colSpan": 3, "style": "td" },
         {}, 
         {},
-        { "text": "Zone/Ward", "style": "th" },
-        { "text": "{{zone}} / {{ward}}", "style": "td" }
+        { "text": "Rate Zone:", "style": "th" },
+        { "text": "{{rateZone}}", "style": "td" }
 
       ],
       [
