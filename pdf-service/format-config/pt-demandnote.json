@@ -44,42 +44,42 @@
     "widths": ["15%", "20%", "15%", "20%", "15%", "15%"],
     "body": [
       [
-        { "text": "Property ID:", "style": "th" },
+        { "text": "Property ID", "style": "th" },
         { "text": "{{consumerID}}", "style": "td" },
-        { "text": "Old Property ID:", "style": "th" },
+        { "text": "Old Property ID", "style": "th" },
         { "text": "{{oldpropertyid}}", "style": "td" },
-        { "text": "Connection Date:", "style": "th" },
-        { "text": "abcd", "style": "td" }
+        { "text": "Connection Date", "style": "th" },
+        { "text": "{{paymentDate}}", "style": "td" }
       ],
       [
-        { "text": "Owner Name:", "style": "th" },
+        { "text": "Owner Name", "style": "th" },
         { "text": "{{payerName}}", "colSpan": 3, "style": "td" },
         {},
         {},
-        { "text": "Mobile No:", "style": "th" },
+        { "text": "Mobile No", "style": "th" },
         { "text": "{{payerContact}}", "style": "td" }
       ],
       [
-        { "text": "Address:", "style": "th" },
+        { "text": "Address", "style": "th" },
         { "text": "{{ptAddress}}", "colSpan": 3, "style": "td" },
         {}, 
         {},
-        { "text": "Rate Zone:", "style": "th" },
+        { "text": "Rate Zone", "style": "th" },
         { "text": "{{rateZone}}", "style": "td" }
 
       ],
       [
-        { "text": "Mobile No", "style": "th" },
-        { "text": "{{payerContact}}", "colSpan": 2, "style": "td" },
-        {},
-        { "text": "Email", "style": "th" },
-        { "text": "{{ownerEmail}}", "colSpan": 2, "style": "td" },
-        {}
+        { "text": "Road Factor", "style": "th" },
+        { "text": "Main Road / Others", "colSpan": 2, "style": "td" },
+        { "text": "Exemption", "style": "th" },
+        { "text": "136 (a) : xyz", "colSpan": 2, "style": "td" },
+        { "text": "Essential Tax", "style": "th" },
+        { "text": "ATM / multiplex, etc.", "colSpan": 2, "style": "td" }      
         
       ],
       [
-        { "text": "Exemption", "style": "th" },
-        { "text": "{{}}", "colSpan": 3, "style": "td" },
+        { "text": "Other Factor", "style": "th" },
+        { "text": "Mobile Tower; Advertisement; Bond Road", "colSpan": 3, "style": "td" },
         {}, {}, 
         { "text": "Date", "style": "th" },
         { "text": "{{paymentDate}}",  "style": "td" }
