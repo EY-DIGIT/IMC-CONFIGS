@@ -134,30 +134,25 @@
   },
   "layout": {}
 },
-     {
+{
   "style": "TaxTable",
-  "margin": [0, 10, 0, 10],
   "table": {
-    "widths": ["50%", "50%"],
+    "widths": ["25%", "25%", "25%", "25%"],
+    "headerRows": 1,
+    "keepWithHeaderRows": 1,
+    "dontBreakRows": true,
     "body": [
-[
-        {
-          "text": "Summary Ledger",
-          "style": "tableHeader",
-          "colSpan": 2,
-          "alignment": "center",
-          "bold": true,
-          "fillColor": "#DAE1F3"
-        },
-        {}
+      [
+        { "text": "Year", "style": "th" },
+        { "text": "Demand", "style": "th" },
+        { "text": "Collection/Paid", "style": "th" },
+        { "text": "Cumulative Balance", "style": "th" }
       ],
-"{{#taxTableData}}[{\"text\":\"Year\",\"style\":\"th\"},{\"text\":\"{{tax_year}}\",\"style\":\"td\"}],[{\"text\":\"Property Tax\",\"style\":\"th\"},{\"text\":\"₹ {{tax_propertyTax}}\",\"style\":\"td\"}],[{\"text\":\"Consolidated Tax\",\"style\":\"th\"},{\"text\":\"₹ {{tax_samekitTax}}\",\"style\":\"td\"}],[{\"text\":\"Education Cess\",\"style\":\"th\"},{\"text\":\"₹ {{tax_educationCess}}\",\"style\":\"td\"}],[{\"text\":\"Water Cess\",\"style\":\"th\"},{\"text\":\"₹ {{tax_waterCess}}\",\"style\":\"td\"}],[{\"text\":\"Drainage Cess\",\"style\":\"th\"},{\"text\":\"₹ {{tax_drainageCess}}\",\"style\":\"td\"}],[{\"text\":\"Urban Development Cess\",\"style\":\"th\"},{\"text\":\"₹ {{tax_urbanDevCess}}\",\"style\":\"td\"}],[{\"text\":\"Service Charge\",\"style\":\"th\"},{\"text\":\"₹ {{tax_serviceCharge}}\",\"style\":\"td\"}],[{\"text\":\"Total Tax\",\"style\":\"th\"},{\"text\":\"₹ {{tax_totalTax}}\",\"style\":\"td\"}],[{\"text\":\"Penalty\",\"style\":\"th\"},{\"text\":\"₹ {{tax_penalty}}\",\"style\":\"td\"}],[{\"text\":\"Rebate\",\"style\":\"th\"},{\"text\":\"₹ {{tax_rebate}}\",\"style\":\"td\"}],[{\"text\":\"Lok Adalat Discount\",\"style\":\"th\"},{\"text\":\"₹ {{lokadalat}}\",\"style\":\"td\"}],[{\"text\":\"Net Tax\",\"style\":\"th\"},{\"text\":\"₹ {{tax_netTotal}}\",\"style\":\"td\"}],[{\"text\":\"Collection/Paid\",\"style\":\"th\"},{\"text\":\"₹ {{tax_paid}}\",\"style\":\"td\"}],[{\"text\":\"Cumulative Balance\",\"style\":\"th\"},{\"text\":\"₹ {{tax_cumulative}}\",\"style\":\"td\"}]{{/taxTableData}}"
-]
-
+      "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"{{tax_netTotal}}\",\"style\":\"td\"},{\"text\":\"{{tax_paid}}\",\"style\":\"td\"},{\"text\":\"{{tax_cumulative}}\",\"style\":\"td\"}]{{/taxTableData}}"
+    ]
   },
   "layout": {}
-}
-,
+},
 {
         "style": "newtaxTable",
         "table": {
