@@ -5,27 +5,7 @@
     "pageMargins": [30, 15, 30, 15],
     "defaultStyle": { "font": "Cambay" },
     "content": [
-{
-  "layout": {
-    "paddingLeft": 0,
-    "paddingRight": 0,
-    "paddingTop": 0,
-    "paddingBottom": 0
-  },
-  "table": {
-    "widths": ["*"],
-    "body": [
-      [
-        {
-          "text": "",
-          "border": [true, true, true, true],
-          "minHeight": 760
-        }
-      ]
-    ]
-  },
-  "margin": [0, 0, 0, -760]
-},
+
       {
         "image": "{{logoImage}}",
         "width": 300,
@@ -266,14 +246,14 @@
 },
 {
   "text": " ",
-  "margin": [0, 30, 0, 0]
+  "margin": [0, 5, 0, 0]
 },
 
 
 {
-  "text": "Terms & Condition",
+  "text": "Terms & Condition:",
   "bold": true,
-  "fontSize": 13,
+  "fontSize": 11,
   "margin": [0, 20, 0, 6]
 },
 {
@@ -283,13 +263,13 @@
     "अनुरोध है कि भुगतान के समय अपना मोबाइल क्रमांक अवश्य दें जिससे कि भुगतान की जानकारी आपको एसएमएस के द्वारा दी जा सके|",
     "समस्त प्रकार के करों / सेवा शुल्कों / देयों का भुगतान नगर निगम / नगर परिषद / नगर पालिका के कैश काउंटर पर अथवा सहायक राजस्व निरीक्षक के पास नकद, UPI, चेक, डिमांड ड्राफ्ट (DD), NEFT, RTGS तथा क्रेडिट/डेबिट कार्ड के माध्यम से किया जा सकता है।"
   ],
-  "fontSize": 11,
-  "margin": [0, 0, 0, 10]
+  "fontSize": 9,
+  "margin": [0, 0, 0, 5]
 },
 
 
 {
-  "margin": [0, 10, 0, 10],
+  "margin": [0, 5, 0, 10],
   "stack": [
     {
       "image": "{{qr_code_image}}",
