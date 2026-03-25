@@ -45,75 +45,76 @@
               {
                   "variable": "itemCode",
                   "value": {
-                    "path": "$.paymentDetails[0].bill.billDetails[0].billAccountDetails[0].taxHeadCode"
+                    "path": "$.itemDetails[0].itemCode"
                   }
               },
                {
                   "variable": "quantity",
                   "value": {
-                    "value": "1"
+                    "path": "$.itemDetails[0].quantity"
                   }
               },
               {
                   "variable": "rate",
                   "value": {
-                    "path": "$.paymentDetails[0].bill.billDetails[0].billAccountDetails[0].amount"
+                    "path": "$.itemDetails[0].rate"
                   }
               },
               {
                   "variable": "amount",
                   "value": {
-                    "path": "$.paymentDetails[0].bill.billDetails[0].billAccountDetails[0].adjustedAmount"
+                    "path": "$.itemDetails[0].totalAmount"
                   }
               },
               {
                   "variable": "description",
                   "value": {
-                    "path": "$.paymentDetails[0].bill.billDetails[0].billAccountDetails[0].taxHeadCode"
+                    "path": "$.itemDetails[0].description"
                   }
               },
               {
                   "variable": "serviceCharge",
                   "value": {
-                    "value": "0"
+                    "path": "$.serviceCharge"
                   }
               },
               {
                   "variable": "itemFees",
                   "value": {
-                    "value": "0"
+                    "path": "$.itemFees"
                   }
               },
               {
                   "variable": "formFees",
                   "value": {
-                    "value": "0"
+                    "path": "$.formFees"
                   }
               },
               {
                   "variable": "totalAmount",
                   "value": {
-                    "path": "$.paymentDetails[0].bill.totalAmount"
+                    "path": "$.totalAmount"
                   }
               },
               {
                   "variable": "applicationDate",
                   "value": {
-                    "path": "$.paymentDetails[0].bill.billDate"
+                    "path": "$.applicationDate"
                   },
                   "type": "date"
               },
               {
                   "variable": "tradeLicenseNo",
                   "value": {
-                    "path": "$.paymentDetails[0].bill.consumerCode"
+                    "path": "$.licenseNumber"
                   }
               },
               {
                 "variable": "user-name", 
                 "value": {
-                  "path": "$.payerName"
-                }
+                  "path": "$.userInfo.name"
+                },
+                "type":"selectFromRequestInfo"  
               },
               {
                 "variable": "payerContact", 
@@ -511,7 +512,7 @@
             "externalAPI": [     
               { 
                   "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                  "queryParam": "moduleName=tenant&masterName=tenants&tenantId={$.tenantId}&filter=%5B?(@.code=='{$.tenantId}')%5D",
+                  "queryParam": "moduleName=tenant&masterName=tenants&tenantId=mp&filter=%5B?(@.code=='{$.tenantId}')%5D",
                   "apiRequest": null,
                   "responseMapping":[
                     
@@ -547,7 +548,7 @@
               },
               { 
                 "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=tenant&masterName=footer&tenantId={$.tenantId}&filter=%5B?(@.code=='{$.tenantId}' %26%26 @.service=='{$.paymentDetails[0].businessService}')%5D",
+                "queryParam": "moduleName=tenant&masterName=footer&tenantId=pb&filter=%5B?(@.code=='{$.tenantId}' %26%26 @.service=='{$.paymentDetails[0].businessService}')%5D",
                 "apiRequest": null,
                 "responseMapping":[
                   {
