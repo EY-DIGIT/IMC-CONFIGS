@@ -31,7 +31,7 @@
 
   
 {
-        "text": "Assessment Year: 2025-26",
+        "text": "Assessment Year: {{tax_year}}",
         "fontSize": 9,
         "bold": true,
         "margin": [0, 0, 0, 8]
