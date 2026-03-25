@@ -49,7 +49,7 @@
         { "text": "Old Property ID:", "style": "th" },
         { "text": "{{oldpropertyid}}", "style": "td" },
         { "text": "Connection Date:", "style": "th" },
-        { "text": "{{paymentDate}}", "style": "td" }
+        { "text": "abcd", "style": "td" }
       ],
       [
         { "text": "Owner Name:", "style": "th" },
