@@ -381,6 +381,32 @@
 
                   ]
                 }
+              },
+              {
+                "variable": "newtaxTableData",
+                "value": { "path": "$.Calculation.propertyFYTaxSummaries[*]" },
+                "type": "array",
+                "format": {
+                  "type": "object",
+                  "scema": [
+                    { "variable": "tax_year",          "value": "year",           "type": "string", "defaultValue": "-" },
+                    { "variable": "tax_propertyTax",   "value": "propertyTax",    "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_samekitTax",    "value": "samekit",        "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_educationCess", "value": "educationCess",  "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_waterCess",     "value": "jalKar",         "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_drainageCess",  "value": "jalNikas",       "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_urbanDevCess",  "value": "urbanTax",       "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_serviceCharge", "value": "sevaKar",        "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_totalTax",      "value": "totalTax",       "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_rebate",        "value": "rebate",         "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_penalty",       "value": "penalty",        "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_netTotal",      "value": "netTax",         "type": "number", "defaultValue": 0 },
+                                                            { "variable": "tax_cumulative",    "value": "cumulativeBalance",      "type": "number", "defaultValue": 0 },
+                                                                                                                        { "variable": "tax_paid",          "value": "paidAmount",          "type": "number", "defaultValue": 0 }
+
+
+                  ]
+                }
               }
             ]
           },
