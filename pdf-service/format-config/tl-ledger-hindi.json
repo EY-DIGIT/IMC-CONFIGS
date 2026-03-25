@@ -1,0 +1,186 @@
+{
+  "key": "tl-ledger-hindi",
+  "config": {
+    "defaultStyle": {
+      "font": "Cambay",
+      "fontSize": 9
+
+     },
+           "pageMargins": [30, 20, 30, 15],
+
+    "content": [
+      {
+    "image": "{{logoImage}}",
+    "width": 300,
+    "absolutePosition": { "x": 150, "y": 200 }
+  },
+  {
+    "image": "{{headLogo}}",
+    "width": 80,
+    "alignment": "center",
+    "margin": [0, 0, 0, 6],
+    "opacity": 1
+  },
+  
+  {
+  "alignment": "center",
+  "stack": [
+    
+    {
+      "text": "Indore Nagar Nigam",
+      "fontSize": 15,
+      "margin": [0, 2, 0, 3]
+    },
+    {
+      "text": "Ledger Report",
+      "fontSize": 10,
+      "color": "#555555",
+      "margin": [0, 2, 0, 10]
+    }
+  ],
+  "margin": [0, 0, 0, 0]
+},
+
+ {
+  "style": "infoTable",
+  "margin": [0, 20, 0, 30],
+  "table": {
+    "widths": ["17%", "16%", "16%", "17%", "17%", "17%"],
+    "body": [
+      [
+        { "text": "पंजीकरण संख्या", "style": "th" },
+        { "text": "{{licenseNumber}}", "style": "td" },
+        { "text": "पुराना पंजीकरण संख्या ", "style": "th" },
+        { "text": "{{oldLicenseNumber}}", "style": "td" },
+        { "text": "पंजीकरण की तारीख", "style": "th" },
+        { "text": "{{applicationDate}}", "style": "td" }
+
+
+      ],
+      [
+        { "text": "मालिक", "style": "th" },
+        { "text": "{{name}}", "colSpan": 3, "style": "td" },
+        {},
+        {},
+        { "text": "आवेदन तिथि", "style": "th" },
+        { "text": "{{applicationDate}}", "style": "td" }
+      ],
+      [
+       { "text": "फर्म का पता", "style": "th" },
+        { "text": "{{address}}", "colSpan": 5, "style": "td" },
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        { "text": "फर्म का नाम", "style": "th" },
+        { "text": "{{tradeName}}", "colSpan": 2, "style": "td" },
+        {},
+        { "text": "मोबाइल नंबर", "style": "th" },
+        { "text": "{{mobile}}", "colSpan": 2, "style": "td" },
+        {}
+        
+      ],
+      [
+         { "text": "आइटम विवरण", "style": "th" },
+        { "text": "{{itemCode}} {{description}}", "colSpan": 3, "style": "td" },
+        {},
+        {},
+        { "text": "रिपोर्ट तैयार की गई", "style": "th" },
+        { "text": "{{issuedDate}}", "style": "td" }
+
+      ]
+    ]
+  }
+},
+
+{
+  "text": "{{calcTableTitle}}",
+  "style": "section-title",
+  "margin": [0, 0, 0, 6]
+},
+{
+  "style": "calcTable",
+  "margin": [0, 0, 0, 30],
+  "table": {
+    "widths": ["10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%"],
+    "headerRows": 2,
+    "keepWithHeaderRows": 1,
+    "dontBreakRows": true,
+    "body": [
+      [
+
+        {
+          "text": "वित्तीय सारांश",
+          "colSpan": 10,
+          "alignment": "center",
+          "style": "tableHeader",
+          "bold": true
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+        
+
+      ],
+      [
+        { "text": "वर्ष", "style": "th" },
+        { "text": "अर्जित शुल्क", "style": "th" },
+        { "text": "अधिभार", "style": "th" },
+        { "text": "सेवा", "style": "th" },
+        { "text": "फॉर्म", "style": "th" },
+        { "text": "बक़ाया", "style": "th" },
+        { "text": "अग्रिम", "style": "th" },
+        { "text": "कुल", "style": "th" },
+        { "text": "चुकाया गया", "style": "th" },
+        { "text": "शेष", "style": "th" }
+
+      ],
+      [
+        { "text": "{{financialYear}}", "style": "td" },
+        { "text": "{{itemFees}}", "style": "td" },
+        { "text": "0", "style": "td" },
+        { "text": "{{serviceCharge}}", "style": "td" },
+        { "text": "{{formFees}}", "style": "td" },
+        { "text": "XXXX", "style": "td" },
+        { "text": "XXXX", "style": "td" },
+        { "text": "{{totalAmount}}", "style": "td" },
+        { "text": "XXXX", "style": "td" },
+        { "text": "XXXX", "style": "td" }
+
+      ],
+      
+      [
+        { "text": "कुल", "bold": true, "style": "td", "colSpan": 7, "fillColor": "#F7E7DB" },
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {},
+        { "text": "{{totalAmount}}", "bold": true, "style": "td", "fillColor": "#F7E7DB" },
+        { "text": "{{totalAmount}}", "bold": true, "style": "td", "fillColor": "#F7E7DB" },
+        { "text": "00", "bold": true, "style": "td", "fillColor": "#F7E7DB" }
+      ]
+
+    ]
+  },
+  "layout": {}
+}
+
+    ],
+    "styles":{
+      "topline": { "fontSize": 8, "color": "#484848" },
+      "calcTable": { "fontSize": 9, "margin": [0, 0, 0, 0] }
+
+    }
+    
+  }
+}
