@@ -37,7 +37,7 @@
           "margin": [0, 0, 0, 1]
         },
         {
-          "text": "Renewal Receipt",
+          "text": "Payment Receipt",
           "fontSize": 11,
           "bold": true,
           "color": "#111827"
