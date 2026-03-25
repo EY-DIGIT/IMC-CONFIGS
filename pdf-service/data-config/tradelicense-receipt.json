@@ -21,100 +21,99 @@
               {
                   "variable": "address",
                   "value": {
-                    "path": "$.tradeLicenseDetail.owners[0].permanentAddress"
+                    "path": "$.payerAddress"
                   }
               }, 
               {
                   "variable": "name",
                   "value": {
-                    "path": "$.tradeLicenseDetail.owners[0].name"
+                    "path": "$.payerName"
                   }
               },
               {
                   "variable": "mobile",
                   "value": {
-                    "path": "$.tradeLicenseDetail.owners[0].mobileNumber"
+                    "path": "$.mobileNumber"
                   }
               },
               {
                   "variable": "email",
                   "value": {
-                    "path": "$.tradeLicenseDetail.owners[0].emailId"
+                    "path": "$.payerEmail"
                   }
               },
               {
                   "variable": "itemCode",
                   "value": {
-                    "path": "$.itemDetails[0].itemCode"
+                    "path": "$.paymentDetails[0].bill.billDetails[0].billAccountDetails[0].taxHeadCode"
                   }
               },
                {
                   "variable": "quantity",
                   "value": {
-                    "path": "$.itemDetails[0].quantity"
+                    "value": "1"
                   }
               },
               {
                   "variable": "rate",
                   "value": {
-                    "path": "$.itemDetails[0].rate"
+                    "path": "$.paymentDetails[0].bill.billDetails[0].billAccountDetails[0].amount"
                   }
               },
               {
                   "variable": "amount",
                   "value": {
-                    "path": "$.itemDetails[0].totalAmount"
+                    "path": "$.paymentDetails[0].bill.billDetails[0].billAccountDetails[0].adjustedAmount"
                   }
               },
               {
                   "variable": "description",
                   "value": {
-                    "path": "$.itemDetails[0].description"
+                    "path": "$.paymentDetails[0].bill.billDetails[0].billAccountDetails[0].taxHeadCode"
                   }
               },
               {
                   "variable": "serviceCharge",
                   "value": {
-                    "path": "$.serviceCharge"
+                    "value": "0"
                   }
               },
               {
                   "variable": "itemFees",
                   "value": {
-                    "path": "$.itemFees"
+                    "value": "0"
                   }
               },
               {
                   "variable": "formFees",
                   "value": {
-                    "path": "$.formFees"
+                    "value": "0"
                   }
               },
               {
                   "variable": "totalAmount",
                   "value": {
-                    "path": "$.totalAmount"
+                    "path": "$.paymentDetails[0].bill.totalAmount"
                   }
               },
               {
                   "variable": "applicationDate",
                   "value": {
-                    "path": "$.applicationDate"
+                    "path": "$.paymentDetails[0].bill.billDate"
                   },
                   "type": "date"
               },
               {
                   "variable": "tradeLicenseNo",
                   "value": {
-                    "path": "$.licenseNumber"
+                    "path": "$.paymentDetails[0].bill.consumerCode"
                   }
               },
               {
                 "variable": "user-name", 
                 "value": {
-                  "path": "$.userInfo.name"
-                },
-                "type":"selectFromRequestInfo"  
+                  "path": "$.payerName"
+                }
               },
               {
                 "variable": "payerContact", 
@@ -512,7 +511,7 @@
             "externalAPI": [     
               { 
                   "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                  "queryParam": "moduleName=tenant&masterName=tenants&tenantId=mp&filter=%5B?(@.code=='{$.tenantId}')%5D",
+                  "queryParam": "moduleName=tenant&masterName=tenants&tenantId={$.tenantId}&filter=%5B?(@.code=='{$.tenantId}')%5D",
                   "apiRequest": null,
                   "responseMapping":[
                     
@@ -548,7 +547,7 @@
               },
               { 
                 "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=tenant&masterName=footer&tenantId=pb&filter=%5B?(@.code=='{$.tenantId}' %26%26 @.service=='{$.paymentDetails[0].businessService}')%5D",
+                "queryParam": "moduleName=tenant&masterName=footer&tenantId={$.tenantId}&filter=%5B?(@.code=='{$.tenantId}' %26%26 @.service=='{$.paymentDetails[0].businessService}')%5D",
                 "apiRequest": null,
                 "responseMapping":[
                   {
