@@ -5,7 +5,26 @@
     "pageMargins": [30, 15, 30, 15],
     "defaultStyle": { "font": "Cambay" },
     "content": [
-
+{
+  "layout": {
+    "paddingLeft": 0,
+    "paddingRight": 0,
+    "paddingTop": 0,
+    "paddingBottom": 0
+  },
+  "table": {
+    "widths": ["*"],
+    "body": [
+      [
+        {
+          "text": "",
+          "border": [true, true, true, true],
+          "minHeight": 760
+        }
+      ]
+    ]
+  }
+},
       {
         "image": "{{logoImage}}",
         "width": 300,
