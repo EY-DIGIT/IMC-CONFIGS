@@ -107,7 +107,7 @@
           "colSpan": 9,
           "alignment": "center",
           "bold": true,
-          "fillColor": "#BBDCFC"
+          "fillColor": "#DAE1F3"
         },
         {},
         {},
@@ -164,10 +164,10 @@
     "widths": ["25%", "25%", "25%", "25%"],
     "body": [
       [
-        { "text": "Arrear: ₹ {{arrearAmt}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 8 },
-        { "text": "Current Year Net Tax: ₹ {{currentYearNetTax}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 8 },
-        { "text": "Previous Balance: ₹ {{previousBalance}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 8 },
-        { "text": "Total Payable Amount: ₹ {{totalDemandPayable}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 8 }
+        { "text": "Arrear: ₹ {{arrearAmt}}", "bold": true, "fillColor": "#FAE3D5","fontSize": 8 },
+        { "text": "Current Year Net Tax: ₹ {{currentYearNetTax}}", "bold": true, "fillColor": "#FAE3D5","fontSize": 8 },
+        { "text": "Previous Balance: ₹ {{previousBalance}}", "bold": true, "fillColor": "#FAE3D5","fontSize": 8 },
+        { "text": "Total Payable Amount: ₹ {{totalDemandPayable}}", "bold": true, "fillColor": "#FAE3D5","fontSize": 8 }
       ]
     ]
   },
