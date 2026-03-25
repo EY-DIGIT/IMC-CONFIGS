@@ -3,20 +3,6 @@
   "config": {
     "pageSize": "A4",
     "pageMargins": [30, 15, 30, 15],
-    "background": [
-  {
-    "canvas": [
-      {
-        "type": "rect",
-        "x": 15,
-        "y": 10,
-        "w": "pageWidth - 30",
-        "h": "pageHeight - 20",
-        "lineWidth": 1
-      }
-    ]
-  }
-],
     "defaultStyle": { "font": "Cambay" },
     "content": [
 
