@@ -106,7 +106,8 @@
           "style": "tableHeader",
           "colSpan": 9,
           "alignment": "center",
-          "bold": true
+          "bold": true,
+          "fillColor": "#DAE1F3"
         },
         {},
         {},
@@ -145,7 +146,8 @@
           "style": "tableHeader",
           "colSpan": 2,
           "alignment": "center",
-          "bold": true
+          "bold": true,
+          "fillColor": "#DAE1F3"
         },
         {}
       ],
@@ -157,15 +159,43 @@
 }
 ,
 {
+        "style": "newtaxTable",
+        "table": {
+          "widths": ["7%", "8%", "8%", "9%", "6%", "8%", "10%", "8%", "6%", "7%", "8%","9%", "6%"],
+          "headerRows": 1,
+          "keepWithHeaderRows": 1,
+          "dontBreakRows": true,
+          "body": [
+            [
+              { "text": "{{th_year}}", "style": "th" },
+              { "text": "{{th_property_tax}}", "style": "th" },
+              { "text": "{{th_samekit_tax}}", "style": "th" },
+              { "text": "{{th_education_cess}}", "style": "th" },
+              { "text": "{{th_water_cess}}", "style": "th" },
+              { "text": "{{th_drainage_cess}}", "style": "th" },
+              { "text": "{{th_urban_dev_cess}}", "style": "th" },
+              { "text": "{{th_service_charge}}", "style": "th" },
+              { "text": "{{th_total_tax}}", "style": "th" },
+              { "text": "{{th_rebate}}", "style": "th" },
+              { "text": "{{th_penalty}}", "style": "th" },
+              { "text": "Lok Adalat Discount", "style": "th"},
+              { "text": "{{th_net_total}}", "style": "th" }
+            ],
+            "{{#newtaxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"{{tax_propertyTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_samekitTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_educationCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_waterCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_drainageCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_urbanDevCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_serviceCharge}}\",\"style\":\"td\"},{\"text\":\"{{tax_totalTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_rebate}}\",\"style\":\"td\"},{\"text\":\"{{tax_penalty}}\",\"style\":\"td\"},{\"text\":\"{{lokadalat}}\",\"style\":\"td\"},{\"text\":\"{{tax_netTotal}}\",\"style\":\"td\"}]{{/newtaxTableData}}"
+          ]
+        },
+        "layout": {}
+      },
+{
   "margin": [0, 10, 0, 10],
   "table": {
     "widths": ["25%", "25%", "25%", "25%"],
     "body": [
       [
-        { "text": "Arrear: ₹ {{arrearAmt}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 8 },
-        { "text": "Current Year Net Tax: ₹ {{currentYearNetTax}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 8 },
-        { "text": "Previous Balance: ₹ {{previousBalance}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 8 },
-        { "text": "Total Payable Amount: ₹ {{totalDemandPayable}}", "bold": true, "fillColor": "#FFF2E6","fontSize": 8 }
+        { "text": "Arrear: ₹ {{arrearAmt}}", "bold": true, "fillColor": "#FAE3D5","fontSize": 8 },
+        { "text": "Current Year Net Tax: ₹ {{currentYearNetTax}}", "bold": true, "fillColor": "#FAE3D5","fontSize": 8 },
+        { "text": "Previous Balance: ₹ {{previousBalance}}", "bold": true, "fillColor": "#FAE3D5","fontSize": 8 },
+        { "text": "Total Payable Amount: ₹ {{totalDemandPayable}}", "bold": true, "fillColor": "#FAE3D5","fontSize": 8 }
       ]
     ]
   },
@@ -185,10 +215,10 @@
 },
 {
   "ol": [
-    "The amount of this bill shall be paid within 15 days from the date of issue. Failing which, recovery proceedings shall be initiated under Sections 174/175 of the Madhya Pradesh Municipal Corporation Act, 1956.",
-    "In case the amount mentioned in this bill has already been deposited into the Municipal Corporation treasury, this bill shall be treated as null and void.",
-    "The citizen is requested to provide their mobile number at the time of payment so that payment-related information and confirmation may be communicated through SMS.",
-    "Payment of all types of taxes, service charges, and dues may be made at the cash counter of the Municipal Corporation or with the Assistant Revenue Inspector through Cash, UPI, Cheque, Demand Draft (DD), NEFT, RTGS, or Credit/Debit Cards."
+    "आप इस देयक प्राप्ति से 15 दिवस के अन्दर उक्त राशि का भुगतान करें अन्यथा म.प्र. नगर पालिका अधिनियम 1956 की धारा 174/175 के तहत वसूली की सख्त कार्यवाही की जायेगी|",
+    "उपर्युक्त देयक का भुगतान यदि आपके द्वारा निगम कोष में जमा किया गया है तो उक्त देयक निरस्त माना जायेगा|",
+    "अनुरोध है कि भुगतान के समय अपना मोबाइल क्रमांक अवश्य दें जिससे कि भुगतान की जानकारी आपको एसएमएस के द्वारा दी जा सके|",
+    "समस्त प्रकार के करों / सेवा शुल्कों / देयों का भुगतान नगर निगम / नगर परिषद / नगर पालिका के कैश काउंटर पर अथवा सहायक राजस्व निरीक्षक के पास नकद, UPI, चेक, डिमांड ड्राफ्ट (DD), NEFT, RTGS तथा क्रेडिट/डेबिट कार्ड के माध्यम से किया जा सकता है।"
   ],
   "fontSize": 11,
   "margin": [0, 0, 0, 10]
