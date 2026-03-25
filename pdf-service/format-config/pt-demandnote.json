@@ -9,7 +9,7 @@
       {
         "image": "{{logoImage}}",
         "width": 400,
-        "absolutePosition": { "x": 100, "y": 100 }
+        "absolutePosition": { "x": 100, "y": 150 }
       },
       {
         "columns": [
