@@ -216,33 +216,22 @@
         {
           "stack": [
             {
-              "text": "Digitally Signed",
+              "text": "Abhinav Kumar",
               "alignment": "center",
               "bold": true,
               "fontSize": 9,
-              "margin": [0, 2, 0, 6]
+              "margin": [0, 2, 0, 2]
             },
             {
-              "text": "Signed by:",
+              "text": "Digitally Signed By:",
               "fontSize": 8
             },
             {
-              "text": "Commissioner",
-              "fontSize": 8,
-              "bold": true
-            },
-            {
-              "text": "Indore Nagar Nigam",
-              "fontSize": 8,
-              "bold": true,
-              "margin": [0, 0, 0, 6]
-            },
-            {
-              "text": "Date: {{signedDate}}",
+              "text": "Date: {{applicationDate}}",
               "fontSize": 7
             },
             {
-              "text": "Certificate ID: {{certificateId}}",
+              "text": "Certificate ID: {{licenseNumber}}",
               "fontSize": 7
             }
           ],
