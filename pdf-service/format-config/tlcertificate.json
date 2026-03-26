@@ -216,7 +216,7 @@
         {
           "stack": [
             {
-              "text": "Abhinav Kumar",
+              "text": "Sadhna Chowdhary",
               "alignment": "center",
               "bold": true,
               "fontSize": 9,
@@ -231,9 +231,14 @@
               "fontSize": 7
             },
             {
-              "text": "Certificate ID: {{licenseNumber}}",
+              "text": "Updated On: YYY/MM/DD HH:MM",
+              "fontSize": 7
+            },
+            {
+              "text": "Downloaded on: YYY/MM/DD HH:MM",
               "fontSize": 7
             }
+            
           ],
           "margin": 8
         }
