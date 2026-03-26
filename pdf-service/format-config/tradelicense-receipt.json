@@ -288,7 +288,8 @@
     ],
     "styles":{
       "topline": { "fontSize": 8, "color": "#484848" },
-      "calcTable": { "fontSize": 9, "margin": [0, 0, 0, 0] }
+      "calcTable": { "fontSize": 9, "margin": [0, 0, 0, 0] },
+      "th": { "bold": true}
 
     }
     
