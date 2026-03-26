@@ -43,9 +43,9 @@
               { "variable": "essentialTax",  "value": { "path": "$.Calculation.essentialTax" }},
               { "variable": "roadFactor",  "value": { "path": "$.Calculation.roadFactor" }},
               { "variable": "exemption", "value": { "path": "$.Calculation.exemption" }},
-              { "variable": "mobileTower", "value": { "path": "$.Calculation.otherFactors[0].mobileTower" }},
-              { "variable": "bondRoad", "value": { "path": "$.Calculation.otherFactors[0].bondRoad" }},
-              { "variable": "advertisement", "value": { "path": "$.Calculation.otherFactors[0].advertisement" }},
+              { "variable": "mobileTower", "value": { "path": "$.Calculation.otherFactors[0].mobileTower.active" }},
+              { "variable": "bondRoad", "value": { "path": "$.Calculation.otherFactors[0].bondRoad.active" }},
+              { "variable": "advertisement", "value": { "path": "$.Calculation.otherFactors[0].advertisement.active" }},
 
               {
                 "variable": "payment_receipt",
