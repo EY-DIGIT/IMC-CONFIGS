@@ -235,16 +235,43 @@
     "widths": ["25%", "25%", "25%", "25%"],
     "body": [
       [
-        { "text": "       Arrear: ₹ {{arrearAmt}}", "bold": true, "fillColor": "#FAE3D5","fontSize": 8 },
-        { "text": "Current Year Net Tax: ₹ {{currentYearNetTax}}", "bold": true, "fillColor": "#FAE3D5","fontSize": 8 },
-        { "text": "Previous Balance: ₹ {{previousBalance}}", "bold": true, "fillColor": "#FAE3D5","fontSize": 8 },
-        { "text": "Total Payable Amount: ₹ {{totalDemandPayable}}", "bold": true, "fillColor": "#FAE3D5","fontSize": 8 }
+        {
+          "text": "Arrear: ₹ {{arrearAmt}}",
+          "bold": true,
+          "fontSize": 8,
+          "fillColor": "#FAE3D5",
+          "lineHeight": 1.2,
+          "margin": [6, 6, 6, 6]
+        },
+        {
+          "text": "Current Year Net Tax: ₹ {{currentYearNetTax}}",
+          "bold": true,
+          "fontSize": 8,
+          "fillColor": "#FAE3D5",
+          "lineHeight": 1.2,
+          "margin": [6, 6, 6, 6]
+        },
+        {
+          "text": "Previous Balance: ₹ {{previousBalance}}",
+          "bold": true,
+          "fontSize": 8,
+          "fillColor": "#FAE3D5",
+          "lineHeight": 1.2,
+          "margin": [6, 6, 6, 6]
+        },
+        {
+          "text": "Total Payable Amount: ₹ {{totalDemandPayable}}",
+          "bold": true,
+          "fontSize": 8,
+          "fillColor": "#FAE3D5",
+          "lineHeight": 1.2,
+          "margin": [6, 6, 6, 6]
+        }
       ]
     ]
   },
   "layout": "noBorders"
 },
-
 
 
 {
