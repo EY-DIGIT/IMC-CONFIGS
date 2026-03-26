@@ -206,7 +206,54 @@
       "margin": [0, 0, 0, 6]
     }
   ]
+},
+{
+  "absolutePosition": { "x": 360, "y": 680 },
+  "table": {
+    "widths": [210],
+    "body": [
+      [
+        {
+          "stack": [
+            {
+              "text": "Digitally Signed",
+              "alignment": "center",
+              "bold": true,
+              "fontSize": 9,
+              "margin": [0, 2, 0, 6]
+            },
+            {
+              "text": "Signed by:",
+              "fontSize": 8
+            },
+            {
+              "text": "Commissioner",
+              "fontSize": 8,
+              "bold": true
+            },
+            {
+              "text": "Indore Nagar Nigam",
+              "fontSize": 8,
+              "bold": true,
+              "margin": [0, 0, 0, 6]
+            },
+            {
+              "text": "Date: {{signedDate}}",
+              "fontSize": 7
+            },
+            {
+              "text": "Certificate ID: {{certificateId}}",
+              "fontSize": 7
+            }
+          ],
+          "margin": 8
+        }
+      ]
+    ]
+  },
+  "layout": "lightHorizontalLines"
 }
+
 
              
             
