@@ -39,6 +39,7 @@
               { "variable": "ownerEmail", "value": { "path": "$.payerEmail" }},
               { "variable": "oldpropertyid", "value": { "path": "$.oldPropertyId" }},
               { "variable": "lokadalat", "value": { "path": "$.lokAdalatDiscount" }},
+              { "variable": "assessmentYear", "value": { "path": "$.Calculation.propertyFYDetails[-1:].year" } },
               {
                 "variable": "payment_receipt",
                 "value": {

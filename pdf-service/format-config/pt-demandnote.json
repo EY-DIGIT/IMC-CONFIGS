@@ -31,11 +31,12 @@
 
   
 {
-        "text": "Assessment Year: 2025-26",
-        "fontSize": 9,
-        "bold": true,
-        "margin": [0, 0, 0, 8]
-      },
+  "text": "Assessment Year: {{assessmentYear}}",
+  "fontSize": 9,
+  "bold": true,
+  "margin": [0, 0, 0, 8]
+},
+
 
      {
   "style": "infoTable",
