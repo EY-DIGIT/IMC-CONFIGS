@@ -175,7 +175,7 @@
         { "text": "Collection/Paid", "style": "th" },
         { "text": "Cumulative Balance", "style": "th" }
       ],
-      "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"{{tax_netTotal}}\",\"style\":\"td\"},{\"text\":\"{{tax_paid}}\",\"style\":\"td\"},{\"text\":\"{{tax_cumulative}}\",\"style\":\"td\"}]{{/taxTableData}}"
+      "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_netTotal}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_paid}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_cumulative}}\",\"style\":\"td\"}]{{/taxTableData}}"
     ]
   },
   "layout": {}
