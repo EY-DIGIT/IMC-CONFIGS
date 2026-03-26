@@ -282,10 +282,10 @@
       "text": [
         { "text": "Scan to pay or goto ", "fontSize": 10 },
         {
-          "text": "citizenservicesdev.eydemoapp.in",
+          "text": "citizenservicesuat.eydemoapp.in",
           "fontSize": 10,
           "color": "blue",
-          "link": "https://citizenservicesdev.eydemoapp.in"
+          "link": "https://citizenservicesuat.eydemoapp.in"
         }
       ],
       "alignment": "left",
