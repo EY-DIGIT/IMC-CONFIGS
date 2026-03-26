@@ -292,7 +292,7 @@
               },
               {
   "variable": "qr_code_image",
-  "url": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://citizenservicesdev.eydemoapp.in/",
+  "url": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://citizenservicesuat.eydemoapp.in/",
   "type": "image"
 },
 
