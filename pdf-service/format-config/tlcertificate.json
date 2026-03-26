@@ -208,56 +208,45 @@
   ]
 },
 {
-  "alignment": "right",
-  "width": 260,
+  "absolutePosition": { "x": 360, "y": 680 },
   "table": {
-    "widths": ["*"],
+    "widths": [210],
     "body": [
       [
         {
-          "border": [true, true, true, true],
-          "borderColor": ["#D6D6D6", "#D6D6D6", "#D6D6D6", "#D6D6D6"],
           "stack": [
+            
             {
               "text": "Sadhna Chowdhary",
-              "bold": true,
-              "fontSize": 11,
               "alignment": "center",
-              "margin": [0, 4, 0, 4]
+              "bold": true,
+              "fontSize": 9,
+              "margin": [0, 2, 0, 2]
             },
             {
-              "text": "Digitally Signed By",
-              "fontSize": 8,
-              "alignment": "center"
+              "text": "Digitally Signed By:    Date 2024/10/24",
+              "fontSize": 8
+            },
+             {
+              "text": "Sadhna Chowdhari    15: 34: 33 + 05'30'",
+              "fontSize": 8
             },
             {
-              "text": "Sadhna Chowdhary",
-              "fontSize": 8,
-              "alignment": "center"
+              "text": "Updated On: YYY/MM/DD HH:MM",
+              "fontSize": 8
             },
             {
-              "text": "Date: {{signedDate}} {{signedTime}}",
-              "fontSize": 8,
-              "alignment": "center"
-            },
-            {
-              "text": "Updated On: {{updatedOn}}",
-              "fontSize": 7,
-              "alignment": "center"
-            },
-            {
-              "text": "Downloaded On: {{downloadedOn}}",
-              "fontSize": 7,
-              "alignment": "center"
+              "text": "Downloaded on: YYY/MM/DD HH:MM",
+              "fontSize": 8
             }
+            
           ],
-          "margin": [8, 6, 8, 6]
+          "margin": 8
         }
       ]
     ]
   },
-  "layout": "noBorders",
-  "margin": [0, 10, 0, 0]
+  "layout": "lightHorizontalLines"
 }
 
 
