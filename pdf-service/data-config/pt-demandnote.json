@@ -40,6 +40,13 @@
               { "variable": "oldpropertyid", "value": { "path": "$.oldPropertyId" }},
               { "variable": "lokadalat", "value": { "path": "$.lokAdalatDiscount" }},
               { "variable": "assessmentYear", "value": { "path": "$.Calculation.propertyFYDetails[-1:].year" } },
+              { "variable": "essentialTax",  "value": { "path": "$.Calculation.essentialTax" }},
+              { "variable": "roadFactor",  "value": { "path": "$.Calculation.roadFactor" }},
+              { "variable": "exemption", "value": { "path": "$.Calculation.exemption" }},
+              { "variable": "mobileTower", "value": { "path": "$.Calculation.otherFactors[0].mobileTower.active" }},
+              { "variable": "bondRoad", "value": { "path": "$.Calculation.otherFactors[0].bondRoad.active" }},
+              { "variable": "advertisement", "value": { "path": "$.Calculation.otherFactors[0].advertisement.active" }},
+
               {
                 "variable": "payment_receipt",
                 "value": {

@@ -71,16 +71,16 @@
       ],
       [
         { "text": "Road Factor", "style": "th" },
-        { "text": "Main Road / Others", "style": "td" },
+        { "text": "{{roadFactor}}", "style": "td" },
         { "text": "Exemption", "style": "th" },
-        { "text": "136 (a) : xyz", "style": "td" },
+        { "text": "{{exemption}}", "style": "td" },
         { "text": "Essential Tax", "style": "th" },
-        { "text": "ATM / multiplex, etc.", "style": "td" }      
+        { "text": "{{essentialTax}}", "style": "td" }      
         
       ],
       [
         { "text": "Other Factor", "style": "th" },
-        { "text": "Mobile Tower; Advertisement; Bond Road", "colSpan": 3, "style": "td" },
+        { "text": "Mobile Tower: {{mobileTower}} ; Advertisement: {{advertisement}} ; Bond Road: {{bondRoad}} ", "colSpan": 3, "style": "td" },
         {}, {}, 
         { "text": "Date", "style": "th" },
         { "text": "{{paymentDate}}",  "style": "td" }
