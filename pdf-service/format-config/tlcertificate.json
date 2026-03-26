@@ -231,10 +231,6 @@
               "fontSize": 8
             },
             {
-              "text": "Date: {{applicationDate}}",
-              "fontSize": 8
-            },
-            {
               "text": "Updated On: YYY/MM/DD HH:MM",
               "fontSize": 8
             },
