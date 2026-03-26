@@ -223,20 +223,24 @@
               "margin": [0, 2, 0, 2]
             },
             {
-              "text": "Digitally Signed By:",
+              "text": "Digitally Signed By:    Date 2024/10/24",
+              "fontSize": 8
+            },
+             {
+              "text": "Sadhna Chowdhari    15: 34: 33 + 05'30'",
               "fontSize": 8
             },
             {
               "text": "Date: {{applicationDate}}",
-              "fontSize": 7
+              "fontSize": 8
             },
             {
               "text": "Updated On: YYY/MM/DD HH:MM",
-              "fontSize": 7
+              "fontSize": 8
             },
             {
               "text": "Downloaded on: YYY/MM/DD HH:MM",
-              "fontSize": 7
+              "fontSize": 8
             }
             
           ],
