@@ -208,13 +208,30 @@
   ]
 },
 {
-  "absolutePosition": { "x": 360, "y": 700 },
+  "absolutePosition": { "x": 360, "y": 680 },
   "table": {
     "widths": [210],
     "body": [
       [
         {
           "stack": [
+            
+{
+      "canvas": [
+        {
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 260,
+          "h": 88,
+          "r": 8,
+          "lineWidth": 1,
+          "lineColor": "#D6D6D6",
+          "fillColor": "#FFFFFF"
+        }
+      ]
+    },
+
             {
               "text": "Sadhna Chowdhary",
               "alignment": "center",
