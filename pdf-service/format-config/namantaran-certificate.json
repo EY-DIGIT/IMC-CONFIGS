@@ -156,66 +156,32 @@
     {
       "columns": [
         {
-          "width": "32%",
+          "width": "28%",
           "text": "1.  नामांतरण शुल्क राशि:",
           "fontSize": 9,
           "bold": true
         },
         {
-          "width": "18%",
+          "width": "14%",
           "text": "₹ 0000000000",
           "fontSize": 9,
           "bold": true
         },
         {
-          "width": "30%",
-          "text": "पावती क्रं.: RN-PT-00000",
+          "width": "12%",
+          "text": "पावती क्रं.:",
           "fontSize": 9,
           "bold": true
         },
         {
-          "width": "20%",
-          "text": "दिनांक: 11/11/1111",
-          "fontSize": 9,
-          "bold": true
-        }
-      ],
-      "margin": [0, 0, 0, 6]
-    },
-    {
-      "columns": [
-        {
-          "width": "32%",
-          "text": "2.  राजस्व शुल्क राशि:",
+          "width": "16%",
+          "text": "RN-PT-00000",
           "fontSize": 9,
           "bold": true
         },
         {
-          "width": "18%",
-          "text": "₹ 0000000000",
-          "fontSize": 9,
-          "bold": true
-        },
-        {
-          "width": "30%",
-          "text": "पावती क्रं.: RN-PT-00000",
-          "fontSize": 9,
-          "bold": true
-        },
-        {
-          "width": "20%",
-          "text": "दिनांक: 11/11/1111",
-          "fontSize": 9,
-          "bold": true
-        }
-      ],
-      "margin": [0, 0, 0, 6]
-    },
-    {
-      "columns": [
-        {
-          "width": "32%",
-          "text": "3.  जाहिर सूचना दिनांक:",
+          "width": "12%",
+          "text": "दिनांक:",
           "fontSize": 9,
           "bold": true
         },
@@ -224,15 +190,84 @@
           "text": "11/11/1111",
           "fontSize": 9,
           "bold": true
-        },
+        }
+      ],
+      "margin": [0, 0, 0, 6]
+    },
+    {
+      "columns": [
         {
-          "width": "30%",
-          "text": "समाचार पत्र: <Newspaper Name>",
+          "width": "28%",
+          "text": "2.  राजस्व शुल्क राशि:",
           "fontSize": 9,
           "bold": true
         },
         {
-          "width": "20%",
+          "width": "14%",
+          "text": "₹ 0000000000",
+          "fontSize": 9,
+          "bold": true
+        },
+        {
+          "width": "12%",
+          "text": "पावती क्रं.:",
+          "fontSize": 9,
+          "bold": true
+        },
+        {
+          "width": "16%",
+          "text": "RN-PT-00000",
+          "fontSize": 9,
+          "bold": true
+        },
+        {
+          "width": "12%",
+          "text": "दिनांक:",
+          "fontSize": 9,
+          "bold": true
+        },
+        {
+          "width": "18%",
+          "text": "11/11/1111",
+          "fontSize": 9,
+          "bold": true
+        }
+      ],
+      "margin": [0, 0, 0, 6]
+    },
+    {
+      "columns": [
+        {
+          "width": "28%",
+          "text": "3.  जाहिर सूचना दिनांक:",
+          "fontSize": 9,
+          "bold": true
+        },
+        {
+          "width": "14%",
+          "text": "11/11/1111",
+          "fontSize": 9,
+          "bold": true
+        },
+        {
+          "width": "12%",
+          "text": "समाचार पत्र:",
+          "fontSize": 9,
+          "bold": true
+        },
+        {
+          "width": "16%",
+          "text": "<Newspaper Name>",
+          "fontSize": 9,
+          "bold": true
+        },
+        {
+          "width": "12%",
+          "text": "",
+          "fontSize": 9
+        },
+        {
+          "width": "18%",
           "text": "",
           "fontSize": 9
         }
