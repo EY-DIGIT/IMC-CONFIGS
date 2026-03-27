@@ -20,10 +20,12 @@
       {
         "alignment": "center",
         "stack": [
-          { "text": "Indore Nagar Nigam", "style": "header-title" },
-          { "text": "Property Tax", "style": "header-subtitle" },
-          { "text": "Municipal Act 1956 Sec. 186", "style": "info-value" },
-          { "text": "Namantran Receipt", "style": "info-value" }
+          { "text": "कार्यालय नगर पालिक निगम इंदौर", "style": "header-title" },
+          { "text": "झोन क्रं . {{zone}}, राजस्व विभाग", "style": "header-subtitle" },
+          { "text": "म. प्र. नगर पालिक निगम, 1956 की धारा 167 के अंतर्गत", "style": "info-value" },
+          { "text": "नामांतरण दाखला ", "style": "info-value" },
+          { "text": "विक्रयपत्र", "style": "info-value" }
+
 
         ],
         "margin": [0, 0, 0, 6]
