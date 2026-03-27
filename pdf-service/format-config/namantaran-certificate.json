@@ -156,70 +156,60 @@
     {
       "columns": [
         {
-          "width": "50%",
-          "text": "1.  नामांतरण शुल्क राशि: ₹ 0000000000",
+          "width": "55%",
+          "text": "1.  नामांतरण शुल्क राशि:  ₹ 0000000000",
           "fontSize": 9,
           "bold": true
         },
         {
-          "width": "50%",
-          "columns": [
-            {
-              "width": "60%",
-              "text": "पावती क्रं.: RN-PT-00000",
-              "fontSize": 9,
-              "bold": true
-            },
-            {
-              "width": "40%",
-              "text": "दिनांक: 11/11/1111",
-              "fontSize": 9,
-              "bold": true
-            }
-          ]
+          "width": "30%",
+          "text": "पावती क्रं.:  RN-PT-00000",
+          "fontSize": 9,
+          "bold": true
+        },
+        {
+          "width": "15%",
+          "text": "दिनांक:  11/11/1111",
+          "fontSize": 9,
+          "bold": true
         }
       ],
-      "margin": [0, 0, 0, 4]
+      "margin": [0, 0, 0, 6]
     },
     {
       "columns": [
         {
-          "width": "50%",
-          "text": "2.  राजस्व शुल्क राशि: ₹ 0000000000",
+          "width": "55%",
+          "text": "2.  राजस्व शुल्क राशि:  ₹ 0000000000",
           "fontSize": 9,
           "bold": true
         },
         {
-          "width": "50%",
-          "columns": [
-            {
-              "width": "60%",
-              "text": "पावती क्रं.: RN-PT-00000",
-              "fontSize": 9,
-              "bold": true
-            },
-            {
-              "width": "40%",
-              "text": "दिनांक: 11/11/1111",
-              "fontSize": 9,
-              "bold": true
-            }
-          ]
+          "width": "30%",
+          "text": "पावती क्रं.:  RN-PT-00000",
+          "fontSize": 9,
+          "bold": true
+        },
+        {
+          "width": "15%",
+          "text": "दिनांक:  11/11/1111",
+          "fontSize": 9,
+          "bold": true
         }
       ],
-      "margin": [0, 0, 0, 4]
+      "margin": [0, 0, 0, 6]
     },
     {
       "columns": [
         {
-          "width": "50%",
-          "text": "3.  जाहिर सूचना दिनांक: 11/11/1111",
+          "width": "55%",
+          "text": "3.  जाहिर सूचना दिनांक:  11/11/1111",
           "fontSize": 9,
           "bold": true
         },
         {
-          "width": "50%",
-          "text": "समाचार पत्र: <Newspaper Name>",
+          "width": "45%",
+          "text": "समाचार पत्र:  <Newspaper Name>",
           "fontSize": 9,
           "bold": true
         }
