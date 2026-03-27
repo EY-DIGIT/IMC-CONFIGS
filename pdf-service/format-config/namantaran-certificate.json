@@ -22,9 +22,9 @@
         "stack": [
           { "text": "कार्यालय नगर पालिक निगम इंदौर", "style": "header-title","bold": true },
           { "text": "झोन क्रं . {{zone}}, राजस्व विभाग", "style": "header-subtitle","bold": true},
-          { "text": "(म. प्र. नगर पालिक निगम, 1956 की धारा 167 के अंतर्गत)", "style": "header-subtitle", "fontSize": 8,"bold": true},
-          { "text": "नामांतरण दाखला ", "style": "header-subtitle","fontSize": 9,"bold": true },
-          { "text": "विक्रयपत्र", "style": "header-subtitle","fontSize": 9,"bold": true }
+          { "text": "(म. प्र. नगर पालिक निगम, 1956 की धारा 167 के अंतर्गत)", "style": "header-subtitle", "fontSize": 10,"bold": true},
+          { "text": "नामांतरण दाखला ", "style": "header-subtitle","fontSize": 11,"bold": true },
+          { "text": "विक्रयपत्र", "style": "header-subtitle","fontSize": 11,"bold": true }
 
 
         ],
