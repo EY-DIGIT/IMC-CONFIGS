@@ -156,20 +156,26 @@
     {
       "columns": [
         {
-          "width": "55%",
-          "text": "1.  नामांतरण शुल्क राशि:  ₹ 0000000000",
+          "width": "32%",
+          "text": "1.  नामांतरण शुल्क राशि:",
+          "fontSize": 9,
+          "bold": true
+        },
+        {
+          "width": "18%",
+          "text": "₹ 0000000000",
           "fontSize": 9,
           "bold": true
         },
         {
           "width": "30%",
-          "text": "पावती क्रं.:  RN-PT-00000",
+          "text": "पावती क्रं.: RN-PT-00000",
           "fontSize": 9,
           "bold": true
         },
         {
-          "width": "15%",
-          "text": "दिनांक:  11/11/1111",
+          "width": "20%",
+          "text": "दिनांक: 11/11/1111",
           "fontSize": 9,
           "bold": true
         }
@@ -179,20 +185,26 @@
     {
       "columns": [
         {
-          "width": "55%",
-          "text": "2.  राजस्व शुल्क राशि:  ₹ 0000000000",
+          "width": "32%",
+          "text": "2.  राजस्व शुल्क राशि:",
+          "fontSize": 9,
+          "bold": true
+        },
+        {
+          "width": "18%",
+          "text": "₹ 0000000000",
           "fontSize": 9,
           "bold": true
         },
         {
           "width": "30%",
-          "text": "पावती क्रं.:  RN-PT-00000",
+          "text": "पावती क्रं.: RN-PT-00000",
           "fontSize": 9,
           "bold": true
         },
         {
-          "width": "15%",
-          "text": "दिनांक:  11/11/1111",
+          "width": "20%",
+          "text": "दिनांक: 11/11/1111",
           "fontSize": 9,
           "bold": true
         }
@@ -202,16 +214,27 @@
     {
       "columns": [
         {
-          "width": "55%",
-          "text": "3.  जाहिर सूचना दिनांक:  11/11/1111",
+          "width": "32%",
+          "text": "3.  जाहिर सूचना दिनांक:",
           "fontSize": 9,
           "bold": true
         },
         {
-          "width": "45%",
-          "text": "समाचार पत्र:  <Newspaper Name>",
+          "width": "18%",
+          "text": "11/11/1111",
           "fontSize": 9,
           "bold": true
+        },
+        {
+          "width": "30%",
+          "text": "समाचार पत्र: <Newspaper Name>",
+          "fontSize": 9,
+          "bold": true
+        },
+        {
+          "width": "20%",
+          "text": "",
+          "fontSize": 9
         }
       ]
     }
