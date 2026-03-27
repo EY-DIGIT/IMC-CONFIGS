@@ -66,52 +66,62 @@
           "fontSize": 9,
           "margin": [0, 0, 0, 6]
         },
-       {
+     {
   "table": {
-    "widths": ["55%", "45%"],
+    "widths": ["100%"],
     "body": [
       [
         {
-          "text": "संपत्ति कर मूल खाता:",
-          "fontSize": 8,
-          "bold": true,
-          "margin": [4, 3, 4, 3]
-        },
-        {
-          "text": "<OG Property ID>",
-          "fontSize": 8,
-          "margin": [4, 3, 4, 3]
-        }
-      ],
-      [
-        {
-          "text": "संपत्ति कर फर्जी खाता:",
-          "fontSize": 8,
-          "bold": true,
-          "margin": [4, 3, 4, 3]
-        },
-        {
-          "text": "<New Property ID 1>",
-          "fontSize": 8,
-          "margin": [4, 3, 4, 3]
-        }
-      ],
-      [
-        {
-          "text": "",
-          "fontSize": 8,
-          "margin": [4, 3, 4, 3]
-        },
-        {
-          "text": "<New Property ID n>",
-          "fontSize": 8,
-          "margin": [4, 3, 4, 3]
+          "columns": [
+            {
+              "width": "55%",
+              "stack": [
+                {
+                  "text": "संपत्ति कर मूल खाता:",
+                  "fontSize": 8,
+                  "bold": true,
+                  "margin": [0, 0, 0, 4]
+                },
+                {
+                  "text": "संपत्ति कर फर्जी खाता:",
+                  "fontSize": 8,
+                  "bold": true,
+                  "margin": [0, 0, 0, 4]
+                },
+                {
+                  "text": " ",
+                  "fontSize": 8
+                }
+              ]
+            },
+            {
+              "width": "45%",
+              "stack": [
+                {
+                  "text": "<OG Property ID>",
+                  "fontSize": 8,
+                  "margin": [0, 0, 0, 4]
+                },
+                {
+                  "text": "<New Property ID 1>",
+                  "fontSize": 8,
+                  "margin": [0, 0, 0, 4]
+                },
+                {
+                  "text": "<New Property ID n>",
+                  "fontSize": 8
+                }
+              ]
+            }
+          ],
+          "margin": [6, 6, 6, 6]
         }
       ]
     ]
   },
   "margin": [0, 6, 0, 6]
 }
+
       ]
     }
   ]
