@@ -271,47 +271,34 @@
   ]
 },
           {
-
-  "style": "calcTable",
-
-  "margin": [0, 0, 0, 10],
-
-  "table": {
-
-    "widths": ["20%", "20%", "20%", "20%", "20%"],
-
-    "headerRows": 1,
-
-    "keepWithHeaderRows": 1,
-
-    "dontBreakRows": true,
-
-    "body": [
-
-      [
-
-        { "text": "Usage Type", "style": "th" },
-
-        { "text": "Usage Factor", "style": "th" },
-
-        { "text": "Floor No.", "style": "th" },
-
-        { "text": "Construction Type", "style": "th" },
-
-        { "text": "Area (Sq. ft.)", "style": "th" }
-
-      
-
-      ],
-
-      "{{#calcTableData}}[{\"text\":\"{{calc_usageType}}\",\"style\":\"td\"},{\"text\":\"{{calc_usageFactor}}\",\"style\":\"td\"},{\"text\":\"{{calc_floorNo}}\",\"style\":\"td\"},{\"text\":\"{{calc_constructionType}}\",\"style\":\"td\"},{\"text\":\"{{calc_area}}\",\"style\":\"td\"}]{{/calcTableData}}"
-
-    ]
-
-  },
-
-  "layout": {}
-
+  "stack": [
+    {
+      "text": "संपत्ति एरिया कुल क्षेत्रफल विवरण:",
+      "fontSize": 10,
+      "bold": true,
+      "margin": [0, 0, 0, 6]
+    },
+    {
+      "style": "calcTable",
+      "margin": [0, 0, 0, 10],
+      "table": {
+        "widths": ["20%", "20%", "20%", "20%", "20%"],
+        "headerRows": 1,
+        "keepWithHeaderRows": 1,
+        "dontBreakRows": true,
+        "body": [
+          [
+            { "text": "Usage Type", "style": "th", "fillColor": "#e6e6e6" },
+            { "text": "Usage Factor", "style": "th", "fillColor": "#e6e6e6" },
+            { "text": "Floor No.", "style": "th", "fillColor": "#e6e6e6" },
+            { "text": "Construction Type", "style": "th", "fillColor": "#e6e6e6" },
+            { "text": "Area (Sq. ft.)", "style": "th", "fillColor": "#e6e6e6" }
+          ],
+         "{{#calcTableData}}[{\"text\":\"{{calc_usageType}}\",\"style\":\"td\"},{\"text\":\"{{calc_usageFactor}}\",\"style\":\"td\"},{\"text\":\"{{calc_floorNo}}\",\"style\":\"td\"},{\"text\":\"{{calc_constructionType}}\",\"style\":\"td\"},{\"text\":\"{{calc_area}}\",\"style\":\"td\"}]{{/calcTableData}}"
+        ]
+      }
+    }
+  ]
 },
       {
   "style": "infoTable",
