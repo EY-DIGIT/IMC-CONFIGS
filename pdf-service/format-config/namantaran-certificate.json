@@ -20,11 +20,11 @@
       {
         "alignment": "center",
         "stack": [
-          { "text": "कार्यालय नगर पालिक निगम इंदौर", "style": "header-title" },
-          { "text": "झोन क्रं . {{zone}}, राजस्व विभाग", "style": "header-subtitle" },
-          { "text": "म. प्र. नगर पालिक निगम, 1956 की धारा 167 के अंतर्गत", "style": "info-value" },
-          { "text": "नामांतरण दाखला ", "style": "info-value" },
-          { "text": "विक्रयपत्र", "style": "info-value" }
+          { "text": "कार्यालय नगर पालिक निगम इंदौर", "style": "header-title","bold": true },
+          { "text": "झोन क्रं . {{zone}}, राजस्व विभाग", "style": "header-subtitle","bold": true},
+          { "text": "(म. प्र. नगर पालिक निगम, 1956 की धारा 167 के अंतर्गत)", "style": "header-subtitle", "fontSize": 8,"bold": true},
+          { "text": "नामांतरण दाखला ", "style": "header-subtitle","fontSize": 9,"bold": true },
+          { "text": "विक्रयपत्र", "style": "header-subtitle","fontSize": 9,"bold": true }
 
 
         ],
@@ -104,7 +104,7 @@
     "styles": {
       "topline": { "fontSize": 10, "color": "#484848" },
       "header-title": { "fontSize": 15,"bold": true, "color": "#000000", "margin": [0, -3, 0, 0] },
-      "header-subtitle": { "fontSize": 13,"bold": true, "color": "#000000", "margin": [0, 2, 0, 0] },
+      "header-subtitle": { "fontSize": 14,"bold": true, "color": "#000000", "margin": [0, 2, 0, 0] },
       "office-header-title": { "fontSize": 12,"bold": true, "color": "#000000" },
       "meta-label": { "fontSize": 9, "color": "#000000", "margin": [2, 2, 0, 2] },
       "meta-value": { "fontSize": 9, "color": "#000000", "margin": [0, 2, 0, 2] },
