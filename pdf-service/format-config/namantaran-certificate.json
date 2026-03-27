@@ -37,11 +37,11 @@
           "margin": [0, 0, 0, 4]
         },
         {
-          "text": "<Salutation> <New Owner Name>,",
+          "text": "<Salutation> {{payerName}},",
           "fontSize": 9
         },
         {
-          "text": "<Correspondence Address>,",
+          "text": "{{ptAddress}},",
           "fontSize": 9
         },
         {
@@ -55,7 +55,7 @@
       "stack": [
         
         {
-          "text": "दिनांक: DD/MM/YYYY",
+          "text": "दिनांक: {{paymentDate}}",
           "alignment": "right",
           "fontSize": 9,
           "margin": [0, 0, 0, 6]
@@ -92,7 +92,7 @@
               "width": "45%",
               "stack": [
                 {
-                  "text": "<OG Property ID>",
+                  "text": "{{propertyId}}",
                   "fontSize": 8,
                   "margin": [0, 0, 0, 4]
                 },
@@ -127,7 +127,7 @@
       "text": [
         { "text": "विषय: ", "bold": true },
         {
-          "text": "<OG Door/House No.>, <OG Address>, <OG Colony>, <Ward>, <Zone>, <Pincode>, इंदौर (म. प्र.) के संपत्ति कर खाता क्रमांक I-20 085-12345 पर नामांतरण करने हेतु।"
+          "text": "<OG Door/House No.>, {{ptAddress}}, {{colony}}, {{ward}}, {{zone}}, <Pincode>, इंदौर (म. प्र.) के संपत्ति कर खाता क्रमांक I-20 085-12345 पर नामांतरण करने हेतु।"
         }
       ],
       "fontSize": 9,
@@ -139,7 +139,7 @@
       "margin": [0, 0, 0, 6]
     },
     {
-      "text": "नगर पालिक निगम के कर वसूली लेजर में स्थित मकान क्रमांक <OG Door/House No.>, <OG Address>, <OG Colony>, <Ward>, <Zone>, <Pincode>, इंदौर (म. प्र.) पर पूर्व में दर्ज <Original Owner Name> <Relationship> <Father/Husband Name> के स्थान पर <New Owner Name> <Relationship> <Father/Husband Name>, तथा <Joint New Owner Name> <Relationship> <Father/Husband Name> (संयुक्त स्वामित्व की स्थिति में लागू) का नाम अंकित कर दिया गया है।",
+      "text": "नगर पालिक निगम के कर वसूली लेजर में स्थित मकान क्रमांक <OG Door/House No.>, {{ptAddress}}, {{colony}}, {{ward}}, {{zone}}, <Pincode>, इंदौर (म. प्र.) पर पूर्व में दर्ज <Original Owner Name> <Relationship> <Father/Husband Name> के स्थान पर <New Owner Name> <Relationship> <Father/Husband Name>, तथा <Joint New Owner Name> <Relationship> <Father/Husband Name> (संयुक्त स्वामित्व की स्थिति में लागू) का नाम अंकित कर दिया गया है।",
       "fontSize": 9
     }
   ]
@@ -183,7 +183,7 @@
         },
         {
           "width": "14%",
-          "text": "11/11/1111",
+          "text": "{{paymentDate}}",
           "fontSize": 9,
           "bold": true
         }
@@ -226,7 +226,7 @@
         },
         {
           "width": "14%",
-          "text": "11/11/1111",
+          "text": "{{paymentDate}}",
           "fontSize": 9,
           "bold": true
         }
@@ -243,7 +243,7 @@
         },
         {
           "width": "18%",
-          "text": "11/11/1111",
+          "text": "{{paymentDate}}",
           "fontSize": 9,
           "bold": true
         },
@@ -308,7 +308,7 @@
           "alignment": "right",
           "stack": [
             {
-              "text": "सहायक राजस्व अधिकारी, ज़ोन क्र. <XX>",
+              "text": "सहायक राजस्व अधिकारी, ज़ोन क्र. {{zone}}",
               "fontSize": 9,
               "bold": true
             },
@@ -361,7 +361,7 @@
           "alignment": "right",
           "stack": [
             {
-              "text": "सहायक राजस्व अधिकारी, ज़ोन क्र. <XX>",
+              "text": "सहायक राजस्व अधिकारी, ज़ोन क्र. {{zone}}",
               "fontSize": 9,
               "bold": true
             },
