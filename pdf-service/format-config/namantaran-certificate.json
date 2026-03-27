@@ -31,6 +31,72 @@
         "margin": [0, 0, 0, 6]
       },
       {
+  "margin": [0, 10, 0, 10],
+  "columns": [
+    {
+      "width": "60%",
+      "stack": [
+        {
+          "text": "आवेदन क्रमांक: IM-PT-1234556",
+          "fontSize": 9,
+          "bold": true,
+          "margin": [0, 0, 0, 4]
+        },
+        {
+          "text": "<Salutation> <New Owner Name>,",
+          "fontSize": 9
+        },
+        {
+          "text": "<Correspondence Address>,",
+          "fontSize": 9
+        },
+        {
+          "text": "इंदौर (म. प्र.)",
+          "fontSize": 9
+        }
+      ]
+    },
+    {
+      "width": "40%",
+      "stack": [
+        {
+          "text": "विक्रयपत्र",
+          "alignment": "right",
+          "bold": true,
+          "fontSize": 9,
+          "margin": [0, 0, 0, 6]
+        },
+        {
+          "text": "दिनांक: DD/MM/YYYY",
+          "alignment": "right",
+          "fontSize": 9,
+          "margin": [0, 0, 0, 6]
+        },
+        {
+          "table": {
+            "widths": ["60%", "40%"],
+            "body": [
+              [
+                { "text": "संपत्ति कर मूल खाता:", "fontSize": 8, "bold": true },
+                { "text": "<OG Property ID>", "fontSize": 8 }
+              ],
+              [
+                { "text": "संपत्ति कर फर्जी खाता:", "fontSize": 8, "bold": true },
+                { "text": "<New Property ID 1>", "fontSize": 8 }
+              ],
+              [
+                { "text": "", "fontSize": 8 },
+                { "text": "<New Property ID n>", "fontSize": 8 }
+              ]
+            ]
+          },
+          "layout": "lightHorizontalLines"
+        }
+      ]
+    }
+  ]
+},
+      {
   "style": "infoTable",
   "margin": [0, 10, 0, 10],
   "table": {
