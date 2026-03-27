@@ -156,37 +156,40 @@
     {
       "columns": [
         {
-          "width": "28%",
+          "width": "30%",
           "text": "1.  नामांतरण शुल्क राशि:",
           "fontSize": 9,
-          "bold": true
+          "bold": true,
+          "margin": [0, 0, 4, 0]
         },
         {
-          "width": "14%",
+          "width": "16%",
           "text": "₹ 0000000000",
           "fontSize": 9,
           "bold": true
         },
         {
-          "width": "12%",
+          "width": "14%",
           "text": "पावती क्रं.:",
           "fontSize": 9,
-          "bold": true
+          "bold": true,
+          "margin": [0, 0, 4, 0]
         },
         {
-          "width": "16%",
+          "width": "18%",
           "text": "RN-PT-00000",
           "fontSize": 9,
           "bold": true
         },
         {
-          "width": "12%",
+          "width": "11%",
           "text": "दिनांक:",
           "fontSize": 9,
-          "bold": true
+          "bold": true,
+          "margin": [0, 0, 4, 0]
         },
         {
-          "width": "18%",
+          "width": "11%",
           "text": "11/11/1111",
           "fontSize": 9,
           "bold": true
@@ -197,37 +200,40 @@
     {
       "columns": [
         {
-          "width": "28%",
+          "width": "30%",
           "text": "2.  राजस्व शुल्क राशि:",
           "fontSize": 9,
-          "bold": true
+          "bold": true,
+          "margin": [0, 0, 4, 0]
         },
         {
-          "width": "14%",
+          "width": "16%",
           "text": "₹ 0000000000",
           "fontSize": 9,
           "bold": true
         },
         {
-          "width": "12%",
+          "width": "14%",
           "text": "पावती क्रं.:",
           "fontSize": 9,
-          "bold": true
+          "bold": true,
+          "margin": [0, 0, 4, 0]
         },
         {
-          "width": "16%",
+          "width": "18%",
           "text": "RN-PT-00000",
           "fontSize": 9,
           "bold": true
         },
         {
-          "width": "12%",
+          "width": "11%",
           "text": "दिनांक:",
           "fontSize": 9,
-          "bold": true
+          "bold": true,
+          "margin": [0, 0, 4, 0]
         },
         {
-          "width": "18%",
+          "width": "11%",
           "text": "11/11/1111",
           "fontSize": 9,
           "bold": true
@@ -238,38 +244,30 @@
     {
       "columns": [
         {
-          "width": "28%",
+          "width": "30%",
           "text": "3.  जाहिर सूचना दिनांक:",
           "fontSize": 9,
-          "bold": true
+          "bold": true,
+          "margin": [0, 0, 4, 0]
         },
         {
-          "width": "14%",
+          "width": "16%",
           "text": "11/11/1111",
           "fontSize": 9,
           "bold": true
         },
         {
-          "width": "12%",
+          "width": "14%",
           "text": "समाचार पत्र:",
           "fontSize": 9,
-          "bold": true
+          "bold": true,
+          "margin": [0, 0, 4, 0]
         },
         {
-          "width": "16%",
+          "width": "40%",
           "text": "<Newspaper Name>",
           "fontSize": 9,
           "bold": true
-        },
-        {
-          "width": "12%",
-          "text": "",
-          "fontSize": 9
-        },
-        {
-          "width": "18%",
-          "text": "",
-          "fontSize": 9
         }
       ]
     }
