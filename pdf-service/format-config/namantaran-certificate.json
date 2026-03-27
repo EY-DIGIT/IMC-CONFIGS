@@ -66,34 +66,51 @@
           "fontSize": 9,
           "margin": [0, 0, 0, 6]
         },
-        {
+       {
   "table": {
-    "widths": ["100%"],
+    "widths": ["55%", "45%"],
     "body": [
       [
         {
-          "table": {
-            "widths": ["60%", "40%"],
-            "body": [
-              [
-                { "text": "संपत्ति कर मूल खाता:", "fontSize": 8, "bold": true },
-                { "text": "<OG Property ID>", "fontSize": 8 }
-              ],
-              [
-                { "text": "संपत्ति कर फर्जी खाता:", "fontSize": 8, "bold": true },
-                { "text": "<New Property ID 1>", "fontSize": 8 }
-              ],
-              [
-                { "text": "", "fontSize": 8 },
-                { "text": "<New Property ID n>", "fontSize": 8 }
-              ]
-            ]
-          }
+          "text": "संपत्ति कर मूल खाता:",
+          "fontSize": 8,
+          "bold": true,
+          "margin": [4, 3, 4, 3]
+        },
+        {
+          "text": "<OG Property ID>",
+          "fontSize": 8,
+          "margin": [4, 3, 4, 3]
+        }
+      ],
+      [
+        {
+          "text": "संपत्ति कर फर्जी खाता:",
+          "fontSize": 8,
+          "bold": true,
+          "margin": [4, 3, 4, 3]
+        },
+        {
+          "text": "<New Property ID 1>",
+          "fontSize": 8,
+          "margin": [4, 3, 4, 3]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "fontSize": 8,
+          "margin": [4, 3, 4, 3]
+        },
+        {
+          "text": "<New Property ID n>",
+          "fontSize": 8,
+          "margin": [4, 3, 4, 3]
         }
       ]
     ]
   },
-  "margin": [0, 0, 0, 0]
+  "margin": [0, 6, 0, 6]
 }
       ]
     }
