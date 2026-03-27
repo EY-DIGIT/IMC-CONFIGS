@@ -59,19 +59,18 @@
     {
       "width": "40%",
       "stack": [
-        {
-          "text": "विक्रयपत्र",
-          "alignment": "right",
-          "bold": true,
-          "fontSize": 9,
-          "margin": [0, 0, 0, 6]
-        },
+        
         {
           "text": "दिनांक: DD/MM/YYYY",
           "alignment": "right",
           "fontSize": 9,
           "margin": [0, 0, 0, 6]
         },
+        {
+  "table": {
+    "widths": ["100%"],
+    "body": [
+      [
         {
           "table": {
             "widths": ["60%", "40%"],
@@ -89,9 +88,13 @@
                 { "text": "<New Property ID n>", "fontSize": 8 }
               ]
             ]
-          },
-          "layout": "lightHorizontalLines"
+          }
         }
+      ]
+    ]
+  },
+  "margin": [0, 0, 0, 0]
+}
       ]
     }
   ]
