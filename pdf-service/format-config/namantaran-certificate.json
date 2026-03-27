@@ -7,16 +7,10 @@
     "content": [
       {
         "image": "{{logoImage}}",
-        "width": 600,
+        "width": 500,
         "absolutePosition": { "x": 150, "y": 200 }
       },
-      {
-        "columns": [
-          { "text": "Payment Receipt", "style": "topline" },
-          { "text": "{{paymentDate}}", "alignment": "right", "style": "topline" }
-        ],
-        "margin": [0, 0, 0, 10]
-      },
+      
       {
         "alignment": "center",
         "stack": [
@@ -381,72 +375,8 @@
       ]
     }
   ]
-},
-      {
-  "style": "infoTable",
-  "margin": [0, 10, 0, 10],
-  "table": {
-    "widths": ["15%", "20%", "15%", "20%", "15%", "15%"],
-    "body": [
-      [
-        { "text": "Property ID", "style": "th" },
-        { "text": "{{propertyId}}", "style": "td" },
-        { "text": "Receipt No", "style": "th" },
-        { "text": "{{receiptNo}}", "style": "td" },
-        { "text": "Payment Mode", "style": "th" },
-        { "text": "{{paymentMode}}", "style": "td" }
-      ],
-      [
-        { "text": "Owner Name", "style": "th" },
-        { "text": "{{payerName}}", "colSpan": 3, "style": "td" },
-        {},
-        {},
-        { "text": "Date", "style": "th" },
-        { "text": "{{paymentDate}}", "style": "td" }
-      ],
-      [
-        { "text": "Property Address", "style": "th" },
-        { "text": "{{ptAddress}}", "colSpan": 3, "style": "td" },
-        {}, 
-        {},
-        { "text": "Zone/Ward", "style": "th" },
-        { "text": "{{zone}} / {{ward}}", "style": "td" }
-
-      ],
-      [
-        { "text": "Colony", "style": "th" },
-        { "text": "{{colony}}", "colSpan": 2, "style": "td" },
-        {},
-        { "text": "Mobile No", "style": "th" },
-        { "text": "{{payerContact}}", "colSpan": 2, "style": "td" },
-        {}
-        
-      ]
-    ]
-  }
-},
-{
-  "style": "TaxTable",
-  "margin": [0, 10, 0, 10],
-  "table": {
-    "widths": ["50%", "50%"],
-    "body": [
-[
-        {
-          "text": "Namantran Fees Details",
-          "style": "tableHeader",
-          "colSpan": 2,
-          "alignment": "center",
-          "bold": true
-        },
-        {}
-      ],
-"{{#taxTableData}}[{\"text\":\"Head\",\"style\":\"th\"},{\"text\":\"Amount (₹)\",\"style\":\"th\"}],[{\"text\":\"Namantran Fees\",\"style\":\"th\"},{\"text\":\"{{namantranFees}}\",\"style\":\"td\"}],[{\"text\":\"Rajwad Fees\",\"style\":\"th\"},{\"text\":\"{{rajwadFees}}\",\"style\":\"td\"}],[{\"text\":\"Total Payable Amount\",\"style\":\"th\"},{\"text\":\"{{totalAmountPaid}}\",\"style\":\"td\"}]{{/taxTableData}}"
-]
-
-  },
-  "layout": {}
 }
+  
     
       
       
