@@ -32,27 +32,27 @@
   "alignment": "center",
   "stack": [
     {
-      "text": "Indore Nagar Nigam",
+      "text": "इंदौर नगर निगम",
       "fontSize": 14,
       "bold": true,
       "color": "#E06C2B",
       "margin": [0, 5, 0, 2]
     },
     {
-      "text": "Trade License Certificate",
+      "text": "व्यापार लाइसेंस प्रमाणपत्र",
       "fontSize": 12,
       "bold": true,
       "color": "#000000",
       "margin": [0, 2, 0, 2]
     },
     {
-      "text": "Issued under Section 366 and 427 of the Municipal Corporation Act, 1956",
+      "text": "नगर निगम अधिनियम, 1956 की धारा 366 एवं 427 के अंतर्गत जारी",
       "fontSize": 10,
       "color": "#555555",
       "margin": [0, 2, 0, 3]
     },
     {
-      "text": "0437 : Barhi Nagar Parishad",
+      "text": "0437 : बरही नगर परिषद",
       "fontSize": 11,
       "bold": true,
       "color": "#000000",
@@ -72,9 +72,9 @@
     "widths": ["33%", "33%", "34%"],
     "body": [
       [
-        { "text": "Firm Name", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
-        { "text": "Registration ID", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
-        { "text": "License Validity", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] }
+        { "text": "फर्म का नाम", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
+        { "text": "पंजीकरण आईडी", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
+        { "text": "लाइसेंस की वैधता", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] }
       ],
       [
         { "text": "{{tradeName}}", "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
@@ -98,45 +98,45 @@
     "widths": ["25%", "25%", "25%", "25%"],
     "body": [
       [
-        { "text": "Applicant Name", "bold": true, "alignment": "center" },
+        { "text": "आवेदक का नाम", "bold": true, "alignment": "center" },
         { "text": "{{applicantname}}" },
-        { "text": "Application Date", "bold": true, "alignment": "center" },
+        { "text": "आवेदन तिथि", "bold": true, "alignment": "center" },
         { "text": "{{applicationDate}}" }
       ],
       
       [ { "text": "", "colSpan": 4, "margin": [0, 3, 0, 3] }, {}, {}, {} ],
 
       [
-        { "text": "S/O", "bold": true, "alignment": "center" },
+        { "text": "पिता का नाम", "bold": true, "alignment": "center" },
         { "text": "{{fatherHusbandName}}" },
-        { "text": "Serial No.", "bold": true, "alignment": "center" },
+        { "text": "क्रम संख्या", "bold": true, "alignment": "center" },
         { "text": "{{applicationNumber}}" }
       ],
       
       [ { "text": "", "colSpan": 4, "margin": [0, 3, 0, 3] }, {}, {}, {} ],
 
       [
-        { "text": "Firm Type", "bold": true, "alignment": "center" },
+        { "text": "फर्म का प्रकार ", "bold": true, "alignment": "center" },
         { "text": "firmType" },
-        { "text": "Trade Type", "bold": true, "alignment": "center" },
+        { "text": "व्यापार का प्रकार", "bold": true, "alignment": "center" },
         { "text": "{{description}}" }
       ],
       
       [ { "text": "", "colSpan": 4, "margin": [0, 3, 0, 3] }, {}, {}, {} ],
 
       [
-        { "text": "Zone", "bold": true, "alignment": "center" },
+        { "text": "क्षेत्र", "bold": true, "alignment": "center" },
         { "text": "{{zone}}" },
-        { "text": "Ward", "bold": true, "alignment": "center" },
+        { "text": "वार्ड", "bold": true, "alignment": "center" },
         { "text": "{{ward}}" }
       ],
       
       [ { "text": "", "colSpan": 4, "margin": [0, 3, 0, 3] }, {}, {}, {} ],
 
       [
-        { "text": "Total Fee", "bold": true, "alignment": "center" },
+        { "text": "कुल शुल्क", "bold": true, "alignment": "center" },
         { "text": "₹ {{amount}}" },
-        { "text": "Address", "bold": true, "alignment": "center" },
+        { "text": "पता", "bold": true, "alignment": "center" },
         { "text": "{{address}}" }
       ]
     ]
@@ -145,7 +145,7 @@
   "margin": [0, 8, 0, 10]
 },
 {
-  "text": "TRADE TYPE",
+  "text": "व्यापार का प्रकार",
   "bold": true,
   "margin": [0, 10, 0, 6]
 },
@@ -154,11 +154,11 @@
     "widths": ["20%", "20%", "20%", "20%", "20%"],
     "body": [
       [
-        { "text": "Item Code", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
-        { "text": "Description", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
-        { "text": "Quantity", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
-        { "text": "Rate", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
-        { "text": "Amount", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] }
+        { "text": "वस्तु कोड", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
+        { "text": "विवरण", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
+        { "text": "गुणवत्ता", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
+        { "text": "दर", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
+        { "text": "राशि", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] }
       ],
       [
         { "text": "{{itemCode}}", "alignment": "center", "margin": [0, 8, 0, 8] },
@@ -175,22 +175,24 @@
 
 },
 {
-  "text": "NOTES",
+  "text": "टिप्पणी",
   "bold": true,
   "fontSize": 9,
   "margin": [0, 5, 0, 6]
 },
 {
   "ol": [
-    "The license must be presented upon inspection by the authorized officer of the Municipal Corporation.",
-    "It is mandatory to obtain a new license in case of a change in the location or name of the business.",
-    "The license is issued only where the policy/rules/regulations of the concerned policy/council permit it.",
-    "Essential information/documents will be considered missing, and appropriate legal action will be taken if they are not provided.",
-    "The department will not be responsible for any disputes related to rent, guarantee, and ownership.",
-    "If the business is closed, the license/cancellation application must be submitted; otherwise, it will be mandatory.",
-    "Compliance with rules and instructions issued from time to time by the administration and the department is mandatory.",
-    "The conditions for compliance with the applicable laws/regulations on the licensed business are issued from time to time.",
-    "The license is issued subject to compliance with the provisions of the relevant laws of the Cigarettes and Other Tobacco Products Act, 2003, and the Smoke-Free Public Places Rules, 2008."
+   
+  "नगर निगम के अधिकृत अधिकारी द्वारा निरीक्षण के समय यह लाइसेंस प्रस्तुत करना अनिवार्य होगा।",
+  "व्यवसाय के स्थान अथवा नाम में परिवर्तन होने की स्थिति में नया लाइसेंस प्राप्त करना अनिवार्य होगा।",
+  "यह लाइसेंस केवल उसी स्थिति में जारी किया जाता है जहाँ संबंधित नीति/परिषद/स्थानीय निकाय द्वारा इसकी अनुमति प्रदान की जाती है।",
+  "आवश्यक जानकारी/दस्तावेज उपलब्ध न कराए जाने की स्थिति में उन्हें अपूर्ण माना जाएगा एवं आवश्यक विधिक कार्यवाही की जाएगी।",
+  "किराया, जमानत एवं स्वामित्व से संबंधित किसी भी प्रकार के विवाद के लिए विभाग उत्तरदायी नहीं होगा।",
+  "व्यवसाय बंद होने की स्थिति में लाइसेंस निरस्तीकरण हेतु आवेदन प्रस्तुत करना अनिवार्य होगा, अन्यथा यह अनिवार्य माना जाएगा।",
+  "प्रशासन एवं विभाग द्वारा समय‑समय पर जारी किए गए नियमों एवं निर्देशों का पालन करना अनिवार्य है।",
+  "लाइसेंसधारी व्यवसाय पर लागू कानूनों/नियमों के अनुपालन की शर्तें समय‑समय पर जारी की जाती हैं।",
+  "लाइसेंस सिगरेट तथा अन्य तंबाकू उत्पाद (प्रतिबंध एवं विनियमन) अधिनियम, 2003 तथा धूम्रपान‑मुक्त सार्वजनिक स्थल नियम, 2008 के प्रावधानों के अनुपालन के अधीन जारी किया जाता है।"
+
   ],
   "fontSize": 7,
   "margin": [0, 0, 0, 10]
