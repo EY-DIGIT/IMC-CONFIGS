@@ -65,13 +65,13 @@
     "body": [
       [
         { "text": "Receipt No", "style": "th" },
-        { "text": "{{receiptNo}}", "style": "td", "bold":true, "fontSize": 9 },
+        { "text": "{{receiptNo}}", "style": "td", "bold":true, "fontSize": 10 },
         { "text": "Date", "style": "th" },
         { "text": "{{applicationDate}}", "style": "td" }
       ],
       [
         { "text": "Registration No", "style": "th" },
-        { "text": "{{tradeLicenseNo}}", "style": "td", "bold":true, "fontSize": 9 },
+        { "text": "{{tradeLicenseNo}}", "style": "td", "bold":true, "fontSize": 10 },
         { "text": "Registration Date", "style": "th" },
         { "text": "{{issuedDate}}", "style": "td" }
       ],
