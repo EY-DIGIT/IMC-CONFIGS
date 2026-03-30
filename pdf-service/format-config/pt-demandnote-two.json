@@ -23,7 +23,7 @@
         "alignment": "center",
         "stack": [
           { "text": "Indore Municipal Corporation", "style": "header-title", "fontsize": 13 },
-          { "text": "Demand Notice Under Section 173", "style": "header-subtitle", "fontsize": 12 }
+          { "text": "Demand Notice Under Section 174", "style": "header-subtitle", "fontsize": 12 }
           
         ],
         "margin": [0, 0, 0, 10]
