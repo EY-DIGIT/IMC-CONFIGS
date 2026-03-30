@@ -2,7 +2,7 @@
   "key": "namantaran-certificate",
   "config": {
     "pageSize": "A4",
-    "pageMargins": [30, 30, 30, 15],
+    "pageMargins": [30, 50, 30, 15],
     "defaultStyle": { "font": "Cambay" },
     "content": [
       {
