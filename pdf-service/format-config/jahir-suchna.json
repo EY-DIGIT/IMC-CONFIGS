@@ -5,14 +5,9 @@
     "pageMargins": [30, 15, 30, 15],
     "defaultStyle": { "font": "Cambay" },
     "content": [
-      {
-        "image": "{{logoImage}}",
-        "width": 300,
-        "absolutePosition": { "x": 150, "y": 200 }
-      },
+     
       {
         "columns": [
-          { "text": "Payment Receipt", "style": "topline" },
           { "text": "{{paymentDate}}", "alignment": "right", "style": "topline" }
         ],
         "margin": [0, 0, 0, 10]
@@ -20,7 +15,7 @@
       {
         "alignment": "center",
         "stack": [
-          { "text": "Indore Nagar Nigam", "style": "header-title" },
+          { "text": "कार्यालय नगर पालिका निगम, इन्दौर", "style": "header-title" },
           { "text": "Property Tax", "style": "header-subtitle" },
           { "text": "Municipal Act 1956 Sec. 186", "style": "info-value" },
           { "text": "Namantran Receipt", "style": "info-value" }
