@@ -8,7 +8,7 @@
      
       {
         "columns": [
-          { "text": "{{paymentDate}}", "alignment": "right", "style": "topline" }
+          { "text": "DD/MM/YYYY", "alignment": "right", "style": "topline" }
         ],
         "margin": [0, 0, 0, 10]
       },
