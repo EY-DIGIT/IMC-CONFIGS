@@ -1,0 +1,117 @@
+{
+  "key": "jahir-suchna",
+  "config": {
+    "pageSize": "A4",
+    "pageMargins": [30, 15, 30, 15],
+    "defaultStyle": { "font": "Cambay" },
+    "content": [
+      {
+        "image": "{{logoImage}}",
+        "width": 300,
+        "absolutePosition": { "x": 150, "y": 200 }
+      },
+      {
+        "columns": [
+          { "text": "Payment Receipt", "style": "topline" },
+          { "text": "{{paymentDate}}", "alignment": "right", "style": "topline" }
+        ],
+        "margin": [0, 0, 0, 10]
+      },
+      {
+        "alignment": "center",
+        "stack": [
+          { "text": "Indore Nagar Nigam", "style": "header-title" },
+          { "text": "Property Tax", "style": "header-subtitle" },
+          { "text": "Municipal Act 1956 Sec. 186", "style": "info-value" },
+          { "text": "Namantran Receipt", "style": "info-value" }
+
+        ],
+        "margin": [0, 0, 0, 6]
+      },
+      {
+  "style": "infoTable",
+  "margin": [0, 10, 0, 10],
+  "table": {
+    "widths": ["15%", "20%", "15%", "20%", "15%", "15%"],
+    "body": [
+      [
+        { "text": "Property ID", "style": "th" },
+        { "text": "{{propertyId}}", "style": "td" },
+        { "text": "Receipt No", "style": "th" },
+        { "text": "{{receiptNo}}", "style": "td" },
+        { "text": "Payment Mode", "style": "th" },
+        { "text": "{{paymentMode}}", "style": "td" }
+      ],
+      [
+        { "text": "Owner Name", "style": "th" },
+        { "text": "{{payerName}}", "colSpan": 3, "style": "td" },
+        {},
+        {},
+        { "text": "Date", "style": "th" },
+        { "text": "{{paymentDate}}", "style": "td" }
+      ],
+      [
+        { "text": "Property Address", "style": "th" },
+        { "text": "{{ptAddress}}", "colSpan": 3, "style": "td" },
+        {}, 
+        {},
+        { "text": "Zone/Ward", "style": "th" },
+        { "text": "{{zone}} / {{ward}}", "style": "td" }
+
+      ],
+      [
+        { "text": "Colony", "style": "th" },
+        { "text": "{{colony}}", "colSpan": 2, "style": "td" },
+        {},
+        { "text": "Mobile No", "style": "th" },
+        { "text": "{{payerContact}}", "colSpan": 2, "style": "td" },
+        {}
+        
+      ]
+    ]
+  }
+},
+{
+  "style": "TaxTable",
+  "margin": [0, 10, 0, 10],
+  "table": {
+    "widths": ["50%", "50%"],
+    "body": [
+[
+        {
+          "text": "Namantran Fees Details",
+          "style": "tableHeader",
+          "colSpan": 2,
+          "alignment": "center",
+          "bold": true
+        },
+        {}
+      ],
+"{{#taxTableData}}[{\"text\":\"Head\",\"style\":\"th\"},{\"text\":\"Amount (₹)\",\"style\":\"th\"}],[{\"text\":\"Namantran Fees\",\"style\":\"th\"},{\"text\":\"{{namantranFees}}\",\"style\":\"td\"}],[{\"text\":\"Rajwad Fees\",\"style\":\"th\"},{\"text\":\"{{rajwadFees}}\",\"style\":\"td\"}],[{\"text\":\"Total Payable Amount\",\"style\":\"th\"},{\"text\":\"{{totalAmountPaid}}\",\"style\":\"td\"}]{{/taxTableData}}"
+]
+
+  },
+  "layout": {}
+}
+    
+      
+      
+       
+      
+    ],
+    "styles": {
+      "topline": { "fontSize": 10, "color": "#484848" },
+      "header-title": { "fontSize": 15,"bold": true, "color": "#000000", "margin": [0, -3, 0, 0] },
+      "header-subtitle": { "fontSize": 13,"bold": true, "color": "#000000", "margin": [0, 2, 0, 0] },
+      "office-header-title": { "fontSize": 12,"bold": true, "color": "#000000" },
+      "meta-label": { "fontSize": 9, "color": "#000000", "margin": [2, 2, 0, 2] },
+      "meta-value": { "fontSize": 9, "color": "#000000", "margin": [0, 2, 0, 2] },
+      "info-line": { "fontSize": 10, "margin": [0, 2, 0, 2], "color": "#000000" },
+      "info-value": { "fontSize": 10, "margin": [0, 2, 0, 2], "color": "#000000" },
+      "section-title": { "fontSize": 9 },
+      "taxTable": { "fontSize": 8, "margin": [0, 0, 0, 0] },
+      "th": { "alignment": "center","bold": true, "margin": [2, 3, 2, 3], "fontSize":7 },
+      "td": { "alignment": "center", "margin": [2, 3, 2, 3], "fontSize":7 }
+    }
+  }
+}
