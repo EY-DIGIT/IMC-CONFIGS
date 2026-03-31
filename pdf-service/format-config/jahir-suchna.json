@@ -16,80 +16,15 @@
         "alignment": "center",
         "stack": [
           { "text": "कार्यालय नगर पालिका निगम, इन्दौर", "style": "header-title" },
-          { "text": "जाहिर सूचना", "style": "header-subtitle" },
-          { "text": "Municipal Act 1956 Sec. 186", "style": "info-value" },
-          { "text": "Namantran Receipt", "style": "info-value" }
+          { "text": "जाहिर सूचना", "style": "header-subtitle" }
 
         ],
         "margin": [0, 0, 0, 6]
       },
-      {
-  "style": "infoTable",
-  "margin": [0, 10, 0, 10],
-  "table": {
-    "widths": ["15%", "20%", "15%", "20%", "15%", "15%"],
-    "body": [
-      [
-        { "text": "Property ID", "style": "th" },
-        { "text": "{{propertyId}}", "style": "td" },
-        { "text": "Receipt No", "style": "th" },
-        { "text": "{{receiptNo}}", "style": "td" },
-        { "text": "Payment Mode", "style": "th" },
-        { "text": "{{paymentMode}}", "style": "td" }
-      ],
-      [
-        { "text": "Owner Name", "style": "th" },
-        { "text": "{{payerName}}", "colSpan": 3, "style": "td" },
-        {},
-        {},
-        { "text": "Date", "style": "th" },
-        { "text": "{{paymentDate}}", "style": "td" }
-      ],
-      [
-        { "text": "Property Address", "style": "th" },
-        { "text": "{{ptAddress}}", "colSpan": 3, "style": "td" },
-        {}, 
-        {},
-        { "text": "Zone/Ward", "style": "th" },
-        { "text": "{{zone}} / {{ward}}", "style": "td" }
-
-      ],
-      [
-        { "text": "Colony", "style": "th" },
-        { "text": "{{colony}}", "colSpan": 2, "style": "td" },
-        {},
-        { "text": "Mobile No", "style": "th" },
-        { "text": "{{payerContact}}", "colSpan": 2, "style": "td" },
-        {}
-        
-      ]
-    ]
-  }
-},
-{
-  "style": "TaxTable",
-  "margin": [0, 10, 0, 10],
-  "table": {
-    "widths": ["50%", "50%"],
-    "body": [
-[
-        {
-          "text": "Namantran Fees Details",
-          "style": "tableHeader",
-          "colSpan": 2,
-          "alignment": "center",
-          "bold": true
-        },
-        {}
-      ],
-"{{#taxTableData}}[{\"text\":\"Head\",\"style\":\"th\"},{\"text\":\"Amount (₹)\",\"style\":\"th\"}],[{\"text\":\"Namantran Fees\",\"style\":\"th\"},{\"text\":\"{{namantranFees}}\",\"style\":\"td\"}],[{\"text\":\"Rajwad Fees\",\"style\":\"th\"},{\"text\":\"{{rajwadFees}}\",\"style\":\"td\"}],[{\"text\":\"Total Payable Amount\",\"style\":\"th\"},{\"text\":\"{{totalAmountPaid}}\",\"style\":\"td\"}]{{/taxTableData}}"
-]
-
-  },
-  "layout": {}
-}
-    
       
+      {
+  "text": "जनसाधारण को सूचित किया जाता है कि, आवेदन श्री/श्रीमती ______________ द्वारा झोन क्रमांक ___ राजस्व विभाग पर आवेदन के साथ << रजिस्ट्री / वसीयतनामा / वारिस नाते >> प्रस्तुत कर सर्विस/पिन नम्बर _______ पता _________________________________ इन्दौर पर नामांतरण चाहा गया है।\n\nइस जाहिर सूचना प्रकाशन के दिनांक से 07 दिवस के अवधि में किसी भी व्यक्ति, बैंक, संस्था, व अन्य को उक्त सम्पत्ति के नामांतरण पर आपत्ति हो तो झोन क्रमांक ________ के राजस्व विभाग में सहायक राजस्व अधिकारी के समक्ष मय दस्तावेज के अपनी आपत्ति प्रस्तुत करें।\n\nअवधि पश्चात व बिना लेखी प्रमाण प्रस्तुत आपत्ति स्वीकार नहीं की जावेगी।"
+}
       
        
       
