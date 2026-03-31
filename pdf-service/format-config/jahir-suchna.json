@@ -15,7 +15,7 @@
       {
         "alignment": "center",
         "stack": [
-          { "text": "कार्यालय नगर पालिका निगम, इन्दौर", "style": "header-title" },
+          { "text": "कार्यालय नगर पालिका निगम, इन्दौर", "style": "header-title","fontSize":15, "bold":true },
           { "text": "जाहिर सूचना", "style": "header-subtitle" }
 
         ],
