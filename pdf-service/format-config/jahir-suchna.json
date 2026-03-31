@@ -16,7 +16,7 @@
         "alignment": "center",
         "stack": [
           { "text": "कार्यालय नगर पालिका निगम, इन्दौर", "style": "header-title" },
-          { "text": "Property Tax", "style": "header-subtitle" },
+          { "text": "जाहिर सूचना", "style": "header-subtitle" },
           { "text": "Municipal Act 1956 Sec. 186", "style": "info-value" },
           { "text": "Namantran Receipt", "style": "info-value" }
 
