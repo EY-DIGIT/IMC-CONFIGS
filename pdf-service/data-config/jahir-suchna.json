@@ -4,8 +4,8 @@
   "DataConfigs": {
     "moduleName": "PT",
     "version": "1.0.0",
-    "baseKeyPath": "",
-    "entityIdPath": "",
+    "baseKeyPath": "$",
+    "entityIdPath": "$.RequestInfo.msgId",
     "mappings": []
   }
 }
