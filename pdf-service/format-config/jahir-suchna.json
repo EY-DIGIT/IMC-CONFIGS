@@ -43,19 +43,19 @@
       {
         "stack": [
           {
-            "text": "\n\n\nसहायक राजस्व अधिकारी",
-            "alignment": "right",
+            "text": "सहायक राजस्व अधिकारी",
+            "alignment": "left",
             "fontSize": 11,
             "bold": true
           },
           {
             "text": "झोन क्रमांक ______",
-            "alignment": "right",
+            "alignment": "left",
             "fontSize": 10
           },
           {
             "text": "नगर पालिका निगम, इन्दौर",
-            "alignment": "right",
+            "alignment": "left",
             "fontSize": 10
           }
         ],
