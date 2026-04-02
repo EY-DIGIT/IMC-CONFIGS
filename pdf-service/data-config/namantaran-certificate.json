@@ -39,7 +39,7 @@
               { "variable": "isCheque", "value": { "path": "$.isCheque" } },
               { "variable": "paidBy", "value": { "path": "$.paidBy" } },
               { "variable": "lokadalat", "value": { "path": "$.lokAdalatDiscount" }},
-              {"variable": "propertyId", "value": {"path": "$.Payments[0].propertyId"}},
+              {"variable": "propertyId", "value": {"path": "$.propertyId"}},
               {
                 "variable": "payment_receipt",
                 "value": {
