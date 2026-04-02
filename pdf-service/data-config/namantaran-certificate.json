@@ -354,24 +354,24 @@
               { "variable": "calcToDate",          "value": { "path": "$.Calculation.toDate" },   "type": "date" },
 
               {
-                "variable": "calcTableData",
-                "value": { "path": "$.Calculation.propertyFYDetails[-1:]" },
-                "type": "array",
-                "format": {
-                  "type": "object",
-                  "scema": [
-                    { "variable": "calc_usageType",        "value": "usageType",        "type": "string", "defaultValue": "-" },
-                    { "variable": "calc_usageFactor",      "value": "usageFactor",      "type": "string", "defaultValue": "-" },
-                    { "variable": "calc_floorNo",          "value": "floorNo",          "type": "string", "defaultValue": "-" },
-                    { "variable": "calc_constructionType", "value": "constructionType", "type": "string", "defaultValue": "-" },
-                    { "variable": "calc_area",             "value": "area",             "type": "string", "defaultValue": "-" },
-                    { "variable": "calc_rate",             "value": "factor",           "type": "string", "defaultValue": "-" },
-                    { "variable": "calc_alv",              "value": "alv",              "type": "string", "defaultValue": "-" },
-                    { "variable": "maintainance_discount", "value": "discount",         "type": "string", "defaultValue": "-" },
-                    { "variable": "tax_tpv",               "value": "tpv",              "type": "string", "defaultValue": "-" }
-                  ]
-                }
-              },
+  "variable": "calcTableData",
+  "value": {
+    "path": "$.units[*]"
+  },
+  "type": "array",
+  "format": {
+    "type": "object",
+    "scema": [
+      { "variable": "calc_usageType", "value": "usageCategory" },
+      { "variable": "calc_usageFactor", "value": "occupancyType" },
+      { "variable": "calc_floorNo", "value": "floorNo" },
+      { "variable": "calc_constructionType", "value": "constructionDetail.constructionType" },
+      { "variable": "calc_area", "value": "constructionDetail.builtUpArea" },
+      { "variable": "calc_fromYear", "value": "fromYear" },
+      { "variable": "calc_toYear", "value": "toYear" }
+    ]
+  }
+},
               {
                 "variable": "taxTableData",
                 "value": { "path": "$.Calculation.propertyFYTaxSummaries[-1:]" },
