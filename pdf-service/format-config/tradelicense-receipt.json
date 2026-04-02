@@ -65,19 +65,19 @@
     "body": [
       [
         { "text": "Receipt No", "style": "th" },
-        { "text": "12345xxx", "style": "td" },
+        { "text": "{{receiptNo}}", "style": "td", "bold":true, "fontSize": 10 },
         { "text": "Date", "style": "th" },
         { "text": "{{applicationDate}}", "style": "td" }
       ],
       [
         { "text": "Registration No", "style": "th" },
-        { "text": "{{tradeLicenseNo}}", "style": "td" },
+        { "text": "{{tradeLicenseNo}}", "style": "td", "bold":true, "fontSize": 10 },
         { "text": "Registration Date", "style": "th" },
-        { "text": "{{applicationDate}}", "style": "td" }
+        { "text": "{{issuedDate}}", "style": "td" }
       ],
       [
-       { "text": "Firm", "style": "th" },
-        { "text": "xyz", "style": "td" },
+        { "text": "Firm", "style": "th" },
+        { "text": "{{firmName}}", "style": "td" },
         { "text": "Owner", "style": "th" },
         { "text": "{{name}}", "style": "td" }
 
@@ -152,7 +152,7 @@
       ],
       [
         {
-          "text": "Cash",
+          "text": "{{paymentMode}}",
           "style": "td",
           "colSpan": 5,
           "alignment": "left"
@@ -243,7 +243,7 @@
         { "text": "In Words", "style": "th",
           "fillColor": "#F7E7DB" },
 
-        { "text": "INR One Thousand And Five Only", "style": "td",
+        { "text": "{{amountInWords}}", "style": "td",
           "fillColor": "#F7E7DB" }
 
       ],
@@ -252,7 +252,7 @@
 
         { "text": "Remarks", "style": "th" },
 
-        { "text": "abc", "colSpan": 3, "style": "td" },
+        { "text": "{{remarks}}", "colSpan": 3, "style": "td" },
 
         {},
 
@@ -289,7 +289,6 @@
     "styles":{
       "topline": { "fontSize": 8, "color": "#484848" },
       "calcTable": { "fontSize": 9, "margin": [0, 0, 0, 0] }
-
     }
     
   }

@@ -1,0 +1,11 @@
+{
+  "key": "jahir-suchna",
+  "documentType": "JAHIRSUCHNA",
+  "DataConfigs": {
+    "moduleName": "PT",
+    "version": "1.0.0",
+    "baseKeyPath": "$",
+    "entityIdPath": "$.RequestInfo.msgId",
+    "mappings": []
+  }
+}

@@ -31,9 +31,34 @@
                   }
               },
               {
+                  "variable": "firmName",
+                  "value": {
+                    "path": "$.firmName"
+                  }
+              },
+              {
+                  "variable": "issuedDate",
+                  "value": {
+                    "path": "$.issuedDate"
+                  },
+                  "type": "date"
+              },
+              {
+                  "variable": "amountInWords",
+                  "value": {
+                    "path": "$.totalAmountInWords"
+                  }
+              },
+              {
                   "variable": "mobile",
                   "value": {
                     "path": "$.mobileNumber"
+                  }
+              },
+              {
+                  "variable": "remarks",
+                  "value": {
+                    "path": "$.remarks"
                   }
               },
               {
@@ -75,19 +100,19 @@
               {
                   "variable": "serviceCharge",
                   "value": {
-                    "path": "$.serviceCharge"
+                    "path": "$.chargesDetails.serviceCharge"
                   }
               },
               {
                   "variable": "itemFees",
                   "value": {
-                    "path": "$.itemFees"
+                    "path": "$.chargesDetails.itemFees"
                   }
               },
               {
                   "variable": "formFees",
                   "value": {
-                    "path": "$.formFees"
+                    "path": "$.chargesDetails.formFees"
                   }
               },
               {
@@ -99,7 +124,7 @@
               {
                   "variable": "applicationDate",
                   "value": {
-                    "path": "$.applicationDate"
+                    "path": "$.transactionDate"
                   },
                   "type": "date"
               },

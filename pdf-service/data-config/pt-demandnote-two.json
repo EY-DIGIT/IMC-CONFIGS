@@ -1,6 +1,6 @@
 {
-  "key": "pt-demandnote",
-  "documentType": "PROPERTYDEMANDNOTE",
+  "key": "pt-demandnote-two",
+  "documentType": "PROPERTYDEMANDNOTETWO",
   "DataConfigs": {
     "moduleName": "PT",
     "version": "1.0.0",

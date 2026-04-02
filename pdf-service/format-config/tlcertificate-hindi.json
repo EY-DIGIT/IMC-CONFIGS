@@ -1,0 +1,260 @@
+{
+  "key": "tlcertificate-hindi",
+  "config": {
+      "defaultStyle": {
+          "font": "Cambay",
+          "fontSize": 9
+
+           },
+           
+      "pageMargins": [26, 20, 18, 15],
+
+           
+          "content": [
+            
+{
+    "image": "{{logoImage}}",
+    "width": 200,
+    "absolutePosition": { "x": 200, "y": 320 }
+  },
+  
+{
+    "image": "{{headLogo}}",
+    "width": 50,
+    "alignment": "center",
+    "margin": [0, 0, 0, 6],
+    "opacity": 1
+  },
+
+
+
+            {
+  "alignment": "center",
+  "stack": [
+    {
+      "text": "इंदौर नगर निगम",
+      "fontSize": 14,
+      "bold": true,
+      "color": "#E06C2B",
+      "margin": [0, 5, 0, 2]
+    },
+    {
+      "text": "व्यापार लाइसेंस प्रमाणपत्र",
+      "fontSize": 12,
+      "bold": true,
+      "color": "#000000",
+      "margin": [0, 2, 0, 2]
+    },
+    {
+      "text": "नगर निगम अधिनियम, 1956 की धारा 366 एवं 427 के अंतर्गत जारी",
+      "fontSize": 10,
+      "color": "#555555",
+      "margin": [0, 2, 0, 3]
+    },
+    {
+      "text": "0437 : बरही नगर परिषद",
+      "fontSize": 11,
+      "bold": true,
+      "color": "#000000",
+      "margin": [0, 3, 0, 2]
+    },
+    {
+      "text": "{{financialYear}}",
+      "fontSize": 10,
+      "color": "#555555",
+      "margin": [0, 2, 0, 10]
+    }
+  ],
+  "margin": [0, 0, 0, 0]
+},
+{
+  "table": {
+    "widths": ["33%", "33%", "34%"],
+    "body": [
+      [
+        { "text": "फर्म का नाम", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
+        { "text": "पंजीकरण आईडी", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
+        { "text": "लाइसेंस की वैधता", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] }
+      ],
+      [
+        { "text": "{{tradeName}}", "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
+        { "text": "{{licenseNumber}}", "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
+        {
+          "stack": [
+            { "text": "From {{validFrom}}", "alignment": "center" },
+            { "text": "To {{validTo}}", "alignment": "center" }
+          ],
+          "margin": [0, 4, 0, 4],
+          "fillColor": "#D0D0D0"
+        }
+      ]
+    ]
+  },
+  "layout": "lightHorizontalLines",
+  "margin": [0, 0, 0, 5]
+},
+{
+  "table": {
+    "widths": ["25%", "25%", "25%", "25%"],
+    "body": [
+      [
+        { "text": "आवेदक का नाम", "bold": true, "alignment": "center" },
+        { "text": "{{applicantname}}" },
+        { "text": "आवेदन तिथि", "bold": true, "alignment": "center" },
+        { "text": "{{applicationDate}}" }
+      ],
+      
+      [ { "text": "", "colSpan": 4, "margin": [0, 3, 0, 3] }, {}, {}, {} ],
+
+      [
+        { "text": "पिता का नाम", "bold": true, "alignment": "center" },
+        { "text": "{{fatherHusbandName}}" },
+        { "text": "क्रम संख्या", "bold": true, "alignment": "center" },
+        { "text": "{{applicationNumber}}" }
+      ],
+      
+      [ { "text": "", "colSpan": 4, "margin": [0, 3, 0, 3] }, {}, {}, {} ],
+
+      [
+        { "text": "फर्म का प्रकार ", "bold": true, "alignment": "center" },
+        { "text": "firmType" },
+        { "text": "व्यापार का प्रकार", "bold": true, "alignment": "center" },
+        { "text": "{{description}}" }
+      ],
+      
+      [ { "text": "", "colSpan": 4, "margin": [0, 3, 0, 3] }, {}, {}, {} ],
+
+      [
+        { "text": "क्षेत्र", "bold": true, "alignment": "center" },
+        { "text": "{{zone}}" },
+        { "text": "वार्ड", "bold": true, "alignment": "center" },
+        { "text": "{{ward}}" }
+      ],
+      
+      [ { "text": "", "colSpan": 4, "margin": [0, 3, 0, 3] }, {}, {}, {} ],
+
+      [
+        { "text": "कुल शुल्क", "bold": true, "alignment": "center" },
+        { "text": "₹ {{amount}}" },
+        { "text": "पता", "bold": true, "alignment": "center" },
+        { "text": "{{address}}" }
+      ]
+    ]
+  },
+  "layout": "noBorders",
+  "margin": [0, 8, 0, 10]
+},
+{
+  "text": "व्यापार का प्रकार",
+  "bold": true,
+  "margin": [0, 10, 0, 6]
+},
+{
+  "table": {
+    "widths": ["20%", "20%", "20%", "20%", "20%"],
+    "body": [
+      [
+        { "text": "वस्तु कोड", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
+        { "text": "विवरण", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
+        { "text": "गुणवत्ता", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
+        { "text": "दर", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] },
+        { "text": "राशि", "bold": true, "alignment": "center", "fillColor": "#D0D0D0", "margin": [0, 8, 0, 8] }
+      ],
+      [
+        { "text": "{{itemCode}}", "alignment": "center", "margin": [0, 8, 0, 8] },
+        { "text": "{{description}}", "alignment": "center", "margin": [0, 8, 0, 8] },
+        { "text": "{{quantity}}", "alignment": "center", "margin": [0, 8, 0, 8] },
+        { "text": "₹ {{rate}}", "alignment": "center", "margin": [0, 8, 0, 8] },
+        { "text": "₹ {{amount}}", "alignment": "center", "margin": [0, 8, 0, 8] }
+      ]
+    ]
+  },
+  "layout": "lightHorizontalLines",
+  "margin": [0, 0, 0, 10],
+  "fillColor": "#D0D0D0"
+
+},
+{
+  "text": "टिप्पणी",
+  "bold": true,
+  "fontSize": 9,
+  "margin": [0, 5, 0, 6]
+},
+{
+  "ol": [
+   
+  "नगर निगम के अधिकृत अधिकारी द्वारा निरीक्षण के समय यह लाइसेंस प्रस्तुत करना अनिवार्य होगा।",
+  "व्यवसाय के स्थान अथवा नाम में परिवर्तन होने की स्थिति में नया लाइसेंस प्राप्त करना अनिवार्य होगा।",
+  "यह लाइसेंस केवल उसी स्थिति में जारी किया जाता है, जब संबंधित नीति / नियम / उपनियम / परिषद इसकी अनुमति प्रदान करती हो।",
+  "आवश्यक जानकारी / दस्तावेज़ उपलब्ध न कराए जाने की स्थिति में उन्हें अपूर्ण माना जाएगा तथा नियमानुसार कानूनी कार्रवाई की जाएगी।",
+  "किराया, जमानत एवं स्वामित्व से संबंधित किसी भी प्रकार के विवाद के लिए विभाग उत्तरदायी नहीं होगा।",
+  "व्यवसाय बंद होने की स्थिति में लाइसेंस निरस्तीकरण हेतु आवेदन प्रस्तुत करना अनिवार्य होगा, अन्यथा इसे प्रभावी माना जाएगा।",
+  "प्रशासन एवं विभाग द्वारा समय-समय पर जारी किए गए नियमों एवं निर्देशों का पालन करना अनिवार्य होगा।",
+  "लाइसेंसधारी व्यवसाय पर लागू कानूनों / नियमों के अनुपालन हेतु शर्तें समय-समय पर जारी की जाएंगी।",
+  "यह लाइसेंस सिगरेट एवं अन्य तंबाकू उत्पाद (विनियमन) अधिनियम, 2003 तथा धूम्रपान - मुक्त सार्वजनिक स्थल नियम, 2008 के प्रावधानों के अनुपालन की शर्तों के अधीन जारी किया जाता है।"
+
+  ],
+  "fontSize": 7,
+  "margin": [0, 0, 0, 10]
+},
+{
+  "margin": [0, 10, 0, 10],
+  "stack": [
+    {
+      "image": "{{qr_code_image}}",
+      "width": 50,
+      "height": 50,
+      "alignment": "left",
+      "margin": [0, 0, 0, 6]
+    }
+  ]
+},
+{
+  "absolutePosition": { "x": 360, "y": 680 },
+  "table": {
+    "widths": [210],
+    "body": [
+      [
+        {
+          "stack": [
+            
+            {
+              "text": "Sadhna Chowdhary",
+              "alignment": "center",
+              "bold": true,
+              "fontSize": 9,
+              "margin": [0, 2, 0, 2]
+            },
+            {
+              "text": "Digitally Signed By:    Date 2024/10/24",
+              "fontSize": 8
+            },
+             {
+              "text": "Sadhna Chowdhari    15: 34: 33 + 05'30'",
+              "fontSize": 8
+            },
+            {
+              "text": "Updated On: YYY/MM/DD HH:MM",
+              "fontSize": 8
+            },
+            {
+              "text": "Downloaded on: YYY/MM/DD HH:MM",
+              "fontSize": 8
+            }
+            
+          ],
+          "margin": 8
+        }
+      ]
+    ]
+  },
+  "layout": "lightHorizontalLines"
+}
+
+
+             
+            
+           ]
+           
+         }
+      }

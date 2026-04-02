@@ -32,7 +32,7 @@
       "margin": [0, 2, 0, 3]
     },
     {
-      "text": "Ledger Report",
+      "text": "लेजर रपोट",
       "fontSize": 10,
       "color": "#555555",
       "margin": [0, 2, 0, 10]
@@ -178,7 +178,8 @@
     ],
     "styles":{
       "topline": { "fontSize": 8, "color": "#484848" },
-      "calcTable": { "fontSize": 9, "margin": [0, 0, 0, 0] }
+      "calcTable": { "fontSize": 9, "margin": [0, 0, 0, 0] },
+      "th": { "bold": true}
 
     }
     
