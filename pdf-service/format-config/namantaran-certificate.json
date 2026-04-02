@@ -157,7 +157,7 @@
         },
         {
           "width": "18%",
-          "text": "₹ 0000000000",
+          "text": "₹ {{namantranFees}}",
           "fontSize": 9,
           "bold": true
         },
@@ -200,7 +200,7 @@
         },
         {
           "width": "18%",
-          "text": "₹ 0000000000",
+          "text": "₹ {{rajwadFees}}",
           "fontSize": 9,
           "bold": true
         },
