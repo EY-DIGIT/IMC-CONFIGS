@@ -40,6 +40,7 @@
               { "variable": "paidBy", "value": { "path": "$.paidBy" } },
               { "variable": "lokadalat", "value": { "path": "$.lokAdalatDiscount" }},
               {"variable": "propertyId", "value": {"path": "$.propertyId"}},
+              {"variable": "salutation", "value": {"path": "$.owners[0].salutation"}},
               {
                 "variable": "payment_receipt",
                 "value": {
