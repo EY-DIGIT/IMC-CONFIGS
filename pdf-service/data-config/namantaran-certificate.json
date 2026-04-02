@@ -34,6 +34,8 @@
               { "variable": "ptAddress", "value": { "path": "$.address" } },
               { "variable": "ward", "value": { "path": "$.ward" } },
               { "variable": "colony", "value": { "path": "$.colony" } },
+              { "variable": "doorNo", "value": { "path": "$.doorNo" } },
+              { "variable": "pincode", "value": { "path": "$.pincode" } },
 
               { "variable": "plotArea", "value": { "path": "$.plotArea" } },
               { "variable": "isCheque", "value": { "path": "$.isCheque" } },
