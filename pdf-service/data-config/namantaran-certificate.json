@@ -45,6 +45,12 @@
               {"variable": "salutation", "value": {"path": "$.owners[0].salutation"}},
               {"variable": "name", "value": {"path": "$.owners[0].name"}},
               {"variable": "permanentAddress", "value": {"path": "$.owners[0].permanentAddress"}},
+              {
+  "variable": "newspaperName",
+  "value": {
+    "path": "$.additionalDetails.newspaperName"
+  }
+},
 
               {
                "variable": "fatherOrHusbandName",
