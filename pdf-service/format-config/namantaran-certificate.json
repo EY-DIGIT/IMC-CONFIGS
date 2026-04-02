@@ -31,7 +31,7 @@
       "width": "60%",
       "stack": [
         {
-          "text": "आवेदन क्रमांक: {{acknowldgementNumber}}",
+          "text": "आवेदन क्रमांक: IM-PT-1234556",
           "fontSize": 9,
           "bold": true,
           "margin": [0, 0, 0, 4]
@@ -256,7 +256,7 @@
         },
         {
           "width": "42%",
-          "text": "{{newspaperName}}",
+          "text": "<Newspaper Name>",
           "fontSize": 9,
           "bold": true
         }
