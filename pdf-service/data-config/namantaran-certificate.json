@@ -457,7 +457,7 @@
               { "variable": "th_category", "formula": "'Category'" },
               { "variable": "th_amount", "formula": "'Amount'" },
               {
-                "variable": "displayRelation", "formula":"{{relationship}} != '' && {{relationship}} != 'Not Applicable' && {{relationship}} != 'NA'? {{relationship}} {{fatherOrHusbandName}}: ''"}
+                "variable": "displayRelation", "formula":"'{{relationship}}' != '' && '{{relationship}}' != 'Not Applicable' && '{{relationship}}' != 'NA'? '{{relationship}} {{fatherOrHusbandName}}': ''"}
             ]
           },
         
