@@ -459,6 +459,9 @@
             ]
           },
           {
+  "variable": "displayRelation", "formula":"'{{relationship}}' != '' && '{{relationship}}' != 'Not applicable' && '{{relationship}}' != 'NA'? '{{relationship}} {{fatherOrHusbandName}}': ''"
+},
+          {
             "externalAPI": [
               {
                 "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
