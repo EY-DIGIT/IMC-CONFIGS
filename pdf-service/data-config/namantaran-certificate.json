@@ -458,7 +458,7 @@
               { "variable": "th_amount", "formula": "'Amount'" },
 {
   "variable": "displayrelation",
-  "formula": "{{relationship}} == 'Not Applicable' ? '' : {{relationship}} "
+  "formula": "{{relationship}} == 'Not Applicable' ? '' : '{{relationship}}' "
 }            ]
           },
           {
