@@ -456,7 +456,7 @@
               { "variable": "th_tax_head", "formula": "'Tax Head Code'" },
               { "variable": "th_category", "formula": "'Category'" },
               { "variable": "th_amount", "formula": "'Amount'" }
-           ]
+            ]
           },
           {
             "externalAPI": [
