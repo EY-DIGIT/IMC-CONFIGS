@@ -162,7 +162,7 @@
               {
                   "variable": "ownername",
                   "value": {
-                    "path": "$.Payments[0].owners[0].name"
+                    "path": "$.owners[0].name"
                   } 
               },
               {
