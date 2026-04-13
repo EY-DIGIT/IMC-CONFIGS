@@ -159,6 +159,12 @@
                     "path": "$.Calculation.propertyFYDetails[(@.length-1)].propertyId"
                   } 
               },
+              {
+                  "variable": "acknowledgementNumber",
+                  "value": {
+                    "path": "$.Payments[0].Calculation.acknowledgementNumber"
+                  } 
+              },
 
               {
                 "variable": "billing_period",
@@ -434,7 +440,9 @@
 
               { "variable": "th_tax_head", "formula": "'Tax Head Code'" },
               { "variable": "th_category", "formula": "'Category'" },
-              { "variable": "th_amount", "formula": "'Amount'" }
+              { "variable": "th_amount", "formula": "'Amount'" },
+              { "variable": "displaypropertyId", "formula": "{{totalAmountPaid}} == 0 ? '{{propertyId}}':'{{acknowledgementNumber}}'"}
+
             ]
           },
           {
