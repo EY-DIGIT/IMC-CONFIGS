@@ -159,7 +159,12 @@
                     "path": "$.Calculation.propertyFYDetails[(@.length-1)].propertyId"
                   } 
               },
-
+              {
+                  "variable": "ownername",
+                  "value": {
+                    "path": "$.Payments[0].owners[0].name"
+                  } 
+              },
               {
                 "variable": "billing_period",
                 "value": {

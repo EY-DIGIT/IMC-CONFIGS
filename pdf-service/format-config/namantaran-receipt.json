@@ -44,7 +44,7 @@
       ],
       [
         { "text": "Owner Name", "style": "th" },
-        { "text": "{{payerName}}", "colSpan": 3, "style": "td" },
+        { "text": "{{ownername}}", "colSpan": 3, "style": "td" },
         {},
         {},
         { "text": "Date", "style": "th" },
