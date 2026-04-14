@@ -179,13 +179,7 @@
                     "path": "$.totalAmountPaid"
                   } 
               },
-              
-
-             {
-  "variable": "qr_code_image",
-  "url": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{Owner:%20{{name}}%20|%20Ward:%20{{ward}}}}",
-  "type": "image"
-},
+             
 
               {
                 "variable": "billing_period",
@@ -461,9 +455,7 @@
 
               { "variable": "th_tax_head", "formula": "'Tax Head Code'" },
               { "variable": "th_category", "formula": "'Category'" },
-              { "variable": "th_amount", "formula": "'Amount'" },
-              { "variable": "qrdata", "formula": "'Owner:'+ {{payerName}}" }
-
+              { "variable": "th_amount", "formula": "'Amount'" }
             ]
           },
           {
