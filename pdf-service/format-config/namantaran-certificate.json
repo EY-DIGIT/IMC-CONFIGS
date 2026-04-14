@@ -339,7 +339,7 @@
   ]
 },
   {
-  "image": "https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=Owner:%20{{payerName}}%20Ward:%20{{ward}}%20Zone:%20{{zone}}",
+  "image": "https://api.qrserver.com/v1/create-qr-code/?size=100x100&data={{consumerID}}",
   "width": 50,
   "height": 50
 }
