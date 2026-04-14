@@ -153,6 +153,12 @@
                     "path": "$.totalAmountPaid"
                   } 
               },
+               {
+                  "variable": "totalDue",
+                  "value": {
+                    "path": "$.totalDue"
+                  } 
+              },
               {
                   "variable": "propertyId",
                   "value": {
