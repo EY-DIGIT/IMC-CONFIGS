@@ -36,7 +36,7 @@
     "body": [
       [
         { "text": "Property ID", "style": "th" },
-        { "text": "{{propertyId}}", "style": "td" },
+        { "text": "{{consumerID}}", "style": "td" },
         { "text": "Receipt No", "style": "th" },
         { "text": "{{receiptNo}}", "style": "td" },
         { "text": "Payment Mode", "style": "th" },
