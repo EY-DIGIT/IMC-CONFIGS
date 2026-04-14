@@ -67,11 +67,6 @@
                }
               },
               {
-  "variable": "qr_code_image",
-  "url": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{consumerID}}",
-  "type": "image"
-},
-              {
                 "variable": "payment_receipt",
                 "value": {
                   "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_PAYMENT_RECEIPT"

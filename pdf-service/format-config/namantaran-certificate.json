@@ -337,19 +337,6 @@
     }
     
   ]
-},
-{
-  "margin": [0, 0, 0, 10],
-  "stack": [
-    {
-      "image": "{{qr_code_image}}",
-      "width": 50,
-      "height": 50,
-      "alignment": "left",
-      "margin": [0, 0, 0, 6]
-    }
-    
-  ]
 }
   
     
