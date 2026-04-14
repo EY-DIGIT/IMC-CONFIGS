@@ -1704,7 +1704,7 @@
       {
         "module": "PT",
         "indexName": "property-services",
-        "aggrQuery": "{\"size\":0,\"query\":{\"terms\":{\"Data.creationReason.keyword\":[\"BIFURCATION\",\"MUTATION\"]}},\"aggs\":{\"Total Application\":{\"value_count\":{\"field\":\"Data.propertyId.keyword\"}}}}",
+        "aggrQuery": "{\"size\":0,\"query\":{\"terms\":{\"Data.creationReason.keyword\":[\"BIFURCATION\",\"MUTATION\"]}},\"aggs\":{\"Total Application\":{\"cardinality\":{\"field\":\"Data.propertyId.keyword\"}}}}",
         "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\", \r\n  \"district\" : \"Data.tenantData.city.districtCode\", \r\n\"tenantId\" : \"Data.tenantId\" \r\n}",
         "dateRefField": ""
       }
@@ -1725,7 +1725,7 @@
     {
       "module": "PT",
       "indexName": "property-services",
-      "aggrQuery":"{\"size\":0,\"query\":{\"term\":{\"Data.creationReason.keyword\":\"MUTATION\"}},\"aggs\":{\"Total Application\":{\"value_count\":{\"field\":\"Data.propertyId.keyword\"}}}}",
+      "aggrQuery":"{\"size\":0,\"query\":{\"term\":{\"Data.creationReason.keyword\":\"MUTATION\"}},\"aggs\":{\"Total Application\":{\"cardinality\":{\"field\":\"Data.propertyId.keyword\"}}}}",
       "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\", \r\n  \"district\" : \"Data.tenantData.city.districtCode\", \r\n\"tenantId\" : \"Data.tenantId\" \r\n}",
       "dateRefField": ""
     }
@@ -1746,7 +1746,7 @@
       {
         "module": "PT",
         "indexName": "property-services",
-        "aggrQuery":"{\"size\":0,\"query\":{\"term\":{\"Data.creationReason.keyword\":\"BIFURCATION\"}},\"aggs\":{\"Total Application\":{\"value_count\":{\"field\":\"Data.propertyId.keyword\"}}}}",
+        "aggrQuery":"{\"size\":0,\"query\":{\"term\":{\"Data.creationReason.keyword\":\"BIFURCATION\"}},\"aggs\":{\"Total Application\":{\"cardinality\":{\"field\":\"Data.propertyId.keyword\"}}}}",
         "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\", \r\n  \"district\" : \"Data.tenantData.city.districtCode\", \r\n\"tenantId\" : \"Data.tenantId\" \r\n}",
         "dateRefField": ""
       }
