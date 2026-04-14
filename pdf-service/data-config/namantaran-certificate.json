@@ -179,7 +179,11 @@
                     "path": "$.totalAmountPaid"
                   } 
               },
-             
+             {
+  "variable": "qr_code_image",
+  "url": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Owner:%20{{name}}%20|%20Ward:%20{{ward}}",
+  "type": "image"
+},
 
               {
                 "variable": "billing_period",
