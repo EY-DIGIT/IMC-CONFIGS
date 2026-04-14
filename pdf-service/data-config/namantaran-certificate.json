@@ -441,6 +441,7 @@
               { "variable": "th_tpv", "formula": "'TPV'" },
               { "variable": "displaypropertyId", "formula": "{{totalDemandPayable}} == 0 ? '{{propertyId}}':'{{consumerID}}'"},
               { "variable": "displayrelation", "formula": "'{{relationship}}' == 'Not Applicable' ? ' ':'{{relationship}}'"},
+              { "variable": "displayfatherOrHusbandName", "formula": "'{{fatherOrHusbandName}}' == 'Not Applicable' ? ' ':'{{fatherOrHusbandName}}'"},
               { "variable": "th_year", "formula": "'Year'" },
               { "variable": "th_property_tax", "formula": "'Property Tax'" },
               { "variable": "th_samekit_tax", "formula": "'Samekit Tax'" },
