@@ -132,12 +132,12 @@
       "margin": [0, 0, 0, 6]
     },
     {
-      "text": "उपरोक्त विषय के संदर्भ में आपका नामांतरण आवेदन क्रमांक {{acknowldgementNumber}} दिनांक DD/MM/YYYY को इस कार्यालय में प्राप्त होने पर यह सूचित किया जाता है कि—",
+      "text": "उपरोक्त विषय के संदर्भ में आपका नामांतरण आवेदन क्रमांक {{acknowldgementNumber}} दिनांक {{paymentDate}} को इस कार्यालय में प्राप्त होने पर यह सूचित किया जाता है कि—",
       "fontSize": 9,
       "margin": [0, 0, 0, 6]
     },
     {
-      "text": "नगर पालिक निगम के कर वसूली लेजर में स्थित मकान क्रमांक {{doorNo}}, {{ptAddress}}, {{colony}}, {{ward}}, {{zone}}, {{pincode}}, इंदौर (म. प्र.) पर पूर्व में दर्ज {{payerName}} {{relationship}} {{fatherOrHusbandName}} के स्थान पर {{name}} {{relationship}} {{fatherOrHusbandName}}, तथा <Joint New Owner Name> <Relationship> <Father/Husband Name> (संयुक्त स्वामित्व की स्थिति में लागू) का नाम अंकित कर दिया गया है।",
+      "text": "नगर पालिक निगम के कर वसूली लेजर में स्थित मकान क्रमांक {{doorNo}}, {{ptAddress}}, {{colony}}, {{ward}}, {{zone}}, {{pincode}}, इंदौर (म. प्र.) पर पूर्व में दर्ज {{payerName}} {{displayrelation}} {{displayfatherOrHusbandName}} के स्थान पर {{name}} {{displayrelation}} {{displayfatherOrHusbandName}}, तथा <Joint New Owner Name> <Relationship> <Father/Husband Name> (संयुक्त स्वामित्व की स्थिति में लागू) का नाम अंकित कर दिया गया है।",
       "fontSize": 9
     }
   ]
