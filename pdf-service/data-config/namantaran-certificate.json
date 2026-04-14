@@ -443,8 +443,11 @@
 {
   "variable": "displayrelation",
   "formula": "'{{relationship}}' == 'Not Applicable' || '{{relationship}}' == 'NOT APPLICABLE' || '{{relationship}}' == 'not applicable' || '{{relationship}}' == 'Not applicable' || '{{relationship}}' == 'NA' || '{{relationship}}' == 'N/A' || '{{relationship}}' == '' ? '' : '{{relationship}}'"
-},              
-{ "variable": "displayfatherOrHusbandName", "formula": "'{{fatherOrHusbandName}}' == 'Not applicable' ? '':'{{fatherOrHusbandName}}'"},
+}, 
+{
+  "variable": "displayfatherOrHusbandName",
+  "formula": "'{{fatherOrHusbandName}}' == 'Not Applicable' || '{{fatherOrHusbandName}}' == 'NOT APPLICABLE' || '{{fatherOrHusbandName}}' == 'not applicable' || '{{fatherOrHusbandName}}' == 'Not applicable' || '{{fatherOrHusbandName}}' == 'NA' || '{{fatherOrHusbandName}}' == 'N/A' || '{{fatherOrHusbandName}}' == '' ? '' : '{{fatherOrHusbandName}}'"
+},             
               { "variable": "th_year", "formula": "'Year'" },
               { "variable": "th_property_tax", "formula": "'Property Tax'" },
               { "variable": "th_samekit_tax", "formula": "'Samekit Tax'" },
