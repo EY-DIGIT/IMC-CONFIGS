@@ -137,7 +137,7 @@
       "margin": [0, 0, 0, 6]
     },
     {
-      "text": "नगर पालिक निगम के कर वसूली लेजर में स्थित मकान क्रमांक {{doorNo}}, {{ptAddress}}, {{colony}}, {{ward}}, {{zone}}, {{pincode}}, इंदौर (म. प्र.) पर पूर्व में दर्ज {{payerName}} {{displayrelation}} {{displayfatherOrHusbandName}} के स्थान पर {{name}} {{displayrelation}} {{displayfatherOrHusbandName}}, तथा <Joint New Owner Name> <Relationship> <Father/Husband Name> (संयुक्त स्वामित्व की स्थिति में लागू) का नाम अंकित कर दिया गया है।",
+      "text": "नगर पालिक निगम के कर वसूली लेजर में स्थित मकान क्रमांक {{doorNo}}, {{ptAddress}}, {{colony}}, {{ward}}, {{zone}}, {{pincode}}, इंदौर (म. प्र.) पर पूर्व में दर्ज {{payerName}} {{displayrelationold}} {{displayfatherOrHusbandNameold}} के स्थान पर {{name}} {{displayrelationnew}} {{displayfatherOrHusbandNamenew}}, तथा <Joint New Owner Name> <Relationship> <Father/Husband Name> (संयुक्त स्वामित्व की स्थिति में लागू) का नाम अंकित कर दिया गया है।",
       "fontSize": 9
     }
   ]

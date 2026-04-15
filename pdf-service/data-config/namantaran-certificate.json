@@ -55,15 +55,27 @@
 },
 
               {
-               "variable": "fatherOrHusbandName",
+               "variable": "fatherOrHusbandNamenew",
                "value": {
                  "path": "$.owners[0].fatherOrHusbandName"
                }
               },
+              {
+               "variable": "fatherOrHusbandNameold",
+               "value": {
+                 "path": "$.owners[1].fatherOrHusbandName"
+               }
+              },
                {
-               "variable": "relationship",
+               "variable": "newrelationship",
                "value": {
                  "path": "$.owners[0].relationship"
+               }
+              },
+              {
+               "variable": "oldrelationship",
+               "value": {
+                 "path": "$.owners[1].relationship"
                }
               },
               {
@@ -441,13 +453,21 @@
               { "variable": "th_tpv", "formula": "'TPV'" },
               { "variable": "displaypropertyId", "formula": "{{totalDemandPayable}} == 0 ? '{{propertyId}}':'{{consumerID}}'"},
 {
-  "variable": "displayrelation",
-  "formula": "'{{relationship}}' == 'Not Applicable' || '{{relationship}}' == 'NOT APPLICABLE' || '{{relationship}}' == 'not applicable' || '{{relationship}}' == 'Not applicable' || '{{relationship}}' == 'NA' || '{{relationship}}' == 'N/A' || '{{relationship}}' == '' ? '' : '{{relationship}}'"
+  "variable": "displayrelationold",
+  "formula": "'{{oldrelationship}}' == 'Not Applicable' || '{{oldrelationship}}' == 'NOT APPLICABLE' || '{{oldrelationship}}' == 'not applicable' || '{{oldrelationship}}' == 'Not applicable' || '{{oldrelationship}}' == 'NA' || '{{oldrelationship}}' == 'N/A' || '{{oldrelationship}}' == '' ? '' : '{{oldrelationship}}'"
 }, 
 {
-  "variable": "displayfatherOrHusbandName",
-  "formula": "'{{fatherOrHusbandName}}' == 'Not Applicable' || '{{fatherOrHusbandName}}' == 'NOT APPLICABLE' || '{{fatherOrHusbandName}}' == 'not applicable' || '{{fatherOrHusbandName}}' == 'Not applicable' || '{{fatherOrHusbandName}}' == 'NA' || '{{fatherOrHusbandName}}' == 'N/A' || '{{fatherOrHusbandName}}' == '' ? '' : '{{fatherOrHusbandName}}'"
-},             
+  "variable": "displayfatherOrHusbandNameold",
+  "formula": "'{{fatherOrHusbandNameold}}' == 'Not Applicable' || '{{fatherOrHusbandNameold}}' == 'NOT APPLICABLE' || '{{fatherOrHusbandNameold}}' == 'not applicable' || '{{fatherOrHusbandNameold}}' == 'Not applicable' || '{{fatherOrHusbandNameold}}' == 'NA' || '{{fatherOrHusbandNameold}}' == 'N/A' || '{{fatherOrHusbandNameold}}' == '' ? '' : '{{fatherOrHusbandName}}'"
+},   
+{
+  "variable": "displayrelationnew",
+  "formula": "'{{newrelationship}}' == 'Not Applicable' || '{{newrelationship}}' == 'NOT APPLICABLE' || '{{newrelationship}}' == 'not applicable' || '{{newrelationship}}' == 'Not applicable' || '{{newrelationship}}' == 'NA' || '{{newrelationship}}' == 'N/A' || '{{newrelationship}}' == '' ? '' : '{{newrelationship}}'"
+}, 
+{
+  "variable": "displayfatherOrHusbandNamenew",
+  "formula": "'{{fatherOrHusbandNamenew}}' == 'Not Applicable' || '{{fatherOrHusbandNamenew}}' == 'NOT APPLICABLE' || '{{fatherOrHusbandNamenew}}' == 'not applicable' || '{{fatherOrHusbandNamenew}}' == 'Not applicable' || '{{fatherOrHusbandNamenew}}' == 'NA' || '{{fatherOrHusbandNamenew}}' == 'N/A' || '{{fatherOrHusbandNamenew}}' == '' ? '' : '{{fatherOrHusbandNamenew}}'"
+},          
               { "variable": "th_year", "formula": "'Year'" },
               { "variable": "th_property_tax", "formula": "'Property Tax'" },
               { "variable": "th_samekit_tax", "formula": "'Samekit Tax'" },
