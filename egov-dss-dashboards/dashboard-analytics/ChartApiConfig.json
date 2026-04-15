@@ -1698,6 +1698,132 @@
     ],
     "_comment": " total properties rejected count"
   },
+  "totalNamantaranProperties": {
+    "chartName": "DSS_PT_TOTAL_NAMANTARAN_PROPERTIES",
+    "queries": [
+      {
+        "module": "PT",
+        "indexName": "property-services",
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Total Application\":{\"scripted_metric\":{\"init_script\":\"state.ids = new HashSet();\",\"map_script\":\"def data = params._source.Data; if (data != null && data.creationReason != null && (data.creationReason == 'MUTATION' || data.creationReason == 'BIFURCATION')) { state.ids.add(data.propertyId); }\",\"combine_script\":\"return state.ids;\",\"reduce_script\":\"Set allIds = new HashSet(); for (s in states) { if (s instanceof Set) allIds.addAll(s); } return allIds.size();\"}}}}",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\", \r\n  \"district\" : \"Data.tenantData.city.districtCode\", \r\n\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "dateRefField": ""
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Application"
+    ],
+    "_comment": " total namantaran properties count"
+  },
+  "totalOneToOneNamantaranProperties": {
+  "chartName": "DSS_PT_ONE_TO_ONE_NAMANTARAN_PROPERTIES",
+  "queries": [
+    {
+      "module": "PT",
+      "indexName": "property-services",
+      "aggrQuery":"{\"size\":0,\"aggs\":{\"Total Application\":{\"scripted_metric\":{\"init_script\":\"state.ids = new HashSet();\",\"map_script\":\"def data = params._source.Data; if (data != null && data.creationReason != null && data.creationReason == 'MUTATION') { state.ids.add(data.propertyId); }\",\"combine_script\":\"return state.ids;\",\"reduce_script\":\"Set allIds = new HashSet(); for (s in states) { if (s instanceof Set) allIds.addAll(s); } return allIds.size();\"}}}}",
+      "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\", \r\n  \"district\" : \"Data.tenantData.city.districtCode\", \r\n\"tenantId\" : \"Data.tenantId\" \r\n}",
+      "dateRefField": ""
+    }
+  ],
+  "chartType": "metric",
+  "valueType": "number",
+  "action": "",
+  "documentType": "_doc",
+  "drillChart": "none",
+  "aggregationPaths": [
+    "Total Application"
+  ],
+  "_comment": " total one to one namantaran properties count"
+  },
+  "totalOneToManyNamantaranProperties": {
+    "chartName": "DSS_PT_ONE_TO_MANY_NAMANTARAN_PROPERTIES",
+    "queries": [
+      {
+        "module": "PT",
+        "indexName": "property-services",
+        "aggrQuery":"{\"size\":0,\"aggs\":{\"Total Application\":{\"scripted_metric\":{\"init_script\":\"state.ids = new HashSet();\",\"map_script\":\"def data = params._source.Data; if (data != null && data.creationReason != null && data.creationReason == 'BIFURCATION') { state.ids.add(data.propertyId); }\",\"combine_script\":\"return state.ids;\",\"reduce_script\":\"Set allIds = new HashSet(); for (s in states) { if (s instanceof Set) allIds.addAll(s); } return allIds.size();\"}}}}",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\", \r\n  \"district\" : \"Data.tenantData.city.districtCode\", \r\n\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "dateRefField": ""
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Application"
+    ],
+    "_comment": " total one to many namantaran properties count"
+  },
+  "totalNamataranPropertiesApproved": {
+    "chartName": "DSS_PT_NAMANTARAN_APPROVED_PROPERTIES",
+    "queries": [
+      {
+        "module": "PT",
+        "indexName": "property-services",
+        "aggrQuery":"{\"size\":0,\"aggs\":{\"Total Application\":{\"scripted_metric\":{\"init_script\":\"state.count=0L;\",\"map_script\":\"if(params._source==null)return;def data=params._source.Data; if(data==null)return; def history=data.history; if(history==null||history.size()==0)return; def latest=history[0]; long latestTime=0L; if(latest.auditDetails!=null&&latest.auditDetails.createdTime!=null){ latestTime=(latest.auditDetails.createdTime instanceof Number)?latest.auditDetails.createdTime:0L; } for(int i=1;i<history.size();i++){ def h=history[i]; if(h==null||h.auditDetails==null) continue; def ct=h.auditDetails.createdTime; if(ct!=null && ct instanceof Number && ct>latestTime){ latest=h; latestTime=ct; } } if(latest.state!=null && latest.state.state==params.state && data.creationReason != null && (data.creationReason == 'MUTATION' || data.creationReason == 'BIFURCATION')){ state.count+=1L; }\",\"combine_script\":\"return state.count;\",\"reduce_script\":\"long total=0L; for(s in states){ if(s instanceof Number){ total+=s; } else if(s instanceof List){ for(x in s) if(x instanceof Number) total+=x; } } return total;\",\"params\":{\"state\":\"APPROVED\"}}}}}",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\", \r\n  \"district\" : \"Data.tenantData.city.districtCode\", \r\n\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "dateRefField": ""
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Application"
+    ],
+    "_comment": " total namantaran properties approved count"
+  },
+  "totalNamantaranPropertiesInProgress": {
+    "chartName": "DSS_PT_NAMANTARAN_IN_PROGRESS_PROPERTIES",
+    "queries": [
+      {
+        "module": "PT",
+        "indexName": "property-services",
+        "aggrQuery":"{\"size\":0,\"aggs\":{\"Total Application\":{\"scripted_metric\":{\"init_script\":\"state.count=0L;\",\"map_script\":\"if(params._source==null)return;def data=params._source.Data; if(data==null)return; def history=data.history; if(history==null||history.size()==0)return; def latest=history[0]; long latestTime=0L; if(latest.auditDetails!=null&&latest.auditDetails.createdTime!=null){ latestTime=(latest.auditDetails.createdTime instanceof Number)?latest.auditDetails.createdTime:0L; } for(int i=1;i<history.size();i++){ def h=history[i]; if(h==null||h.auditDetails==null) continue; def ct=h.auditDetails.createdTime; if(ct!=null && ct instanceof Number && ct>latestTime){ latest=h; latestTime=ct; } } if(latest.state!=null && latest.state.state != 'APPROVED' && latest.state.state != 'REJECTED' && latest.state.state != 'INACTIVE' && data.creationReason != null && (data.creationReason == 'MUTATION' || data.creationReason == 'BIFURCATION')){ state.count+=1L; }\",\"combine_script\":\"return state.count;\",\"reduce_script\":\"long total=0L; for(s in states){ if(s instanceof Number){ total+=s; } else if(s instanceof List){ for(x in s) if(x instanceof Number) total+=x; } } return total;\",\"params\":{\"state\":\"CORRECTIONPENDING\"}}}}}",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\", \r\n  \"district\" : \"Data.tenantData.city.districtCode\", \r\n\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "dateRefField": ""
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Application"
+    ],
+    "_comment": " total namantaran properties in progress count"
+  },
+  "totalNamantaranPropertiesRejected": {
+    "chartName": "DSS_PT_NAMANTARAN_REJECTED_PROPERTIES",
+    "queries": [
+      {
+        "module": "PT",
+        "indexName": "property-services",
+        "aggrQuery":"{\"size\":0,\"aggs\":{\"Total Application\":{\"scripted_metric\":{\"init_script\":\"state.count=0L;\",\"map_script\":\"if(params._source==null)return;def data=params._source.Data; if(data==null)return; def history=data.history; if(history==null||history.size()==0)return; def latest=history[0]; long latestTime=0L; if(latest.auditDetails!=null&&latest.auditDetails.createdTime!=null){ latestTime=(latest.auditDetails.createdTime instanceof Number)?latest.auditDetails.createdTime:0L; } for(int i=1;i<history.size();i++){ def h=history[i]; if(h==null||h.auditDetails==null) continue; def ct=h.auditDetails.createdTime; if(ct!=null && ct instanceof Number && ct>latestTime){ latest=h; latestTime=ct; } } if(latest.state!=null && (latest.state.state == 'REJECTED' || latest.state.state == 'INACTIVE') && data.creationReason != null && (data.creationReason == 'MUTATION' || data.creationReason == 'BIFURCATION')){ state.count+=1L; }\",\"combine_script\":\"return state.count;\",\"reduce_script\":\"long total=0L; for(s in states){ if(s instanceof Number){ total+=s; } else if(s instanceof List){ for(x in s) if(x instanceof Number) total+=x; } } return total;\",\"params\":{\"state\":\"REJECTED\"}}}}}",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\", \r\n  \"district\" : \"Data.tenantData.city.districtCode\", \r\n\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "dateRefField": ""
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Application"
+    ],
+    "_comment": " total namantaran properties rejected count"
+  },
   "propertiesAssessed": {
     "chartName": "DSS_PT_TOTAL_PROPERTIES_ASSESSED",
     "queries": [

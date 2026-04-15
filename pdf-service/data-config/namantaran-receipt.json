@@ -153,13 +153,24 @@
                     "path": "$.totalAmountPaid"
                   } 
               },
+               {
+                  "variable": "totalDue",
+                  "value": {
+                    "path": "$.totalDue"
+                  } 
+              },
               {
                   "variable": "propertyId",
                   "value": {
                     "path": "$.Calculation.propertyFYDetails[(@.length-1)].propertyId"
                   } 
               },
-
+              {
+                  "variable": "ownername",
+                  "value": {
+                    "path": "$.owners[0].name"
+                  } 
+              },
               {
                 "variable": "billing_period",
                 "value": {
@@ -418,7 +429,7 @@
               { "variable": "th_alv", "formula": "'ALV'" },
               { "variable": "th_maintenance", "formula": "'Maintenance Discount'" },
               { "variable": "th_tpv", "formula": "'TPV'" },
-              { "variable": "displaypropertyId", "formula": "{{totalDemandPayable}} == 0 ? '{{propertyId}}':'{{consumerID}}'"},
+              { "variable": "displaypropertyId", "formula": "{{totalDue}} == 0 ? '{{propertyId}}':'{{consumerID}}'"},
               { "variable": "th_year", "formula": "'Year'" },
               { "variable": "th_property_tax", "formula": "'Property Tax'" },
               { "variable": "th_samekit_tax", "formula": "'Samekit Tax'" },
