@@ -332,8 +332,7 @@
 
               {
                 "variable": "calcTableData",
-                "value": { "path": "$.Calculation.propertyFYDetails[-1:]" },
-                "type": "array",
+"path": "$.Calculation.propertyFYDetails[?(@.year==$.Calculation.propertyFYDetails[-1].year)]",                "type": "array",
                 "format": {
                   "type": "object",
                   "scema": [
