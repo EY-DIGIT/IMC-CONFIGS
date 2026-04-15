@@ -458,7 +458,7 @@
 }, 
 {
   "variable": "displayfatherOrHusbandNameold",
-  "formula": "'{{fatherOrHusbandNameold}}' == 'Not Applicable' || '{{fatherOrHusbandNameold}}' == 'NOT APPLICABLE' || '{{fatherOrHusbandNameold}}' == 'not applicable' || '{{fatherOrHusbandNameold}}' == 'Not applicable' || '{{fatherOrHusbandNameold}}' == 'NA' || '{{fatherOrHusbandNameold}}' == 'N/A' || '{{fatherOrHusbandNameold}}' == '' ? '' : '{{fatherOrHusbandName}}'"
+  "formula": "'{{fatherOrHusbandNameold}}' == 'Not Applicable' || '{{fatherOrHusbandNameold}}' == 'NOT APPLICABLE' || '{{fatherOrHusbandNameold}}' == 'not applicable' || '{{fatherOrHusbandNameold}}' == 'Not applicable' || '{{fatherOrHusbandNameold}}' == 'NA' || '{{fatherOrHusbandNameold}}' == 'N/A' || '{{fatherOrHusbandNameold}}' == '' ? '' : '{{fatherOrHusbandNameold}}'"
 },   
 {
   "variable": "displayrelationnew",
