@@ -38,6 +38,12 @@
               { "variable": "paidBy", "value": { "path": "$.paidBy" } },
               {"variable": "propertyId", "value": {"path": "$.Calculation.propertyFYDetails[-1:].propertyId"}},
               {
+  "variable": "latestFY",
+  "value": {
+    "path": "$.Calculation.propertyFYTaxSummaries[-1].year"
+  }
+},
+              {
                 "variable": "payment_receipt",
                 "value": {
                   "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_PAYMENT_RECEIPT"
@@ -331,7 +337,7 @@
 
               {
                 "variable": "calcTableData",
-                "value": { "path": "$.Calculation.propertyFYDetails[-1:]" },
+                "value": { "path": "$.Calculation.propertyFYDetails[?(@.year=='{{latestFY}}')]" },
                 "type": "array",
                 "format": {
                   "type": "object",
