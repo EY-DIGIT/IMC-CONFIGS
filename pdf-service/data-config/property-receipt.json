@@ -367,6 +367,7 @@
                     { "variable": "tax_totalTax",      "value": "totalTax",       "type": "number", "defaultValue": 0 },
                     { "variable": "tax_rebate",        "value": "rebate",         "type": "number", "defaultValue": 0 },
                     { "variable": "tax_penalty",       "value": "penalty",        "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_lokadalat_discount", "value": "lokAdalatDiscount", "type": "number", "defaultValue": 0},
                     { "variable": "tax_netTotal",      "value": "netTax",         "type": "number", "defaultValue": 0 }
                   ]
                 }
