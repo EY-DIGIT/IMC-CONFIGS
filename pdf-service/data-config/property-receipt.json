@@ -367,7 +367,7 @@
                     { "variable": "tax_totalTax",      "value": "totalTax",       "type": "number", "defaultValue": 0 },
                     { "variable": "tax_rebate",        "value": "rebate",         "type": "number", "defaultValue": 0 },
                     { "variable": "tax_penalty",       "value": "penalty",        "type": "number", "defaultValue": 0 },
-                    { "variable": "tax_lokadalat_discount", "value": "lokAdalatDiscount", "type": "number", "defaultValue": 0},
+                    { "variable": "tax_lokadalat_discount", "value": "lokAdalatDiscount"},
                     { "variable": "tax_netTotal",      "value": "netTax",         "type": "number", "defaultValue": 0 }
                   ]
                 }
@@ -408,7 +408,8 @@
 
               { "variable": "th_tax_head", "formula": "'Tax Head Code'" },
               { "variable": "th_category", "formula": "'Category'" },
-              { "variable": "th_amount", "formula": "'Amount'" }
+              { "variable": "th_amount", "formula": "'Amount'" },
+              { "variable": "tax_lokadalat_discount", "formula": "{{tax_lokadalat_discount}} != 0 ? {{tax_lokadalat_discount}} : 0"}
             ]
           },
           {
