@@ -36,7 +36,6 @@
               { "variable": "plotArea", "value": { "path": "$.plotArea" } },
               { "variable": "isCheque", "value": { "path": "$.isCheque" } },
               { "variable": "paidBy", "value": { "path": "$.paidBy" } },
-              { "variable": "lokadalat", "value": { "path": "$.lokAdalatDiscount" }},
               {"variable": "propertyId", "value": {"path": "$.Calculation.propertyFYDetails[-1:].propertyId"}},
               {
                 "variable": "payment_receipt",
