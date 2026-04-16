@@ -407,7 +407,9 @@
 
               { "variable": "th_tax_head", "formula": "'Tax Head Code'" },
               { "variable": "th_category", "formula": "'Category'" },
-              { "variable": "th_amount", "formula": "'Amount'" }
+              { "variable": "th_amount", "formula": "'Amount'" },
+              { "variable": "validatedPreviousBalance", "formula": "('{{previousBalance}}' == 'NA' || '{{previousBalance}}' == '' || {{previousBalance}} == null) ? 0 : {{previousBalance}}"},
+              { "variable": "validatedAdvanceAmt", "formula": "('{{advanceAmt}}' == 'NA' || '{{advanceAmt}}' == '' || {{advanceAmt}} == null) ? 0 : {{advanceAmt}}"}
             ]
           },
           {

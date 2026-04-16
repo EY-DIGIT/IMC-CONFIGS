@@ -113,7 +113,7 @@
             "columns": [
               { "width": "25%", "text": [{ "text": "Arrear : ", "style": "meta-label" }, { "text": "{{arrearAmt}}", "style": "meta-value" }] },
               { "width": "25%", "text": [{ "text": "Current Year Net Tax : ", "style": "meta-label" }, { "text": "{{currentYearNetTax}}", "style": "meta-value" }] },
-              { "width": "25%", "text": [{ "text": "Previous Balance : ", "style": "meta-label" }, { "text": "{{previousBalance}}", "style": "meta-value" }] },
+              { "width": "25%", "text": [{ "text": "Previous Balance : ", "style": "meta-label" }, { "text": "{{validatedPreviousBalance}}", "style": "meta-value" }] },
               { "width": "25%", "text": [{ "text": "Total Demand Payable : ", "style": "meta-label" }, { "text": "{{totalDemandPayable}}", "style": "meta-value" }] }
             ],
             "columnGap": 4,
@@ -122,7 +122,7 @@
           {
             "columns": [
               { "width": "25%", "text": [{ "text": "Total Amount Paid : ", "style": "meta-label" }, { "text": "₹ {{paidAmount}}", "style": "meta-value" }] },
-              { "width": "25%", "text": [{ "text": "Advance : ", "style": "meta-label" }, { "text": "{{advanceAmt}}", "style": "meta-value" }] },
+              { "width": "25%", "text": [{ "text": "Advance : ", "style": "meta-label" }, { "text": "{{validatedAdvanceAmt}}", "style": "meta-value" }] },
               { "width": "25%", "text": [{ "text": "Cumulative Balance : ", "style": "meta-label" }, { "text": "{{cumulativeBalance}}", "style": "meta-value" }] },
               { "width": "25%", "text": [{ "text": "Mode of Payment : ", "style": "meta-label" }, { "text": "{{paymentMode}}", "style": "meta-value" }] }
             ],
