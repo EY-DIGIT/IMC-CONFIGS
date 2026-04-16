@@ -930,11 +930,11 @@ serviceMaps:
 
       - jsonPath: $.Licenses.*.tradeLicenseDetail.address.detail
 
-      - jsonPath: $.Licenses.*.tradeLicenseDetail.applicantAddress.zone
+      - jsonPath: $.Licenses.*.tradeLicenseDetail.address.zone
 
-      - jsonPath: $.Licenses.*.tradeLicenseDetail.applicantAddress.ward
+      - jsonPath: $.Licenses.*.tradeLicenseDetail.address.ward
 
-      - jsonPath: $.Licenses.*.tradeLicenseDetail.applicantAddress.colony
+      - jsonPath: $.Licenses.*.tradeLicenseDetail.address.colony
 
       - jsonPath: $.Licenses.*.auditDetails.lastModifiedBy
 
