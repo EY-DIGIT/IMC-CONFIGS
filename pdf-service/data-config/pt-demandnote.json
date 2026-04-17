@@ -300,7 +300,7 @@
               },
               {
   "variable": "qr_code_image",
-  "url": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://citizenservicesuat.eydemoapp.in/",
+  "url": "{{qr_url}}",
   "type": "image"
 },
 
@@ -452,7 +452,11 @@
 
               { "variable": "th_tax_head", "formula": "'Tax Head Code'" },
               { "variable": "th_category", "formula": "'Category'" },
-              { "variable": "th_amount", "formula": "'Amount'" }
+              { "variable": "th_amount", "formula": "'Amount'" },
+              {
+  "variable": "qr_url",
+  "formula": "'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://citizenservicesuat.eydemoapp.in/?consumerId=' + {{consumerID}}"
+}
             ]
           },
           {
