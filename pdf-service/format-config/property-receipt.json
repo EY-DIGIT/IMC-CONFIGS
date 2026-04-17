@@ -101,7 +101,7 @@
               { "text": "Lok Adalat Discount", "style": "th"},
               { "text": "{{th_net_total}}", "style": "th" }
             ],
-            "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"{{tax_propertyTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_samekitTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_educationCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_waterCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_drainageCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_urbanDevCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_serviceCharge}}\",\"style\":\"td\"},{\"text\":\"{{tax_totalTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_rebate}}\",\"style\":\"td\"},{\"text\":\"{{tax_penalty}}\",\"style\":\"td\"},{\"text\":\"{{lokadalat}}\",\"style\":\"td\"},{\"text\":\"{{tax_netTotal}}\",\"style\":\"td\"}]{{/taxTableData}}"
+            "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"{{tax_propertyTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_samekitTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_educationCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_waterCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_drainageCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_urbanDevCess}}\",\"style\":\"td\"},{\"text\":\"{{tax_serviceCharge}}\",\"style\":\"td\"},{\"text\":\"{{tax_totalTax}}\",\"style\":\"td\"},{\"text\":\"{{tax_rebate}}\",\"style\":\"td\"},{\"text\":\"{{tax_penalty}}\",\"style\":\"td\"},{\"text\":\"{{tax_lokadalat_discount}}\",\"style\":\"td\"},{\"text\":\"{{tax_netTotal}}\",\"style\":\"td\"}]{{/taxTableData}}"
           ]
         },
         "layout": {}
@@ -113,7 +113,7 @@
             "columns": [
               { "width": "25%", "text": [{ "text": "Arrear : ", "style": "meta-label" }, { "text": "{{arrearAmt}}", "style": "meta-value" }] },
               { "width": "25%", "text": [{ "text": "Current Year Net Tax : ", "style": "meta-label" }, { "text": "{{currentYearNetTax}}", "style": "meta-value" }] },
-              { "width": "25%", "text": [{ "text": "Previous Balance : ", "style": "meta-label" }, { "text": "{{previousBalance}}", "style": "meta-value" }] },
+              { "width": "25%", "text": [{ "text": "Previous Balance : ", "style": "meta-label" }, { "text": "{{validatedPreviousBalance}}", "style": "meta-value" }] },
               { "width": "25%", "text": [{ "text": "Total Demand Payable : ", "style": "meta-label" }, { "text": "{{totalDemandPayable}}", "style": "meta-value" }] }
             ],
             "columnGap": 4,
@@ -122,7 +122,7 @@
           {
             "columns": [
               { "width": "25%", "text": [{ "text": "Total Amount Paid : ", "style": "meta-label" }, { "text": "₹ {{paidAmount}}", "style": "meta-value" }] },
-              { "width": "25%", "text": [{ "text": "Advance : ", "style": "meta-label" }, { "text": "{{advanceAmt}}", "style": "meta-value" }] },
+              { "width": "25%", "text": [{ "text": "Advance : ", "style": "meta-label" }, { "text": "{{validatedAdvanceAmt}}", "style": "meta-value" }] },
               { "width": "25%", "text": [{ "text": "Cumulative Balance : ", "style": "meta-label" }, { "text": "{{cumulativeBalance}}", "style": "meta-value" }] },
               { "width": "25%", "text": [{ "text": "Mode of Payment : ", "style": "meta-label" }, { "text": "{{paymentMode}}", "style": "meta-value" }] }
             ],
@@ -169,7 +169,7 @@
             "width": "65%",
             "stack": [
               { "text": ["Receipt No : ", { "text": "{{receiptNo}}", "style": "info-value" }], "style": "info-line" },
-              { "text": ["Property ID : ", { "text": "{{consumerID}}", "style": "info-value" }], "style": "info-line" },
+              { "text": ["Property ID : ", { "text": "{{displaypropertyId}}", "style": "info-value" }], "style": "info-line" },
               { "text": ["Property Owner Name : ", { "text": "{{payerName}}", "style": "info-value" }], "style": "info-line" },
               { "text": ["Address : ", { "text": "{{ptAddress}}", "style": "info-value" }], "style": "info-line" },
               { "text": ["Zone/Ward : ", { "text": "{{zone}} / {{ward}}", "style": "info-value" }], "style": "info-line" }
@@ -196,7 +196,7 @@
             "columns": [
               { "width": "25%", "text": [{ "text": "Arrear : ", "style": "meta-label" }, { "text": "{{arrearAmt}}", "style": "meta-value" }] },
               { "width": "25%", "text": [{ "text": "Current Year Net Tax : ", "style": "meta-label" }, { "text": "{{currentYearNetTax}}", "style": "meta-value" }] },
-              { "width": "25%", "text": [{ "text": "Previous Balance : ", "style": "meta-label" }, { "text": "{{previousBalance}}", "style": "meta-value" }] },
+              { "width": "25%", "text": [{ "text": "Previous Balance : ", "style": "meta-label" }, { "text": "{{validatedPreviousBalance}}", "style": "meta-value" }] },
               { "width": "25%", "text": [{ "text": "Total Demand Payable : ", "style": "meta-label" }, { "text": "{{totalDemandPayable}}", "style": "meta-value" }] }
             ],
             "columnGap": 4,
@@ -205,7 +205,7 @@
           {
             "columns": [
               { "width": "25%", "text": [{ "text": "Total Amount Paid : ", "style": "meta-label" }, { "text": "₹ {{paidAmount}}", "style": "meta-value" }] },
-              { "width": "25%", "text": [{ "text": "Advance : ", "style": "meta-label" }, { "text": "{{advanceAmt}}", "style": "meta-value" }] },
+              { "width": "25%", "text": [{ "text": "Advance : ", "style": "meta-label" }, { "text": "{{validatedAdvanceAmt}}", "style": "meta-value" }] },
               { "width": "25%", "text": [{ "text": "Cumulative Balance : ", "style": "meta-label" }, { "text": "{{cumulativeBalance}}", "style": "meta-value" }] },
               { "width": "25%", "text": [{ "text": "Mode of Payment : ", "style": "meta-label" }, { "text": "{{paymentMode}}", "style": "meta-value" }] }
             ],
