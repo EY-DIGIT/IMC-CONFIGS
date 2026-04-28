@@ -12,7 +12,7 @@ ServiceMaps:
         timeStampField: $.auditDetails.createdTime
         isBulk: false
         customJsonMapping:
-          indexMapping: { "Data": { "id": "","tenantId": "", "propertyId": "","owners": [{}],"mobileNumber": "","acknowldgementNumber": "","status": "","creationReason": {},"locality": "","@timestamp": "timestamp","auditDetails": {},"currentProcessInstance": {},"publishedOn": ""}}      
+          indexMapping: { "Data": { "id": "","tenantId": "", "propertyId": "","owners": [],"mobileNumber": "","acknowldgementNumber": "","status": "","creationReason": {},"locality": "","@timestamp": "timestamp","auditDetails": {},"currentProcessInstance": {},"publishedOn": ""}}      
           fieldMapping:
           - inJsonPath: $.id
             outJsonPath: $.Data.id
@@ -21,7 +21,7 @@ ServiceMaps:
           - inJsonPath: $.propertyId
             outJsonPath: $.Data.propertyId
           - inJsonPath: $.owners[*][?(@.status=='ACTIVE')].name
-            outJsonPath: $.Data.ownerNames
+            outJsonPath: $.Data.owners
           - inJsonPath: $.owners[0].mobileNumber
             outJsonPath: $.Data.mobileNumber
           - inJsonPath: $.acknowldgementNumber
