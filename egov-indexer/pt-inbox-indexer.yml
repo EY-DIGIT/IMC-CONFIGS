@@ -20,7 +20,7 @@ ServiceMaps:
             outJsonPath: $.Data.tenantId
           - inJsonPath: $.propertyId
             outJsonPath: $.Data.propertyId
-          - inJsonPath: $.owners[*][?(@.status=='ACTIVE')].name
+          - inJsonPath: $.owners[*].name
             outJsonPath: $.Data.owners[*].name
           - inJsonPath: $.owners[0].mobileNumber
             outJsonPath: $.Data.mobileNumber
