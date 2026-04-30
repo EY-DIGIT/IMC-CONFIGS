@@ -338,7 +338,7 @@
                   "scema": [
                     { "variable": "calc_usageType",        "value": "usageType",        "type": "string", "defaultValue": "-" },
                     { "variable": "calc_usageFactor",      "value": "usageFactor",      "type": "string", "defaultValue": "-" },
-                    { "variable": "calc_floorNo",          "value": "floorNo",          "type": "string", "defaultValue": "-" },
+                    { "variable": "calc_floorNo_raw",          "value": "floorNo",          "type": "string", "defaultValue": "-" },
                     { "variable": "calc_constructionType", "value": "constructionType", "type": "string", "defaultValue": "-" },
                     { "variable": "calc_area",             "value": "area",             "type": "string", "defaultValue": "-" },
                     { "variable": "calc_rate",             "value": "factor",           "type": "string", "defaultValue": "-" },
@@ -378,6 +378,7 @@
               { "variable": "pendingAmount", "formula": "{{dueAmount}}>{{paidAmount}}?{{dueAmount}}-{{paidAmount}}:0" },
               { "variable": "excessAmountPaid", "formula": "{{paidAmount}}>{{dueAmount}}?{{paidAmount}}-{{dueAmount}}:0" },
               { "variable": "cumulativeBalance", "formula": "{{totalDemandPayable}}>{{paidAmount}}?{{totalDemandPayable}}-{{paidAmount}}:0" },
+              { "variable": "calc_floorNo", "formula": "{{calc_floorNo_raw}} == 0 ? 'GROUND' : {{calc_floorNo_raw}}"},
               { "variable": "calcTableTitle", "formula": "'Property Taxes and Other Taxes have been calculated based on the details given below'" },
               { "variable": "chequeDisclaimer", "formula": "'{{paymentMode}}' == 'Cheque' ? '**This property tax receipt paid via cheque shall be acknowledged upon successful clearance of the cheque' : ''" },
               { "variable": "cashierName", "formula": "'{{paymentMode}}' != 'Online' ? '{{paidBy}}' : ''"},
