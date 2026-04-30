@@ -391,7 +391,7 @@
               { "variable": "th_alv", "formula": "'ALV'" },
               { "variable": "th_maintenance", "formula": "'Maintenance Discount'" },
               { "variable": "th_tpv", "formula": "'TPV'" },
-              { "variable": "displaypropertyId", "formula": "{{totalDemandPayable}} == 0 ? '{{propertyId}}':'{{consumerID}}'"},
+              { "variable": "displaypropertyId", "formula": "{{totalDemandPayable}} == {{paidAmount}} ? '{{propertyId}}':'{{consumerID}}'"},
               { "variable": "th_year", "formula": "'Year'" },
               { "variable": "th_property_tax", "formula": "'Property Tax'" },
               { "variable": "th_samekit_tax", "formula": "'Samekit Tax'" },
