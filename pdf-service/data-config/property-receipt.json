@@ -378,7 +378,7 @@
               { "variable": "pendingAmount", "formula": "{{dueAmount}}>{{paidAmount}}?{{dueAmount}}-{{paidAmount}}:0" },
               { "variable": "excessAmountPaid", "formula": "{{paidAmount}}>{{dueAmount}}?{{paidAmount}}-{{dueAmount}}:0" },
               { "variable": "cumulativeBalance", "formula": "{{totalDemandPayable}}>{{paidAmount}}?{{totalDemandPayable}}-{{paidAmount}}:0" },
-              { "variable": "calc_floorNo", "formula": "{{calc_floorNo_raw}} == 0 ? 'GROUND' : {{calc_floorNo_raw}}"},
+              { "variable": "calc_floorNo", "formula": "{{calc_floorNo_raw}} == 0 ? 'GROUND' : '{{calc_floorNo_raw}}'"},
               { "variable": "calcTableTitle", "formula": "'Property Taxes and Other Taxes have been calculated based on the details given below'" },
               { "variable": "chequeDisclaimer", "formula": "'{{paymentMode}}' == 'Cheque' ? '**This property tax receipt paid via cheque shall be acknowledged upon successful clearance of the cheque' : ''" },
               { "variable": "cashierName", "formula": "'{{paymentMode}}' != 'Online' ? '{{paidBy}}' : ''"},
