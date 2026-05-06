@@ -13,7 +13,7 @@
       },
       {
         "columns": [
-          { "text": "Demand Note u/s 173", "style": "topline" },
+          { "text": "मांग पर्ची u/s 173", "style": "topline" },
           { "text": "{{paymentDate}}", "alignment": "right", "style": "topline" }
         ],
         "margin": [0, 0, 0, 10]
@@ -31,7 +31,7 @@
 
   
 {
-  "text": "Assessment Year: {{assessmentYear}}",
+  "text": "मूल्यांकन वर्ष: {{assessmentYear}}",
   "fontSize": 9,
   "bold": true,
   "margin": [0, 0, 0, 8]
@@ -45,7 +45,7 @@
     "widths": ["15%", "20%", "15%", "20%", "15%", "15%"],
     "body": [
       [
-        { "text": "Property ID", "style": "th" },
+        { "text": "संपत्ति आईडी", "style": "th" },
         { "text": "{{consumerID}}", "style": "td" },
         { "text": "Old Property ID", "style": "th" },
         { "text": "{{oldpropertyid}}", "style": "td" },
@@ -53,36 +53,36 @@
         { "text": "{{paymentDate}}", "style": "td" }
       ],
       [
-        { "text": "Owner Name", "style": "th" },
+        { "text": "स्वामी का नाम", "style": "th" },
         { "text": "{{payerName}}", "colSpan": 3, "style": "td" },
         {},
         {},
-        { "text": "Mobile No", "style": "th" },
+        { "text": "मोबाइल नंबर", "style": "th" },
         { "text": "{{payerContact}}", "style": "td" }
       ],
       [
-        { "text": "Address", "style": "th" },
+        { "text": "पता", "style": "th" },
         { "text": "{{ptAddress}}", "colSpan": 3, "style": "td" },
         {}, 
         {},
-        { "text": "Rate Zone", "style": "th" },
+        { "text": "दर क्षेत्र", "style": "th" },
         { "text": "{{rateZone}}", "style": "td" }
 
       ],
       [
-        { "text": "Road Factor", "style": "th" },
+        { "text": "सड़क गुणांक", "style": "th" },
         { "text": "{{roadFactor}}", "style": "td" },
-        { "text": "Exemption", "style": "th" },
+        { "text": "छूट", "style": "th" },
         { "text": "{{exemption}}", "style": "td" },
-        { "text": "Essential Tax", "style": "th" },
+        { "text": "आवश्यक कर", "style": "th" },
         { "text": "{{essentialTax}}", "style": "td" }      
         
       ],
       [
-        { "text": "Other Factor", "style": "th" },
-        { "text": "Mobile Tower: {{mobileTower}} ; Advertisement: {{advertisement}} ; Bond Road: {{bondRoad}} ", "colSpan": 3, "style": "td" },
+        { "text": "अन्य कारक", "style": "th" },
+        { "text": "मोबाइल टॉवर: {{mobileTower}} ; विज्ञापन: {{advertisement}} ; बॉन्ड रोड: {{bondRoad}} ", "colSpan": 3, "style": "td" },
         {}, {}, 
-        { "text": "Date", "style": "th" },
+        { "text": "दिनांक", "style": "th" },
         { "text": "{{paymentDate}}",  "style": "td" }
 
       ]
