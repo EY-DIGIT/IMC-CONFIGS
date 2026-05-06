@@ -13,7 +13,7 @@
       },
       {
         "columns": [
-          { "text": "Demand Note u/s 174", "style": "topline" },
+          { "text": "मांग पर्ची u/s 174", "style": "topline" },
           { "text": "{{paymentDate}}", "alignment": "right", "style": "topline" }
         ],
         "margin": [0, 0, 0, 10]
@@ -31,7 +31,7 @@
 
   
 {
-  "text": "Assessment Year: {{assessmentYear}}",
+  "text": "मूल्यांकन वर्ष: {{assessmentYear}}",
   "fontSize": 9,
   "bold": true,
   "margin": [0, 0, 0, 8]
@@ -45,7 +45,7 @@
     "widths": ["15%", "20%", "15%", "20%", "15%", "15%"],
     "body": [
       [
-        { "text": "Property ID", "style": "th" },
+        { "text": "संपत्ति आईडी", "style": "th" },
         { "text": "{{consumerID}}", "style": "td" },
         { "text": "Old Property ID", "style": "th" },
         { "text": "{{oldpropertyid}}", "style": "td" },
@@ -53,36 +53,36 @@
         { "text": "{{paymentDate}}", "style": "td" }
       ],
       [
-        { "text": "Owner Name", "style": "th" },
+        { "text": "स्वामी का नाम", "style": "th" },
         { "text": "{{payerName}}", "colSpan": 3, "style": "td" },
         {},
         {},
-        { "text": "Mobile No", "style": "th" },
+        { "text": "मोबाइल नंबर", "style": "th" },
         { "text": "{{payerContact}}", "style": "td" }
       ],
       [
-        { "text": "Address", "style": "th" },
+        { "text": "पता", "style": "th" },
         { "text": "{{ptAddress}}", "colSpan": 3, "style": "td" },
         {}, 
         {},
-        { "text": "Rate Zone", "style": "th" },
+        { "text": "दर क्षेत्र", "style": "th" },
         { "text": "{{rateZone}}", "style": "td" }
 
       ],
       [
-        { "text": "Road Factor", "style": "th" },
+        { "text": "सड़क गुणांक", "style": "th" },
         { "text": "{{roadFactor}}", "style": "td" },
-        { "text": "Exemption", "style": "th" },
+        { "text": "छूट", "style": "th" },
         { "text": "{{exemption}}", "style": "td" },
-        { "text": "Essential Tax", "style": "th" },
+        { "text": "आवश्यक कर", "style": "th" },
         { "text": "{{essentialTax}}", "style": "td" }      
         
       ],
       [
-        { "text": "Other Factor", "style": "th" },
-        { "text": "Mobile Tower: {{mobileTower}} ; Advertisement: {{advertisement}} ; Bond Road: {{bondRoad}} ", "colSpan": 3, "style": "td" },
+        { "text": "अन्य कारक", "style": "th" },
+        { "text": "मोबाइल टॉवर: {{mobileTower}} ; विज्ञापन: {{advertisement}} ; बॉन्ड रोड: {{bondRoad}} ", "colSpan": 3, "style": "td" },
         {}, {}, 
-        { "text": "Date", "style": "th" },
+        { "text": "दिनांक", "style": "th" },
         { "text": "{{paymentDate}}",  "style": "td" }
 
       ]
@@ -120,15 +120,15 @@
         {}
       ],
       [
-        { "text": "{{th_usage_type}}", "style": "th" },
-        { "text": "{{th_usage_factor}}", "style": "th" },
-        { "text": "{{th_floor_no}}", "style": "th" },
-        { "text": "{{th_construction_type}}", "style": "th" },
-        { "text": "Area (Sq. ft.)", "style": "th" },
-        { "text": "{{th_rate}}", "style": "th" },
-        { "text": "{{th_alv}}", "style": "th" },
-        { "text": "{{th_maintenance}}", "style": "th" },
-        { "text": "{{th_tpv}}", "style": "th" }
+        { "text": "उपयोग प्रकार", "style": "th" },
+        { "text": "उपयोग गुणांक", "style": "th" },
+        { "text": "मंज़िल संख्या", "style": "th" },
+        { "text": "निर्माण का प्रकार", "style": "th" },
+        { "text": "क्षेत्रफल (वर्ग फुट में)", "style": "th" },
+        { "text": "दर", "style": "th" },
+        { "text": "वार्षिक भाड़ा मूल्य", "style": "th" },
+        { "text": "रखरखाव छूट", "style": "th" },
+        { "text": "प्राप्त वार्षिक भाड़ा मूल्य", "style": "th" }
       ],
       "{{#calcTableData}}[{\"text\":\"{{calc_usageType}}\",\"style\":\"td\"},{\"text\":\"{{calc_usageFactor}}\",\"style\":\"td\"},{\"text\":\"{{calc_floorNo}}\",\"style\":\"td\"},{\"text\":\"{{calc_constructionType}}\",\"style\":\"td\"},{\"text\":\"{{calc_area}}\",\"style\":\"td\"},{\"text\":\"₹ {{calc_rate}}\",\"style\":\"td\"},{\"text\":\"₹ {{calc_alv}}\",\"style\":\"td\"},{\"text\":\"₹ {{maintainance_discount}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_tpv}}\",\"style\":\"td\"}]{{/calcTableData}}"
     ]
@@ -171,8 +171,8 @@
 
       ],
       [
-        { "text": "Year", "style": "th" },
-        { "text": "Demand", "style": "th" },
+        { "text": "वर्ष", "style": "th" },
+        { "text": "मांग", "style": "th" },
         { "text": "Collection/Paid", "style": "th" },
         { "text": "Cumulative Balance", "style": "th" }
       ],
@@ -212,18 +212,18 @@
       ],
 
             [
-              { "text": "{{th_year}}", "style": "th" },
-              { "text": "{{th_property_tax}}", "style": "th" },
-              { "text": "{{th_samekit_tax}}", "style": "th" },
-              { "text": "{{th_education_cess}}", "style": "th" },
-              { "text": "{{th_water_cess}}", "style": "th" },
-              { "text": "{{th_drainage_cess}}", "style": "th" },
-              { "text": "{{th_urban_dev_cess}}", "style": "th" },
-              { "text": "{{th_service_charge}}", "style": "th" },
-              { "text": "{{th_total_tax}}", "style": "th" },
-              { "text": "{{th_rebate}}", "style": "th" },
-              { "text": "{{th_penalty}}", "style": "th" },
-              { "text": "{{th_net_total}}", "style": "th" }
+              { "text": "वर्ष", "style": "th" },
+              { "text": "संपत्ति कर", "style": "th" },
+              { "text": "समेकित कर", "style": "th" },
+              { "text": "शिक्षा उपकर", "style": "th" },
+              { "text": "जल अभिकर", "style": "th" },
+              { "text": "जल निकास कर", "style": "th" },
+              { "text": "नगरीय विकास उपकर", "style": "th" },
+              { "text": "सेवा शुल्क", "style": "th" },
+              { "text": "कुल कर", "style": "th" },
+              { "text": "छूट", "style": "th" },
+              { "text": "अधिभार", "style": "th" },
+              { "text": "देय कर राशि", "style": "th" }
             ],
             "{{#newtaxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_propertyTax}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_samekitTax}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_educationCess}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_waterCess}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_drainageCess}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_urbanDevCess}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_serviceCharge}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_totalTax}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_rebate}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_penalty}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_netTotal}}\",\"style\":\"td\"}]{{/newtaxTableData}}"
           ]
