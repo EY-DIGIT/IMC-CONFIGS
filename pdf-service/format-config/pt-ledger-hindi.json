@@ -38,15 +38,15 @@
     "widths": ["15%", "20%", "15%", "20%", "15%", "15%"],
     "body": [
       [
-        { "text": "Property ID", "style": "th" },
+        { "text": "संपत्ति आईडी", "style": "th" },
         { "text": "{{consumerID}}", "style": "td" },
         { "text": "Old Property ID", "style": "th" },
         { "text": "{{oldpropertyid}}", "style": "td" },
-        { "text": "Rate Zone", "style": "th" },
+        { "text": "दर क्षेत्र", "style": "th" },
         { "text": "{{rateZone}}", "style": "td" }
       ],
       [
-        { "text": "Owner Name", "style": "th" },
+        { "text": "स्वामी का नाम", "style": "th" },
         { "text": "{{payerName}}", "colSpan": 3, "style": "td" },
         {},
         {},
@@ -54,28 +54,28 @@
         { "text": "{{paymentDate}}", "style": "td" }
       ],
       [
-        { "text": "Address", "style": "th" },
+        { "text": "पता", "style": "th" },
         { "text": "{{ptAddress}}", "colSpan": 3, "style": "td" },
         {}, 
         {},
-        { "text": "Zone/Ward", "style": "th" },
+        { "text": "झोन/वार्ड", "style": "th" },
         { "text": "{{zone}} / {{ward}}", "style": "td" }
 
       ],
       [
-        { "text": "Mobile No", "style": "th" },
+        { "text": "मोबाइल नंबर", "style": "th" },
         { "text": "{{payerContact}}", "colSpan": 2, "style": "td" },
         {},
-        { "text": "Email", "style": "th" },
+        { "text": "ईमेल आईडी", "style": "th" },
         { "text": "{{ownerEmail}}", "colSpan": 2, "style": "td" },
         {}
         
       ],
       [
-        { "text": "Exemption", "style": "th" },
+        { "text": "छूट", "style": "th" },
         { "text": "{{}}", "colSpan": 3, "style": "td" },
         {}, {}, 
-        { "text": "Date", "style": "th" },
+        { "text": "दिनांक", "style": "th" },
         { "text": "{{paymentDate}}",  "style": "td" }
 
       ]
