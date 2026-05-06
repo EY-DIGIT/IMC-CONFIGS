@@ -191,7 +191,7 @@
           "body": [
             [
         {
-          "text": "Tax Details",
+          "text": "कर विवरण",
           "style": "tableHeader",
           "colSpan": 12,
           "alignment": "center",

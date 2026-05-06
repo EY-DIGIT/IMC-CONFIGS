@@ -22,9 +22,9 @@
       {
         "alignment": "center",
         "stack": [
-          { "text": "Indore Municipal Corporation", "style": "header-title" },
+          { "text": "इंदौर नगर पालिका निगम", "style": "header-title" },
           { "text": "संपत्ति कर", "style": "header-subtitle" },
-          { "text": "Municipal Act 1956 Sec. 186", "style": "info-value" },
+          { "text": "म. प्र. नगर पालिका अिधिनयम 1956, धारा 186", "style": "info-value" },
           { "text": "बहीखाता", "style": "ledger-title" }
         ],
         "margin": [0, 0, 0, 10]
@@ -40,7 +40,7 @@
       [
         { "text": "संपत्ति आईडी", "style": "th" },
         { "text": "{{consumerID}}", "style": "td" },
-        { "text": "Old Property ID", "style": "th" },
+        { "text": "पुराना संपत्ति आईडी", "style": "th" },
         { "text": "{{oldpropertyid}}", "style": "td" },
         { "text": "दर क्षेत्र", "style": "th" },
         { "text": "{{rateZone}}", "style": "td" }
@@ -50,7 +50,7 @@
         { "text": "{{payerName}}", "colSpan": 3, "style": "td" },
         {},
         {},
-        { "text": "Connection Date", "style": "th" },
+        { "text": "कनेक्शन दिनांक", "style": "th" },
         { "text": "{{paymentDate}}", "style": "td" }
       ],
       [
@@ -96,7 +96,7 @@
     "body": [
       [
         {
-          "text": "Dimension Details",
+          "text": "आयाम विवरण",
           "style": "tableHeader",
           "colSpan": 9,
           "alignment": "center",
@@ -138,7 +138,7 @@
     "body": [
       [
         {
-          "text": "Summary Ledger",
+          "text": "सारांश बही",
           "style": "tableHeader",
           "colSpan": 4,
           "alignment": "center",
@@ -151,8 +151,8 @@
       [
         { "text": "वर्ष", "style": "th" },
         { "text": "मांग", "style": "th" },
-        { "text": "Collection/Paid", "style": "th" },
-        { "text": "Cumulative Balance", "style": "th" }
+        { "text": "संग्रहण / भुगतान", "style": "th" },
+        { "text": "संचयी शेष", "style": "th" }
       ],
             "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_demand}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_paid}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_cumulative}}\",\"style\":\"td\"}]{{/taxTableData}}"
     ]
