@@ -15,7 +15,7 @@
       },
       {
         "columns": [
-          { "text": "Detailed Ledger Report", "style": "topline" },
+          { "text": "विस्तृत बहीखाता रिपोर्ट", "style": "topline" },
           { "text": "{{paymentDate}}", "alignment": "right", "style": "topline" }
         ],
         "margin": [0, 0, 0, 10]
@@ -24,10 +24,10 @@
       {
         "alignment": "center",
         "stack": [
-          { "text": "Indore Municipal Corporation", "style": "header-title" },
+          { "text": "इंदौर नगर पालिका निगम", "style": "header-title" },
           { "text": "संपत्ति कर", "style": "header-subtitle" },
-          { "text": "Municipal Act 1956 Sec. 186", "style": "info-value" },
-          { "text": "Detailed Ledger Report", "style": "ledger-title" }
+          { "text": "म. प्र. नगर पालिका अिधिनयम 1956, धारा 186", "style": "info-value" },
+          { "text": "विस्तृत बहीखाता रिपोर्ट", "style": "ledger-title" }
         ],
         "margin": [0, 0, 0, 10]
       },
@@ -42,7 +42,7 @@
       [
         { "text": "संपत्ति आईडी", "style": "th" },
         { "text": "{{consumerID}}", "style": "td" },
-        { "text": "Old Property ID", "style": "th" },
+        { "text": "पुराना संपत्ति आईडी", "style": "th" },
         { "text": "{{oldpropertyid}}", "style": "td" },
         { "text": "दर क्षेत्र", "style": "th" },
         { "text": "{{rateZone}}", "style": "td" }
@@ -52,7 +52,7 @@
         { "text": "{{payerName}}", "colSpan": 3, "style": "td" },
         {},
         {},
-        { "text": "Connection Date", "style": "th" },
+        { "text": "कनेक्शन दिनांक", "style": "th" },
         { "text": "{{paymentDate}}", "style": "td" }
       ],
       [
@@ -98,7 +98,7 @@
     "body": [
       [
         {
-          "text": "Dimension Details",
+          "text": "आयाम विवरण",
           "style": "tableHeader",
           "colSpan": 9,
           "alignment": "center",
@@ -140,7 +140,7 @@
     "body": [
       [
         {
-          "text": "Summary Ledger",
+          "text": "सारांश बही",
           "style": "tableHeader",
           "colSpan": 15,
           "alignment": "center",
@@ -173,10 +173,10 @@
         { "text": "कुल कर", "style": "th" },
         { "text": "अधिभार", "style": "th" },
         { "text": "छूट", "style": "th" },
-        { "text": "Lok Adalat Discount", "style": "th" },
+        { "text": "लोक अदालत छूट", "style": "th" },
         { "text": "देय कर राशि", "style": "th" },
-        { "text": "Collection/Paid", "style": "th" },
-        { "text": "Cumulative Balance", "style": "th" }
+        { "text": "संग्रहण / भुगतान", "style": "th" },
+        { "text": "संचयी शेष", "style": "th" }
       ],
             "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_propertyTax}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_samekitTax}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_educationCess}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_waterCess}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_drainageCess}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_urbanDevCess}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_serviceCharge}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_totalTax}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_penalty}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_rebate}}\",\"style\":\"td\"},{\"text\":\"₹ {{lokadalat}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_netTotal}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_paid}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_cumulative}}\",\"style\":\"td\"}]{{/taxTableData}}"
     ]
