@@ -13,7 +13,7 @@
       },
       {
         "columns": [
-          { "text": "मांग पर्ची u/s 173", "style": "topline" },
+          { "text": "धा. 173 के अंतर्गत मांग पत्र", "style": "topline" },
           { "text": "{{paymentDate}}", "alignment": "right", "style": "topline" }
         ],
         "margin": [0, 0, 0, 10]
@@ -22,8 +22,8 @@
       {
         "alignment": "center",
         "stack": [
-          { "text": "Indore Municipal Corporation", "style": "header-title", "fontsize": 13 },
-          { "text": "Demand Notice Under Section 173", "style": "header-subtitle", "fontsize": 12 }
+          { "text": "इंदौर नगर पालिका निगम", "style": "header-title", "fontsize": 13 },
+          { "text": "धा. 173 के अंतर्गत मांग पत्र", "style": "header-subtitle", "fontsize": 12 }
           
         ],
         "margin": [0, 0, 0, 10]
@@ -47,9 +47,9 @@
       [
         { "text": "संपत्ति आईडी", "style": "th" },
         { "text": "{{consumerID}}", "style": "td" },
-        { "text": "Old Property ID", "style": "th" },
+        { "text": "पुराना संपत्ति आईडी", "style": "th" },
         { "text": "{{oldpropertyid}}", "style": "td" },
-        { "text": "Connection Date", "style": "th" },
+        { "text": "कनेक्शन दिनांक", "style": "th" },
         { "text": "{{paymentDate}}", "style": "td" }
       ],
       [
@@ -103,7 +103,7 @@
     "body": [
       [
         {
-          "text": "Dimension Details",
+          "text": "आयाम विवरण",
           "style": "tableHeader",
           "colSpan": 9,
           "alignment": "center",
@@ -149,7 +149,7 @@
 
         {
 
-          "text": "Summary Ledger",
+          "text": "सारांश बही",
 
           "style": "tableHeader",
 
@@ -173,8 +173,8 @@
       [
         { "text": "वर्ष", "style": "th" },
         { "text": "मांग", "style": "th" },
-        { "text": "Collection/Paid", "style": "th" },
-        { "text": "Cumulative Balance", "style": "th" }
+        { "text": "संग्रहण / भुगतान", "style": "th" },
+        { "text": "संचयी शेष", "style": "th" }
       ],
       "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_netTotal}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_paid}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_cumulative}}\",\"style\":\"td\"}]{{/taxTableData}}"
     ]
@@ -237,7 +237,7 @@
     "body": [
       [
         {
-          "text": "Arrear: ₹ {{arrearAmt}}",
+          "text": "बकाया: ₹ {{arrearAmt}}",
           "bold": true,
           "fontSize": 8,
           "fillColor": "#FAE3D5",
@@ -245,7 +245,7 @@
           "margin": [6, 4, 6, 4]
         },
         {
-          "text": "Current Year Net Tax: ₹ {{currentYearNetTax}}",
+          "text": "वर्तमान कर राशि: ₹ {{currentYearNetTax}}",
           "bold": true,
           "fontSize": 8,
           "fillColor": "#FAE3D5",
@@ -253,7 +253,7 @@
           "margin": [6, 4, 6, 4]
         },
         {
-          "text": "Previous Balance: ₹ {{previousBalance}}",
+          "text": "पूर्व शेष राशि: ₹ {{previousBalance}}",
           "bold": true,
           "fontSize": 8,
           "fillColor": "#FAE3D5",
@@ -261,7 +261,7 @@
           "margin": [6, 4, 6, 4]
         },
         {
-          "text": "Total Payable Amount: ₹ {{totalDemandPayable}}",
+          "text": "कुल देय राशि: ₹ {{totalDemandPayable}}",
           "bold": true,
           "fontSize": 8,
           "fillColor": "#FAE3D5",
@@ -276,7 +276,7 @@
 
 
 {
-  "text": "Terms & Condition:",
+  "text": "नियम एवं शर्तें लागू:",
   "bold": true,
   "fontSize": 11,
   "margin": [0, 20, 0, 6]
