@@ -112,8 +112,8 @@
         {}
       ],
       [
-        { "text": "{{th_usage_type}}", "style": "th" },
-        { "text": "{{th_usage_factor}}", "style": "th" },
+        { "text": "उपयोग प्रकार", "style": "th" },
+        { "text": "उपयोग गुणांक", "style": "th" },
         { "text": "{{th_floor_no}}", "style": "th" },
         { "text": "{{th_construction_type}}", "style": "th" },
         { "text": "Area (Sq. ft.)", "style": "th" },
