@@ -13,7 +13,7 @@
       },
       {
         "columns": [
-          { "text": "Ledger", "style": "topline" },
+          { "text": "बहीखाता", "style": "topline" },
           { "text": "{{paymentDate}}", "alignment": "right", "style": "topline" }
         ],
         "margin": [0, 0, 0, 10]
@@ -25,7 +25,7 @@
           { "text": "Indore Municipal Corporation", "style": "header-title" },
           { "text": "Property Tax", "style": "header-subtitle" },
           { "text": "Municipal Act 1956 Sec. 186", "style": "info-value" },
-          { "text": "Ledger", "style": "ledger-title" }
+          { "text": "बहीखाता", "style": "ledger-title" }
         ],
         "margin": [0, 0, 0, 10]
       },
@@ -149,8 +149,8 @@
         {}
       ],
       [
-        { "text": "Year", "style": "th" },
-        { "text": "Demand", "style": "th" },
+        { "text": "वर्ष", "style": "th" },
+        { "text": "मांग", "style": "th" },
         { "text": "Collection/Paid", "style": "th" },
         { "text": "Cumulative Balance", "style": "th" }
       ],
