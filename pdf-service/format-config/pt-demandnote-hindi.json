@@ -305,7 +305,7 @@
     },
     {
       "text": [
-        { "text": "Scan to pay or goto ", "fontSize": 10 },
+        { "text": "स्कैन करें या ", "fontSize": 10 },
         {
           "text": "citizenservicesuat.eydemoapp.in",
           "fontSize": 10,
@@ -317,7 +317,7 @@
       "margin": [0, 0, 0, 2]
     },
     {
-      "text": "to pay property bill online.",
+      "text": "पर जाकर अपना संपत्ति कर ऑनलाइन भुगतान करें।",
       "fontSize": 10,
       "alignment": "left"
     }
