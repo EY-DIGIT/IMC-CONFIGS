@@ -25,7 +25,7 @@
         "alignment": "center",
         "stack": [
           { "text": "Indore Municipal Corporation", "style": "header-title" },
-          { "text": "Property Tax", "style": "header-subtitle" },
+          { "text": "संपत्ति कर", "style": "header-subtitle" },
           { "text": "Municipal Act 1956 Sec. 186", "style": "info-value" },
           { "text": "Detailed Ledger Report", "style": "ledger-title" }
         ],
