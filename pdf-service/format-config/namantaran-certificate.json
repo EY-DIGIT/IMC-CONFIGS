@@ -64,40 +64,47 @@
     "body": [
       [
         {
-  "columns": [
-    {
-      "width": "55%",
-      "stack": [
-        {
-          "text": "संपत्ति कर मूल खाता:",
-          "fontSize": 8,
-          "bold": true,
-          "margin": [0, 0, 0, 4]
-        },
-        {
-          "text": "{{peikiLabel}}",
-          "fontSize": 8,
-          "bold": true
+          "columns": [
+            {
+              "width": "55%",
+              "stack": [
+                {
+                  "text": "संपत्ति कर मूल खाता:",
+                  "fontSize": 8,
+                  "bold": true,
+                  "margin": [0, 0, 0, 4]
+                },
+                {
+                  "text": "{{peikiLabel}",
+                  "fontSize": 8,
+                  "bold": true,
+                  "margin": [0, 0, 0, 4]
+                },
+                {
+                  "text": " ",
+                  "fontSize": 8
+                }
+              ]
+            },
+            {
+              "width": "45%",
+              "stack": [
+                {
+                  "text": "{{propertyId}}",
+                  "fontSize": 8,
+                  "margin": [0, 0, 0, 4]
+                },
+                {
+                  "text": "{{peikiValue}}",
+                  "fontSize": 8,
+                  "margin": [0, 0, 0, 4]
+                }
+                
+              ]
+            }
+          ],
+          "margin": [6, 6, 6, 6]
         }
-      ]
-    },
-    {
-      "width": "45%",
-      "stack": [
-        {
-          "text": "{{propertyId}}",
-          "fontSize": 8,
-          "margin": [0, 0, 0, 4]
-        },
-        {
-          "text": "{{peikiValue}}",
-          "fontSize": 8
-        }
-      ]
-    }
-  ]
-}
-
       ]
     ]
   },
