@@ -75,7 +75,7 @@
                   "margin": [0, 0, 0, 4]
                 },
                 {
-                  "text": "{{peikiLabel}",
+                  "text": "{{peikiLabel}}",
                   "fontSize": 8,
                   "bold": true,
                   "margin": [0, 0, 0, 4]
