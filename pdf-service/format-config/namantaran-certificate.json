@@ -98,11 +98,8 @@
                   "text": "{{peikiValue}}",
                   "fontSize": 8,
                   "margin": [0, 0, 0, 4]
-                },
-                {
-                  "text": "<New Property ID n>",
-                  "fontSize": 8
                 }
+                
               ]
             }
           ],
