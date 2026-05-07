@@ -48,6 +48,12 @@
               {"variable": "name", "value": {"path": "$.owners[0].name"}},
               {"variable": "permanentAddress", "value": {"path": "$.owners[0].permanentAddress"}},
               {
+  "variable": "creationReason",
+  "value": {
+    "path": "$.creationReason"
+  }
+},
+              {
   "variable": "newspaperName",
   "value": {
     "path": "$.additionalDetails.newspaperName"
@@ -468,6 +474,14 @@
   "variable": "displayfatherOrHusbandNamenew",
   "formula": "'{{fatherOrHusbandNamenew}}' == 'Not Applicable' || '{{fatherOrHusbandNamenew}}' == 'NOT APPLICABLE' || '{{fatherOrHusbandNamenew}}' == 'not applicable' || '{{fatherOrHusbandNamenew}}' == 'Not applicable' || '{{fatherOrHusbandNamenew}}' == 'NA' || '{{fatherOrHusbandNamenew}}' == 'N/A' || '{{fatherOrHusbandNamenew}}' == '' ? '' : '{{fatherOrHusbandNamenew}}'"
 },          
+{
+  "variable": "peikiLabel",
+  "formula": "'{{creationReason}}' == 'BIFURCATION' ? 'संपत्ति कर पैकी खाता:' : ''"
+},
+{
+  "variable": "peikiValue",
+  "formula": "'{{creationReason}}' == 'BIFURCATION' ? '{{propertyId}}' : ''"
+},
               { "variable": "th_year", "formula": "'Year'" },
               { "variable": "th_property_tax", "formula": "'Property Tax'" },
               { "variable": "th_samekit_tax", "formula": "'Samekit Tax'" },

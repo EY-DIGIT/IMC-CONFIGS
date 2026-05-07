@@ -75,7 +75,7 @@
                   "margin": [0, 0, 0, 4]
                 },
                 {
-                  "text": "संपत्ति कर पैकी खाता:",
+                  "text": "{{peikiLabel}",
                   "fontSize": 8,
                   "bold": true,
                   "margin": [0, 0, 0, 4]
@@ -95,7 +95,7 @@
                   "margin": [0, 0, 0, 4]
                 },
                 {
-                  "text": "<New Property ID 1>",
+                  "text": "{{peikiValue}}",
                   "fontSize": 8,
                   "margin": [0, 0, 0, 4]
                 },
