@@ -1,0 +1,364 @@
+{
+  "key": "pt-demandnote-hindi",
+  "config": {
+    "pageSize": "A4",
+    "pageMargins": [30, 15, 30, 15],
+    "defaultStyle": { "font": "Cambay" },
+    "content": [
+
+      {
+        "image": "{{logoImage}}",
+        "width": 400,
+        "absolutePosition": { "x": 100, "y": 150 }
+      },
+      {
+        "columns": [
+          { "text": "धा. 173 के अंतर्गत मांग पत्र", "style": "topline" },
+          { "text": "{{paymentDate}}", "alignment": "right", "style": "topline" }
+        ],
+        "margin": [0, 0, 0, 10]
+      },
+
+      {
+        "alignment": "center",
+        "stack": [
+          { "text": "इंदौर नगर पालिका निगम", "style": "header-title", "fontsize": 13 },
+          { "text": "धा. 173 के अंतर्गत मांग पत्र", "style": "header-subtitle", "fontsize": 12 }
+          
+        ],
+        "margin": [0, 0, 0, 10]
+      },
+
+  
+{
+  "text": "मूल्यांकन वर्ष: {{assessmentYear}}",
+  "fontSize": 9,
+  "bold": true,
+  "margin": [0, 0, 0, 8]
+},
+
+
+     {
+  "style": "infoTable",
+  "margin": [0, 10, 0, 10],
+  "table": {
+    "widths": ["15%", "20%", "15%", "20%", "15%", "15%"],
+    "body": [
+      [
+        { "text": "संपत्ति आईडी", "style": "th" },
+        { "text": "{{consumerID}}", "style": "td" },
+        { "text": "पुराना संपत्ति आईडी", "style": "th" },
+        { "text": "{{oldpropertyid}}", "style": "td" },
+        { "text": "कनेक्शन दिनांक", "style": "th" },
+        { "text": "{{paymentDate}}", "style": "td" }
+      ],
+      [
+        { "text": "स्वामी का नाम", "style": "th" },
+        { "text": "{{payerName}}", "colSpan": 3, "style": "td" },
+        {},
+        {},
+        { "text": "मोबाइल नंबर", "style": "th" },
+        { "text": "{{payerContact}}", "style": "td" }
+      ],
+      [
+        { "text": "पता", "style": "th" },
+        { "text": "{{ptAddress}}", "colSpan": 3, "style": "td" },
+        {}, 
+        {},
+        { "text": "दर क्षेत्र", "style": "th" },
+        { "text": "{{rateZone}}", "style": "td" }
+
+      ],
+      [
+        { "text": "सड़क गुणांक", "style": "th" },
+        { "text": "{{roadFactor}}", "style": "td" },
+        { "text": "छूट", "style": "th" },
+        { "text": "{{exemption}}", "style": "td" },
+        { "text": "आवश्यक कर", "style": "th" },
+        { "text": "{{essentialTax}}", "style": "td" }      
+        
+      ],
+      [
+        { "text": "अन्य कारक", "style": "th" },
+        { "text": "मोबाइल टॉवर: {{mobileTower}} ; विज्ञापन: {{advertisement}} ; बॉन्ड रोड: {{bondRoad}} ", "colSpan": 3, "style": "td" },
+        {}, {}, 
+        { "text": "दिनांक", "style": "th" },
+        { "text": "{{paymentDate}}",  "style": "td" }
+
+      ]
+    ]
+  }
+},
+
+
+
+      {
+  "style": "calcTable",
+  "margin": [0, 0, 0, 10],
+  "table": {
+    "widths": ["14%", "15%", "9%", "14%", "9%", "8%", "9%", "14%", "8%"],
+    "headerRows": 2,
+    "keepWithHeaderRows": 1,
+    "dontBreakRows": true,
+    "body": [
+      [
+        {
+          "text": "आयाम विवरण",
+          "style": "tableHeader",
+          "colSpan": 9,
+          "alignment": "center",
+          "bold": true,
+          "fillColor": "#DAE1F3"
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        { "text": "उपयोग प्रकार", "style": "th" },
+        { "text": "उपयोग गुणांक", "style": "th" },
+        { "text": "मंज़िल संख्या", "style": "th" },
+        { "text": "निर्माण का प्रकार", "style": "th" },
+        { "text": "क्षेत्रफल (वर्ग फुट में)", "style": "th" },
+        { "text": "दर", "style": "th" },
+        { "text": "वार्षिक भाड़ा मूल्य", "style": "th" },
+        { "text": "रखरखाव छूट", "style": "th" },
+        { "text": "प्राप्त वार्षिक भाड़ा मूल्य", "style": "th" }
+      ],
+      "{{#calcTableData}}[{\"text\":\"{{calc_usageType}}\",\"style\":\"td\"},{\"text\":\"{{calc_usageFactor}}\",\"style\":\"td\"},{\"text\":\"{{calc_floorNo}}\",\"style\":\"td\"},{\"text\":\"{{calc_constructionType}}\",\"style\":\"td\"},{\"text\":\"{{calc_area}}\",\"style\":\"td\"},{\"text\":\"₹ {{calc_rate}}\",\"style\":\"td\"},{\"text\":\"₹ {{calc_alv}}\",\"style\":\"td\"},{\"text\":\"₹ {{maintainance_discount}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_tpv}}\",\"style\":\"td\"}]{{/calcTableData}}"
+    ]
+  },
+  "layout": {}
+},
+{
+  "style": "TaxTable",
+  "margin": [0, 0, 0, 10],
+
+  "table": {
+    "widths": ["25%", "25%", "25%", "25%"],
+    "headerRows": 2,
+    "keepWithHeaderRows": 1,
+    "dontBreakRows": true,
+    "body": [
+      [
+
+        {
+
+          "text": "सारांश बही",
+
+          "style": "tableHeader",
+
+          "colSpan": 4,
+
+          "alignment": "center",
+
+          "bold": true,
+
+          "fillColor": "#DAE1F3"
+
+        },
+
+        {},
+
+        {},
+
+        {}
+
+      ],
+      [
+        { "text": "वर्ष", "style": "th" },
+        { "text": "मांग", "style": "th" },
+        { "text": "संग्रहण / भुगतान", "style": "th" },
+        { "text": "संचयी शेष", "style": "th" }
+      ],
+      "{{#taxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_netTotal}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_paid}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_cumulative}}\",\"style\":\"td\"}]{{/taxTableData}}"
+    ]
+  },
+  "layout": {}
+},
+{
+        "style": "newtaxTable",
+        "table": {
+          "widths": ["7%", "8%", "8%", "9%", "6%", "8%", "13%", "8%", "8%", "8%", "8%","9%"],
+          "headerRows": 2,
+          "keepWithHeaderRows": 1,
+          "dontBreakRows": true,
+          "body": [
+            [
+        {
+          "text": "कर विवरण",
+          "style": "tableHeader",
+          "colSpan": 12,
+          "alignment": "center",
+          "bold": true,
+          "fillColor": "#DAE1F3"
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+
+            [
+              { "text": "वर्ष", "style": "th" },
+              { "text": "संपत्ति कर", "style": "th" },
+              { "text": "समेकित कर", "style": "th" },
+              { "text": "शिक्षा उपकर", "style": "th" },
+              { "text": "जल अभिकर", "style": "th" },
+              { "text": "जल निकास कर", "style": "th" },
+              { "text": "नगरीय विकास उपकर", "style": "th" },
+              { "text": "सेवा शुल्क", "style": "th" },
+              { "text": "कुल कर", "style": "th" },
+              { "text": "छूट", "style": "th" },
+              { "text": "अधिभार", "style": "th" },
+              { "text": "देय कर राशि", "style": "th" }
+            ],
+            "{{#newtaxTableData}}[{\"text\":\"{{tax_year}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_propertyTax}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_samekitTax}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_educationCess}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_waterCess}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_drainageCess}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_urbanDevCess}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_serviceCharge}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_totalTax}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_rebate}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_penalty}}\",\"style\":\"td\"},{\"text\":\"₹ {{tax_netTotal}}\",\"style\":\"td\"}]{{/newtaxTableData}}"
+          ]
+        },
+        "layout": {}
+      },
+{
+  "margin": [0, 8, 0, 8],
+  "table": {
+    "widths": ["25%", "25%", "25%", "25%"],
+    "body": [
+      [
+        {
+          "text": "बकाया: ₹ {{arrearAmt}}",
+          "bold": true,
+          "fontSize": 8,
+          "fillColor": "#FAE3D5",
+          "lineHeight": 1.1,
+          "margin": [6, 4, 6, 4]
+        },
+        {
+          "text": "वर्तमान कर राशि: ₹ {{currentYearNetTax}}",
+          "bold": true,
+          "fontSize": 8,
+          "fillColor": "#FAE3D5",
+          "lineHeight": 1.1,
+          "margin": [6, 4, 6, 4]
+        },
+        {
+          "text": "पूर्व शेष राशि: ₹ {{previousBalance}}",
+          "bold": true,
+          "fontSize": 8,
+          "fillColor": "#FAE3D5",
+          "lineHeight": 1.1,
+          "margin": [6, 4, 6, 4]
+        },
+        {
+          "text": "कुल देय राशि: ₹ {{totalDemandPayable}}",
+          "bold": true,
+          "fontSize": 8,
+          "fillColor": "#FAE3D5",
+          "lineHeight": 1.1,
+          "margin": [6, 4, 6, 4]
+        }
+      ]
+    ]
+  },
+  "layout": "noBorders"
+},
+
+
+{
+  "text": "नियम एवं शर्तें लागू:",
+  "bold": true,
+  "fontSize": 11,
+  "margin": [0, 20, 0, 6]
+},
+{
+  "ol": [
+    "आप इस देयक प्राप्ति से 15 दिवस के अन्दर उक्त राशि का भुगतान करें अन्यथा म.प्र. नगर पालिका अधिनियम 1956 की धारा 174/175 के तहत वसूली की सख्त कार्यवाही की जायेगी|",
+    "उपर्युक्त देयक का भुगतान यदि आपके द्वारा निगम कोष में जमा किया गया है तो उक्त देयक निरस्त माना जायेगा|",
+    "अनुरोध है कि भुगतान के समय अपना मोबाइल क्रमांक अवश्य दें जिससे कि भुगतान की जानकारी आपको एसएमएस के द्वारा दी जा सके|",
+    "समस्त प्रकार के करों / सेवा शुल्कों / देयों का भुगतान नगर निगम / नगर परिषद / नगर पालिका के कैश काउंटर पर अथवा सहायक राजस्व निरीक्षक के पास नकद, UPI, चेक, डिमांड ड्राफ्ट (DD), NEFT, RTGS तथा क्रेडिट/डेबिट कार्ड के माध्यम से किया जा सकता है।"
+  ],
+  "fontSize": 9,
+  "margin": [0, 0, 0, 10]
+},
+
+
+{
+  "margin": [0, 0, 0, 10],
+  "stack": [
+    {
+      "image": "{{qr_code_image}}",
+      "width": 50,
+      "height": 50,
+      "alignment": "left",
+      "margin": [0, 0, 0, 6]
+    },
+    {
+      "text": [
+        { "text": "स्कैन करें या ", "fontSize": 10 },
+        {
+          "text": "citizenservicesuat.eydemoapp.in",
+          "fontSize": 10,
+          "color": "blue",
+          "link": "https://citizenservicesuat.eydemoapp.in"
+        }
+      ],
+      "alignment": "left",
+      "margin": [0, 0, 0, 2]
+    },
+    {
+      "text": "पर जाकर अपना संपत्ति कर ऑनलाइन भुगतान करें।",
+      "fontSize": 10,
+      "alignment": "left"
+    }
+  ]
+}
+
+
+      
+
+
+
+
+
+
+     
+
+      
+    ],
+    
+
+
+    
+
+   
+    
+
+    "styles": {
+      "topline": { "fontSize": 10, "color": "#484848" },
+      "header-title": { "fontSize": 17,"bold": true, "color": "#000000", "margin": [0, -3, 0, 0] },
+      "header-subtitle": { "fontSize": 14,"bold": true, "color": "#000000", "margin": [0, 2, 0, 0] },
+      "ledger-title": { "fontSize": 14, "bold": true, "margin": [0, 4, 0, 2] },
+      "ledger-date": { "fontSize": 9, "color": "#484848" },
+      "info-block": { "fontSize": 10 },
+      "section-title": { "fontSize": 10, "bold": true },
+      "th": { "fontSize": 7,"bold": true, "margin": [2, 3, 2, 3] },
+      "td": { "fontSize": 7, "margin": [2, 3, 2, 3] },
+       "qr-code": {
+        "color": "#000000",
+        "alignment": "left",
+        "margin": [0, 0, 0, 0]
+      }
+    }
+  }
+}

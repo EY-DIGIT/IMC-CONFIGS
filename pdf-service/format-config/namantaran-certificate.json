@@ -35,7 +35,7 @@
           "margin": [0, 0, 0, 4]
         },
         {
-          "text": "{{salutation}} {{name}},",
+          "text": "{{salutation}} {{newownername}},",
           "fontSize": 9
         },
         {
@@ -75,7 +75,7 @@
                   "margin": [0, 0, 0, 4]
                 },
                 {
-                  "text": "संपत्ति कर पैकी खाता:",
+                  "text": "{{peikiLabel}}",
                   "fontSize": 8,
                   "bold": true,
                   "margin": [0, 0, 0, 4]
@@ -95,14 +95,11 @@
                   "margin": [0, 0, 0, 4]
                 },
                 {
-                  "text": "<New Property ID 1>",
+                  "text": "{{peikiValue}}",
                   "fontSize": 8,
                   "margin": [0, 0, 0, 4]
-                },
-                {
-                  "text": "<New Property ID n>",
-                  "fontSize": 8
                 }
+                
               ]
             }
           ],
@@ -125,7 +122,7 @@
       "text": [
         { "text": "विषय: ", "bold": true },
         {
-          "text": "{{doorNo}}, {{ptAddress}}, {{colony}}, {{ward}}, {{zone}}, {{pincode}}, इंदौर (म. प्र.) के संपत्ति कर खाता क्रमांक I-20 085-12345 पर नामांतरण करने हेतु।"
+          "text": "{{doorNo}}, {{ptAddress}}, {{colony}}, {{ward}}, {{zone}}, {{pincode}}, इंदौर (म. प्र.) के संपत्ति कर खाता क्रमांक {{propertyId}} पर नामांतरण करने हेतु।"
         }
       ],
       "fontSize": 9,
@@ -137,7 +134,7 @@
       "margin": [0, 0, 0, 6]
     },
     {
-      "text": "नगर पालिक निगम के कर वसूली लेजर में स्थित मकान क्रमांक {{doorNo}}, {{ptAddress}}, {{colony}}, {{ward}}, {{zone}}, {{pincode}}, इंदौर (म. प्र.) पर पूर्व में दर्ज {{payerName}} {{displayrelationold}} {{displayfatherOrHusbandNameold}} के स्थान पर {{name}} {{displayrelationnew}} {{displayfatherOrHusbandNamenew}}, तथा <Joint New Owner Name> <Relationship> <Father/Husband Name> (संयुक्त स्वामित्व की स्थिति में लागू) का नाम अंकित कर दिया गया है।",
+      "text": "नगर पालिक निगम के कर वसूली लेजर में स्थित मकान क्रमांक {{doorNo}}, {{ptAddress}}, {{colony}}, {{ward}}, {{zone}}, {{pincode}}, इंदौर (म. प्र.) पर पूर्व में दर्ज {{originalownername}} {{displayrelationold}} {{displayfatherOrHusbandNameold}} के स्थान पर {{newownername}} {{displayrelationnew}} {{displayfatherOrHusbandNamenew}}, तथा <Joint New Owner Name> <Relationship> <Father/Husband Name> (संयुक्त स्वामित्व की स्थिति में लागू) का नाम अंकित कर दिया गया है।",
       "fontSize": 9
     }
   ]

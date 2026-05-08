@@ -1,6 +1,6 @@
 {
-  "key": "namantaran-certificate",
-  "documentType": "NAMANTARANCERTIFICATE",
+  "key": "pt-demandnote-hindi",
+  "documentType": "PROPERTYDEMANDNOTEHINDI",
   "DataConfigs": {
     "moduleName": "PT",
     "version": "1.0.0",
@@ -14,8 +14,6 @@
           {
             "direct": [
               { "variable": "payerName", "value": { "path": "$.payerName" } },
-              { "variable": "acknowldgementNumber", "value": { "path": "$.acknowldgementNumber" } },
-
               { "variable": "user-name", "value": { "path": "$.userInfo.name" }, "type": "selectFromRequestInfo" },
               { "variable": "payerContact", "value": { "path": "$.mobileNumber" } },
               { "variable": "paymentStatus", "value": { "path": "$.paymentStatus" }, "localisation": { "required": true, "prefix": null, "module": "rainmaker-common" } },
@@ -35,56 +33,20 @@
               { "variable": "rateZone", "value": { "path": "$.rateZone" } },
               { "variable": "ptAddress", "value": { "path": "$.address" } },
               { "variable": "ward", "value": { "path": "$.ward" } },
-              { "variable": "colony", "value": { "path": "$.colony" } },
-              { "variable": "doorNo", "value": { "path": "$.doorNo" } },
-              { "variable": "pincode", "value": { "path": "$.pincode" } },
-
               { "variable": "plotArea", "value": { "path": "$.plotArea" } },
               { "variable": "isCheque", "value": { "path": "$.isCheque" } },
               { "variable": "paidBy", "value": { "path": "$.paidBy" } },
+              { "variable": "ownerEmail", "value": { "path": "$.payerEmail" }},
+              { "variable": "oldpropertyid", "value": { "path": "$.oldPropertyId" }},
               { "variable": "lokadalat", "value": { "path": "$.lokAdalatDiscount" }},
-              {"variable": "propertyId", "value": {"path": "$.propertyId"}},
-              {"variable": "salutation", "value": {"path": "$.owners[1].salutation"}},
-              {"variable": "originalownername", "value": {"path": "$.owners[0].name"}},
-              {"variable": "newownername", "value": {"path": "$.owners[1].name"}},
-              {"variable": "permanentAddress", "value": {"path": "$.owners[0].permanentAddress"}},
-              {
-  "variable": "creationReason",
-  "value": {
-    "path": "$.creationReason"
-  }
-},
-              {
-  "variable": "newspaperName",
-  "value": {
-    "path": "$.additionalDetails.newspaperName"
-  }
-},
+              { "variable": "assessmentYear", "value": { "path": "$.Calculation.propertyFYDetails[-1:].year" } },
+              { "variable": "essentialTax",  "value": { "path": "$.Calculation.essentialTax" }},
+              { "variable": "roadFactor",  "value": { "path": "$.Calculation.roadFactor" }},
+              { "variable": "exemption", "value": { "path": "$.Calculation.exemption" }},
+              { "variable": "mobileTower", "value": { "path": "$.Calculation.otherFactors[0].mobileTower.active" }},
+              { "variable": "bondRoad", "value": { "path": "$.Calculation.otherFactors[0].bondRoad.active" }},
+              { "variable": "advertisement", "value": { "path": "$.Calculation.otherFactors[0].advertisement.active" }},
 
-              {
-               "variable": "fatherOrHusbandNameold",
-               "value": {
-                 "path": "$.owners[0].fatherOrHusbandName"
-               }
-              },
-              {
-               "variable": "fatherOrHusbandNamenew",
-               "value": {
-                 "path": "$.owners[1].fatherOrHusbandName"
-               }
-              },
-               {
-               "variable": "relationshipold",
-               "value": {
-                 "path": "$.owners[0].relationship"
-               }
-              },
-              {
-               "variable": "relationshipnew",
-               "value": {
-                 "path": "$.owners[1].relationship"
-               }
-              },
               {
                 "variable": "payment_receipt",
                 "value": {
@@ -180,26 +142,6 @@
                   "module":"rainmaker-common"
                }
               },
-              {
-                  "variable": "namantranFees",
-                  "value": {
-                    "path": "$.namantranFees"
-                  }
-              },
-              {
-                  "variable": "rajwadFees",
-                  "value": {
-                    "path": "$.rajwadFees"
-                  } 
-              },
-               {
-                  "variable": "totalAmountPaid",
-                  "value": {
-                    "path": "$.totalAmountPaid"
-                  } 
-              },
-             
-
               {
                 "variable": "billing_period",
                 "value": {
@@ -357,6 +299,12 @@
                }
               },
               {
+  "variable": "qr_code_image",
+  "url": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://citizenservicesuat.eydemoapp.in/",
+  "type": "image"
+},
+
+              {
                 "variable": "to",
                 "value": {
                   "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_TO"
@@ -398,26 +346,52 @@
               { "variable": "calcToDate",          "value": { "path": "$.Calculation.toDate" },   "type": "date" },
 
               {
-  "variable": "calcTableData",
-  "value": {
-    "path": "$.units[*]"
-  },
-  "type": "array",
-  "format": {
-    "type": "object",
-    "scema": [
-      { "variable": "calc_usageType", "value": "usageCategory" },
-      { "variable": "calc_usageFactor", "value": "occupancyType" },
-      { "variable": "calc_floorNo", "value": "floorNo" },
-      { "variable": "calc_constructionType", "value": "constructionDetail.constructionType" },
-      { "variable": "calc_area", "value": "constructionDetail.builtUpArea" },
-      { "variable": "calc_fromYear", "value": "fromYear" },
-      { "variable": "calc_toYear", "value": "toYear" }
-    ]
-  }
-},
+                "variable": "calcTableData",
+                "value": { "path": "$.Calculation.propertyFYDetails[-1:]" },
+                "type": "array",
+                "format": {
+                  "type": "object",
+                  "scema": [
+                    { "variable": "calc_usageType",        "value": "usageType",        "type": "string", "defaultValue": "-" },
+                    { "variable": "calc_usageFactor",      "value": "usageFactor",      "type": "string", "defaultValue": "-" },
+                    { "variable": "calc_floorNo",          "value": "floorNo",          "type": "string", "defaultValue": "-" },
+                    { "variable": "calc_constructionType", "value": "constructionType", "type": "string", "defaultValue": "-" },
+                    { "variable": "calc_area",             "value": "area",             "type": "string", "defaultValue": "-" },
+                    { "variable": "calc_rate",             "value": "factor",           "type": "string", "defaultValue": "-" },
+                    { "variable": "calc_alv",              "value": "alv",              "type": "string", "defaultValue": "-" },
+                    { "variable": "maintainance_discount", "value": "discount",         "type": "string", "defaultValue": "-" },
+                    { "variable": "tax_tpv",               "value": "tpv",              "type": "string", "defaultValue": "-" }
+                  ]
+                }
+              },
               {
                 "variable": "taxTableData",
+                "value": { "path": "$.Calculation.propertyFYTaxSummaries[*]" },
+                "type": "array",
+                "format": {
+                  "type": "object",
+                  "scema": [
+                    { "variable": "tax_year",          "value": "year",           "type": "string", "defaultValue": "-" },
+                    { "variable": "tax_propertyTax",   "value": "propertyTax",    "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_samekitTax",    "value": "samekit",        "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_educationCess", "value": "educationCess",  "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_waterCess",     "value": "jalKar",         "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_drainageCess",  "value": "jalNikas",       "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_urbanDevCess",  "value": "urbanTax",       "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_serviceCharge", "value": "sevaKar",        "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_totalTax",      "value": "totalTax",       "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_rebate",        "value": "rebate",         "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_penalty",       "value": "penalty",        "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_netTotal",      "value": "netTax",         "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_cumulative",    "value": "cumulativeBalance",      "type": "number", "defaultValue": 0 },
+                    { "variable": "tax_paid",          "value": "paidAmount",          "type": "number", "defaultValue": 0 }
+
+
+                  ]
+                }
+              },
+              {
+                "variable": "newtaxTableData",
                 "value": { "path": "$.Calculation.propertyFYTaxSummaries[-1:]" },
                 "type": "array",
                 "format": {
@@ -434,7 +408,11 @@
                     { "variable": "tax_totalTax",      "value": "totalTax",       "type": "number", "defaultValue": 0 },
                     { "variable": "tax_rebate",        "value": "rebate",         "type": "number", "defaultValue": 0 },
                     { "variable": "tax_penalty",       "value": "penalty",        "type": "number", "defaultValue": 0 },
-                    { "variable": "tax_netTotal",      "value": "netTax",         "type": "number", "defaultValue": 0 }
+                    { "variable": "tax_netTotal",      "value": "netTax",         "type": "number", "defaultValue": 0 },
+                                                            { "variable": "tax_cumulative",    "value": "cumulativeBalance",      "type": "number", "defaultValue": 0 },
+                                                                                                                        { "variable": "tax_paid",          "value": "paidAmount",          "type": "number", "defaultValue": 0 }
+
+
                   ]
                 }
               }
@@ -458,31 +436,7 @@
               { "variable": "th_alv", "formula": "'ALV'" },
               { "variable": "th_maintenance", "formula": "'Maintenance Discount'" },
               { "variable": "th_tpv", "formula": "'TPV'" },
-              { "variable": "displaypropertyId", "formula": "{{totalDemandPayable}} == 0 ? '{{propertyId}}':'{{consumerID}}'"},
-{
-  "variable": "displayrelationold",
-  "formula": "'{{relationshipold}}' == 'Not Applicable' || '{{relationshipold}}' == 'NOT APPLICABLE' || '{{relationshipold}}' == 'not applicable' || '{{relationshipold}}' == 'Not applicable' || '{{relationshipold}}' == 'NA' || '{{relationshipold}}' == 'N/A' || '{{relationshipold}}' == '' ? '' : '{{relationshipold}}'"
-}, 
-{
-  "variable": "displayfatherOrHusbandNameold",
-  "formula": "'{{fatherOrHusbandNameold}}' == 'Not Applicable' || '{{fatherOrHusbandNameold}}' == 'NOT APPLICABLE' || '{{fatherOrHusbandNameold}}' == 'not applicable' || '{{fatherOrHusbandNameold}}' == 'Not applicable' || '{{fatherOrHusbandNameold}}' == 'NA' || '{{fatherOrHusbandNameold}}' == 'N/A' || '{{fatherOrHusbandNameold}}' == '' ? '' : '{{fatherOrHusbandNameold}}'"
-},   
-{
-  "variable": "displayrelationnew",
-  "formula": "'{{relationshipnew}}' == 'Not Applicable' || '{{relationshipnew}}' == 'NOT APPLICABLE' || '{{relationshipnew}}' == 'not applicable' || '{{relationshipnew}}' == 'Not applicable' || '{{relationshipnew}}' == 'NA' || '{{relationshipnew}}' == 'N/A' || '{{relationshipnew}}' == '' ? '' : '{{relationshipnew}}'"
-}, 
-{
-  "variable": "displayfatherOrHusbandNamenew",
-  "formula": "'{{fatherOrHusbandNamenew}}' == 'Not Applicable' || '{{fatherOrHusbandNamenew}}' == 'NOT APPLICABLE' || '{{fatherOrHusbandNamenew}}' == 'not applicable' || '{{fatherOrHusbandNamenew}}' == 'Not applicable' || '{{fatherOrHusbandNamenew}}' == 'NA' || '{{fatherOrHusbandNamenew}}' == 'N/A' || '{{fatherOrHusbandNamenew}}' == '' ? '' : '{{fatherOrHusbandNamenew}}'"
-},          
-{
-  "variable": "peikiLabel",
-  "formula": "'{{creationReason}}' == 'BIFURCATION' ? 'संपत्ति कर पैकी खाता:' : ''"
-},
-{
-  "variable": "peikiValue",
-  "formula": "'{{creationReason}}' == 'BIFURCATION' ? '{{propertyId}}' : ''"
-},
+
               { "variable": "th_year", "formula": "'Year'" },
               { "variable": "th_property_tax", "formula": "'Property Tax'" },
               { "variable": "th_samekit_tax", "formula": "'Samekit Tax'" },
