@@ -62,25 +62,25 @@
 },
 
               {
-               "variable": "fatherOrHusbandNamenew",
+               "variable": "fatherOrHusbandNameold",
                "value": {
                  "path": "$.owners[0].fatherOrHusbandName"
                }
               },
               {
-               "variable": "fatherOrHusbandNameold",
+               "variable": "fatherOrHusbandNamenew",
                "value": {
                  "path": "$.owners[1].fatherOrHusbandName"
                }
               },
                {
-               "variable": "newrelationship",
+               "variable": "relationshipold",
                "value": {
                  "path": "$.owners[0].relationship"
                }
               },
               {
-               "variable": "oldrelationship",
+               "variable": "relationshipnew",
                "value": {
                  "path": "$.owners[1].relationship"
                }
@@ -461,7 +461,7 @@
               { "variable": "displaypropertyId", "formula": "{{totalDemandPayable}} == 0 ? '{{propertyId}}':'{{consumerID}}'"},
 {
   "variable": "displayrelationold",
-  "formula": "'{{oldrelationship}}' == 'Not Applicable' || '{{oldrelationship}}' == 'NOT APPLICABLE' || '{{oldrelationship}}' == 'not applicable' || '{{oldrelationship}}' == 'Not applicable' || '{{oldrelationship}}' == 'NA' || '{{oldrelationship}}' == 'N/A' || '{{oldrelationship}}' == '' ? '' : '{{oldrelationship}}'"
+  "formula": "'{{relationshipold}}' == 'Not Applicable' || '{{relationshipold}}' == 'NOT APPLICABLE' || '{{relationshipold}}' == 'not applicable' || '{{relationshipold}}' == 'Not applicable' || '{{relationshipold}}' == 'NA' || '{{relationshipold}}' == 'N/A' || '{{relationshipold}}' == '' ? '' : '{{relationshipold}}'"
 }, 
 {
   "variable": "displayfatherOrHusbandNameold",
@@ -469,7 +469,7 @@
 },   
 {
   "variable": "displayrelationnew",
-  "formula": "'{{newrelationship}}' == 'Not Applicable' || '{{newrelationship}}' == 'NOT APPLICABLE' || '{{newrelationship}}' == 'not applicable' || '{{newrelationship}}' == 'Not applicable' || '{{newrelationship}}' == 'NA' || '{{newrelationship}}' == 'N/A' || '{{newrelationship}}' == '' ? '' : '{{newrelationship}}'"
+  "formula": "'{{relationshipnew}}' == 'Not Applicable' || '{{relationshipnew}}' == 'NOT APPLICABLE' || '{{relationshipnew}}' == 'not applicable' || '{{relationshipnew}}' == 'Not applicable' || '{{relationshipnew}}' == 'NA' || '{{relationshipnew}}' == 'N/A' || '{{relationshipnew}}' == '' ? '' : '{{relationshipnew}}'"
 }, 
 {
   "variable": "displayfatherOrHusbandNamenew",
