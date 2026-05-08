@@ -45,7 +45,8 @@
               { "variable": "lokadalat", "value": { "path": "$.lokAdalatDiscount" }},
               {"variable": "propertyId", "value": {"path": "$.propertyId"}},
               {"variable": "salutation", "value": {"path": "$.owners[0].salutation"}},
-              {"variable": "name", "value": {"path": "$.owners[0].name"}},
+              {"variable": "originalownername", "value": {"path": "$.owners[0].name"}},
+              {"variable": "newownername", "value": {"path": "$.owners[1].name"}},
               {"variable": "permanentAddress", "value": {"path": "$.owners[0].permanentAddress"}},
               {
   "variable": "creationReason",
