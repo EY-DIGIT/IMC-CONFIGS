@@ -35,7 +35,7 @@
           "margin": [0, 0, 0, 4]
         },
         {
-          "text": "{{salutation}} {{newownername}},",
+          "text": "{{salutation}} {{name}},",
           "fontSize": 9
         },
         {
