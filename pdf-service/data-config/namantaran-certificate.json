@@ -481,10 +481,7 @@
   "variable": "displayfatherOrHusbandNamenew",
   "formula": "'{{fatherOrHusbandNamenew}}' == 'Not Applicable' || '{{fatherOrHusbandNamenew}}' == 'NOT APPLICABLE' || '{{fatherOrHusbandNamenew}}' == 'not applicable' || '{{fatherOrHusbandNamenew}}' == 'Not applicable' || '{{fatherOrHusbandNamenew}}' == 'NA' || '{{fatherOrHusbandNamenew}}' == 'N/A' || '{{fatherOrHusbandNamenew}}' == '' ? '' : '{{fatherOrHusbandNamenew}}'"
 },          
-{
-  "variable": "mulKhataLabel",
-  "formula": "'{{creationReason}}' == 'BIFURCATION' ? 'संपत्ति कर मूल खाता:' : ''"
-},
+
 {
   "variable": "mulKhataValue",
   "formula": "'{{creationReason}}' == 'BIFURCATION' ? '{{parentPropertyId}}' : '{{propertyId}}'"
