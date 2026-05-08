@@ -69,7 +69,7 @@
               "width": "55%",
               "stack": [
                 {
-                  "text": "संपत्ति कर मूल खाता:",
+                  "text": "{{mulKhataLabel}}",
                   "fontSize": 8,
                   "bold": true,
                   "margin": [0, 0, 0, 4]
@@ -90,7 +90,7 @@
               "width": "45%",
               "stack": [
                 {
-                  "text": "{{propertyId}}",
+                  "text": "{{mulKhataValue}}",
                   "fontSize": 8,
                   "margin": [0, 0, 0, 4]
                 },
