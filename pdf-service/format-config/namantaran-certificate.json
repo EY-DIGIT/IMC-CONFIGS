@@ -122,7 +122,7 @@
       "text": [
         { "text": "विषय: ", "bold": true },
         {
-          "text": "{{doorNo}}, {{ptAddress}}, {{colony}}, {{ward}}, {{zone}}, {{pincode}}, इंदौर (म. प्र.) के संपत्ति कर खाता क्रमांक I-20 085-12345 पर नामांतरण करने हेतु।"
+          "text": "{{doorNo}}, {{ptAddress}}, {{colony}}, {{ward}}, {{zone}}, {{pincode}}, इंदौर (म. प्र.) के संपत्ति कर खाता क्रमांक {{propertyId}} पर नामांतरण करने हेतु।"
         }
       ],
       "fontSize": 9,
