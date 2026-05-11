@@ -75,7 +75,7 @@
       {
   "variable": "newspaper",
   "value": {
-    "path": "$newspaper"
+    "path": "$.newspaper"
   }
 },
               {
