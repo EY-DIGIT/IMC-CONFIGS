@@ -251,7 +251,7 @@
         },
         {
           "width": "42%",
-          "text": "{{newspaperName}}",
+          "text": "{{newspaper}}",
           "fontSize": 9,
           "bold": true
         }

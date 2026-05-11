@@ -72,7 +72,12 @@
     "path": "$.additionalDetails.newspaperName"
   }
 },
-
+      {
+  "variable": "newspaper",
+  "value": {
+    "path": "$newspaper"
+  }
+},
               {
                "variable": "fatherOrHusbandNameold",
                "value": {
