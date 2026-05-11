@@ -511,8 +511,9 @@
 },
 {
   "variable": "displayNewspaper",
-  "formula": "'{{creationReason}}' == 'BIFURCATION' ? '{{newspaper}}' : '{{newspaperName}}'"
+  "formula": "'{{creationReason}}' == 'BIFURCATION' ? \"{{newspaper}}\" : \"{{newspaperName}}\""
 },
+
 
               { "variable": "th_year", "formula": "'Year'" },
               { "variable": "th_property_tax", "formula": "'Property Tax'" },
