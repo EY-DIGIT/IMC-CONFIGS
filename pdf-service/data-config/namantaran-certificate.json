@@ -72,7 +72,12 @@
     "path": "$.additionalDetails.newspaperName"
   }
 },
-
+      {
+  "variable": "newspaper",
+  "value": {
+    "path": "$.newspaper"
+  }
+},
               {
                "variable": "fatherOrHusbandNameold",
                "value": {
@@ -504,6 +509,11 @@
   "variable": "jointOwnerText",
   "formula": "'{{ownershipCategory}}' == 'JOINTOWNER' ? 'तथा <Joint New Owner Name> <Relationship> <Father/Husband Name> (संयुक्त स्वामित्व की स्थिति में लागू) ' : ''"
 },
+{
+  "variable": "displayNewspaper",
+  "formula": "'{{creationReason}}' == 'BIFURCATION' ? \"{{newspaper}}\" : \"{{newspaperName}}\""
+},
+
 
               { "variable": "th_year", "formula": "'Year'" },
               { "variable": "th_property_tax", "formula": "'Property Tax'" },
