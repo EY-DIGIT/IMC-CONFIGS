@@ -6,6 +6,22 @@
     "version": "1.0.0",
     "baseKeyPath": "$",
     "entityIdPath": "$.RequestInfo.msgId",
-    "mappings": []
+    "mappings": [
+      {
+        "topic": "common-pdf-generation-3",
+        "mappings": [
+          {
+            "direct": [
+              {
+                "variable": "parentOwnerName",
+                "value": {
+                  "path": "$.parentProperty.owners[0].hindiName"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
