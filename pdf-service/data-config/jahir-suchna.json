@@ -15,7 +15,7 @@
               {
                 "variable": "parentOwnerName",
                 "value": {
-                  "path": "$.parentProperty.owners[0].hindiName"
+                  "path": "$.parentProperty.owners[0].name"
                 }
               },
               {
