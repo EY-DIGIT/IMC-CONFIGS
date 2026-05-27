@@ -69,7 +69,7 @@
               {
   "variable": "childOwnerNames",
   "value": {
-    "path": "$.childProperties[].owners[*].name"
+    "path": "$.childProperties[*].owners[*].name"
   }
 }
 
