@@ -69,7 +69,7 @@
               {
   "variable": "childOwnerNames",
   "value": {
-    "path": "$.childProperties[*].owners[*].name"
+    "path": "$.childProperties[].owners[*].name"
   }
 }
 
@@ -78,11 +78,7 @@
               {
                 "variable": "reasonForTransferLabel",
                 "formula": "'{{reason}}' == 'REGISTEREDDEED' ? 'रजिस्ट्री' : '{{reason}}' == 'INHERITENCE' ? 'वारिस नाते' : '{{reason}}' == 'REGISTEREDUNREGISTEREDWILL' ? 'वसीयतनामा' : '{{reason}}' == 'COURTORDER' ? 'कोर्ट ऑर्डर' : ''"
-              },
-              {
-  "variable": "childOwnerNames",
-  "formula": "{{#childProperties}}{{owners.[0].name}}{{^last}}, {{/last}}{{/childProperties}}"
-}
+              }
             ]
           }
         ]
