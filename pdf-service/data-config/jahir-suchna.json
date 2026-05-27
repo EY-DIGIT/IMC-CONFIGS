@@ -65,7 +65,14 @@
                 "value": {
                   "path": "$.parentProperty.additionalDetails.reasonForTransfer"
                 }
-              }
+              },
+              {
+  "variable": "childOwnerNames",
+  "value": {
+    "path": "$.childProperties[*].owners[*].name"
+  }
+}
+
             ],
             "derived": [
               {

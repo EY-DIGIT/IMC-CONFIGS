@@ -10,7 +10,7 @@
       {
         "columns": [
           {
-            "text": "DD/MM/YYYY",
+            "text": "",
             "alignment": "right",
             "style": "topline"
           }
@@ -37,7 +37,7 @@
       {
   "text": [
     {
-      "text": "जनसाधारण को सूचित किया जाता है कि, आवेदन श्री/श्रीमती {{parentOwnerName}} द्वारा झोन क्रमांक {{zone}} राजस्व विभाग पर आवेदन के साथ "
+      "text": "जनसाधारण को सूचित किया जाता है कि, आवेदन श्री/श्रीमती {{childOwnerNames}} द्वारा झोन क्रमांक {{zone}} राजस्व विभाग पर आवेदन के साथ "
     },
     {
       "text": "{{reasonForTransferLabel}}",
