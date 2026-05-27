@@ -67,9 +67,9 @@
                 }
               },
               {
-  "variable": "childOwnerNames",
+  "variable": "OwnerName",
   "value": {
-    "path": "$.childProperties[*].owners[*].name"
+    "path": "$.applicationData.additionalDetails.bifurcationDetails[*].ownerNames[*]"
   }
 }
 
