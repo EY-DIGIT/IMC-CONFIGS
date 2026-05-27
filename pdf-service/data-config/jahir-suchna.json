@@ -30,13 +30,48 @@
                   "path": "$.parentProperty.address.pincode"
                 }
               },
-              
-{ "variable": "doorNo", "value": { "path": "$.parentProperty.address.doorNo" } },
-  { "variable": "street", "value": { "path": "$.parentProperty.address.street" } },
-  { "variable": "locality", "value": { "path": "$.parentProperty.address.locality.name" } },
-  { "variable": "city", "value": { "path": "$.parentProperty.address.city" } },
-  { "variable": "ward", "value": { "path": "$.parentProperty.address.ward" } }
-
+              {
+                "variable": "doorNo",
+                "value": {
+                  "path": "$.parentProperty.address.doorNo"
+                }
+              },
+              {
+                "variable": "street",
+                "value": {
+                  "path": "$.parentProperty.address.street"
+                }
+              },
+              {
+                "variable": "locality",
+                "value": {
+                  "path": "$.parentProperty.address.locality.name"
+                }
+              },
+              {
+                "variable": "city",
+                "value": {
+                  "path": "$.parentProperty.address.city"
+                }
+              },
+              {
+                "variable": "ward",
+                "value": {
+                  "path": "$.parentProperty.address.ward"
+                }
+              },
+              {
+                "variable": "reason",
+                "value": {
+                  "path": "$.parentProperty.additionalDetails.reasonForTransfer"
+                }
+              }
+            ],
+            "derived": [
+              {
+                "variable": "reasonForTransferLabel",
+                "formula": "'{{reason}}' == 'REGISTEREDDEED' ? 'रजिस्ट्री' : '{{reason}}' == 'INHERITENCE' ? 'वारिस नाते' : '{{reason}}' == 'REGISTEREDUNREGISTEREDWILL' ? 'वसीयतनामा' : '{{reason}}' == 'COURTORDER' ? 'कोर्ट ऑर्डर' : ''"
+              }
             ]
           }
         ]
