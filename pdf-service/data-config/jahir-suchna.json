@@ -69,7 +69,7 @@
               {
   "variable": "childPropertiesOwnerName",
   "value": {
-    "path": "$.childPropertiesOwnerName"
+    "path": "$.childPropertiesOwnerNameHindi"
   }
 }
 
