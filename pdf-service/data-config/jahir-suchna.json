@@ -6,6 +6,89 @@
     "version": "1.0.0",
     "baseKeyPath": "$",
     "entityIdPath": "$.RequestInfo.msgId",
-    "mappings": []
+    "mappings": [
+      {
+        "topic": "common-pdf-generation-3",
+        "mappings": [
+          {
+            "direct": [
+              {
+                "variable": "parentOwnerName",
+                "value": {
+                  "path": "$.parentProperty.owners[0].name"
+                }
+              },
+              {
+                "variable": "zone",
+                "value": {
+                  "path": "$.parentProperty.address.zone"
+                }
+              },
+              {
+                "variable": "pincode",
+                "value": {
+                  "path": "$.parentProperty.address.pincode"
+                }
+              },
+              {
+                "variable": "doorNo",
+                "value": {
+                  "path": "$.parentProperty.address.doorNo"
+                }
+              },
+              {
+                "variable": "street",
+                "value": {
+                  "path": "$.parentProperty.address.street"
+                }
+              },
+              {
+                "variable": "locality",
+                "value": {
+                  "path": "$.parentProperty.address.locality.name"
+                }
+              },
+              {
+                "variable": "city",
+                "value": {
+                  "path": "$.parentProperty.address.city"
+                }
+              },
+              {
+                "variable": "ward",
+                "value": {
+                  "path": "$.parentProperty.address.ward"
+                }
+              },
+              {
+                "variable": "reason",
+                "value": {
+                  "path": "$.parentProperty.additionalDetails.reasonForTransfer"
+                }
+              },
+              {
+  "variable": "childPropertiesOwnerName",
+  "value": {
+    "path": "$.childPropertiesOwnerNameHindi"
+  }
+}
+
+            ],
+            "derived": [
+              
+{
+  "variable": "zoneLabel",
+  "formula": "'{{zone}}' == 'Z1' ? 'Zone-1' : '{{zone}}' == 'Z2' ? 'Zone-2' : '{{zone}}' == 'Z3' ? 'Zone-3' : '{{zone}}' == 'Z4' ? 'Zone-4' : '{{zone}}' == 'Z5' ? 'Zone-5' : '{{zone}}' == 'Z6' ? 'Zone-6' : '{{zone}}' == 'Z7' ? 'Zone-7' : '{{zone}}' == 'Z8' ? 'Zone-8' : '{{zone}}' == 'Z9' ? 'Zone-9' : '{{zone}}' == 'Z10' ? 'Zone-10' : '{{zone}}' == 'Z11' ? 'Zone-11' : '{{zone}}' == 'Z12' ? 'Zone-12' : '{{zone}}' == 'Z13' ? 'Zone-13' : '{{zone}}' == 'Z14' ? 'Zone-14' : '{{zone}}' == 'Z15' ? 'Zone-15' : '{{zone}}' == 'Z16' ? 'Zone-16' : '{{zone}}' == 'Z17' ? 'Zone-17' : '{{zone}}' == 'Z18' ? 'Zone-18' : '{{zone}}' == 'Z19' ? 'Zone-19' : '{{zone}}' == 'Z20' ? 'Zone-20' : '{{zone}}' == 'Z21' ? 'Zone-21' : '{{zone}}' == 'Z22' ? 'Zone-22' : ''"
+},
+
+              {
+                "variable": "reasonForTransferLabel",
+                "formula": "'{{reason}}' == 'REGISTEREDDEED' ? 'रजिस्ट्री' : '{{reason}}' == 'INHERITENCE' ? 'वारिस नाते' : '{{reason}}' == 'REGISTEREDUNREGISTEREDWILL' ? 'वसीयतनामा' : '{{reason}}' == 'COURTORDER' ? 'कोर्ट ऑर्डर' : ''"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
